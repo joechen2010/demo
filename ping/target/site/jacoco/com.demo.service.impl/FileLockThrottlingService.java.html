@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FileLockThrottlingService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ping</a> &gt; <a href="index.source.html" class="el_package">com.demo.service.impl</a> &gt; <span class="el_source">FileLockThrottlingService.java</span></div><h1>FileLockThrottlingService.java</h1><pre class="source lang-java linenums">package com.demo.service.impl;
+
+import com.demo.service.ThrottlingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+@Component(&quot;filelockThrottlingService&quot;)
+<span class="fc" id="L21">public class FileLockThrottlingService implements ThrottlingService, InitializingBean, Runnable, DisposableBean {</span>
+
+<span class="fc" id="L23">    private static final Logger logger = LoggerFactory.getLogger(FileLockThrottlingService.class);</span>
+
+    @Value(&quot;${lock.file.path:rate_limit.lock}&quot;)
+    private String lockFilePath;
+
+    @Value(&quot;${counter.file.path:rate_limit.counter}&quot;)
+    private String counterFilePath;
+
+    private FileLock fileLock;
+    private FileChannel channel;
+
+<span class="fc" id="L34">    @Value(&quot;${throttle.permitsPerSecond:2}&quot;)</span>
+    private int permitsPerSecond = 2;
+
+<span class="fc" id="L37">    private ScheduledExecutorService resetExecutorService = Executors.newScheduledThreadPool(1);</span>
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+<span class="fc" id="L41">        createFile(lockFilePath);</span>
+<span class="fc" id="L42">        createFile(counterFilePath);</span>
+<span class="fc" id="L43">        resetExecutorService.scheduleAtFixedRate(this, 0, 1, TimeUnit.SECONDS);</span>
+<span class="fc" id="L44">    }</span>
+
+    @Override
+    public void run() {
+<span class="fc" id="L48">        setRequestCount(0);</span>
+<span class="fc" id="L49">    }</span>
+
+    @Override
+    public boolean tryAcquire() {
+<span class="fc" id="L53">        try (RandomAccessFile lockFile = new RandomAccessFile(lockFilePath, &quot;rw&quot;)) {</span>
+<span class="fc" id="L54">            channel = lockFile.getChannel();</span>
+<span class="fc" id="L55">            fileLock = channel.tryLock();</span>
+<span class="pc bpc" id="L56" title="1 of 2 branches missed.">            if (fileLock == null) {</span>
+<span class="nc" id="L57">                return false;</span>
+            }
+<span class="fc" id="L59">            int requestCount = getRequestCount();</span>
+<span class="fc" id="L60">            logger.debug(&quot;Request count: {} in current second&quot;, requestCount);</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">            if (requestCount &lt; permitsPerSecond) {</span>
+<span class="fc" id="L62">                setRequestCount(requestCount + 1);</span>
+<span class="fc" id="L63">                return true;</span>
+            }
+<span class="pc" id="L65">        } catch (Exception e) {</span>
+<span class="nc" id="L66">            logger.error(&quot;Failed to acquire file lock&quot;, e);</span>
+<span class="nc" id="L67">            release();</span>
+<span class="fc" id="L68">        }</span>
+<span class="fc" id="L69">        return false;</span>
+    }
+
+    @Override
+    public void release() {
+<span class="fc" id="L74">        closeChannelAndRelease(channel, fileLock);</span>
+<span class="fc" id="L75">        fileLock = null;</span>
+<span class="fc" id="L76">        channel = null;</span>
+<span class="fc" id="L77">    }</span>
+
+    private int getRequestCount() throws IOException {
+<span class="fc" id="L80">        try (RandomAccessFile countFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;)) {</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">            if (countFile.length() == 0) {</span>
+<span class="fc" id="L82">                return 0;</span>
+            }
+<span class="fc" id="L84">            return Integer.parseInt(countFile.readLine());</span>
+<span class="pc" id="L85">        } catch (Exception e) {</span>
+<span class="nc" id="L86">            return permitsPerSecond;</span>
+        }
+    }
+
+    private synchronized void setRequestCount(int count){
+<span class="fc" id="L91">        FileChannel counterChannel = null;</span>
+<span class="fc" id="L92">        FileLock counterLock = null;</span>
+<span class="fc" id="L93">        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;)) {</span>
+<span class="fc" id="L94">            counterChannel = counterFile.getChannel();</span>
+<span class="fc" id="L95">            counterLock = counterChannel.tryLock();</span>
+<span class="pc bpc" id="L96" title="1 of 2 branches missed.">            if (counterLock == null) {</span>
+<span class="nc" id="L97">                logger.error(&quot;Failed to acquire lock on counter file&quot;);</span>
+            }
+<span class="fc" id="L99">            counterFile.setLength(0);</span>
+<span class="fc" id="L100">            counterFile.writeBytes(String.valueOf(count));</span>
+<span class="nc" id="L101">        }catch (Exception e){</span>
+<span class="nc" id="L102">            logger.error(&quot;Failed to set counter&quot;, e);</span>
+        }finally {
+<span class="fc" id="L104">            closeChannelAndRelease(counterChannel, counterLock);</span>
+        }
+<span class="fc" id="L106">    }</span>
+
+    private void closeChannelAndRelease(FileChannel channel, FileLock fileLock){
+<span class="pc bpc" id="L109" title="1 of 4 branches missed.">        if (channel == null || !channel.isOpen()) {</span>
+<span class="fc" id="L110">            return;</span>
+        }
+<span class="pc bpc" id="L112" title="1 of 2 branches missed.">        if(fileLock != null){</span>
+            try {
+<span class="fc" id="L114">                fileLock.release();</span>
+<span class="nc" id="L115">            } catch (IOException e) {</span>
+<span class="nc" id="L116">                logger.error(&quot;Failed to release lock&quot;, e);</span>
+<span class="fc" id="L117">            }</span>
+        }
+        try {
+<span class="fc" id="L120">            channel.close();</span>
+<span class="nc" id="L121">        } catch (IOException e) {</span>
+<span class="nc" id="L122">            logger.error(&quot;Failed to close channel&quot;, e);</span>
+<span class="fc" id="L123">        }</span>
+<span class="fc" id="L124">    }</span>
+
+    private static void createFile(String filePath) {
+<span class="fc" id="L127">        File file = new File(filePath);</span>
+<span class="pc bpc" id="L128" title="1 of 2 branches missed.">        if (!file.exists()) {</span>
+            try {
+<span class="nc bnc" id="L130" title="All 2 branches missed.">                if (!file.createNewFile()) {</span>
+<span class="nc" id="L131">                    logger.error(&quot;Failed to create file {}&quot;, filePath);</span>
+                }
+<span class="nc" id="L133">            } catch (Exception e) {</span>
+<span class="nc" id="L134">                logger.error(&quot;Failed to create lock file {}&quot;, filePath, e);</span>
+<span class="nc" id="L135">            }</span>
+        }
+<span class="fc" id="L137">    }</span>
+
+    @Override
+    public void destroy() throws Exception {
+<span class="nc" id="L141">        resetExecutorService.shutdown();</span>
+<span class="nc" id="L142">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RedissonThrottlingService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ping</a> &gt; <a href="index.source.html" class="el_package">com.demo.service.impl</a> &gt; <span class="el_source">RedissonThrottlingService.java</span></div><h1>RedissonThrottlingService.java</h1><pre class="source lang-java linenums">package com.demo.service.impl;
+
+import com.demo.service.ThrottlingService;
+import org.redisson.api.RRateLimiter;
+import org.redisson.api.RateIntervalUnit;
+import org.redisson.api.RateType;
+import org.redisson.api.RedissonClient;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import java.util.concurrent.TimeUnit;
+
+@Component(&quot;redissonThrottlingService&quot;)
+<span class="fc" id="L16">public class RedissonThrottlingService implements ThrottlingService, InitializingBean {</span>
+
+    public static final String KEY = &quot;PING-REDISSON-THROTTLING&quot;;
+
+    // By default, we don't have a redis server
+    @Autowired(required = false)
+    private RedissonClient redissonClient;
+
+<span class="fc" id="L24">    @Value(&quot;${throttle.permitsPerSecond:2}&quot;)</span>
+    private int permitsPerSecond = 2;
+
+    private RRateLimiter rateLimiter;
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">        if(redissonClient != null){</span>
+<span class="nc" id="L32">            RRateLimiter rateLimiter = redissonClient.getRateLimiter(KEY);</span>
+<span class="nc" id="L33">            rateLimiter.trySetRate(RateType.OVERALL, permitsPerSecond, 1, RateIntervalUnit.SECONDS);</span>
+        }
+<span class="fc" id="L35">    }</span>
+
+    @Override
+    public boolean tryAcquire() {
+<span class="nc" id="L39">        return rateLimiter.tryAcquire(100, TimeUnit.MILLISECONDS);</span>
+    }
+
+    @Override
+    public void release() {
+        //Do nothing
+<span class="nc" id="L45">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

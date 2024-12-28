@@ -1,0 +1,148 @@
+2024-12-27 00:00:01.008 Started PongControllerSpec in 5.078 seconds (process running for 13.86)
+2024-12-27 00:00:05.789 Throttling request as too many requests in the same second
+2024-12-27 00:00:05.789 Throttling request as too many requests in the same second
+2024-12-27 00:00:05.789 Received ping message: Hello
+2024-12-27 00:00:05.789 Received ping message: Hello
+2024-12-27 00:00:05.905 Throttling request as too many requests in the same second
+2024-12-27 00:07:08.314 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 00:07:08.882 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 00:07:10.919 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 00:07:10.988 Starting PongControllerSpec using Java 17.0.12 with PID 18660 (started by joech in C:\code\hbsc\pong)
+2024-12-27 00:07:10.992 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:07:14.835 Started PongControllerSpec in 5.16 seconds (process running for 14.085)
+2024-12-27 00:07:19.092 Received ping message: Hello
+2024-12-27 00:07:19.502 Received ping message: Hello
+2024-12-27 00:07:19.503 Throttling request as too many requests in the same second
+2024-12-27 00:07:19.508 Throttling request as too many requests in the same second
+2024-12-27 00:07:19.829 Throttling request as too many requests in the same second
+2024-12-27 00:08:01.877 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 00:08:02.422 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 00:08:04.479 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 00:08:04.550 Starting PongControllerSpec using Java 17.0.12 with PID 26684 (started by joech in C:\code\hbsc\pong)
+2024-12-27 00:08:04.555 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:08:08.404 Started PongControllerSpec in 5.161 seconds (process running for 14.156)
+2024-12-27 00:08:12.759 Received ping message: Hello
+2024-12-27 00:08:13.159 Received ping message: Hello
+2024-12-27 00:08:13.160 Throttling request as too many requests in the same second
+2024-12-27 00:12:33.421 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 00:12:33.976 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 00:12:35.907 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 00:12:35.978 Starting PongControllerSpec using Java 17.0.12 with PID 28380 (started by joech in C:\code\hbsc\pong)
+2024-12-27 00:12:35.984 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:12:40.018 Started PongControllerSpec in 5.313 seconds (process running for 14.274)
+2024-12-27 00:12:44.701 Received ping message: Hello
+2024-12-27 00:12:44.701 Received ping message: Hello
+2024-12-27 00:13:04.573 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 00:13:05.184 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 00:13:07.357 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 00:13:07.431 Starting PongControllerSpec using Java 17.0.12 with PID 24776 (started by joech in C:\code\hbsc\pong)
+2024-12-27 00:13:07.435 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:13:11.654 Started PongControllerSpec in 5.737 seconds (process running for 15.4)
+2024-12-27 00:13:16.431 Received ping message: Hello
+2024-12-27 00:13:16.431 Received ping message: Hello
+2024-12-27 00:14:00.768 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 00:14:01.316 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 00:14:03.364 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 00:14:03.436 Starting PongControllerSpec using Java 17.0.12 with PID 19048 (started by joech in C:\code\hbsc\pong)
+2024-12-27 00:14:03.440 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:14:07.243 Started PongControllerSpec in 5.091 seconds (process running for 14.056)
+2024-12-27 00:14:11.884 Received ping message: Hello
+2024-12-27 00:14:11.884 Received ping message: Hello
+2024-12-27 00:14:11.967 Received ping message: Hello
+2024-12-27 00:14:45.933 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 00:14:46.457 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 00:14:48.300 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 00:14:48.369 Starting PongControllerSpec using Java 17.0.12 with PID 29308 (started by joech in C:\code\hbsc\pong)
+2024-12-27 00:14:48.375 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:14:52.238 Started PongControllerSpec in 5.112 seconds (process running for 13.674)
+2024-12-27 00:14:56.794 Throttling request as too many requests in the same second
+2024-12-27 00:14:56.794 Received ping message: Hello
+2024-12-27 00:14:56.794 Received ping message: Hello
+2024-12-27 15:40:18.743 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 15:40:18.944 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 15:40:19.010 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 15:40:19.018 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 15:40:19.531 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 15:40:19.551 Starting PongControllerSpec using Java 17.0.12 with PID 17876 (started by joech in C:\code\hsbc\pong)
+2024-12-27 15:40:19.553 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 15:40:20.635 Started PongControllerSpec in 1.466 seconds (process running for 3.967)
+2024-12-27 15:40:21.735 Received ping message: Hello
+2024-12-27 15:40:21.852 Received ping message: Hello
+2024-12-27 15:40:21.855 Throttling request as too many requests in the same second
+2024-12-27 15:40:21.954 Throttling request as too many requests in the same second
+2024-12-27 15:53:31.280 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 15:53:31.433 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 15:53:31.500 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-27 15:53:31.512 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-27 15:53:31.990 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-27 15:53:32.008 Starting PongControllerSpec using Java 17.0.12 with PID 19124 (started by joech in C:\code\hsbc\demo\pong)
+2024-12-27 15:53:32.009 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 15:53:32.990 Started PongControllerSpec in 1.33 seconds (process running for 4.067)
+2024-12-27 15:53:34.024 Received ping message: Hello
+2024-12-27 15:53:34.131 Received ping message: Hello
+2024-12-27 15:53:34.133 Throttling request as too many requests in the same second
+2024-12-27 15:53:34.208 Throttling request as too many requests in the same second

@@ -1,0 +1,665 @@
+2024-12-27 12:15:09.993 Starting PingApplication using Java 17.0.12 with PID 21588 (C:\code\hbsc\ping\target\classes started by joech in C:\code\hbsc)
+2024-12-27 12:15:09.995 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 12:15:10.779 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 12:15:10.781 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 12:15:10.803 Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-12-27 12:15:11.092 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:11.650 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-27 12:15:11.984 Netty started on port 8082
+2024-12-27 12:15:11.995 Started PingApplication in 2.277 seconds (process running for 2.773)
+2024-12-27 12:15:12.100 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:12.320 Request count: 2 in current second
+2024-12-27 12:15:12.322 Request 0 not sent as being 'ping rate limited'
+2024-12-27 12:15:12.615 Request count: 2 in current second
+2024-12-27 12:15:12.615 Request 1 not sent as being 'ping rate limited'
+2024-12-27 12:15:12.928 Request count: 2 in current second
+2024-12-27 12:15:12.928 Request 2 not sent as being 'ping rate limited'
+2024-12-27 12:15:13.102 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:13.227 Request count: 2 in current second
+2024-12-27 12:15:13.228 Request 3 not sent as being 'ping rate limited'
+2024-12-27 12:15:13.527 Request count: 2 in current second
+2024-12-27 12:15:13.527 Request 4 not sent as being 'ping rate limited'
+2024-12-27 12:15:13.824 Request count: 2 in current second
+2024-12-27 12:15:13.824 Request 5 not sent as being 'ping rate limited'
+2024-12-27 12:15:14.092 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:14.125 Request count: 2 in current second
+2024-12-27 12:15:14.125 Request 6 not sent as being 'ping rate limited'
+2024-12-27 12:15:14.422 Request count: 2 in current second
+2024-12-27 12:15:14.423 Request 7 not sent as being 'ping rate limited'
+2024-12-27 12:15:14.720 Request count: 2 in current second
+2024-12-27 12:15:14.720 Request 8 not sent as being 'ping rate limited'
+2024-12-27 12:15:15.020 Request count: 2 in current second
+2024-12-27 12:15:15.021 Request 9 not sent as being 'ping rate limited'
+2024-12-27 12:15:15.100 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:15.321 Request count: 2 in current second
+2024-12-27 12:15:15.321 Request 10 not sent as being 'ping rate limited'
+2024-12-27 12:15:15.619 Request count: 2 in current second
+2024-12-27 12:15:15.620 Request 11 not sent as being 'ping rate limited'
+2024-12-27 12:15:15.915 Request count: 2 in current second
+2024-12-27 12:15:15.915 Request 12 not sent as being 'ping rate limited'
+2024-12-27 12:15:16.102 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:16.227 Request count: 2 in current second
+2024-12-27 12:15:16.227 Request 13 not sent as being 'ping rate limited'
+2024-12-27 12:15:16.528 Request count: 2 in current second
+2024-12-27 12:15:16.528 Request 14 not sent as being 'ping rate limited'
+2024-12-27 12:15:16.825 Request count: 2 in current second
+2024-12-27 12:15:16.825 Request 15 not sent as being 'ping rate limited'
+2024-12-27 12:15:17.094 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:17.125 Request count: 2 in current second
+2024-12-27 12:15:17.125 Request 16 not sent as being 'ping rate limited'
+2024-12-27 12:15:17.427 Request count: 2 in current second
+2024-12-27 12:15:17.428 Request 17 not sent as being 'ping rate limited'
+2024-12-27 12:15:17.724 Request count: 2 in current second
+2024-12-27 12:15:17.724 Request 18 not sent as being 'ping rate limited'
+2024-12-27 12:15:18.024 Request count: 2 in current second
+2024-12-27 12:15:18.024 Request 19 not sent as being 'ping rate limited'
+2024-12-27 12:15:18.103 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:18.324 Request count: 2 in current second
+2024-12-27 12:15:18.324 Request 20 not sent as being 'ping rate limited'
+2024-12-27 12:15:18.621 Request count: 2 in current second
+2024-12-27 12:15:18.621 Request 21 not sent as being 'ping rate limited'
+2024-12-27 12:15:18.920 Request count: 2 in current second
+2024-12-27 12:15:18.920 Request 22 not sent as being 'ping rate limited'
+2024-12-27 12:15:19.093 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:19.219 Request count: 2 in current second
+2024-12-27 12:15:19.219 Request 23 not sent as being 'ping rate limited'
+2024-12-27 12:15:19.516 Request count: 2 in current second
+2024-12-27 12:15:19.516 Request 24 not sent as being 'ping rate limited'
+2024-12-27 12:15:19.815 Request count: 2 in current second
+2024-12-27 12:15:19.815 Request 25 not sent as being 'ping rate limited'
+2024-12-27 12:15:20.096 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:20.128 Request count: 2 in current second
+2024-12-27 12:15:20.128 Request 26 not sent as being 'ping rate limited'
+2024-12-27 12:15:20.426 Request count: 2 in current second
+2024-12-27 12:15:20.427 Request 27 not sent as being 'ping rate limited'
+2024-12-27 12:15:20.727 Request count: 2 in current second
+2024-12-27 12:15:20.727 Request 28 not sent as being 'ping rate limited'
+2024-12-27 12:15:21.024 Request count: 2 in current second
+2024-12-27 12:15:21.024 Request 29 not sent as being 'ping rate limited'
+2024-12-27 12:15:21.105 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:21.322 Request count: 2 in current second
+2024-12-27 12:15:21.322 Request 30 not sent as being 'ping rate limited'
+2024-12-27 12:15:21.619 Request count: 2 in current second
+2024-12-27 12:15:21.619 Request 31 not sent as being 'ping rate limited'
+2024-12-27 12:15:21.919 Request count: 2 in current second
+2024-12-27 12:15:21.919 Request 32 not sent as being 'ping rate limited'
+2024-12-27 12:15:22.108 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:22.217 Request count: 2 in current second
+2024-12-27 12:15:22.221 Request 33 not sent as being 'ping rate limited'
+2024-12-27 12:15:22.518 Request count: 2 in current second
+2024-12-27 12:15:22.518 Request 34 not sent as being 'ping rate limited'
+2024-12-27 12:15:22.815 Request count: 2 in current second
+2024-12-27 12:15:22.816 Request 35 not sent as being 'ping rate limited'
+2024-12-27 12:15:23.096 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:23.128 Request count: 2 in current second
+2024-12-27 12:15:23.128 Request 36 not sent as being 'ping rate limited'
+2024-12-27 12:15:23.424 Request count: 2 in current second
+2024-12-27 12:15:23.424 Request 37 not sent as being 'ping rate limited'
+2024-12-27 12:15:23.722 Request count: 2 in current second
+2024-12-27 12:15:23.722 Request 38 not sent as being 'ping rate limited'
+2024-12-27 12:15:24.020 Request count: 2 in current second
+2024-12-27 12:15:24.022 Request 39 not sent as being 'ping rate limited'
+2024-12-27 12:15:24.099 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:24.319 Request count: 2 in current second
+2024-12-27 12:15:24.319 Request 40 not sent as being 'ping rate limited'
+2024-12-27 12:15:24.618 Request count: 2 in current second
+2024-12-27 12:15:24.619 Request 41 not sent as being 'ping rate limited'
+2024-12-27 12:15:24.918 Request count: 2 in current second
+2024-12-27 12:15:24.918 Request 42 not sent as being 'ping rate limited'
+2024-12-27 12:15:25.093 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:25.215 Request count: 2 in current second
+2024-12-27 12:15:25.216 Request 43 not sent as being 'ping rate limited'
+2024-12-27 12:15:25.517 Request count: 2 in current second
+2024-12-27 12:15:25.517 Request 44 not sent as being 'ping rate limited'
+2024-12-27 12:15:25.828 Request count: 2 in current second
+2024-12-27 12:15:25.829 Request 45 not sent as being 'ping rate limited'
+2024-12-27 12:15:26.097 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:26.130 Request count: 2 in current second
+2024-12-27 12:15:26.130 Request 46 not sent as being 'ping rate limited'
+2024-12-27 12:15:26.426 Request count: 2 in current second
+2024-12-27 12:15:26.428 Request 47 not sent as being 'ping rate limited'
+2024-12-27 12:15:26.724 Request count: 2 in current second
+2024-12-27 12:15:26.725 Request 48 not sent as being 'ping rate limited'
+2024-12-27 12:15:27.023 Request count: 2 in current second
+2024-12-27 12:15:27.023 Request 49 not sent as being 'ping rate limited'
+2024-12-27 12:15:27.104 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:27.323 Request count: 2 in current second
+2024-12-27 12:15:27.323 Request 50 not sent as being 'ping rate limited'
+2024-12-27 12:15:27.619 Request count: 2 in current second
+2024-12-27 12:15:27.619 Request 51 not sent as being 'ping rate limited'
+2024-12-27 12:15:27.916 Request count: 2 in current second
+2024-12-27 12:15:27.916 Request 52 not sent as being 'ping rate limited'
+2024-12-27 12:15:28.107 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:28.217 Request count: 2 in current second
+2024-12-27 12:15:28.217 Request 53 not sent as being 'ping rate limited'
+2024-12-27 12:15:28.516 Request count: 2 in current second
+2024-12-27 12:15:28.516 Request 54 not sent as being 'ping rate limited'
+2024-12-27 12:15:28.830 Request count: 2 in current second
+2024-12-27 12:15:28.830 Request 55 not sent as being 'ping rate limited'
+2024-12-27 12:15:29.097 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:29.128 Request count: 2 in current second
+2024-12-27 12:15:29.129 Request 56 not sent as being 'ping rate limited'
+2024-12-27 12:15:29.427 Request count: 2 in current second
+2024-12-27 12:15:29.427 Request 57 not sent as being 'ping rate limited'
+2024-12-27 12:15:29.726 Request count: 2 in current second
+2024-12-27 12:15:29.726 Request 58 not sent as being 'ping rate limited'
+2024-12-27 12:15:30.027 Request count: 2 in current second
+2024-12-27 12:15:30.027 Request 59 not sent as being 'ping rate limited'
+2024-12-27 12:15:30.105 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:30.324 Request count: 2 in current second
+2024-12-27 12:15:30.325 Request 60 not sent as being 'ping rate limited'
+2024-12-27 12:15:30.621 Request count: 2 in current second
+2024-12-27 12:15:30.621 Request 61 not sent as being 'ping rate limited'
+2024-12-27 12:15:30.918 Request count: 2 in current second
+2024-12-27 12:15:30.918 Request 62 not sent as being 'ping rate limited'
+2024-12-27 12:15:31.107 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:31.216 Request count: 2 in current second
+2024-12-27 12:15:31.217 Request 63 not sent as being 'ping rate limited'
+2024-12-27 12:15:31.517 Request count: 2 in current second
+2024-12-27 12:15:31.517 Request 64 not sent as being 'ping rate limited'
+2024-12-27 12:15:31.827 Request count: 2 in current second
+2024-12-27 12:15:31.828 Request 65 not sent as being 'ping rate limited'
+2024-12-27 12:15:32.093 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:32.125 Request count: 2 in current second
+2024-12-27 12:15:32.125 Request 66 not sent as being 'ping rate limited'
+2024-12-27 12:15:32.423 Request count: 2 in current second
+2024-12-27 12:15:32.424 Request 67 not sent as being 'ping rate limited'
+2024-12-27 12:15:32.722 Request count: 2 in current second
+2024-12-27 12:15:32.722 Request 68 not sent as being 'ping rate limited'
+2024-12-27 12:15:33.019 Request count: 2 in current second
+2024-12-27 12:15:33.019 Request 69 not sent as being 'ping rate limited'
+2024-12-27 12:15:33.096 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:33.317 Request count: 2 in current second
+2024-12-27 12:15:33.317 Request 70 not sent as being 'ping rate limited'
+2024-12-27 12:15:33.616 Request count: 2 in current second
+2024-12-27 12:15:33.616 Request 71 not sent as being 'ping rate limited'
+2024-12-27 12:15:33.915 Request count: 2 in current second
+2024-12-27 12:15:33.915 Request 72 not sent as being 'ping rate limited'
+2024-12-27 12:15:34.104 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:34.229 Request count: 2 in current second
+2024-12-27 12:15:34.230 Request 73 not sent as being 'ping rate limited'
+2024-12-27 12:15:34.527 Request count: 2 in current second
+2024-12-27 12:15:34.528 Request 74 not sent as being 'ping rate limited'
+2024-12-27 12:15:34.824 Request count: 2 in current second
+2024-12-27 12:15:34.825 Request 75 not sent as being 'ping rate limited'
+2024-12-27 12:15:35.105 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:35.119 Request count: 2 in current second
+2024-12-27 12:15:35.120 Request 76 not sent as being 'ping rate limited'
+2024-12-27 12:15:35.419 Request count: 2 in current second
+2024-12-27 12:15:35.419 Request 77 not sent as being 'ping rate limited'
+2024-12-27 12:15:35.717 Request count: 2 in current second
+2024-12-27 12:15:35.717 Request 78 not sent as being 'ping rate limited'
+2024-12-27 12:15:36.029 Request count: 2 in current second
+2024-12-27 12:15:36.030 Request 79 not sent as being 'ping rate limited'
+2024-12-27 12:15:36.093 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:36.327 Request count: 2 in current second
+2024-12-27 12:15:36.328 Request 80 not sent as being 'ping rate limited'
+2024-12-27 12:15:36.627 Request count: 2 in current second
+2024-12-27 12:15:36.628 Request 81 not sent as being 'ping rate limited'
+2024-12-27 12:15:36.923 Request count: 2 in current second
+2024-12-27 12:15:36.923 Request 82 not sent as being 'ping rate limited'
+2024-12-27 12:15:37.099 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:37.224 Request count: 2 in current second
+2024-12-27 12:15:37.224 Request 83 not sent as being 'ping rate limited'
+2024-12-27 12:15:37.521 Request count: 2 in current second
+2024-12-27 12:15:37.522 Request 84 not sent as being 'ping rate limited'
+2024-12-27 12:15:37.817 Request count: 2 in current second
+2024-12-27 12:15:37.817 Request 85 not sent as being 'ping rate limited'
+2024-12-27 12:15:38.101 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:38.116 Request count: 2 in current second
+2024-12-27 12:15:38.116 Request 86 not sent as being 'ping rate limited'
+2024-12-27 12:15:38.430 Request count: 2 in current second
+2024-12-27 12:15:38.430 Request 87 not sent as being 'ping rate limited'
+2024-12-27 12:15:38.726 Request count: 2 in current second
+2024-12-27 12:15:38.727 Request 88 not sent as being 'ping rate limited'
+2024-12-27 12:15:39.022 Request count: 2 in current second
+2024-12-27 12:15:39.023 Request 89 not sent as being 'ping rate limited'
+2024-12-27 12:15:39.101 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:39.321 Request count: 2 in current second
+2024-12-27 12:15:39.321 Request 90 not sent as being 'ping rate limited'
+2024-12-27 12:15:39.619 Request count: 2 in current second
+2024-12-27 12:15:39.619 Request 91 not sent as being 'ping rate limited'
+2024-12-27 12:15:39.916 Request count: 2 in current second
+2024-12-27 12:15:39.916 Request 92 not sent as being 'ping rate limited'
+2024-12-27 12:15:40.103 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:40.229 Request count: 2 in current second
+2024-12-27 12:15:40.229 Request 93 not sent as being 'ping rate limited'
+2024-12-27 12:15:40.525 Request count: 2 in current second
+2024-12-27 12:15:40.525 Request 94 not sent as being 'ping rate limited'
+2024-12-27 12:15:40.821 Request count: 2 in current second
+2024-12-27 12:15:40.821 Request 95 not sent as being 'ping rate limited'
+2024-12-27 12:15:41.102 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:41.117 Request count: 2 in current second
+2024-12-27 12:15:41.117 Request 96 not sent as being 'ping rate limited'
+2024-12-27 12:15:41.415 Request count: 2 in current second
+2024-12-27 12:15:41.416 Request 97 not sent as being 'ping rate limited'
+2024-12-27 12:15:41.729 Request count: 2 in current second
+2024-12-27 12:15:41.731 Request 98 not sent as being 'ping rate limited'
+2024-12-27 12:15:42.030 Request count: 2 in current second
+2024-12-27 12:15:42.031 Request 99 not sent as being 'ping rate limited'
+2024-12-27 12:15:42.094 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:42.325 Request count: 2 in current second
+2024-12-27 12:15:42.326 Request 100 not sent as being 'ping rate limited'
+2024-12-27 12:15:42.623 Request count: 2 in current second
+2024-12-27 12:15:42.623 Request 101 not sent as being 'ping rate limited'
+2024-12-27 12:15:42.920 Request count: 2 in current second
+2024-12-27 12:15:42.920 Request 102 not sent as being 'ping rate limited'
+2024-12-27 12:15:43.093 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:43.217 Request count: 2 in current second
+2024-12-27 12:15:43.218 Request 103 not sent as being 'ping rate limited'
+2024-12-27 12:15:43.530 Request count: 2 in current second
+2024-12-27 12:15:43.530 Request 104 not sent as being 'ping rate limited'
+2024-12-27 12:15:43.829 Request count: 2 in current second
+2024-12-27 12:15:43.830 Request 105 not sent as being 'ping rate limited'
+2024-12-27 12:15:44.098 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:44.128 Request count: 2 in current second
+2024-12-27 12:15:44.128 Request 106 not sent as being 'ping rate limited'
+2024-12-27 12:15:44.428 Request count: 2 in current second
+2024-12-27 12:15:44.428 Request 107 not sent as being 'ping rate limited'
+2024-12-27 12:15:44.728 Request count: 2 in current second
+2024-12-27 12:15:44.728 Request 108 not sent as being 'ping rate limited'
+2024-12-27 12:15:45.026 Request count: 2 in current second
+2024-12-27 12:15:45.027 Request 109 not sent as being 'ping rate limited'
+2024-12-27 12:15:45.107 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:45.327 Request count: 2 in current second
+2024-12-27 12:15:45.327 Request 110 not sent as being 'ping rate limited'
+2024-12-27 12:15:45.626 Request count: 2 in current second
+2024-12-27 12:15:45.626 Request 111 not sent as being 'ping rate limited'
+2024-12-27 12:15:45.923 Request count: 2 in current second
+2024-12-27 12:15:45.924 Request 112 not sent as being 'ping rate limited'
+2024-12-27 12:15:46.094 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:46.217 Request count: 2 in current second
+2024-12-27 12:15:46.218 Request 113 not sent as being 'ping rate limited'
+2024-12-27 12:15:46.528 Request count: 2 in current second
+2024-12-27 12:15:46.529 Request 114 not sent as being 'ping rate limited'
+2024-12-27 12:15:46.824 Request count: 2 in current second
+2024-12-27 12:15:46.825 Request 115 not sent as being 'ping rate limited'
+2024-12-27 12:15:47.092 Failed to release lock on counter file
+java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.FileLockImpl.release(FileLockImpl.java:58)
+	at com.demo.service.impl.FileLockThrottlingService.setRequestCount(FileLockThrottlingService.java:109)
+	at com.demo.service.impl.FileLockThrottlingService.run(FileLockThrottlingService.java:46)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-27 12:15:47.124 Request count: 2 in current second
+2024-12-27 12:15:47.124 Request 116 not sent as being 'ping rate limited'
+2024-12-27 12:15:47.420 Request count: 2 in current second
+2024-12-27 12:15:47.420 Request 117 not sent as being 'ping rate limited'
+2024-12-27 12:15:47.720 Request count: 2 in current second
+2024-12-27 12:15:47.721 Request 118 not sent as being 'ping rate limited'
+2024-12-27 12:15:48.023 Request count: 2 in current second
+2024-12-27 12:15:48.023 Request 119 not sent as being 'ping rate limited'
+2024-12-27 12:15:48.317 Request count: 2 in current second
+2024-12-27 12:15:48.318 Request 120 not sent as being 'ping rate limited'
+2024-12-27 12:15:48.629 Request count: 2 in current second
+2024-12-27 12:15:48.629 Request 121 not sent as being 'ping rate limited'
+2024-12-27 12:15:48.927 Request count: 2 in current second
+2024-12-27 12:15:48.927 Request 122 not sent as being 'ping rate limited'
+2024-12-27 12:15:49.223 Request count: 2 in current second
+2024-12-27 12:15:49.223 Request 123 not sent as being 'ping rate limited'
+2024-12-27 12:15:49.519 Request count: 2 in current second
+2024-12-27 12:15:49.519 Request 124 not sent as being 'ping rate limited'

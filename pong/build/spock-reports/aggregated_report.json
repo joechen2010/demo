@@ -1,0 +1,1 @@
+{"com.demo.controller.PongControllerSpec":{"executedFeatures":["should handle correctly (#input -> #expected, #status)","should throttled correctly"],"ignoredFeatures":[],"stats":{"failures":0,"errors":0,"skipped":0,"totalRuns":2,"totalFeatures":2,"passed":2,"successRate":1.0,"time":2631},"title":"","narrative":""}}

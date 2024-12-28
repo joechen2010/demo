@@ -1,0 +1,20 @@
+2024-12-27 20:15:13.265 Starting PingApplication using Java 17.0.12 with PID 25680 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2024-12-27 20:15:13.267 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 20:15:14.070 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 20:15:14.073 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 20:15:14.096 Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-12-27 20:15:15.066 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-27 20:15:15.555 Netty started on port 8081
+2024-12-27 20:15:15.570 Started PingApplication in 2.56 seconds (process running for 3.014)
+2024-12-27 20:15:16.680 Request 0 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:17.591 Request 1 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:18.591 Request 2 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:19.589 Request 3 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:20.591 Request 4 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:21.599 Request 5 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:22.603 Request 6 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:23.588 Request 7 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:24.592 Request 8 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:25.591 Request 9 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:26.605 Request 10 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2024-12-27 20:15:27.587 Request 11 not sent as being 'ping rate limited'

@@ -1,0 +1,182 @@
+2024-12-27 12:17:08.211 Starting PingApplication using Java 17.0.12 with PID 22852 (C:\code\hbsc\ping\target\classes started by joech in C:\code\hbsc)
+2024-12-27 12:17:08.213 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 12:17:09.011 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 12:17:09.013 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 12:17:09.036 Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-12-27 12:17:09.903 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-27 12:17:10.250 Netty started on port 8082
+2024-12-27 12:17:10.262 Started PingApplication in 2.378 seconds (process running for 2.994)
+2024-12-27 12:17:10.587 Request count: 2 in current second
+2024-12-27 12:17:10.589 Request 0 not sent as being 'ping rate limited'
+2024-12-27 12:17:10.885 Request count: 2 in current second
+2024-12-27 12:17:10.885 Request 1 not sent as being 'ping rate limited'
+2024-12-27 12:17:11.187 Request count: 2 in current second
+2024-12-27 12:17:11.188 Request 2 not sent as being 'ping rate limited'
+2024-12-27 12:17:11.487 Request count: 2 in current second
+2024-12-27 12:17:11.487 Request 3 not sent as being 'ping rate limited'
+2024-12-27 12:17:11.778 Request count: 2 in current second
+2024-12-27 12:17:11.779 Request 4 not sent as being 'ping rate limited'
+2024-12-27 12:17:12.076 Request count: 2 in current second
+2024-12-27 12:17:12.077 Request 5 not sent as being 'ping rate limited'
+2024-12-27 12:17:12.374 Request count: 2 in current second
+2024-12-27 12:17:12.375 Request 6 not sent as being 'ping rate limited'
+2024-12-27 12:17:12.687 Request count: 2 in current second
+2024-12-27 12:17:12.687 Request 7 not sent as being 'ping rate limited'
+2024-12-27 12:17:12.983 Request count: 2 in current second
+2024-12-27 12:17:12.983 Request 8 not sent as being 'ping rate limited'
+2024-12-27 12:17:13.283 Request count: 2 in current second
+2024-12-27 12:17:13.283 Request 9 not sent as being 'ping rate limited'
+2024-12-27 12:17:13.584 Request count: 2 in current second
+2024-12-27 12:17:13.584 Request 10 not sent as being 'ping rate limited'
+2024-12-27 12:17:13.883 Request count: 2 in current second
+2024-12-27 12:17:13.883 Request 11 not sent as being 'ping rate limited'
+2024-12-27 12:17:14.182 Request count: 2 in current second
+2024-12-27 12:17:14.182 Request 12 not sent as being 'ping rate limited'
+2024-12-27 12:17:14.479 Request count: 2 in current second
+2024-12-27 12:17:14.479 Request 13 not sent as being 'ping rate limited'
+2024-12-27 12:17:14.779 Request count: 2 in current second
+2024-12-27 12:17:14.780 Request 14 not sent as being 'ping rate limited'
+2024-12-27 12:17:15.076 Request count: 2 in current second
+2024-12-27 12:17:15.077 Request 15 not sent as being 'ping rate limited'
+2024-12-27 12:17:15.375 Request count: 2 in current second
+2024-12-27 12:17:15.375 Request 16 not sent as being 'ping rate limited'
+2024-12-27 12:17:15.689 Request count: 2 in current second
+2024-12-27 12:17:15.689 Request 17 not sent as being 'ping rate limited'
+2024-12-27 12:17:15.987 Request count: 2 in current second
+2024-12-27 12:17:15.987 Request 18 not sent as being 'ping rate limited'
+2024-12-27 12:17:16.286 Request count: 2 in current second
+2024-12-27 12:17:16.286 Request 19 not sent as being 'ping rate limited'
+2024-12-27 12:17:16.586 Request count: 2 in current second
+2024-12-27 12:17:16.586 Request 20 not sent as being 'ping rate limited'
+2024-12-27 12:17:16.886 Request count: 2 in current second
+2024-12-27 12:17:16.886 Request 21 not sent as being 'ping rate limited'
+2024-12-27 12:17:17.184 Request count: 2 in current second
+2024-12-27 12:17:17.184 Request 22 not sent as being 'ping rate limited'
+2024-12-27 12:17:17.481 Request count: 2 in current second
+2024-12-27 12:17:17.481 Request 23 not sent as being 'ping rate limited'
+2024-12-27 12:17:17.779 Request count: 2 in current second
+2024-12-27 12:17:17.779 Request 24 not sent as being 'ping rate limited'
+2024-12-27 12:17:18.079 Request count: 2 in current second
+2024-12-27 12:17:18.083 Request 25 not sent as being 'ping rate limited'
+2024-12-27 12:17:18.376 Request count: 2 in current second
+2024-12-27 12:17:18.376 Request 26 not sent as being 'ping rate limited'
+2024-12-27 12:17:18.689 Request count: 2 in current second
+2024-12-27 12:17:18.689 Request 27 not sent as being 'ping rate limited'
+2024-12-27 12:17:18.988 Request count: 2 in current second
+2024-12-27 12:17:18.988 Request 28 not sent as being 'ping rate limited'
+2024-12-27 12:17:19.284 Request count: 2 in current second
+2024-12-27 12:17:19.284 Request 29 not sent as being 'ping rate limited'
+2024-12-27 12:17:19.582 Request count: 2 in current second
+2024-12-27 12:17:19.582 Request 30 not sent as being 'ping rate limited'
+2024-12-27 12:17:19.880 Request count: 2 in current second
+2024-12-27 12:17:19.880 Request 31 not sent as being 'ping rate limited'
+2024-12-27 12:17:20.179 Request count: 2 in current second
+2024-12-27 12:17:20.179 Request 32 not sent as being 'ping rate limited'
+2024-12-27 12:17:20.480 Request count: 2 in current second
+2024-12-27 12:17:20.480 Request 33 not sent as being 'ping rate limited'
+2024-12-27 12:17:20.780 Request count: 2 in current second
+2024-12-27 12:17:20.781 Request 34 not sent as being 'ping rate limited'
+2024-12-27 12:17:21.078 Request count: 2 in current second
+2024-12-27 12:17:21.079 Request 35 not sent as being 'ping rate limited'
+2024-12-27 12:17:21.377 Request count: 2 in current second
+2024-12-27 12:17:21.378 Request 36 not sent as being 'ping rate limited'
+2024-12-27 12:17:21.680 Request count: 2 in current second
+2024-12-27 12:17:21.680 Request 37 not sent as being 'ping rate limited'
+2024-12-27 12:17:21.977 Request count: 2 in current second
+2024-12-27 12:17:21.977 Request 38 not sent as being 'ping rate limited'
+2024-12-27 12:17:22.276 Request count: 2 in current second
+2024-12-27 12:17:22.276 Request 39 not sent as being 'ping rate limited'
+2024-12-27 12:17:22.585 Request count: 2 in current second
+2024-12-27 12:17:22.586 Request 40 not sent as being 'ping rate limited'
+2024-12-27 12:17:22.883 Request count: 2 in current second
+2024-12-27 12:17:22.884 Request 41 not sent as being 'ping rate limited'
+2024-12-27 12:17:23.182 Request count: 2 in current second
+2024-12-27 12:17:23.183 Request 42 not sent as being 'ping rate limited'
+2024-12-27 12:17:23.479 Request count: 2 in current second
+2024-12-27 12:17:23.481 Request 43 not sent as being 'ping rate limited'
+2024-12-27 12:17:23.775 Request count: 2 in current second
+2024-12-27 12:17:23.776 Request 44 not sent as being 'ping rate limited'
+2024-12-27 12:17:24.089 Request count: 2 in current second
+2024-12-27 12:17:24.090 Request 45 not sent as being 'ping rate limited'
+2024-12-27 12:17:24.385 Request count: 2 in current second
+2024-12-27 12:17:24.386 Request 46 not sent as being 'ping rate limited'
+2024-12-27 12:17:24.681 Request count: 2 in current second
+2024-12-27 12:17:24.682 Request 47 not sent as being 'ping rate limited'
+2024-12-27 12:17:24.976 Request count: 2 in current second
+2024-12-27 12:17:24.977 Request 48 not sent as being 'ping rate limited'
+2024-12-27 12:17:25.287 Request count: 2 in current second
+2024-12-27 12:17:25.287 Request 49 not sent as being 'ping rate limited'
+2024-12-27 12:17:25.587 Request count: 2 in current second
+2024-12-27 12:17:25.587 Request 50 not sent as being 'ping rate limited'
+2024-12-27 12:17:25.883 Request count: 2 in current second
+2024-12-27 12:17:25.883 Request 51 not sent as being 'ping rate limited'
+2024-12-27 12:17:26.179 Request count: 2 in current second
+2024-12-27 12:17:26.180 Request 52 not sent as being 'ping rate limited'
+2024-12-27 12:17:26.476 Request count: 2 in current second
+2024-12-27 12:17:26.476 Request 53 not sent as being 'ping rate limited'
+2024-12-27 12:17:26.788 Request count: 2 in current second
+2024-12-27 12:17:26.789 Request 54 not sent as being 'ping rate limited'
+2024-12-27 12:17:27.086 Request count: 2 in current second
+2024-12-27 12:17:27.086 Request 55 not sent as being 'ping rate limited'
+2024-12-27 12:17:27.380 Request count: 2 in current second
+2024-12-27 12:17:27.381 Request 56 not sent as being 'ping rate limited'
+2024-12-27 12:17:27.679 Request count: 2 in current second
+2024-12-27 12:17:27.679 Request 57 not sent as being 'ping rate limited'
+2024-12-27 12:17:27.978 Request count: 2 in current second
+2024-12-27 12:17:27.978 Request 58 not sent as being 'ping rate limited'
+2024-12-27 12:17:28.274 Request count: 2 in current second
+2024-12-27 12:17:28.274 Request 59 not sent as being 'ping rate limited'
+2024-12-27 12:17:28.587 Request count: 2 in current second
+2024-12-27 12:17:28.587 Request 60 not sent as being 'ping rate limited'
+2024-12-27 12:17:28.882 Request count: 2 in current second
+2024-12-27 12:17:28.883 Request 61 not sent as being 'ping rate limited'
+2024-12-27 12:17:29.182 Request count: 2 in current second
+2024-12-27 12:17:29.183 Request 62 not sent as being 'ping rate limited'
+2024-12-27 12:17:29.480 Request count: 2 in current second
+2024-12-27 12:17:29.480 Request 63 not sent as being 'ping rate limited'
+2024-12-27 12:17:29.777 Request count: 2 in current second
+2024-12-27 12:17:29.778 Request 64 not sent as being 'ping rate limited'
+2024-12-27 12:17:30.075 Request count: 2 in current second
+2024-12-27 12:17:30.076 Request 65 not sent as being 'ping rate limited'
+2024-12-27 12:17:30.388 Request count: 2 in current second
+2024-12-27 12:17:30.389 Request 66 not sent as being 'ping rate limited'
+2024-12-27 12:17:30.686 Request count: 2 in current second
+2024-12-27 12:17:30.686 Request 67 not sent as being 'ping rate limited'
+2024-12-27 12:17:30.984 Request count: 2 in current second
+2024-12-27 12:17:30.985 Request 68 not sent as being 'ping rate limited'
+2024-12-27 12:17:31.281 Request count: 2 in current second
+2024-12-27 12:17:31.281 Request 69 not sent as being 'ping rate limited'
+2024-12-27 12:17:31.581 Request count: 2 in current second
+2024-12-27 12:17:31.581 Request 70 not sent as being 'ping rate limited'
+2024-12-27 12:17:31.878 Request count: 2 in current second
+2024-12-27 12:17:31.878 Request 71 not sent as being 'ping rate limited'
+2024-12-27 12:17:32.177 Request count: 2 in current second
+2024-12-27 12:17:32.177 Request 72 not sent as being 'ping rate limited'
+2024-12-27 12:17:32.477 Request count: 2 in current second
+2024-12-27 12:17:32.477 Request 73 not sent as being 'ping rate limited'
+2024-12-27 12:17:32.774 Request count: 2 in current second
+2024-12-27 12:17:32.775 Request 74 not sent as being 'ping rate limited'
+2024-12-27 12:17:33.074 Request count: 2 in current second
+2024-12-27 12:17:33.078 Request 75 not sent as being 'ping rate limited'
+2024-12-27 12:17:33.384 Request count: 2 in current second
+2024-12-27 12:17:33.386 Request 76 not sent as being 'ping rate limited'
+2024-12-27 12:17:33.685 Request count: 2 in current second
+2024-12-27 12:17:33.686 Request 77 not sent as being 'ping rate limited'
+2024-12-27 12:17:33.987 Request count: 2 in current second
+2024-12-27 12:17:33.987 Request 78 not sent as being 'ping rate limited'
+2024-12-27 12:17:34.284 Request count: 2 in current second
+2024-12-27 12:17:34.284 Request 79 not sent as being 'ping rate limited'
+2024-12-27 12:17:34.578 Request count: 2 in current second
+2024-12-27 12:17:34.579 Request 80 not sent as being 'ping rate limited'
+2024-12-27 12:17:34.873 Request count: 2 in current second
+2024-12-27 12:17:34.874 Request 81 not sent as being 'ping rate limited'
+2024-12-27 12:17:35.184 Request count: 2 in current second
+2024-12-27 12:17:35.185 Request 82 not sent as being 'ping rate limited'
+2024-12-27 12:17:35.482 Request count: 2 in current second
+2024-12-27 12:17:35.482 Request 83 not sent as being 'ping rate limited'
+2024-12-27 12:17:35.781 Request count: 2 in current second
+2024-12-27 12:17:35.782 Request 84 not sent as being 'ping rate limited'
+2024-12-27 12:17:36.077 Request count: 2 in current second
+2024-12-27 12:17:36.077 Request 85 not sent as being 'ping rate limited'
+2024-12-27 12:17:36.374 Request count: 2 in current second
+2024-12-27 12:17:36.374 Request 86 not sent as being 'ping rate limited'

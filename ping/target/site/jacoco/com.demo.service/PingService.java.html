@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PingService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ping</a> &gt; <a href="index.source.html" class="el_package">com.demo.service</a> &gt; <span class="el_source">PingService.java</span></div><h1>PingService.java</h1><pre class="source lang-java linenums">package com.demo.service;
+
+import com.demo.service.impl.ThrottlingServiceFactory;
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.MeterRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.reactive.function.client.WebClientResponseException;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.time.Duration;
+
+@Service
+<span class="fc" id="L22">public class PingService implements InitializingBean {</span>
+
+<span class="fc" id="L24">    private static final Logger logger = LoggerFactory.getLogger(PingService.class);</span>
+
+<span class="fc" id="L26">    @Value(&quot;${ping.intervalInMillis:1000}&quot;)</span>
+    private int pingIntervalInMillis = 1000;
+
+<span class="fc" id="L29">    @Value(&quot;${pong.endpoint:http://localhost:8080/pong}&quot;)</span>
+    private String pongEndpoint = &quot;http://localhost:8080/pong&quot;;
+
+    @Autowired
+    private ThrottlingServiceFactory throttlingServiceFactory;
+
+    @Autowired
+    private MeterRegistry meterRegistry;
+
+    private WebClient webClient;
+
+    private Counter successCounter;
+    private Counter pondThrottledCounter;
+    private Counter pingThrottledCounter;
+
+    public Flux&lt;Integer&gt; start() {
+<span class="fc" id="L45">        return Flux.interval(Duration.ofMillis(pingIntervalInMillis))</span>
+<span class="fc" id="L46">                .filter(it -&gt; {</span>
+<span class="fc" id="L47">                    boolean result = throttlingServiceFactory.getThrottlingService().tryAcquire();</span>
+<span class="fc" id="L48">                    logger.debug(&quot;Request {} throttled result {} by ping service.&quot;, it, result);</span>
+<span class="fc" id="L49">                    return result;</span>
+                })
+<span class="fc" id="L51">                .doOnDiscard(Long.class, it -&gt; {</span>
+<span class="fc" id="L52">                    pingThrottledCounter.increment();</span>
+<span class="fc" id="L53">                    logger.info(&quot;Request {} not sent as being 'ping rate limited'&quot;, it);</span>
+<span class="fc" id="L54">                })</span>
+<span class="fc" id="L55">                .flatMap(it -&gt; {</span>
+<span class="fc" id="L56">                            logger.debug(&quot;Request {} is going to send to Pong&quot;, it);</span>
+<span class="fc" id="L57">                            return webClient.post()</span>
+<span class="fc" id="L58">                                    .contentType(MediaType.TEXT_PLAIN)</span>
+<span class="fc" id="L59">                                    .bodyValue(&quot;Hello&quot;)</span>
+<span class="fc" id="L60">                                    .retrieve()</span>
+<span class="fc" id="L61">                                    .toBodilessEntity()</span>
+<span class="fc" id="L62">                                    .map(response -&gt; {</span>
+<span class="fc" id="L63">                                        int statusCode = response.getStatusCode().value();</span>
+<span class="fc" id="L64">                                        logger.info(&quot;Request {} sent &amp; Pong Respond: {}&quot;, it, statusCode);</span>
+<span class="fc" id="L65">                                        successCounter.increment();</span>
+<span class="fc" id="L66">                                        return statusCode;</span>
+                                    })
+<span class="fc" id="L68">                                    .onErrorResume(e -&gt; {</span>
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">                                        if (e instanceof WebClientResponseException) {</span>
+<span class="fc" id="L70">                                            WebClientResponseException webClientResponseException = (WebClientResponseException) e;</span>
+<span class="fc" id="L71">                                            int statusCode = webClientResponseException.getStatusCode().value();</span>
+<span class="pc bpc" id="L72" title="1 of 2 branches missed.">                                            if (statusCode == HttpStatus.TOO_MANY_REQUESTS.value()) {</span>
+<span class="fc" id="L73">                                                pondThrottledCounter.increment();</span>
+<span class="fc" id="L74">                                                logger.info(&quot;Request {} send &amp; Pong throttled it {}&quot;, it, statusCode);</span>
+                                            }
+<span class="fc" id="L76">                                            return Mono.just(statusCode);</span>
+                                        }
+<span class="nc" id="L78">                                        logger.error(&quot;Request {} failed with unexpected error: {}&quot;, it, e.getMessage());</span>
+<span class="nc" id="L79">                                        return Mono.just(HttpStatus.INTERNAL_SERVER_ERROR.value());</span>
+                                    });
+                        }
+                )
+<span class="fc" id="L83">                .doFinally(signalType -&gt; {</span>
+<span class="fc" id="L84">                    throttlingServiceFactory.getThrottlingService().release();</span>
+<span class="fc" id="L85">                });</span>
+    }
+
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+<span class="fc" id="L91">        setWebClient(WebClient.create(pongEndpoint));</span>
+<span class="fc" id="L92">        successCounter = meterRegistry.counter(&quot;pong.200&quot;);</span>
+<span class="fc" id="L93">        pondThrottledCounter = meterRegistry.counter(&quot;pong.429&quot;);;</span>
+<span class="fc" id="L94">        pingThrottledCounter = meterRegistry.counter(&quot;ping.429&quot;);;</span>
+<span class="fc" id="L95">    }</span>
+
+    public void setWebClient(WebClient webClient) {
+<span class="fc" id="L98">        this.webClient = webClient;</span>
+<span class="fc" id="L99">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

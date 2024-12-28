@@ -1,0 +1,211 @@
+2024-12-26 15:41:00.425 Starting PingApplication using Java 17.0.12 with PID 27936 (C:\code\hbsc\ping\target\classes started by joech in C:\code\hbsc)
+2024-12-26 15:41:00.427 No active profile set, falling back to 1 default profile: "default"
+2024-12-26 15:41:01.035 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-26 15:41:01.038 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-26 15:41:01.065 Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-12-26 15:41:02.122 Netty started on port 8082
+2024-12-26 15:41:02.131 Started PingApplication in 2.093 seconds (process running for 2.587)
+2024-12-26 15:41:02.248 Request 0 send & Pong throttled: true
+2024-12-26 15:41:02.249 Request 0 is going to send to Pong
+2024-12-26 15:41:02.357 Request 1 send & Pong throttled: true
+2024-12-26 15:41:02.357 Request 1 is going to send to Pong
+2024-12-26 15:41:02.394 Request 0 sent & Pong Respond: World
+2024-12-26 15:41:02.394 Request 1 sent & Pong Respond: World
+2024-12-26 15:41:02.451 Request 2 send & Pong throttled: false
+2024-12-26 15:41:02.452 Request 2 not sent as being 'rate limited'
+2024-12-26 15:41:02.544 Request 3 send & Pong throttled: true
+2024-12-26 15:41:02.545 Request 3 is going to send to Pong
+2024-12-26 15:41:02.560 Request 3 send & Pong throttled it
+2024-12-26 15:41:02.654 Request 4 send & Pong throttled: true
+2024-12-26 15:41:02.654 Request 4 is going to send to Pong
+2024-12-26 15:41:02.657 Request 4 send & Pong throttled it
+2024-12-26 15:41:02.746 Request 5 send & Pong throttled: false
+2024-12-26 15:41:02.746 Request 5 not sent as being 'rate limited'
+2024-12-26 15:41:02.855 Request 6 send & Pong throttled: false
+2024-12-26 15:41:02.856 Request 6 not sent as being 'rate limited'
+2024-12-26 15:41:02.950 Request 7 send & Pong throttled: false
+2024-12-26 15:41:02.950 Request 7 not sent as being 'rate limited'
+2024-12-26 15:41:03.058 Request 8 send & Pong throttled: false
+2024-12-26 15:41:03.059 Request 8 not sent as being 'rate limited'
+2024-12-26 15:41:03.143 Request 9 send & Pong throttled: false
+2024-12-26 15:41:03.144 Request 9 not sent as being 'rate limited'
+2024-12-26 15:41:03.246 Request 10 send & Pong throttled: false
+2024-12-26 15:41:03.246 Request 10 not sent as being 'rate limited'
+2024-12-26 15:41:03.357 Request 11 send & Pong throttled: false
+2024-12-26 15:41:03.357 Request 11 not sent as being 'rate limited'
+2024-12-26 15:41:03.444 Request 12 send & Pong throttled: false
+2024-12-26 15:41:03.444 Request 12 not sent as being 'rate limited'
+2024-12-26 15:41:03.559 Request 13 send & Pong throttled: true
+2024-12-26 15:41:03.560 Request 13 is going to send to Pong
+2024-12-26 15:41:03.563 Request 13 sent & Pong Respond: World
+2024-12-26 15:41:03.643 Request 14 send & Pong throttled: true
+2024-12-26 15:41:03.644 Request 14 is going to send to Pong
+2024-12-26 15:41:03.648 Request 14 send & Pong throttled it
+2024-12-26 15:41:03.748 Request 15 send & Pong throttled: false
+2024-12-26 15:41:03.748 Request 15 not sent as being 'rate limited'
+2024-12-26 15:41:03.844 Request 16 send & Pong throttled: false
+2024-12-26 15:41:03.844 Request 16 not sent as being 'rate limited'
+2024-12-26 15:41:03.953 Request 17 send & Pong throttled: false
+2024-12-26 15:41:03.953 Request 17 not sent as being 'rate limited'
+2024-12-26 15:41:04.047 Request 18 send & Pong throttled: false
+2024-12-26 15:41:04.047 Request 18 not sent as being 'rate limited'
+2024-12-26 15:41:04.157 Request 19 send & Pong throttled: false
+2024-12-26 15:41:04.157 Request 19 not sent as being 'rate limited'
+2024-12-26 15:41:04.249 Request 20 send & Pong throttled: false
+2024-12-26 15:41:04.249 Request 20 not sent as being 'rate limited'
+2024-12-26 15:41:04.358 Request 21 send & Pong throttled: false
+2024-12-26 15:41:04.359 Request 21 not sent as being 'rate limited'
+2024-12-26 15:41:04.443 Request 22 send & Pong throttled: false
+2024-12-26 15:41:04.443 Request 22 not sent as being 'rate limited'
+2024-12-26 15:41:04.544 Request 23 send & Pong throttled: true
+2024-12-26 15:41:04.544 Request 23 is going to send to Pong
+2024-12-26 15:41:04.547 Request 23 sent & Pong Respond: World
+2024-12-26 15:41:04.653 Request 24 send & Pong throttled: true
+2024-12-26 15:41:04.654 Request 24 is going to send to Pong
+2024-12-26 15:41:04.657 Request 24 send & Pong throttled it
+2024-12-26 15:41:04.747 Request 25 send & Pong throttled: false
+2024-12-26 15:41:04.747 Request 25 not sent as being 'rate limited'
+2024-12-26 15:41:04.854 Request 26 send & Pong throttled: false
+2024-12-26 15:41:04.854 Request 26 not sent as being 'rate limited'
+2024-12-26 15:41:04.947 Request 27 send & Pong throttled: false
+2024-12-26 15:41:04.948 Request 27 not sent as being 'rate limited'
+2024-12-26 15:41:05.056 Request 28 send & Pong throttled: false
+2024-12-26 15:41:05.056 Request 28 not sent as being 'rate limited'
+2024-12-26 15:41:05.150 Request 29 send & Pong throttled: false
+2024-12-26 15:41:05.150 Request 29 not sent as being 'rate limited'
+2024-12-26 15:41:05.258 Request 30 send & Pong throttled: false
+2024-12-26 15:41:05.258 Request 30 not sent as being 'rate limited'
+2024-12-26 15:41:05.352 Request 31 send & Pong throttled: false
+2024-12-26 15:41:05.352 Request 31 not sent as being 'rate limited'
+2024-12-26 15:41:05.445 Request 32 send & Pong throttled: false
+2024-12-26 15:41:05.445 Request 32 not sent as being 'rate limited'
+2024-12-26 15:41:05.553 Request 33 send & Pong throttled: true
+2024-12-26 15:41:05.553 Request 33 is going to send to Pong
+2024-12-26 15:41:05.557 Request 33 sent & Pong Respond: World
+2024-12-26 15:41:05.648 Request 34 send & Pong throttled: true
+2024-12-26 15:41:05.649 Request 34 is going to send to Pong
+2024-12-26 15:41:05.652 Request 34 send & Pong throttled it
+2024-12-26 15:41:05.759 Request 35 send & Pong throttled: false
+2024-12-26 15:41:05.759 Request 35 not sent as being 'rate limited'
+2024-12-26 15:41:05.853 Request 36 send & Pong throttled: false
+2024-12-26 15:41:05.853 Request 36 not sent as being 'rate limited'
+2024-12-26 15:41:05.948 Request 37 send & Pong throttled: false
+2024-12-26 15:41:05.948 Request 37 not sent as being 'rate limited'
+2024-12-26 15:41:06.058 Request 38 send & Pong throttled: false
+2024-12-26 15:41:06.059 Request 38 not sent as being 'rate limited'
+2024-12-26 15:41:06.152 Request 39 send & Pong throttled: false
+2024-12-26 15:41:06.152 Request 39 not sent as being 'rate limited'
+2024-12-26 15:41:06.245 Request 40 send & Pong throttled: false
+2024-12-26 15:41:06.245 Request 40 not sent as being 'rate limited'
+2024-12-26 15:41:06.355 Request 41 send & Pong throttled: false
+2024-12-26 15:41:06.356 Request 41 not sent as being 'rate limited'
+2024-12-26 15:41:06.444 Request 42 send & Pong throttled: false
+2024-12-26 15:41:06.444 Request 42 not sent as being 'rate limited'
+2024-12-26 15:41:06.544 Request 43 send & Pong throttled: true
+2024-12-26 15:41:06.544 Request 43 is going to send to Pong
+2024-12-26 15:41:06.546 Request 43 sent & Pong Respond: World
+2024-12-26 15:41:06.655 Request 44 send & Pong throttled: true
+2024-12-26 15:41:06.655 Request 44 is going to send to Pong
+2024-12-26 15:41:06.658 Request 44 send & Pong throttled it
+2024-12-26 15:41:06.747 Request 45 send & Pong throttled: false
+2024-12-26 15:41:06.748 Request 45 not sent as being 'rate limited'
+2024-12-26 15:41:06.856 Request 46 send & Pong throttled: false
+2024-12-26 15:41:06.856 Request 46 not sent as being 'rate limited'
+2024-12-26 15:41:06.950 Request 47 send & Pong throttled: false
+2024-12-26 15:41:06.950 Request 47 not sent as being 'rate limited'
+2024-12-26 15:41:07.058 Request 48 send & Pong throttled: false
+2024-12-26 15:41:07.058 Request 48 not sent as being 'rate limited'
+2024-12-26 15:41:07.152 Request 49 send & Pong throttled: false
+2024-12-26 15:41:07.152 Request 49 not sent as being 'rate limited'
+2024-12-26 15:41:07.244 Request 50 send & Pong throttled: false
+2024-12-26 15:41:07.244 Request 50 not sent as being 'rate limited'
+2024-12-26 15:41:07.354 Request 51 send & Pong throttled: false
+2024-12-26 15:41:07.354 Request 51 not sent as being 'rate limited'
+2024-12-26 15:41:07.448 Request 52 send & Pong throttled: false
+2024-12-26 15:41:07.448 Request 52 not sent as being 'rate limited'
+2024-12-26 15:41:07.557 Request 53 send & Pong throttled: true
+2024-12-26 15:41:07.558 Request 53 is going to send to Pong
+2024-12-26 15:41:07.561 Request 53 sent & Pong Respond: World
+2024-12-26 15:41:07.653 Request 54 send & Pong throttled: true
+2024-12-26 15:41:07.654 Request 54 is going to send to Pong
+2024-12-26 15:41:07.657 Request 54 send & Pong throttled it
+2024-12-26 15:41:07.748 Request 55 send & Pong throttled: false
+2024-12-26 15:41:07.748 Request 55 not sent as being 'rate limited'
+2024-12-26 15:41:07.855 Request 56 send & Pong throttled: false
+2024-12-26 15:41:07.855 Request 56 not sent as being 'rate limited'
+2024-12-26 15:41:07.949 Request 57 send & Pong throttled: false
+2024-12-26 15:41:07.949 Request 57 not sent as being 'rate limited'
+2024-12-26 15:41:08.059 Request 58 send & Pong throttled: false
+2024-12-26 15:41:08.059 Request 58 not sent as being 'rate limited'
+2024-12-26 15:41:08.153 Request 59 send & Pong throttled: false
+2024-12-26 15:41:08.153 Request 59 not sent as being 'rate limited'
+2024-12-26 15:41:08.247 Request 60 send & Pong throttled: false
+2024-12-26 15:41:08.247 Request 60 not sent as being 'rate limited'
+2024-12-26 15:41:08.356 Request 61 send & Pong throttled: false
+2024-12-26 15:41:08.356 Request 61 not sent as being 'rate limited'
+2024-12-26 15:41:08.450 Request 62 send & Pong throttled: false
+2024-12-26 15:41:08.450 Request 62 not sent as being 'rate limited'
+2024-12-26 15:41:08.545 Request 63 send & Pong throttled: true
+2024-12-26 15:41:08.545 Request 63 is going to send to Pong
+2024-12-26 15:41:08.548 Request 63 sent & Pong Respond: World
+2024-12-26 15:41:08.656 Request 64 send & Pong throttled: true
+2024-12-26 15:41:08.656 Request 64 is going to send to Pong
+2024-12-26 15:41:08.660 Request 64 send & Pong throttled it
+2024-12-26 15:41:08.744 Request 65 send & Pong throttled: false
+2024-12-26 15:41:08.744 Request 65 not sent as being 'rate limited'
+2024-12-26 15:41:08.859 Request 66 send & Pong throttled: false
+2024-12-26 15:41:08.859 Request 66 not sent as being 'rate limited'
+2024-12-26 15:41:08.952 Request 67 send & Pong throttled: false
+2024-12-26 15:41:08.952 Request 67 not sent as being 'rate limited'
+2024-12-26 15:41:09.047 Request 68 send & Pong throttled: false
+2024-12-26 15:41:09.047 Request 68 not sent as being 'rate limited'
+2024-12-26 15:41:09.156 Request 69 send & Pong throttled: false
+2024-12-26 15:41:09.156 Request 69 not sent as being 'rate limited'
+2024-12-26 15:41:09.251 Request 70 send & Pong throttled: false
+2024-12-26 15:41:09.251 Request 70 not sent as being 'rate limited'
+2024-12-26 15:41:09.345 Request 71 send & Pong throttled: false
+2024-12-26 15:41:09.345 Request 71 not sent as being 'rate limited'
+2024-12-26 15:41:09.455 Request 72 send & Pong throttled: false
+2024-12-26 15:41:09.455 Request 72 not sent as being 'rate limited'
+2024-12-26 15:41:09.550 Request 73 send & Pong throttled: true
+2024-12-26 15:41:09.550 Request 73 is going to send to Pong
+2024-12-26 15:41:09.567 Request 73 sent & Pong Respond: World
+2024-12-26 15:41:09.643 Request 74 send & Pong throttled: true
+2024-12-26 15:41:09.644 Request 74 is going to send to Pong
+2024-12-26 15:41:09.647 Request 74 send & Pong throttled it
+2024-12-26 15:41:09.753 Request 75 send & Pong throttled: false
+2024-12-26 15:41:09.753 Request 75 not sent as being 'rate limited'
+2024-12-26 15:41:09.848 Request 76 send & Pong throttled: false
+2024-12-26 15:41:09.848 Request 76 not sent as being 'rate limited'
+2024-12-26 15:41:09.958 Request 77 send & Pong throttled: false
+2024-12-26 15:41:09.958 Request 77 not sent as being 'rate limited'
+2024-12-26 15:41:10.050 Request 78 send & Pong throttled: false
+2024-12-26 15:41:10.050 Request 78 not sent as being 'rate limited'
+2024-12-26 15:41:10.158 Request 79 send & Pong throttled: false
+2024-12-26 15:41:10.158 Request 79 not sent as being 'rate limited'
+2024-12-26 15:41:10.251 Request 80 send & Pong throttled: false
+2024-12-26 15:41:10.251 Request 80 not sent as being 'rate limited'
+2024-12-26 15:41:10.344 Request 81 send & Pong throttled: false
+2024-12-26 15:41:10.345 Request 81 not sent as being 'rate limited'
+2024-12-26 15:41:10.453 Request 82 send & Pong throttled: false
+2024-12-26 15:41:10.453 Request 82 not sent as being 'rate limited'
+2024-12-26 15:41:10.548 Request 83 send & Pong throttled: true
+2024-12-26 15:41:10.549 Request 83 is going to send to Pong
+2024-12-26 15:41:10.551 Request 83 sent & Pong Respond: World
+2024-12-26 15:41:10.658 Request 84 send & Pong throttled: true
+2024-12-26 15:41:10.658 Request 84 is going to send to Pong
+2024-12-26 15:41:10.661 Request 84 send & Pong throttled it
+2024-12-26 15:41:10.751 Request 85 send & Pong throttled: false
+2024-12-26 15:41:10.751 Request 85 not sent as being 'rate limited'
+2024-12-26 15:41:10.845 Request 86 send & Pong throttled: false
+2024-12-26 15:41:10.845 Request 86 not sent as being 'rate limited'
+2024-12-26 15:41:10.952 Request 87 send & Pong throttled: false
+2024-12-26 15:41:10.952 Request 87 not sent as being 'rate limited'
+2024-12-26 15:41:11.045 Request 88 send & Pong throttled: false
+2024-12-26 15:41:11.045 Request 88 not sent as being 'rate limited'
+2024-12-26 15:41:11.155 Request 89 send & Pong throttled: false
+2024-12-26 15:41:11.155 Request 89 not sent as being 'rate limited'
+2024-12-26 15:41:11.251 Request 90 send & Pong throttled: false
+2024-12-26 15:41:11.251 Request 90 not sent as being 'rate limited'
+2024-12-26 15:41:11.345 Request 91 send & Pong throttled: false
+2024-12-26 15:41:11.345 Request 91 not sent as being 'rate limited'
