@@ -1,5 +1,7 @@
 package com.demo.controller;
 
+import com.demo.kafka.KafkaProducerService;
+import com.demo.model.Message;
 import com.demo.service.ThrottlingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +23,9 @@ public class PongController {
     @Autowired
     private ThrottlingService throttlingService;
 
+    @Autowired
+    private KafkaProducerService kafkaProducerService;
+
     @PostMapping(value = "/pong", consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
     public Mono<String> handle(@RequestBody String message) {
 
@@ -29,6 +34,7 @@ public class PongController {
             return Mono.error(new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Too many requests in this second"));
         }
         logger.info("Received ping message: {}", message);
+        kafkaProducerService.sendMessage(new Message(message, System.currentTimeMillis()));
         return Mono.just(RESPONSE);
     }
 }

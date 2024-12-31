@@ -3,15 +3,14 @@ package com.demo.service.impl
 import com.demo.BaseSpec
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import redis.embedded.RedisServer
-import spock.lang.Shared
-import spock.lang.Specification
+import org.springframework.test.annotation.DirtiesContext
 
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
 @SpringBootTest
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 class RedisThrottlingServiceSpec extends BaseSpec {
 
     @Autowired
@@ -21,7 +20,6 @@ class RedisThrottlingServiceSpec extends BaseSpec {
         System.setProperty("ping.intervalInMillis", "1000")
         System.setProperty("throttle.type", "redis")
         System.setProperty("spring.redis.host", "localhost")
-
     }
 
     def "should throttled correctly"() {

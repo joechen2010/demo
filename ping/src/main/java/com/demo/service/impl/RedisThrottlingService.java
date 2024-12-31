@@ -16,7 +16,7 @@ public class RedisThrottlingService implements ThrottlingService {
     private static final Logger logger = LoggerFactory.getLogger(RedisThrottlingService.class);
     public static final String KEY = "PING-REDIS-THROTTLING";
 
-    @Autowired
+    @Autowired(required = false)
     private StringRedisTemplate redisTemplate;
 
     @Value("${throttle.permitsPerSecond:2}")
@@ -24,18 +24,15 @@ public class RedisThrottlingService implements ThrottlingService {
 
     @Override
     public boolean tryAcquire() {
+        if (redisTemplate == null) {
+            logger.warn("Redis is not available, throttling is disabled");
+            return true;
+        }
         Long currentCount = redisTemplate.opsForValue().increment(KEY);
-
         if (currentCount == 1) {
             redisTemplate.expire(KEY, Duration.ofSeconds(1));
         }
         logger.debug("Rate limiter key: {}, current count: {}", KEY, currentCount);
         return currentCount <= permitsPerSecond;
-    }
-
-
-    @Override
-    public void release() {
-        //do nothing
     }
 }

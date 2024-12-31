@@ -7,11 +7,13 @@ import org.spockframework.spring.SpringBean
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.HttpStatus
+import org.springframework.test.annotation.DirtiesContext
 import reactor.core.Disposable
 import reactor.test.StepVerifier
 import spock.lang.Subject
 
 @SpringBootTest
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 class PingServiceSpec extends BaseSpec {
 
     @SpringBean(name = "filelockThrottlingService")
@@ -27,19 +29,18 @@ class PingServiceSpec extends BaseSpec {
     def setupSpec() {
         System.setProperty("ping.intervalInMillis", "1000")
         System.setProperty("throttle.type", "filelock")
-        System.setProperty("spring.redis.host", "")
     }
 
     def setup() {
         pingService.setWebClient(webClient)
     }
 
+
     def "should send requests and handle successful responses"() {
         given:
         mockWebServer.enqueue(new MockResponse().setResponseCode(HttpStatus.OK.value()))
 
         1 * throttlingService.tryAcquire() >> true
-        1 * throttlingService.release()
 
         when:
         def result = pingService.start()
@@ -58,7 +59,6 @@ class PingServiceSpec extends BaseSpec {
         mockWebServer.enqueue(new MockResponse().setResponseCode(HttpStatus.TOO_MANY_REQUESTS.value()))
 
         1 * throttlingService.tryAcquire() >> true
-        1 * throttlingService.release()
 
         when:
         def result = pingService.start()
@@ -72,12 +72,11 @@ class PingServiceSpec extends BaseSpec {
         meterRegistry.counter("pong.429").count() == 1
     }
 
-    def "should handle throttled requests from Ping"() {
+    def "should handle throttled requests in Ping"() {
         given:
         mockWebServer.enqueue(new MockResponse().setResponseCode(HttpStatus.OK.value()))
 
         _ * throttlingService.tryAcquire() >> false
-        _ * throttlingService.release()
 
         when:
         Disposable disposable = pingService.start().subscribe()
@@ -86,5 +85,22 @@ class PingServiceSpec extends BaseSpec {
 
         then:
         meterRegistry.counter("ping.429").count() == 1
+    }
+
+    def "should handle other error response from Pone"() {
+        given:
+        meterRegistry.clear()
+        mockWebServer.enqueue(new MockResponse().setResponseCode(HttpStatus.INTERNAL_SERVER_ERROR.value()))
+        _ * throttlingService.tryAcquire() >> true
+
+        when:
+        Disposable disposable = pingService.start().subscribe()
+        Thread.sleep(1000)
+        disposable.dispose();
+
+        then:
+        meterRegistry.counter("ping.429").count() == 0
+        meterRegistry.counter("pong.200").count() == 0
+        meterRegistry.counter("pong.429").count() == 0
     }
 }

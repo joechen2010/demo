@@ -1,12 +1,13 @@
 package com.demo.service.impl
 
-
+import com.demo.BaseSpec
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import spock.lang.Specification
+import org.springframework.test.annotation.DirtiesContext
 
 @SpringBootTest
-class FileLockThrottlingServiceSpec extends Specification {
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
+class FileLockThrottlingServiceSpec extends BaseSpec {
 
     @Autowired
     FileLockThrottlingService fileLockThrottlingService
@@ -15,6 +16,7 @@ class FileLockThrottlingServiceSpec extends Specification {
         new File(fileLockThrottlingService.counterFilePath).delete()
         new File(fileLockThrottlingService.lockFilePath).delete()
     }
+
 
     def "should acquire lock when request count is below permits per second"() {
         given:

@@ -4,5 +4,4 @@ public interface ThrottlingService {
 
     boolean tryAcquire();
 
-    void release();
 }

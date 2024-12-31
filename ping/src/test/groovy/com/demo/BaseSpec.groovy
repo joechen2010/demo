@@ -23,7 +23,6 @@ class BaseSpec extends Specification {
         Thread.sleep(2000)
         System.setProperty("ping.intervalInMillis", "1000")
         System.setProperty("throttle.type", "filelock")
-        System.setProperty("spring.redis.host", "")
         System.setProperty("spring.redis.port", String.valueOf(redisServer.ports().get(0)))
     }
 

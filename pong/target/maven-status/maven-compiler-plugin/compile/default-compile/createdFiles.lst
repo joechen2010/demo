@@ -1,4 +1,9 @@
 com\demo\service\impl\MemoryThrottlingService.class
+com\demo\dao\MessageRepository.class
 com\demo\service\ThrottlingService.class
 com\demo\controller\PongController.class
+com\demo\kafka\KafkaProducerService.class
 com\demo\PongApplication.class
+com\demo\kafka\KafkaConfig.class
+com\demo\model\Message.class
+com\demo\kafka\KafkaConsumerService.class

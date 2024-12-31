@@ -1,0 +1,334 @@
+2024-12-30 16:14:41.402 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 16:14:41.603 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-30 16:14:41.666 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 16:14:41.670 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-30 16:14:42.099 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-30 16:14:42.117 Starting PongControllerSpec using Java 17.0.12 with PID 15344 (started by joech in C:\code\hsbc\demo\pong)
+2024-12-30 16:14:42.117 No active profile set, falling back to 1 default profile: "default"
+2024-12-30 16:14:43.055 Started PongControllerSpec in 1.256 seconds (process running for 3.511)
+2024-12-30 16:14:44.101 Received ping message: Hello
+2024-12-30 16:14:44.200 Received ping message: Hello
+2024-12-30 16:14:44.203 Throttling request as too many requests in the same second
+2024-12-30 16:14:44.277 Throttling request as too many requests in the same second
+2024-12-30 16:18:57.501 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 16:18:57.629 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-30 16:18:57.676 Could not detect default configuration classes for test class [com.demo.controller.PongControllerSpec]: PongControllerSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 16:18:57.683 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.controller.PongControllerSpec
+2024-12-30 16:18:58.046 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-30 16:18:58.063 Starting PongControllerSpec using Java 17.0.12 with PID 6220 (started by joech in C:\code\hsbc\demo\pong)
+2024-12-30 16:18:58.064 No active profile set, falling back to 1 default profile: "default"
+2024-12-30 16:18:58.875 Started PongControllerSpec in 1.077 seconds (process running for 3.064)
+2024-12-30 16:18:59.841 Received ping message: Hello
+2024-12-30 16:18:59.928 Received ping message: Hello
+2024-12-30 16:18:59.929 Throttling request as too many requests in the same second
+2024-12-30 16:18:59.988 Throttling request as too many requests in the same second
+2024-12-30 23:56:10.376 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-30 23:56:10.392 Starting MessageRepositorySpec using Java 17.0.12 with PID 20672 (started by joech in C:\code\hsbc\demo\pong)
+2024-12-30 23:56:10.394 No active profile set, falling back to 1 default profile: "default"
+2024-12-30 23:56:10.818 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-30 23:56:10.818 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30 23:56:10.926 Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
+2024-12-30 23:56:11.060 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-30 23:56:11.061 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-30 23:56:11.083 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.demo.dao.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-30 23:56:11.083 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-12-30 23:56:11.159 Replacing 'dataSource' DataSource bean with embedded version
+2024-12-30 23:56:11.369 Starting embedded database: url='jdbc:h2:mem:cba1e6bb-1bc1-44dd-a696-21337cd5e44a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-12-30 23:56:11.617 HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30 23:56:11.679 HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-12-30 23:56:11.681 HHH000406: Using bytecode reflection optimizer
+2024-12-30 23:56:11.804 HHH000021: Bytecode provider name : bytebuddy
+2024-12-30 23:56:11.896 No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30 23:56:12.077 HHH000021: Bytecode provider name : bytebuddy
+2024-12-30 23:56:12.583 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-30 23:56:12.636 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 23:56:12.649 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': The @PropertyMapping annotation @DataJpaTest cannot be used in combination with the @Component annotation @Configuration
+2024-12-30 23:56:12.649 Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 23:56:12.658 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-30 23:56:12.673 Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': The @PropertyMapping annotation @DataJpaTest cannot be used in combination with the @Component annotation @Configuration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1409)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.spockframework.spring.SpringTestContextManager.prepareTestInstance(SpringTestContextManager.java:56)
+	at org.spockframework.spring.SpringInterceptor.interceptInitializerMethod(SpringInterceptor.java:46)
+	at org.spockframework.runtime.extension.AbstractMethodInterceptor.intercept(AbstractMethodInterceptor.java:24)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:101)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:398)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:259)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:254)
+	at org.spockframework.runtime.IterationNode.prepare(IterationNode.java:31)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:32)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:15)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:156)
+	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.IllegalStateException: The @PropertyMapping annotation @DataJpaTest cannot be used in combination with the @Component annotation @Configuration
+	at org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer$PropertyMappingCheckBeanPostProcessor.postProcessBeforeInitialization(PropertyMappingContextCustomizer.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	... 85 common frames omitted
+2024-12-30 23:56:12.680 Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.demo.dao.MessageRepositorySpec@5eed2edf]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@106ac5f4 testClass = com.demo.dao.MessageRepositorySpec, locations = [], classes = [com.demo.dao.TestConfig], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@153d4abb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@27b000f7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73017a80, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@5c0f79f0, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@1dc2de84, org.spockframework.spring.mock.SpockContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@dfe2fa0b], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:143)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.spockframework.spring.SpringTestContextManager.prepareTestInstance(SpringTestContextManager.java:56)
+	at org.spockframework.spring.SpringInterceptor.interceptInitializerMethod(SpringInterceptor.java:46)
+	at org.spockframework.runtime.extension.AbstractMethodInterceptor.intercept(AbstractMethodInterceptor.java:24)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:101)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:398)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:259)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:254)
+	at org.spockframework.runtime.IterationNode.prepare(IterationNode.java:31)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:32)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:15)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:156)
+	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': The @PropertyMapping annotation @DataJpaTest cannot be used in combination with the @Component annotation @Configuration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1409)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119)
+	... 65 common frames omitted
+Caused by: java.lang.IllegalStateException: The @PropertyMapping annotation @DataJpaTest cannot be used in combination with the @Component annotation @Configuration
+	at org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer$PropertyMappingCheckBeanPostProcessor.postProcessBeforeInitialization(PropertyMappingContextCustomizer.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	... 85 common frames omitted
+2024-12-30 23:57:24.721 Could not detect default configuration classes for test class [com.demo.dao.MessageRepositorySpec]: MessageRepositorySpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 23:57:24.806 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.dao.MessageRepositorySpec
+2024-12-30 23:57:25.185 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-30 23:57:25.201 Starting MessageRepositorySpec using Java 17.0.12 with PID 18748 (started by joech in C:\code\hsbc\demo\pong)
+2024-12-30 23:57:25.202 No active profile set, falling back to 1 default profile: "default"
+2024-12-30 23:57:25.636 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-30 23:57:25.636 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30 23:57:25.740 Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces.
+2024-12-30 23:57:25.879 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-30 23:57:25.879 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-30 23:57:25.900 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.demo.dao.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-30 23:57:25.900 Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-12-30 23:57:26.221 HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30 23:57:26.286 HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-12-30 23:57:26.287 HHH000406: Using bytecode reflection optimizer
+2024-12-30 23:57:26.497 HHH000021: Bytecode provider name : bytebuddy
+2024-12-30 23:57:26.607 No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30 23:57:26.621 HikariPool-1 - Starting...
+2024-12-30 23:57:26.822 HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./demodb user=SA
+2024-12-30 23:57:26.824 HikariPool-1 - Start completed.
+2024-12-30 23:57:26.991 HHH000021: Bytecode provider name : bytebuddy
+2024-12-30 23:57:27.419 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-30 23:57:27.473 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 23:57:28.690 Started MessageRepositorySpec in 3.688 seconds (process running for 5.588)
+2024-12-30 23:57:29.650 Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 23:57:29.652 HikariPool-1 - Shutdown initiated...
+2024-12-30 23:57:29.654 HikariPool-1 - Shutdown completed.
+2024-12-30 23:58:40.206 Could not detect default configuration classes for test class [com.demo.dao.MessageRepositorySpec]: MessageRepositorySpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 23:58:40.297 Found @SpringBootConfiguration com.demo.PongApplication for test class com.demo.dao.MessageRepositorySpec
+2024-12-30 23:58:40.705 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-30 23:58:40.723 Starting MessageRepositorySpec using Java 17.0.12 with PID 6572 (started by joech in C:\code\hsbc\demo\pong)
+2024-12-30 23:58:40.725 No active profile set, falling back to 1 default profile: "default"
+2024-12-30 23:58:41.136 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-30 23:58:41.136 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30 23:58:41.243 Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2024-12-30 23:58:41.379 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-30 23:58:41.379 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-30 23:58:41.402 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.demo.dao.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-12-30 23:58:41.402 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-12-30 23:58:41.739 HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30 23:58:41.800 HHH000412: Hibernate ORM core version 6.2.9.Final
+2024-12-30 23:58:41.802 HHH000406: Using bytecode reflection optimizer
+2024-12-30 23:58:42.011 HHH000021: Bytecode provider name : bytebuddy
+2024-12-30 23:58:42.139 No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30 23:58:42.159 HikariPool-1 - Starting...
+2024-12-30 23:58:42.386 HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./demodb user=SA
+2024-12-30 23:58:42.388 HikariPool-1 - Start completed.
+2024-12-30 23:58:42.564 HHH000021: Bytecode provider name : bytebuddy
+2024-12-30 23:58:43.017 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-30 23:58:43.068 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 23:58:44.222 Started MessageRepositorySpec in 3.714 seconds (process running for 5.672)
+2024-12-30 23:58:45.458 Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 23:58:45.460 HikariPool-1 - Shutdown initiated...
+2024-12-30 23:58:45.473 HikariPool-1 - Shutdown completed.

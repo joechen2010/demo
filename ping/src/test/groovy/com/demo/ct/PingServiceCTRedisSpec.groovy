@@ -7,10 +7,12 @@ import okhttp3.mockwebserver.MockResponse
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.HttpStatus
+import org.springframework.test.annotation.DirtiesContext
 import reactor.core.Disposable
 import spock.lang.Subject
 
 @SpringBootTest
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 class PingServiceCTRedisSpec extends BaseSpec {
 
     @Autowired

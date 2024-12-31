@@ -1,0 +1,367 @@
+2024-12-27 00:59:27.224 Starting PongApplication using Java 17.0.12 with PID 31348 (C:\code\hbsc\pong\target\classes started by joech in C:\code\hbsc)
+2024-12-27 00:59:27.228 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 00:59:27.798 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 00:59:27.801 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 00:59:27.827 Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-12-27 00:59:28.766 Netty started on port 8080
+2024-12-27 00:59:28.774 Started PongApplication in 1.809 seconds (process running for 2.205)
+2024-12-27 01:00:32.021 Received ping message: Hello
+2024-12-27 01:00:32.120 Received ping message: Hello
+2024-12-27 01:00:32.415 Throttling request as too many requests in the same second
+2024-12-27 01:00:32.725 Throttling request as too many requests in the same second
+2024-12-27 01:00:33.019 Throttling request as too many requests in the same second
+2024-12-27 01:00:33.313 Received ping message: Hello
+2024-12-27 01:00:33.626 Throttling request as too many requests in the same second
+2024-12-27 01:00:33.922 Throttling request as too many requests in the same second
+2024-12-27 01:00:34.219 Received ping message: Hello
+2024-12-27 01:00:34.512 Throttling request as too many requests in the same second
+2024-12-27 01:00:34.821 Throttling request as too many requests in the same second
+2024-12-27 01:00:35.120 Received ping message: Hello
+2024-12-27 01:00:35.417 Throttling request as too many requests in the same second
+2024-12-27 01:00:35.717 Throttling request as too many requests in the same second
+2024-12-27 01:00:36.013 Throttling request as too many requests in the same second
+2024-12-27 01:00:36.312 Received ping message: Hello
+2024-12-27 01:00:36.623 Throttling request as too many requests in the same second
+2024-12-27 01:00:36.920 Throttling request as too many requests in the same second
+2024-12-27 01:00:37.214 Received ping message: Hello
+2024-12-27 01:00:37.525 Throttling request as too many requests in the same second
+2024-12-27 01:00:38.123 Received ping message: Hello
+2024-12-27 01:00:38.418 Throttling request as too many requests in the same second
+2024-12-27 01:00:38.711 Throttling request as too many requests in the same second
+2024-12-27 01:00:39.021 Received ping message: Hello
+2024-12-27 01:00:39.316 Throttling request as too many requests in the same second
+2024-12-27 01:00:39.613 Throttling request as too many requests in the same second
+2024-12-27 01:00:39.927 Throttling request as too many requests in the same second
+2024-12-27 01:00:40.219 Received ping message: Hello
+2024-12-27 01:00:40.517 Throttling request as too many requests in the same second
+2024-12-27 01:00:40.825 Throttling request as too many requests in the same second
+2024-12-27 01:00:41.125 Received ping message: Hello
+2024-12-27 01:00:41.421 Throttling request as too many requests in the same second
+2024-12-27 01:00:41.715 Throttling request as too many requests in the same second
+2024-12-27 01:00:42.027 Received ping message: Hello
+2024-12-27 01:00:42.323 Throttling request as too many requests in the same second
+2024-12-27 01:00:42.620 Throttling request as too many requests in the same second
+2024-12-27 01:05:07.199 Starting PongApplication using Java 17.0.12 with PID 28700 (C:\code\hbsc\pong\target\classes started by joech in C:\code\hbsc)
+2024-12-27 01:05:07.201 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 01:05:07.768 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 01:05:07.770 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 01:05:07.794 Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-12-27 01:05:08.697 Netty started on port 8080
+2024-12-27 01:05:08.707 Started PongApplication in 1.771 seconds (process running for 2.21)
+2024-12-27 01:05:48.444 Received ping message: Hello
+2024-12-27 01:05:48.563 Received ping message: Hello
+2024-12-27 01:05:48.857 Throttling request as too many requests in the same second
+2024-12-27 01:05:49.154 Throttling request as too many requests in the same second
+2024-12-27 01:05:49.464 Received ping message: Hello
+2024-12-27 01:05:49.759 Throttling request as too many requests in the same second
+2024-12-27 01:05:50.054 Throttling request as too many requests in the same second
+2024-12-27 01:05:50.364 Throttling request as too many requests in the same second
+2024-12-27 01:05:50.660 Received ping message: Hello
+2024-12-27 01:05:50.958 Throttling request as too many requests in the same second
+2024-12-27 01:05:51.252 Throttling request as too many requests in the same second
+2024-12-27 01:05:51.564 Received ping message: Hello
+2024-12-27 01:05:51.859 Throttling request as too many requests in the same second
+2024-12-27 01:05:52.155 Throttling request as too many requests in the same second
+2024-12-27 01:05:52.453 Received ping message: Hello
+2024-12-27 01:05:52.764 Throttling request as too many requests in the same second
+2024-12-27 01:05:53.060 Throttling request as too many requests in the same second
+2024-12-27 01:05:53.354 Throttling request as too many requests in the same second
+2024-12-27 01:05:53.651 Received ping message: Hello
+2024-12-27 01:05:53.964 Throttling request as too many requests in the same second
+2024-12-27 01:05:54.263 Throttling request as too many requests in the same second
+2024-12-27 01:05:54.558 Received ping message: Hello
+2024-12-27 01:05:54.856 Throttling request as too many requests in the same second
+2024-12-27 01:05:55.152 Throttling request as too many requests in the same second
+2024-12-27 01:05:55.450 Received ping message: Hello
+2024-12-27 01:05:55.764 Throttling request as too many requests in the same second
+2024-12-27 01:05:56.062 Throttling request as too many requests in the same second
+2024-12-27 01:05:56.358 Throttling request as too many requests in the same second
+2024-12-27 01:05:56.654 Received ping message: Hello
+2024-12-27 01:05:56.952 Throttling request as too many requests in the same second
+2024-12-27 01:05:57.262 Throttling request as too many requests in the same second
+2024-12-27 01:05:57.557 Received ping message: Hello
+2024-12-27 01:05:57.852 Throttling request as too many requests in the same second
+2024-12-27 01:05:58.150 Throttling request as too many requests in the same second
+2024-12-27 01:05:58.471 Received ping message: Hello
+2024-12-27 01:05:58.759 Throttling request as too many requests in the same second
+2024-12-27 01:05:59.052 Throttling request as too many requests in the same second
+2024-12-27 01:05:59.662 Received ping message: Hello
+2024-12-27 01:05:59.957 Throttling request as too many requests in the same second
+2024-12-27 01:54:12.819 Received ping message: Hello
+2024-12-27 01:54:13.021 Received ping message: Hello
+2024-12-27 01:54:13.318 Throttling request as too many requests in the same second
+2024-12-27 01:54:13.631 Throttling request as too many requests in the same second
+2024-12-27 01:54:13.927 Received ping message: Hello
+2024-12-27 01:54:14.223 Throttling request as too many requests in the same second
+2024-12-27 01:54:14.521 Throttling request as too many requests in the same second
+2024-12-27 01:54:14.830 Received ping message: Hello
+2024-12-27 01:54:15.130 Throttling request as too many requests in the same second
+2024-12-27 01:54:15.425 Throttling request as too many requests in the same second
+2024-12-27 01:54:15.720 Throttling request as too many requests in the same second
+2024-12-27 01:54:16.017 Received ping message: Hello
+2024-12-27 01:54:16.328 Throttling request as too many requests in the same second
+2024-12-27 01:54:16.626 Throttling request as too many requests in the same second
+2024-12-27 01:54:16.922 Received ping message: Hello
+2024-12-27 01:54:17.220 Throttling request as too many requests in the same second
+2024-12-27 01:54:17.515 Throttling request as too many requests in the same second
+2024-12-27 01:54:17.826 Received ping message: Hello
+2024-12-27 01:54:18.122 Throttling request as too many requests in the same second
+2024-12-27 01:54:18.418 Throttling request as too many requests in the same second
+2024-12-27 01:54:18.716 Throttling request as too many requests in the same second
+2024-12-27 01:54:19.027 Received ping message: Hello
+2024-12-27 01:54:19.329 Throttling request as too many requests in the same second
+2024-12-27 01:54:19.622 Throttling request as too many requests in the same second
+2024-12-27 01:54:19.919 Received ping message: Hello
+2024-12-27 01:54:20.215 Throttling request as too many requests in the same second
+2024-12-27 01:54:20.525 Throttling request as too many requests in the same second
+2024-12-27 01:54:20.840 Received ping message: Hello
+2024-12-27 01:54:21.123 Throttling request as too many requests in the same second
+2024-12-27 01:54:21.420 Throttling request as too many requests in the same second
+2024-12-27 01:54:21.719 Throttling request as too many requests in the same second
+2024-12-27 01:54:22.015 Received ping message: Hello
+2024-12-27 01:54:22.326 Throttling request as too many requests in the same second
+2024-12-27 01:54:22.620 Throttling request as too many requests in the same second
+2024-12-27 08:33:22.933 Starting PongApplication using Java 17.0.12 with PID 20436 (C:\code\hbsc\pong\target\classes started by joech in C:\code\hbsc)
+2024-12-27 08:33:22.935 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 08:33:23.650 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 08:33:23.652 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 08:33:23.678 Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-12-27 08:33:24.744 Netty started on port 8080
+2024-12-27 08:33:24.756 Started PongApplication in 2.134 seconds (process running for 2.594)
+2024-12-27 08:33:35.133 Received ping message: Hello
+2024-12-27 08:33:35.253 Received ping message: Hello
+2024-12-27 08:33:35.550 Throttling request as too many requests in the same second
+2024-12-27 08:33:35.865 Throttling request as too many requests in the same second
+2024-12-27 08:33:36.163 Received ping message: Hello
+2024-12-27 08:33:36.464 Throttling request as too many requests in the same second
+2024-12-27 08:33:36.761 Throttling request as too many requests in the same second
+2024-12-27 08:33:37.059 Throttling request as too many requests in the same second
+2024-12-27 08:33:37.358 Received ping message: Hello
+2024-12-27 08:33:37.653 Throttling request as too many requests in the same second
+2024-12-27 08:33:37.952 Throttling request as too many requests in the same second
+2024-12-27 08:33:38.264 Received ping message: Hello
+2024-12-27 08:33:38.560 Throttling request as too many requests in the same second
+2024-12-27 08:33:38.858 Throttling request as too many requests in the same second
+2024-12-27 08:33:39.156 Received ping message: Hello
+2024-12-27 08:33:39.454 Throttling request as too many requests in the same second
+2024-12-27 08:33:39.752 Throttling request as too many requests in the same second
+2024-12-27 08:33:40.050 Throttling request as too many requests in the same second
+2024-12-27 08:33:40.360 Received ping message: Hello
+2024-12-27 08:33:40.658 Throttling request as too many requests in the same second
+2024-12-27 08:33:40.952 Throttling request as too many requests in the same second
+2024-12-27 08:33:41.263 Received ping message: Hello
+2024-12-27 08:33:41.559 Throttling request as too many requests in the same second
+2024-12-27 08:33:41.856 Throttling request as too many requests in the same second
+2024-12-27 08:33:42.149 Received ping message: Hello
+2024-12-27 08:33:42.463 Throttling request as too many requests in the same second
+2024-12-27 08:33:42.761 Throttling request as too many requests in the same second
+2024-12-27 08:33:43.058 Throttling request as too many requests in the same second
+2024-12-27 08:33:43.351 Received ping message: Hello
+2024-12-27 08:33:43.662 Throttling request as too many requests in the same second
+2024-12-27 08:33:43.960 Throttling request as too many requests in the same second
+2024-12-27 08:33:44.255 Received ping message: Hello
+2024-12-27 08:33:44.564 Throttling request as too many requests in the same second
+2024-12-27 08:33:44.861 Throttling request as too many requests in the same second
+2024-12-27 08:33:45.159 Received ping message: Hello
+2024-12-27 08:33:45.456 Throttling request as too many requests in the same second
+2024-12-27 08:33:45.752 Throttling request as too many requests in the same second
+2024-12-27 08:33:46.061 Throttling request as too many requests in the same second
+2024-12-27 08:33:46.355 Received ping message: Hello
+2024-12-27 08:33:46.655 Throttling request as too many requests in the same second
+2024-12-27 08:33:46.953 Throttling request as too many requests in the same second
+2024-12-27 08:33:47.265 Received ping message: Hello
+2024-12-27 08:33:47.564 Throttling request as too many requests in the same second
+2024-12-27 08:33:47.861 Throttling request as too many requests in the same second
+2024-12-27 08:33:48.156 Received ping message: Hello
+2024-12-27 08:33:48.450 Throttling request as too many requests in the same second
+2024-12-27 08:33:48.761 Throttling request as too many requests in the same second
+2024-12-27 08:33:49.056 Throttling request as too many requests in the same second
+2024-12-27 12:07:55.302 Starting PongApplication using Java 17.0.12 with PID 9576 (C:\code\hbsc\pong\target\classes started by joech in C:\code\hbsc)
+2024-12-27 12:07:55.304 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 12:07:56.100 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 12:07:56.102 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 12:07:56.130 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-12-27 12:07:57.283 Netty started on port 8080
+2024-12-27 12:07:57.291 Started PongApplication in 2.426 seconds (process running for 3.12)
+2024-12-27 12:08:12.579 Received ping message: Hello
+2024-12-27 12:08:12.628 Received ping message: Hello
+2024-12-27 12:08:12.921 Throttling request as too many requests in the same second
+2024-12-27 12:08:13.216 Throttling request as too many requests in the same second
+2024-12-27 12:08:13.524 Throttling request as too many requests in the same second
+2024-12-27 12:08:13.821 Received ping message: Hello
+2024-12-27 12:08:14.117 Throttling request as too many requests in the same second
+2024-12-27 12:08:14.413 Throttling request as too many requests in the same second
+2024-12-27 12:08:14.708 Received ping message: Hello
+2024-12-27 12:08:15.020 Throttling request as too many requests in the same second
+2024-12-27 12:08:15.314 Throttling request as too many requests in the same second
+2024-12-27 12:08:15.611 Received ping message: Hello
+2024-12-27 12:08:15.923 Throttling request as too many requests in the same second
+2024-12-27 12:08:16.210 Throttling request as too many requests in the same second
+2024-12-27 12:08:16.522 Throttling request as too many requests in the same second
+2024-12-27 12:08:16.822 Received ping message: Hello
+2024-12-27 12:08:17.120 Throttling request as too many requests in the same second
+2024-12-27 12:08:17.419 Throttling request as too many requests in the same second
+2024-12-27 12:08:17.719 Received ping message: Hello
+2024-12-27 12:08:18.017 Throttling request as too many requests in the same second
+2024-12-27 12:08:18.316 Throttling request as too many requests in the same second
+2024-12-27 12:08:18.614 Received ping message: Hello
+2024-12-27 12:08:18.911 Throttling request as too many requests in the same second
+2024-12-27 12:08:19.210 Throttling request as too many requests in the same second
+2024-12-27 12:08:19.521 Throttling request as too many requests in the same second
+2024-12-27 12:08:19.818 Received ping message: Hello
+2024-12-27 12:08:20.115 Throttling request as too many requests in the same second
+2024-12-27 12:08:20.415 Throttling request as too many requests in the same second
+2024-12-27 12:08:20.712 Received ping message: Hello
+2024-12-27 12:08:21.011 Throttling request as too many requests in the same second
+2024-12-27 12:08:21.319 Throttling request as too many requests in the same second
+2024-12-27 12:08:21.617 Received ping message: Hello
+2024-12-27 12:08:21.916 Throttling request as too many requests in the same second
+2024-12-27 12:08:22.212 Throttling request as too many requests in the same second
+2024-12-27 12:08:22.512 Throttling request as too many requests in the same second
+2024-12-27 12:08:22.810 Received ping message: Hello
+2024-12-27 12:08:23.108 Throttling request as too many requests in the same second
+2024-12-27 12:08:23.422 Throttling request as too many requests in the same second
+2024-12-27 12:08:23.721 Received ping message: Hello
+2024-12-27 12:08:24.017 Throttling request as too many requests in the same second
+2024-12-27 12:08:24.315 Throttling request as too many requests in the same second
+2024-12-27 12:08:24.610 Received ping message: Hello
+2024-12-27 12:08:24.926 Throttling request as too many requests in the same second
+2024-12-27 12:08:25.219 Throttling request as too many requests in the same second
+2024-12-27 12:08:25.519 Throttling request as too many requests in the same second
+2024-12-27 12:08:25.818 Received ping message: Hello
+2024-12-27 12:08:26.116 Throttling request as too many requests in the same second
+2024-12-27 12:08:26.414 Throttling request as too many requests in the same second
+2024-12-27 12:08:26.712 Received ping message: Hello
+2024-12-27 12:08:27.010 Throttling request as too many requests in the same second
+2024-12-27 12:08:27.322 Throttling request as too many requests in the same second
+2024-12-27 12:08:27.623 Received ping message: Hello
+2024-12-27 12:08:27.922 Throttling request as too many requests in the same second
+2024-12-27 12:08:28.219 Throttling request as too many requests in the same second
+2024-12-27 12:08:28.517 Throttling request as too many requests in the same second
+2024-12-27 12:08:28.817 Received ping message: Hello
+2024-12-27 12:08:29.115 Throttling request as too many requests in the same second
+2024-12-27 12:08:29.409 Throttling request as too many requests in the same second
+2024-12-27 12:08:29.723 Received ping message: Hello
+2024-12-27 12:08:30.018 Throttling request as too many requests in the same second
+2024-12-27 12:08:30.315 Throttling request as too many requests in the same second
+2024-12-27 12:08:30.614 Received ping message: Hello
+2024-12-27 12:08:30.911 Throttling request as too many requests in the same second
+2024-12-27 12:08:31.213 Throttling request as too many requests in the same second
+2024-12-27 12:08:31.511 Throttling request as too many requests in the same second
+2024-12-27 12:08:31.810 Received ping message: Hello
+2024-12-27 12:08:32.121 Throttling request as too many requests in the same second
+2024-12-27 12:08:32.419 Throttling request as too many requests in the same second
+2024-12-27 12:08:32.717 Received ping message: Hello
+2024-12-27 12:08:33.014 Throttling request as too many requests in the same second
+2024-12-27 12:08:33.309 Throttling request as too many requests in the same second
+2024-12-27 12:08:33.620 Received ping message: Hello
+2024-12-27 12:08:33.922 Throttling request as too many requests in the same second
+2024-12-27 12:08:34.207 Throttling request as too many requests in the same second
+2024-12-27 12:08:34.515 Throttling request as too many requests in the same second
+2024-12-27 12:08:34.811 Received ping message: Hello
+2024-12-27 12:08:35.121 Throttling request as too many requests in the same second
+2024-12-27 12:08:35.419 Throttling request as too many requests in the same second
+2024-12-27 12:08:35.719 Received ping message: Hello
+2024-12-27 12:08:36.013 Throttling request as too many requests in the same second
+2024-12-27 12:08:36.311 Throttling request as too many requests in the same second
+2024-12-27 12:08:36.621 Received ping message: Hello
+2024-12-27 12:08:36.916 Throttling request as too many requests in the same second
+2024-12-27 12:08:37.216 Throttling request as too many requests in the same second
+2024-12-27 12:08:37.511 Throttling request as too many requests in the same second
+2024-12-27 12:08:37.809 Received ping message: Hello
+2024-12-27 12:08:38.120 Throttling request as too many requests in the same second
+2024-12-27 12:08:38.419 Throttling request as too many requests in the same second
+2024-12-27 12:08:38.716 Received ping message: Hello
+2024-12-27 12:08:39.015 Throttling request as too many requests in the same second
+2024-12-27 12:08:39.315 Throttling request as too many requests in the same second
+2024-12-27 12:08:39.616 Received ping message: Hello
+2024-12-27 12:08:39.914 Throttling request as too many requests in the same second
+2024-12-27 12:08:40.212 Throttling request as too many requests in the same second
+2024-12-27 12:08:40.508 Throttling request as too many requests in the same second
+2024-12-27 12:08:40.822 Received ping message: Hello
+2024-12-27 12:08:41.119 Throttling request as too many requests in the same second
+2024-12-27 12:08:41.417 Throttling request as too many requests in the same second
+2024-12-27 12:08:41.718 Received ping message: Hello
+2024-12-27 12:08:42.014 Throttling request as too many requests in the same second
+2024-12-27 12:08:42.311 Throttling request as too many requests in the same second
+2024-12-27 12:08:42.621 Received ping message: Hello
+2024-12-27 12:08:42.920 Throttling request as too many requests in the same second
+2024-12-27 12:08:43.220 Throttling request as too many requests in the same second
+2024-12-27 12:08:43.518 Throttling request as too many requests in the same second
+2024-12-27 12:08:43.816 Received ping message: Hello
+2024-12-27 12:08:44.118 Throttling request as too many requests in the same second
+2024-12-27 12:08:44.407 Throttling request as too many requests in the same second
+2024-12-27 12:08:44.719 Received ping message: Hello
+2024-12-27 12:08:45.020 Throttling request as too many requests in the same second
+2024-12-27 12:08:45.306 Throttling request as too many requests in the same second
+2024-12-27 12:08:45.618 Received ping message: Hello
+2024-12-27 12:08:45.916 Throttling request as too many requests in the same second
+2024-12-27 12:08:46.213 Throttling request as too many requests in the same second
+2024-12-27 12:08:46.510 Throttling request as too many requests in the same second
+2024-12-27 12:08:46.821 Received ping message: Hello
+2024-12-27 12:08:47.119 Throttling request as too many requests in the same second
+2024-12-27 12:08:47.414 Throttling request as too many requests in the same second
+2024-12-27 12:08:47.715 Received ping message: Hello
+2024-12-27 12:08:48.014 Throttling request as too many requests in the same second
+2024-12-27 12:08:48.314 Throttling request as too many requests in the same second
+2024-12-27 12:08:48.613 Received ping message: Hello
+2024-12-27 12:08:48.913 Throttling request as too many requests in the same second
+2024-12-27 12:08:49.212 Throttling request as too many requests in the same second
+2024-12-27 12:08:49.510 Throttling request as too many requests in the same second
+2024-12-27 12:08:49.810 Received ping message: Hello
+2024-12-27 12:08:50.121 Throttling request as too many requests in the same second
+2024-12-27 12:08:50.420 Throttling request as too many requests in the same second
+2024-12-27 12:08:50.717 Received ping message: Hello
+2024-12-27 12:08:51.009 Throttling request as too many requests in the same second
+2024-12-27 12:08:51.320 Throttling request as too many requests in the same second
+2024-12-27 12:08:51.619 Received ping message: Hello
+2024-12-27 12:08:51.917 Throttling request as too many requests in the same second
+2024-12-27 12:08:52.215 Throttling request as too many requests in the same second
+2024-12-27 12:08:52.509 Throttling request as too many requests in the same second
+2024-12-27 12:08:52.820 Received ping message: Hello
+2024-12-27 12:08:53.115 Throttling request as too many requests in the same second
+2024-12-27 12:08:53.417 Throttling request as too many requests in the same second
+2024-12-27 12:08:53.711 Received ping message: Hello
+2024-12-27 12:08:54.008 Throttling request as too many requests in the same second
+2024-12-27 12:08:54.323 Throttling request as too many requests in the same second
+2024-12-27 12:08:54.619 Received ping message: Hello
+2024-12-27 12:08:54.919 Throttling request as too many requests in the same second
+2024-12-27 12:08:55.215 Throttling request as too many requests in the same second
+2024-12-27 12:08:55.513 Throttling request as too many requests in the same second
+2024-12-27 12:08:55.810 Received ping message: Hello
+2024-12-27 12:08:56.109 Throttling request as too many requests in the same second
+2024-12-27 12:08:56.419 Throttling request as too many requests in the same second
+2024-12-27 12:08:56.706 Received ping message: Hello
+2024-12-27 12:08:57.017 Throttling request as too many requests in the same second
+2024-12-27 12:08:57.315 Throttling request as too many requests in the same second
+2024-12-27 12:08:57.610 Received ping message: Hello
+2024-12-27 12:08:57.922 Throttling request as too many requests in the same second
+2024-12-27 12:08:58.219 Throttling request as too many requests in the same second
+2024-12-27 12:08:58.516 Throttling request as too many requests in the same second
+2024-12-27 12:08:58.814 Received ping message: Hello
+2024-12-27 12:08:59.113 Throttling request as too many requests in the same second
+2024-12-27 12:08:59.408 Throttling request as too many requests in the same second
+2024-12-27 12:08:59.720 Received ping message: Hello
+2024-12-27 12:09:00.020 Throttling request as too many requests in the same second
+2024-12-27 12:09:00.320 Throttling request as too many requests in the same second
+2024-12-27 12:09:00.616 Received ping message: Hello
+2024-12-27 12:09:00.913 Throttling request as too many requests in the same second
+2024-12-27 12:09:01.209 Throttling request as too many requests in the same second
+2024-12-27 12:09:01.509 Throttling request as too many requests in the same second
+2024-12-27 12:09:01.808 Received ping message: Hello
+2024-12-27 12:09:02.106 Throttling request as too many requests in the same second
+2024-12-27 12:09:02.419 Throttling request as too many requests in the same second
+2024-12-27 12:09:02.743 Received ping message: Hello
+2024-12-27 12:09:03.014 Throttling request as too many requests in the same second
+2024-12-27 12:09:03.313 Throttling request as too many requests in the same second
+2024-12-27 12:09:03.612 Received ping message: Hello
+2024-12-27 12:09:03.909 Throttling request as too many requests in the same second
+2024-12-27 12:09:04.222 Throttling request as too many requests in the same second
+2024-12-27 12:09:04.518 Throttling request as too many requests in the same second
+2024-12-27 12:18:28.871 Starting PongApplication using Java 17.0.12 with PID 15716 (C:\code\hbsc\pong\target\classes started by joech in C:\code\hbsc)
+2024-12-27 12:18:28.873 No active profile set, falling back to 1 default profile: "default"
+2024-12-27 12:18:29.560 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-27 12:18:29.562 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-27 12:18:29.590 Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-12-27 12:18:30.675 Netty started on port 8080
+2024-12-27 12:18:30.686 Started PongApplication in 2.19 seconds (process running for 2.882)

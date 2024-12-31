@@ -3,6 +3,7 @@
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,8 +11,10 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 @Configuration
+// By default, we don't have a redis server
+@ConditionalOnProperty(name = &quot;spring.redis.host&quot;)
 @ConfigurationProperties(prefix = &quot;spring.redis&quot;)
-<span class="fc" id="L14">public class RedisConfig {</span>
+<span class="fc" id="L17">public class RedisConfig {</span>
 
     private Integer database;
 
@@ -19,56 +22,43 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 
     private Integer port;
 
-    private String password;
-
     @Bean
     public StringRedisTemplate redisTemplate(RedisConnectionFactory factory) {
-<span class="fc" id="L26">        return new StringRedisTemplate(factory);</span>
+<span class="fc" id="L27">        return new StringRedisTemplate(factory);</span>
     }
 
     @Bean
     public RedissonClient redissonClient() {
-<span class="pc bpc" id="L31" title="2 of 4 branches missed.">        if(host == null || host.length() == 0 ){</span>
-            // By default, we don't have a redis server
-<span class="fc" id="L33">            return null;</span>
-        }
-<span class="nc" id="L35">        Config config = new Config();</span>
-<span class="nc" id="L36">        config.useSingleServer()</span>
-<span class="nc" id="L37">                .setDatabase(database)</span>
-<span class="nc" id="L38">                .setAddress(&quot;redis://&quot; + host + &quot;:&quot; + port);</span>
-<span class="nc" id="L39">        return Redisson.create(config);</span>
+<span class="fc" id="L32">        Config config = new Config();</span>
+<span class="fc" id="L33">        config.useSingleServer()</span>
+<span class="fc" id="L34">                .setDatabase(getDatabase())</span>
+<span class="fc" id="L35">                .setAddress(&quot;redis://&quot; + getHost() + &quot;:&quot; + getPort());</span>
+<span class="fc" id="L36">        return Redisson.create(config);</span>
     }
 
     public Integer getDatabase() {
-<span class="nc" id="L43">        return database;</span>
+<span class="fc" id="L40">        return database;</span>
     }
 
     public void setDatabase(Integer database) {
-<span class="fc" id="L47">        this.database = database;</span>
-<span class="fc" id="L48">    }</span>
+<span class="fc" id="L44">        this.database = database;</span>
+<span class="fc" id="L45">    }</span>
 
     public String getHost() {
-<span class="nc" id="L51">        return host;</span>
+<span class="fc" id="L48">        return host;</span>
     }
 
     public void setHost(String host) {
-<span class="fc" id="L55">        this.host = host;</span>
-<span class="fc" id="L56">    }</span>
+<span class="fc" id="L52">        this.host = host;</span>
+<span class="fc" id="L53">    }</span>
 
     public Integer getPort() {
-<span class="nc" id="L59">        return port;</span>
+<span class="fc" id="L56">        return port;</span>
     }
 
     public void setPort(Integer port) {
-<span class="fc" id="L63">        this.port = port;</span>
-<span class="fc" id="L64">    }</span>
+<span class="fc" id="L60">        this.port = port;</span>
+<span class="fc" id="L61">    }</span>
 
-    public String getPassword() {
-<span class="nc" id="L67">        return password;</span>
-    }
-
-    public void setPassword(String password) {
-<span class="fc" id="L71">        this.password = password;</span>
-<span class="fc" id="L72">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

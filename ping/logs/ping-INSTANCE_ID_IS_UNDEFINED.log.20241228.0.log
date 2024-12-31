@@ -1,0 +1,1643 @@
+2024-12-28 00:01:58.864 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:01:58.941 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:01:59.648 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:01:59.667 Starting PingServiceCTSpec using Java 17.0.12 with PID 9596 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:01:59.667 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:02:00.246 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:02:00.249 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:02:00.279 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:02:01.116 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:02:01.483 Started PingServiceCTSpec in 1.982 seconds (process running for 3.996)
+2024-12-28 00:02:02.743 Request 0 sent & Pong Respond: 200
+2024-12-28 00:02:02.760 Request 1 send & Pong throttled it 429
+2024-12-28 00:02:26.640 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:02:26.753 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:02:27.598 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:02:27.613 Starting PingServiceCTSpec using Java 17.0.12 with PID 27560 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:02:27.614 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:02:28.207 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:02:28.210 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:02:28.238 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:02:29.097 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:02:29.503 Started PingServiceCTSpec in 2.069 seconds (process running for 4.655)
+2024-12-28 00:02:30.726 Request 0 sent & Pong Respond: 200
+2024-12-28 00:02:30.794 Request 1 send & Pong throttled it 429
+2024-12-28 00:02:31.082 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:02:38.646 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:02:38.748 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:02:39.506 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:02:39.522 Starting PingServiceCTSpec using Java 17.0.12 with PID 13236 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:02:39.523 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:02:40.074 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:02:40.077 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:02:40.104 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:02:40.950 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:02:41.351 Started PingServiceCTSpec in 1.989 seconds (process running for 4.382)
+2024-12-28 00:02:42.648 Request 0 sent & Pong Respond: 200
+2024-12-28 00:02:42.670 Request 1 send & Pong throttled it 429
+2024-12-28 00:02:42.938 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:04:15.731 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:15.808 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:04:16.923 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:04:16.940 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 10008 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:04:16.943 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:04:17.471 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:04:17.475 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:04:17.505 Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:04:17.750 Redisson 3.21.3
+2024-12-28 00:04:18.011 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:04:18.069 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:04:18.570 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:04:18.939 Started PingServiceCTRedisSpec in 2.176 seconds (process running for 4.711)
+2024-12-28 00:04:20.397 Request 0 sent & Pong Respond: 200
+2024-12-28 00:04:20.413 Request 1 send & Pong throttled it 429
+2024-12-28 00:04:20.534 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:04:21.105 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:04:21.216 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:04:21.221 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:04:37.747 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:37.844 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 00:04:37.968 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:37.974 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 00:04:37.982 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:37.996 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:04:38.001 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:38.005 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:04:38.011 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:38.015 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:04:38.021 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:04:38.028 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:04:38.309 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:04:38.325 Starting FileLockThrottlingServiceSpec using Java 17.0.12 with PID 28364 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:04:38.326 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:04:38.942 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:04:38.944 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:04:38.969 Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:04:40.046 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:04:40.424 Started FileLockThrottlingServiceSpec in 2.296 seconds (process running for 4.613)
+2024-12-28 00:04:46.043 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:04:46.045 Starting PingServiceSpec using Java 17.0.12 with PID 28364 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:04:46.046 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:04:46.265 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:04:46.266 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:04:46.277 Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:04:46.439 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:04:46.523 Started PingServiceSpec in 0.495 seconds (process running for 10.712)
+2024-12-28 00:04:47.837 Request 0 sent & Pong Respond: 200
+2024-12-28 00:04:48.881 Request 0 send & Pong throttled it 429
+2024-12-28 00:04:49.897 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:10:11.644 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:11.731 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 00:10:11.832 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:11.836 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 00:10:11.844 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:11.855 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:10:11.859 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:11.863 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:10:11.866 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:11.870 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:10:11.874 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:11.880 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:10:12.135 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:10:12.150 Starting FileLockThrottlingServiceSpec using Java 17.0.12 with PID 26760 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:10:12.152 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:10:12.715 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:10:12.717 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:10:12.740 Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:10:13.750 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:10:14.128 Started FileLockThrottlingServiceSpec in 2.157 seconds (process running for 4.313)
+2024-12-28 00:10:19.973 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:10:19.975 Starting PingServiceSpec using Java 17.0.12 with PID 26760 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:10:19.976 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:10:20.176 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:10:20.176 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:10:20.185 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:10:20.344 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:10:20.418 Started PingServiceSpec in 0.464 seconds (process running for 10.603)
+2024-12-28 00:10:21.701 Request 0 sent & Pong Respond: 200
+2024-12-28 00:10:22.736 Request 0 send & Pong throttled it 429
+2024-12-28 00:10:23.758 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:10:47.589 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:47.683 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:10:47.809 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:10:47.815 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:10:48.523 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:10:48.541 Starting PingServiceCTSpec using Java 17.0.12 with PID 23156 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:10:48.542 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:10:49.087 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:10:49.088 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:10:49.117 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:10:49.982 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:10:50.359 Started PingServiceCTSpec in 1.998 seconds (process running for 4.698)
+2024-12-28 00:10:51.653 Request 0 sent & Pong Respond: 200
+2024-12-28 00:10:51.687 Request 1 send & Pong throttled it 429
+2024-12-28 00:10:51.955 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:10:53.160 Request 0 sent & Pong Respond: 200
+2024-12-28 00:10:53.454 Request 1 send & Pong throttled it 429
+2024-12-28 00:15:18.823 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:15:18.902 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:15:19.964 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:15:19.978 Starting RedisThrottlingServiceSpec using Java 17.0.12 with PID 3448 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:15:19.979 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:15:20.524 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:15:20.526 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:15:20.557 Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:15:20.810 Redisson 3.21.3
+2024-12-28 00:15:21.044 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:15:21.091 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:15:21.591 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:15:21.963 Started RedisThrottlingServiceSpec in 2.139 seconds (process running for 4.473)
+2024-12-28 00:15:22.900 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:15:22.937 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:15:22.942 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:15:55.776 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:15:55.865 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:15:56.943 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:15:56.961 Starting RedisThrottlingServiceSpec using Java 17.0.12 with PID 8796 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:15:56.962 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:15:57.470 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:15:57.473 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:15:57.499 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:15:57.756 Redisson 3.21.3
+2024-12-28 00:15:58.018 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:15:58.069 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:15:58.577 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:15:58.965 Started RedisThrottlingServiceSpec in 2.162 seconds (process running for 4.657)
+2024-12-28 00:15:59.859 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:15:59.913 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:15:59.918 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:18:35.818 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:18:35.892 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:18:37.015 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:18:37.037 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 14772 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:18:37.038 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:18:37.570 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:18:37.573 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:18:37.601 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:18:37.841 Redisson 3.21.3
+2024-12-28 00:18:38.096 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:18:38.152 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:18:38.710 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:18:39.122 Started PingServiceCTRedisSpec in 2.255 seconds (process running for 4.744)
+2024-12-28 00:18:40.512 Request 1 sent & Pong Respond: 200
+2024-12-28 00:18:40.526 Request 0 send & Pong throttled it 429
+2024-12-28 00:18:40.750 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:18:40.889 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:18:40.906 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:18:40.910 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:19:22.508 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:19:22.585 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:19:23.666 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:19:23.684 Starting PingServiceCTSpec using Java 17.0.12 with PID 23696 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:19:23.685 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:19:24.209 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:19:24.211 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:19:24.238 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:19:25.024 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:19:25.424 Started PingServiceCTSpec in 1.898 seconds (process running for 4.337)
+2024-12-28 00:19:26.652 Request 0 sent & Pong Respond: 200
+2024-12-28 00:19:26.736 Request 1 send & Pong throttled it 429
+2024-12-28 00:20:12.814 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:20:12.894 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:20:14.024 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:20:14.042 Starting PingServiceCTSpec using Java 17.0.12 with PID 25724 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:20:14.043 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:20:14.577 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:20:14.580 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:20:14.615 Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:20:15.414 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:20:15.797 Started PingServiceCTSpec in 1.921 seconds (process running for 4.741)
+2024-12-28 00:20:17.089 Request 0 sent & Pong Respond: 200
+2024-12-28 00:20:17.119 Request 1 send & Pong throttled it 429
+2024-12-28 00:21:30.572 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:30.671 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:21:31.837 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:21:31.856 Starting PingServiceCTSpec using Java 17.0.12 with PID 19040 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:21:31.856 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:21:32.419 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:21:32.422 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:21:32.454 Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:21:33.263 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:21:33.672 Started PingServiceCTSpec in 1.981 seconds (process running for 4.982)
+2024-12-28 00:21:34.927 Request 0 sent & Pong Respond: 200
+2024-12-28 00:21:35.031 Request 1 send & Pong throttled it 429
+2024-12-28 00:21:35.304 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:21:51.261 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:51.357 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 00:21:51.472 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:51.476 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 00:21:51.483 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:51.496 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:21:51.502 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:51.506 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:21:51.512 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:51.515 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:21:51.521 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:21:51.529 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:21:51.806 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:21:51.822 Starting FileLockThrottlingServiceSpec using Java 17.0.12 with PID 19052 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:21:51.823 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:21:52.382 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:21:52.384 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:21:52.409 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:21:53.498 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:21:53.904 Started FileLockThrottlingServiceSpec in 2.265 seconds (process running for 4.601)
+2024-12-28 00:22:12.428 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:22:12.466 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:22:12.471 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:22:18.491 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:22:18.492 Starting PingServiceSpec using Java 17.0.12 with PID 19052 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:22:18.492 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:22:18.639 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:22:18.639 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:22:18.645 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:22:18.702 Redisson 3.21.3
+2024-12-28 00:22:18.813 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonThrottlingService': Unsatisfied dependency expressed through field 'redissonClient': Error creating bean with name 'redissonClient' defined in class path resource [com/demo/config/RedisConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+2024-12-28 00:22:18.816 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-28 00:22:18.832 Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonThrottlingService': Unsatisfied dependency expressed through field 'redissonClient': Error creating bean with name 'redissonClient' defined in class path resource [com/demo/config/RedisConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:747)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1409)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.spockframework.spring.SpringTestContextManager.prepareTestInstance(SpringTestContextManager.java:56)
+	at org.spockframework.spring.SpringInterceptor.interceptInitializerMethod(SpringInterceptor.java:46)
+	at org.spockframework.runtime.extension.AbstractMethodInterceptor.intercept(AbstractMethodInterceptor.java:24)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:101)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:398)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:259)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:254)
+	at org.spockframework.runtime.IterationNode.prepare(IterationNode.java:31)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:32)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:15)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:156)
+	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/demo/config/RedisConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:654)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:488)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	... 90 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 103 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.client.RedisClient$1$2.run(RedisClient.java:257)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:1097)
+	... 11 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:22:18.839 Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.demo.service.PingServiceSpec@3470c771]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@1ea482b4 testClass = com.demo.service.PingServiceSpec, locations = [], classes = [com.demo.PingApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@bc4d5e1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@35835e65, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1ad8df52, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@507d20bb, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@3f4b840d, org.spockframework.spring.mock.SpockContextCustomizer@f6960af4, org.springframework.boot.test.context.SpringBootTestAnnotation@f5ed88d3], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:143)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.spockframework.spring.SpringTestContextManager.prepareTestInstance(SpringTestContextManager.java:56)
+	at org.spockframework.spring.SpringInterceptor.interceptInitializerMethod(SpringInterceptor.java:46)
+	at org.spockframework.runtime.extension.AbstractMethodInterceptor.intercept(AbstractMethodInterceptor.java:24)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:101)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:398)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:259)
+	at org.spockframework.runtime.PlatformSpecRunner.runInitializer(PlatformSpecRunner.java:254)
+	at org.spockframework.runtime.IterationNode.prepare(IterationNode.java:31)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:32)
+	at org.spockframework.runtime.SimpleFeatureNode.prepare(SimpleFeatureNode.java:15)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.spockframework.runtime.SpockNode.sneakyInvoke(SpockNode.java:40)
+	at org.spockframework.runtime.SpecNode.lambda$around$0(SpecNode.java:63)
+	at org.spockframework.runtime.PlatformSpecRunner.lambda$createMethodInfoForDoRunSpec$0(PlatformSpecRunner.java:61)
+	at org.spockframework.runtime.model.MethodInfo.invoke(MethodInfo.java:156)
+	at org.spockframework.runtime.PlatformSpecRunner.invokeRaw(PlatformSpecRunner.java:407)
+	at org.spockframework.runtime.PlatformSpecRunner.invoke(PlatformSpecRunner.java:390)
+	at org.spockframework.runtime.PlatformSpecRunner.runSpec(PlatformSpecRunner.java:55)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:63)
+	at org.spockframework.runtime.SpecNode.around(SpecNode.java:11)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonThrottlingService': Unsatisfied dependency expressed through field 'redissonClient': Error creating bean with name 'redissonClient' defined in class path resource [com/demo/config/RedisConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:747)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1409)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119)
+	... 65 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/demo/config/RedisConfig.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:654)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:488)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	... 90 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception with message: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 103 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.client.RedisClient$1$2.run(RedisClient.java:257)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:1097)
+	... 11 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:28:00.218 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:28:00.293 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:28:01.386 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:28:01.404 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 5252 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:28:01.405 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:28:01.911 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:28:01.913 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:28:01.941 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:28:02.191 Redisson 3.21.3
+2024-12-28 00:28:02.437 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:28:02.485 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:28:02.979 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:28:03.348 Started PingServiceCTRedisSpec in 2.1 seconds (process running for 4.518)
+2024-12-28 00:28:04.824 Request 0 sent & Pong Respond: 200
+2024-12-28 00:28:04.839 Request 1 send & Pong throttled it 429
+2024-12-28 00:28:04.956 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:28:05.092 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:28:05.116 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:28:05.120 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:35:03.804 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:35:03.910 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:35:05.072 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:35:05.087 Starting RedisThrottlingServiceSpec using Java 17.0.12 with PID 15408 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:35:05.088 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:35:05.619 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:35:05.624 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:35:05.655 Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:35:05.921 Redisson 3.21.3
+2024-12-28 00:35:06.179 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:35:06.228 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:35:06.698 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:35:07.062 Started RedisThrottlingServiceSpec in 2.153 seconds (process running for 5.075)
+2024-12-28 00:35:07.958 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:35:08.065 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:35:08.069 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:35:23.252 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:35:23.343 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:35:24.489 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:35:24.507 Starting PingServiceCTSpec using Java 17.0.12 with PID 26088 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:35:24.508 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:35:25.021 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:35:25.024 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:35:25.054 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:35:25.836 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:35:26.275 Started PingServiceCTSpec in 1.931 seconds (process running for 4.914)
+2024-12-28 00:35:27.552 Request 0 sent & Pong Respond: 200
+2024-12-28 00:35:27.592 Request 1 send & Pong throttled it 429
+2024-12-28 00:35:27.862 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:35:42.603 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:35:42.693 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:35:43.836 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:35:43.853 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 2432 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:35:43.854 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:35:44.378 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:35:44.381 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:35:44.407 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:35:44.652 Redisson 3.21.3
+2024-12-28 00:35:44.914 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:35:44.980 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:35:45.509 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:35:45.882 Started PingServiceCTRedisSpec in 2.194 seconds (process running for 5.126)
+2024-12-28 00:35:47.450 Request 1 sent & Pong Respond: 200
+2024-12-28 00:35:47.468 Request 0 send & Pong throttled it 429
+2024-12-28 00:35:47.480 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:35:47.626 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:35:47.719 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:35:47.725 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:36:01.852 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:36:01.952 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 00:36:02.072 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:36:02.076 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 00:36:02.084 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:36:02.095 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:36:02.101 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:36:02.104 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:36:02.108 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:36:02.111 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:36:02.115 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:36:02.121 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:36:02.397 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:36:02.412 Starting FileLockThrottlingServiceSpec using Java 17.0.12 with PID 27424 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:36:02.413 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:36:03.039 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:36:03.041 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:36:03.068 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:36:04.078 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:36:04.475 Started FileLockThrottlingServiceSpec in 2.254 seconds (process running for 4.58)
+2024-12-28 00:36:23.176 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:36:23.188 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:36:23.194 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:36:28.964 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:36:28.968 Starting PingServiceSpec using Java 17.0.12 with PID 27424 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:36:28.968 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:36:29.161 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:36:29.162 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:36:29.169 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:36:29.291 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:36:29.339 Started PingServiceSpec in 0.392 seconds (process running for 29.443)
+2024-12-28 00:36:30.564 Request 0 sent & Pong Respond: 200
+2024-12-28 00:36:31.625 Request 0 send & Pong throttled it 429
+2024-12-28 00:36:32.287 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 00:36:32.291 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:36:32.646 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:44:51.746 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:44:51.820 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:44:52.916 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:44:52.934 Starting PingServiceCTSpec using Java 17.0.12 with PID 21020 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:44:52.935 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:44:53.450 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:44:53.453 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:44:53.481 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:44:54.248 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:44:54.652 Started PingServiceCTSpec in 1.877 seconds (process running for 4.285)
+2024-12-28 00:44:55.973 Request 0 sent & Pong Respond: 200
+2024-12-28 00:44:55.997 Request 1 send & Pong throttled it 429
+2024-12-28 00:45:14.835 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:45:14.936 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:45:16.087 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:45:16.104 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 9812 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:45:16.106 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:45:16.662 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:45:16.664 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:45:16.697 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:45:16.980 Redisson 3.21.3
+2024-12-28 00:45:17.237 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:45:17.287 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 00:45:17.751 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:45:18.151 Started PingServiceCTRedisSpec in 2.235 seconds (process running for 5.19)
+2024-12-28 00:45:19.549 Request 1 sent & Pong Respond: 200
+2024-12-28 00:45:19.563 Request 0 send & Pong throttled it 429
+2024-12-28 00:45:19.739 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:45:19.883 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:45:19.910 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:45:19.916 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:45:44.162 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:45:44.254 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:45:44.363 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:45:44.367 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:45:45.349 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:45:45.370 Starting PingServiceCTSpec using Java 17.0.12 with PID 14752 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:45:45.371 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:45:45.903 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:45:45.905 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:45:45.934 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:45:46.693 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:45:47.083 Started PingServiceCTSpec in 1.878 seconds (process running for 4.834)
+2024-12-28 00:45:48.119 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:45:48.617 Request 1 sent & Pong Respond: 200
+2024-12-28 00:45:48.744 Request 2 send & Pong throttled it 429
+2024-12-28 00:45:55.639 Request 0 sent & Pong Respond: 200
+2024-12-28 00:45:55.935 Request 1 send & Pong throttled it 429
+2024-12-28 00:48:12.254 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:48:12.345 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:48:13.518 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:48:13.538 Starting PingServiceSpec using Java 17.0.12 with PID 9804 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:48:13.539 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:48:14.073 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:48:14.076 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:48:14.107 Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:48:14.899 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:48:15.350 Started PingServiceSpec in 1.975 seconds (process running for 4.845)
+2024-12-28 00:48:17.314 Request 0 sent & Pong Respond: 200
+2024-12-28 00:48:25.227 Request 0 failed with unexpected error: Connection refused: no further information: /127.0.0.1:55015
+2024-12-28 00:48:26.569 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:49:07.725 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:49:07.874 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:49:09.022 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:49:09.043 Starting PingServiceSpec using Java 17.0.12 with PID 10144 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:49:09.044 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:49:09.584 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:49:09.586 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:49:09.617 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:49:10.411 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:49:10.809 Started PingServiceSpec in 1.93 seconds (process running for 5.038)
+2024-12-28 00:49:12.841 Request 0 sent & Pong Respond: 200
+2024-12-28 00:49:19.925 Request 0 failed with unexpected error: Connection refused: no further information: /127.0.0.1:55054
+2024-12-28 00:49:21.270 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:49:49.061 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:49:49.181 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:49:50.317 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:49:50.336 Starting PingServiceSpec using Java 17.0.12 with PID 22656 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:49:50.336 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:49:50.872 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:49:50.875 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:49:50.904 Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:49:51.704 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:49:52.113 Started PingServiceSpec in 1.941 seconds (process running for 5.012)
+2024-12-28 00:49:54.154 Request 0 send & Pong throttled it 429
+2024-12-28 00:51:31.578 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:51:31.690 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:51:34.358 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:51:34.385 Starting PingServiceSpec using Java 17.0.12 with PID 5068 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:51:34.387 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:51:35.172 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:51:35.175 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:51:35.225 Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:51:36.051 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:51:36.473 Started PingServiceSpec in 2.318 seconds (process running for 6.8)
+2024-12-28 00:51:38.463 Request 0 sent & Pong Respond: 200
+2024-12-28 00:51:45.756 Request 0 failed with unexpected error: Connection refused: no further information: /127.0.0.1:55163
+2024-12-28 00:51:47.041 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:53:53.237 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:53:53.328 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 00:53:53.433 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:53:53.439 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 00:53:53.444 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:53:53.448 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 00:53:53.452 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:53:53.454 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 00:53:53.457 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:53:53.459 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 00:53:53.463 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 00:53:53.477 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 00:53:54.487 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:53:54.500 Starting PingServiceCTSpec using Java 17.0.12 with PID 9376 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:53:54.501 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:53:54.992 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:53:54.994 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:53:55.024 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:53:55.825 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:53:56.205 Started PingServiceCTSpec in 1.874 seconds (process running for 4.848)
+2024-12-28 00:53:57.490 Request 0 sent & Pong Respond: 200
+2024-12-28 00:53:57.574 Request 1 send & Pong throttled it 429
+2024-12-28 00:53:57.846 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:54:06.341 Request 0 sent & Pong Respond: 200
+2024-12-28 00:54:06.629 Request 1 not sent as being 'ping rate limited'
+2024-12-28 00:54:06.925 Request 2 not sent as being 'ping rate limited'
+2024-12-28 00:54:13.396 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 00:54:13.425 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 00:54:13.428 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:54:19.336 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 00:54:19.338 Starting PingServiceSpec using Java 17.0.12 with PID 9376 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 00:54:19.338 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 00:54:19.473 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 00:54:19.473 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 00:54:19.480 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-12-28 00:54:19.602 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 00:54:19.650 Started PingServiceSpec in 0.324 seconds (process running for 28.293)
+2024-12-28 00:54:20.714 Request 0 sent & Pong Respond: 200
+2024-12-28 00:54:22.426 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 00:54:22.430 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 00:54:27.720 Request 0 failed with unexpected error: Connection refused: no further information: /127.0.0.1:55279
+2024-12-28 00:54:29.033 Request 0 not sent as being 'ping rate limited'
+2024-12-28 00:54:30.723 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 00:54:30.728 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:04:18.852 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:04:18.927 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:04:22.139 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:04:22.160 Starting PingServiceSpec using Java 17.0.12 with PID 16028 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:04:22.162 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:04:22.963 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:04:22.968 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:04:23.015 Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:04:24.178 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:04:24.617 Started PingServiceSpec in 2.701 seconds (process running for 7.158)
+2024-12-28 01:04:26.657 Request 0 sent & Pong Respond: 200
+2024-12-28 01:04:34.192 Request 0 failed with unexpected error: Connection refused: no further information: /127.0.0.1:55653
+2024-12-28 01:04:35.468 Request 0 not sent as being 'ping rate limited'
+2024-12-28 01:08:44.937 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:08:45.041 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:08:48.332 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:08:48.365 Starting PingServiceSpec using Java 17.0.12 with PID 27864 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:08:48.366 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:08:49.225 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:08:49.228 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:08:49.292 Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:08:50.630 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:08:51.198 Started PingServiceSpec in 3.098 seconds (process running for 8.228)
+2024-12-28 01:09:22.210 Request 1 not sent as being 'ping rate limited'
+2024-12-28 01:09:22.276 MockWebServer[55830] connection from /127.0.0.1 didn't make a request
+2024-12-28 01:09:48.393 Request 1 not sent as being 'ping rate limited'
+2024-12-28 01:09:49.430 Request 0 not sent as being 'ping rate limited'
+2024-12-28 01:10:10.550 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:10:10.636 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:10:13.853 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:10:13.875 Starting PingServiceSpec using Java 17.0.12 with PID 24392 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:10:13.877 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:10:14.633 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:10:14.639 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:10:14.682 Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:10:15.863 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:10:16.330 Started PingServiceSpec in 2.692 seconds (process running for 7.607)
+2024-12-28 01:10:18.365 Request 0 sent & Pong Respond: 200
+2024-12-28 01:10:25.970 Request 0 failed with unexpected error: Connection refused: no further information: /127.0.0.1:55888
+2024-12-28 01:10:27.300 Request 0 not sent as being 'ping rate limited'
+2024-12-28 01:18:32.677 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:18:32.772 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:18:35.746 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:18:35.769 Starting PingServiceSpec using Java 17.0.12 with PID 15516 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:18:35.770 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:18:36.662 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:18:36.666 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:18:36.704 Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:18:38.047 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:18:38.487 Started PingServiceSpec in 2.962 seconds (process running for 7.633)
+2024-12-28 01:18:40.561 Request 0 sent & Pong Respond: 200
+2024-12-28 01:18:48.179 Request 0 send & Pong throttled it 429
+2024-12-28 01:18:49.201 Request 0 not sent as being 'ping rate limited'
+2024-12-28 01:19:03.595 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:19:03.694 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 01:19:03.809 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:19:03.818 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 01:19:03.827 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:19:03.829 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 01:19:03.833 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:19:03.835 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 01:19:03.839 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:19:03.841 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 01:19:03.845 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:19:03.857 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:19:06.600 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:19:06.625 Starting PingServiceCTSpec using Java 17.0.12 with PID 21748 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:19:06.626 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:19:07.491 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:19:07.495 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:19:07.538 Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:19:08.656 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:19:09.069 Started PingServiceCTSpec in 2.689 seconds (process running for 7.368)
+2024-12-28 01:19:10.490 Request 0 sent & Pong Respond: 200
+2024-12-28 01:19:10.533 Request 1 send & Pong throttled it 429
+2024-12-28 01:19:21.884 Request 0 sent & Pong Respond: 200
+2024-12-28 01:19:22.171 Request 1 not sent as being 'ping rate limited'
+2024-12-28 01:19:22.469 Request 2 not sent as being 'ping rate limited'
+2024-12-28 01:19:32.021 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:19:32.141 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 01:19:32.147 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:19:41.007 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:19:41.010 Starting PingServiceSpec using Java 17.0.12 with PID 21748 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:19:41.010 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:19:41.225 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:19:41.237 Reconnected to localhost/<unresolved>:6379
+2024-12-28 01:19:41.242 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:19:41.242 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:19:41.255 Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:19:41.412 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:19:41.489 Started PingServiceSpec in 0.504 seconds (process running for 39.789)
+2024-12-28 01:19:42.585 Request 0 sent & Pong Respond: 200
+2024-12-28 01:19:42.620 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:19:47.531 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:19:47.532 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:19:49.895 Request 0 send & Pong throttled it 429
+2024-12-28 01:19:50.916 Request 0 not sent as being 'ping rate limited'
+2024-12-28 01:20:16.392 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:20:16.479 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 01:20:16.590 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:20:16.600 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 01:20:16.609 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:20:16.612 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 01:20:16.617 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:20:16.620 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 01:20:16.626 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:20:16.629 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 01:20:16.633 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:20:16.649 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:20:19.404 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:20:19.423 Starting PingServiceCTSpec using Java 17.0.12 with PID 28240 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:20:19.424 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:20:20.257 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:20:20.260 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:20:20.297 Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:20:21.591 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:20:21.990 Started PingServiceCTSpec in 2.795 seconds (process running for 7.487)
+2024-12-28 01:20:23.347 Request 0 sent & Pong Respond: 200
+2024-12-28 01:20:23.435 Request 1 send & Pong throttled it 429
+2024-12-28 01:20:34.648 Request 0 sent & Pong Respond: 200
+2024-12-28 01:20:34.937 Request 1 not sent as being 'ping rate limited'
+2024-12-28 01:20:35.234 Request 2 not sent as being 'ping rate limited'
+2024-12-28 01:20:44.449 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:20:44.464 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 01:20:44.469 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:20:52.880 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/joech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/joech/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:20:52.883 Starting PingServiceSpec using Java 17.0.12 with PID 28240 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:20:52.883 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:20:53.079 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:20:53.079 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:20:53.089 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:20:53.249 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:20:53.320 Started PingServiceSpec in 0.462 seconds (process running for 38.817)
+2024-12-28 01:20:53.562 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:20:53.569 Reconnected to localhost/<unresolved>:6379
+2024-12-28 01:20:54.400 Request 0 sent & Pong Respond: 200
+2024-12-28 01:20:54.418 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:20:59.364 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:20:59.365 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:21:01.411 Request 0 send & Pong throttled it 429
+2024-12-28 01:21:02.433 Request 0 not sent as being 'ping rate limited'
+2024-12-28 01:21:11.894 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.026 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 01:21:12.188 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.193 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 01:21:12.220 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.314 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 01:21:12.322 Could not detect default configuration classes for test class [com.demo.service.impl.RedissonThrottlingServiceSpec]: RedissonThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.324 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedissonThrottlingServiceSpec
+2024-12-28 01:21:12.333 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.335 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 01:21:12.346 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.358 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:21:12.372 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTRedisSpec]: PingServiceCTRedisSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.375 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTRedisSpec
+2024-12-28 01:21:12.379 Could not detect default configuration classes for test class [com.demo.ct.PingServiceCTSpec]: PingServiceCTSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.382 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.ct.PingServiceCTSpec
+2024-12-28 01:21:12.386 Could not detect default configuration classes for test class [com.demo.service.impl.FileLockThrottlingServiceSpec]: FileLockThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.388 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.FileLockThrottlingServiceSpec
+2024-12-28 01:21:12.393 Could not detect default configuration classes for test class [com.demo.service.impl.RedisThrottlingServiceSpec]: RedisThrottlingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.395 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.impl.RedisThrottlingServiceSpec
+2024-12-28 01:21:12.398 Could not detect default configuration classes for test class [com.demo.service.PingServiceSpec]: PingServiceSpec does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28 01:21:12.400 Found @SpringBootConfiguration com.demo.PingApplication for test class com.demo.service.PingServiceSpec
+2024-12-28 01:21:15.327 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:21:15.358 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 21884 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:21:15.359 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:21:16.486 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:21:16.493 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:21:16.548 Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:21:17.033 Redisson 3.21.3
+2024-12-28 01:21:17.463 1 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 01:21:17.527 24 connections initialized for localhost/127.0.0.1:6379
+2024-12-28 01:21:18.407 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:21:18.990 Started PingServiceCTRedisSpec in 3.954 seconds (process running for 9.282)
+2024-12-28 01:21:21.120 Request 1 sent & Pong Respond: 200
+2024-12-28 01:21:21.143 Request 0 send & Pong throttled it 429
+2024-12-28 01:21:21.180 Request 2 not sent as being 'ping rate limited'
+2024-12-28 01:21:21.296 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:21:21.383 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 01:21:21.388 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:21:30.485 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:21:30.493 Reconnected to localhost/<unresolved>:6379
+2024-12-28 01:21:30.502 Request 0 sent & Pong Respond: 200
+2024-12-28 01:21:30.502 Request 1 send & Pong throttled it 429
+2024-12-28 01:21:30.719 Request 2 not sent as being 'ping rate limited'
+2024-12-28 01:21:30.832 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:21:35.775 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:21:35.777 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:21:39.878 Reconnected to localhost/<unresolved>:6379
+2024-12-28 01:21:40.774 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:21:40.877 Reconnecting, last destination was localhost/127.0.0.1:6379
+2024-12-28 01:21:40.878 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:21:49.708 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-12-28 01:21:49.712 Starting PingServiceSpec using Java 17.0.12 with PID 21884 (started by joech in C:\code\hsbc\demo\ping)
+2024-12-28 01:21:49.713 No active profile set, falling back to 1 default profile: "default"
+2024-12-28 01:21:49.876 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:21:49.884 Reconnected to localhost/<unresolved>:6379
+2024-12-28 01:21:49.969 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-28 01:21:49.970 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-28 01:21:49.982 Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-12-28 01:21:50.187 Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-28 01:21:50.279 Started PingServiceSpec in 0.595 seconds (process running for 40.571)
+2024-12-28 01:21:51.384 Request 0 sent & Pong Respond: 200
+2024-12-28 01:21:51.409 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-28 01:21:56.382 Reconnecting, last destination was localhost/<unresolved>:6379
+2024-12-28 01:21:56.384 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2024-12-28 01:21:58.518 Request 0 send & Pong throttled it 429
+2024-12-28 01:21:59.547 Request 0 not sent as being 'ping rate limited'

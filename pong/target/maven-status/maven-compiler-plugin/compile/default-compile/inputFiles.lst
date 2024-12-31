@@ -1,4 +1,9 @@
 C:\code\hsbc\demo\pong\src\main\java\com\demo\controller\PongController.java
 C:\code\hsbc\demo\pong\src\main\java\com\demo\service\ThrottlingService.java
+C:\code\hsbc\demo\pong\src\main\java\com\demo\kafka\KafkaConfig.java
 C:\code\hsbc\demo\pong\src\main\java\com\demo\PongApplication.java
+C:\code\hsbc\demo\pong\src\main\java\com\demo\model\Message.java
+C:\code\hsbc\demo\pong\src\main\java\com\demo\dao\MessageRepository.java
 C:\code\hsbc\demo\pong\src\main\java\com\demo\service\impl\MemoryThrottlingService.java
+C:\code\hsbc\demo\pong\src\main\java\com\demo\kafka\KafkaProducerService.java
+C:\code\hsbc\demo\pong\src\main\java\com\demo\kafka\KafkaConsumerService.java

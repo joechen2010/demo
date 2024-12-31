@@ -43,25 +43,25 @@ public class PingService implements InitializingBean {
 
     public Flux<Integer> start() {
         return Flux.interval(Duration.ofMillis(pingIntervalInMillis))
-                .filter(it -> {
+                .filter(n -> {
                     boolean result = throttlingServiceFactory.getThrottlingService().tryAcquire();
-                    logger.debug("Request {} throttled result {} by ping service.", it, result);
+                    logger.debug("Request {} throttled result {} by ping service.", n, result);
                     return result;
                 })
-                .doOnDiscard(Long.class, it -> {
+                .doOnDiscard(Long.class, n -> {
                     pingThrottledCounter.increment();
-                    logger.info("Request {} not sent as being 'ping rate limited'", it);
+                    logger.info("Request {} not sent as being 'ping rate limited'", n);
                 })
-                .flatMap(it -> {
-                            logger.debug("Request {} is going to send to Pong", it);
+                .flatMap(n -> {
+                            logger.debug("Request {} is going to send to Pong", n);
                             return webClient.post()
                                     .contentType(MediaType.TEXT_PLAIN)
-                                    .bodyValue("Hello")
+                                    .bodyValue("Hello-" + System.currentTimeMillis())
                                     .retrieve()
                                     .toBodilessEntity()
                                     .map(response -> {
                                         int statusCode = response.getStatusCode().value();
-                                        logger.info("Request {} sent & Pong Respond: {}", it, statusCode);
+                                        logger.info("Request {} sent & Pong Respond: {}", n, statusCode);
                                         successCounter.increment();
                                         return statusCode;
                                     })
@@ -71,18 +71,15 @@ public class PingService implements InitializingBean {
                                             int statusCode = webClientResponseException.getStatusCode().value();
                                             if (statusCode == HttpStatus.TOO_MANY_REQUESTS.value()) {
                                                 pondThrottledCounter.increment();
-                                                logger.info("Request {} send & Pong throttled it {}", it, statusCode);
+                                                logger.info("Request {} send & Pong throttled it {}", n, statusCode);
                                             }
                                             return Mono.just(statusCode);
                                         }
-                                        logger.error("Request {} failed with unexpected error: {}", it, e.getMessage());
+                                        logger.error("Request {} failed with unexpected error: {}", n, e.getMessage());
                                         return Mono.just(HttpStatus.INTERNAL_SERVER_ERROR.value());
                                     });
                         }
-                )
-                .doFinally(signalType -> {
-                    throttlingServiceFactory.getThrottlingService().release();
-                });
+                );
     }
 
 

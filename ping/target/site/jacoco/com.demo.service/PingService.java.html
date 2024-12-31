@@ -43,25 +43,25 @@ import java.time.Duration;
 
     public Flux&lt;Integer&gt; start() {
 <span class="fc" id="L45">        return Flux.interval(Duration.ofMillis(pingIntervalInMillis))</span>
-<span class="fc" id="L46">                .filter(it -&gt; {</span>
+<span class="fc" id="L46">                .filter(n -&gt; {</span>
 <span class="fc" id="L47">                    boolean result = throttlingServiceFactory.getThrottlingService().tryAcquire();</span>
-<span class="fc" id="L48">                    logger.debug(&quot;Request {} throttled result {} by ping service.&quot;, it, result);</span>
+<span class="fc" id="L48">                    logger.debug(&quot;Request {} throttled result {} by ping service.&quot;, n, result);</span>
 <span class="fc" id="L49">                    return result;</span>
                 })
-<span class="fc" id="L51">                .doOnDiscard(Long.class, it -&gt; {</span>
+<span class="fc" id="L51">                .doOnDiscard(Long.class, n -&gt; {</span>
 <span class="fc" id="L52">                    pingThrottledCounter.increment();</span>
-<span class="fc" id="L53">                    logger.info(&quot;Request {} not sent as being 'ping rate limited'&quot;, it);</span>
+<span class="fc" id="L53">                    logger.info(&quot;Request {} not sent as being 'ping rate limited'&quot;, n);</span>
 <span class="fc" id="L54">                })</span>
-<span class="fc" id="L55">                .flatMap(it -&gt; {</span>
-<span class="fc" id="L56">                            logger.debug(&quot;Request {} is going to send to Pong&quot;, it);</span>
+<span class="fc" id="L55">                .flatMap(n -&gt; {</span>
+<span class="fc" id="L56">                            logger.debug(&quot;Request {} is going to send to Pong&quot;, n);</span>
 <span class="fc" id="L57">                            return webClient.post()</span>
 <span class="fc" id="L58">                                    .contentType(MediaType.TEXT_PLAIN)</span>
-<span class="fc" id="L59">                                    .bodyValue(&quot;Hello&quot;)</span>
+<span class="fc" id="L59">                                    .bodyValue(&quot;Hello-&quot; + System.currentTimeMillis())</span>
 <span class="fc" id="L60">                                    .retrieve()</span>
 <span class="fc" id="L61">                                    .toBodilessEntity()</span>
 <span class="fc" id="L62">                                    .map(response -&gt; {</span>
 <span class="fc" id="L63">                                        int statusCode = response.getStatusCode().value();</span>
-<span class="fc" id="L64">                                        logger.info(&quot;Request {} sent &amp; Pong Respond: {}&quot;, it, statusCode);</span>
+<span class="fc" id="L64">                                        logger.info(&quot;Request {} sent &amp; Pong Respond: {}&quot;, n, statusCode);</span>
 <span class="fc" id="L65">                                        successCounter.increment();</span>
 <span class="fc" id="L66">                                        return statusCode;</span>
                                     })
@@ -71,31 +71,28 @@ import java.time.Duration;
 <span class="fc" id="L71">                                            int statusCode = webClientResponseException.getStatusCode().value();</span>
 <span class="pc bpc" id="L72" title="1 of 2 branches missed.">                                            if (statusCode == HttpStatus.TOO_MANY_REQUESTS.value()) {</span>
 <span class="fc" id="L73">                                                pondThrottledCounter.increment();</span>
-<span class="fc" id="L74">                                                logger.info(&quot;Request {} send &amp; Pong throttled it {}&quot;, it, statusCode);</span>
+<span class="fc" id="L74">                                                logger.info(&quot;Request {} send &amp; Pong throttled it {}&quot;, n, statusCode);</span>
                                             }
 <span class="fc" id="L76">                                            return Mono.just(statusCode);</span>
                                         }
-<span class="nc" id="L78">                                        logger.error(&quot;Request {} failed with unexpected error: {}&quot;, it, e.getMessage());</span>
+<span class="nc" id="L78">                                        logger.error(&quot;Request {} failed with unexpected error: {}&quot;, n, e.getMessage());</span>
 <span class="nc" id="L79">                                        return Mono.just(HttpStatus.INTERNAL_SERVER_ERROR.value());</span>
                                     });
                         }
-                )
-<span class="fc" id="L83">                .doFinally(signalType -&gt; {</span>
-<span class="fc" id="L84">                    throttlingServiceFactory.getThrottlingService().release();</span>
-<span class="fc" id="L85">                });</span>
+                );
     }
 
 
     @Override
     public void afterPropertiesSet() throws Exception {
-<span class="fc" id="L91">        setWebClient(WebClient.create(pongEndpoint));</span>
-<span class="fc" id="L92">        successCounter = meterRegistry.counter(&quot;pong.200&quot;);</span>
-<span class="fc" id="L93">        pondThrottledCounter = meterRegistry.counter(&quot;pong.429&quot;);;</span>
-<span class="fc" id="L94">        pingThrottledCounter = meterRegistry.counter(&quot;ping.429&quot;);;</span>
-<span class="fc" id="L95">    }</span>
+<span class="fc" id="L88">        setWebClient(WebClient.create(pongEndpoint));</span>
+<span class="fc" id="L89">        successCounter = meterRegistry.counter(&quot;pong.200&quot;);</span>
+<span class="fc" id="L90">        pondThrottledCounter = meterRegistry.counter(&quot;pong.429&quot;);;</span>
+<span class="fc" id="L91">        pingThrottledCounter = meterRegistry.counter(&quot;ping.429&quot;);;</span>
+<span class="fc" id="L92">    }</span>
 
     public void setWebClient(WebClient webClient) {
-<span class="fc" id="L98">        this.webClient = webClient;</span>
-<span class="fc" id="L99">    }</span>
+<span class="fc" id="L95">        this.webClient = webClient;</span>
+<span class="fc" id="L96">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

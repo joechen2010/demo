@@ -28,20 +28,16 @@ public class RedissonThrottlingService implements ThrottlingService, Initializin
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        // if redis is available, create a rate limiter and set the rate
         if(redissonClient != null){
-            RRateLimiter rateLimiter = redissonClient.getRateLimiter(KEY);
+            rateLimiter = redissonClient.getRateLimiter(KEY);
             rateLimiter.trySetRate(RateType.OVERALL, permitsPerSecond, 1, RateIntervalUnit.SECONDS);
         }
     }
 
     @Override
     public boolean tryAcquire() {
-        return rateLimiter.tryAcquire(100, TimeUnit.MILLISECONDS);
+        return rateLimiter != null
+                && rateLimiter.tryAcquire(100, TimeUnit.MILLISECONDS);
     }
-
-    @Override
-    public void release() {
-        //Do nothing
-    }
-
 }
