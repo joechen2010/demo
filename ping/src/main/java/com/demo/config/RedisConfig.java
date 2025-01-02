@@ -8,6 +8,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 @Configuration
@@ -22,8 +24,17 @@ public class RedisConfig {
 
     private Integer port;
 
+    private String password;
+
     @Bean
-    public StringRedisTemplate redisTemplate(RedisConnectionFactory factory) {
+    public StringRedisTemplate redisTemplate() {
+        RedisStandaloneConfiguration configuration = new RedisStandaloneConfiguration();
+        configuration.setDatabase(getDatabase());
+        configuration.setHostName(getHost());
+        configuration.setPort(getPort());
+        configuration.setPassword(getPassword());
+        LettuceConnectionFactory factory = new LettuceConnectionFactory(configuration);
+        factory.afterPropertiesSet();
         return new StringRedisTemplate(factory);
     }
 
@@ -31,6 +42,8 @@ public class RedisConfig {
     public RedissonClient redissonClient() {
         Config config = new Config();
         config.useSingleServer()
+                .setDatabase(getDatabase())
+                .setPassword(getPassword())
                 .setDatabase(getDatabase())
                 .setAddress("redis://" + getHost() + ":" + getPort());
         return Redisson.create(config);
@@ -60,4 +73,11 @@ public class RedisConfig {
         this.port = port;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
