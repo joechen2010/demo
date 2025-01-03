@@ -33,7 +33,7 @@ public class PongController {
             logger.warn("Throttling request as too many requests in the same second");
             return Mono.error(new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Too many requests in this second"));
         }
-        logger.info("Received ping message: {}", message);
+        logger.info("Ping success, handling ping message: {}", message);
         kafkaProducerService.sendMessage(new Message(message, System.currentTimeMillis()));
         return Mono.just(RESPONSE);
     }

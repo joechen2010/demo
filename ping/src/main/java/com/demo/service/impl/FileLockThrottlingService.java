@@ -54,13 +54,14 @@ public class FileLockThrottlingService implements ThrottlingService, Initializin
             channel = lockFile.getChannel();
             fileLock = channel.tryLock();
             if (fileLock == null) {
+                // lock fail, reject this acquire
                 return false;
             }
+            // get current request count
             int requestCount = getRequestCount();
             logger.debug("Request counter is {} in current second", requestCount);
             if (requestCount < permitsPerSecond) {
-                setRequestCount(requestCount + 1);
-                return true;
+                return setRequestCount(requestCount + 1);
             }
         } catch (Exception e) {
             logger.error("Failed to acquire file lock", e);
@@ -70,50 +71,52 @@ public class FileLockThrottlingService implements ThrottlingService, Initializin
         return false;
     }
 
-    public void release() {
-        closeChannelAndRelease(channel, fileLock);
-        fileLock = null;
-        channel = null;
-    }
-
     private int getRequestCount(){
         FileChannel counterChannel = null;
         FileLock counterLock = null;
         try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, "rw")) {
+            // new file, means no request so far
             if (counterFile.length() == 0) {
                 return 0;
             }
             counterChannel = counterFile.getChannel();
             counterLock = counterChannel.tryLock();
-            if (counterLock == null) {
-                throw new IllegalStateException("Failed to acquire lock on counter file");
+            if (counterLock != null) {
+                return Integer.parseInt(counterFile.readLine());
             }
-            return Integer.parseInt(counterFile.readLine());
         }catch (Exception e){
             logger.error("Failed to get counter", e);
-            return Integer.MAX_VALUE;
         }finally {
             closeChannelAndRelease(counterChannel, counterLock);
         }
+        //we reject this acquire due to lock fail
+        return Integer.MAX_VALUE;
     }
 
-    public void setRequestCount(int count){
+    public boolean setRequestCount(int count){
         FileChannel counterChannel = null;
         FileLock counterLock = null;
         try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, "rw")) {
             counterChannel = counterFile.getChannel();
             counterLock = counterChannel.tryLock();
-            if (counterLock == null) {
-                logger.error("Failed to acquire lock on counter file");
+            if (counterLock != null) {
+                counterFile.setLength(0);
+                counterFile.writeBytes(String.valueOf(count));
+                logger.debug("Request counter is set to {}", count);
+                return true;
             }
-            counterFile.setLength(0);
-            counterFile.writeBytes(String.valueOf(count));
-            logger.debug("Request counter is set to {}", count);
         }catch (Exception e){
             logger.error("Failed to set counter", e);
         }finally {
             closeChannelAndRelease(counterChannel, counterLock);
         }
+        return false;
+    }
+
+    public void release() {
+        closeChannelAndRelease(channel, fileLock);
+        fileLock = null;
+        channel = null;
     }
 
     private void closeChannelAndRelease(FileChannel channel, FileLock fileLock){

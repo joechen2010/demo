@@ -14,8 +14,10 @@ public class PingApplication {
 
     public static void main(String[] args) {
         //SET INSTANCE_ID for logback then each instance can separate log by instanceId
-        String instanceId = UUID.randomUUID().toString();
-        System.setProperty("INSTANCE_ID", instanceId);
+        if (System.getProperty("INSTANCE_ID") == null){
+            String instanceId = UUID.randomUUID().toString();
+            System.setProperty("INSTANCE_ID", instanceId);
+        }
         ApplicationContext ctx = SpringApplication.run(PingApplication.class, args);
         PingService pingService = ctx.getBean(PingService.class);
         pingService.start().subscribe();
