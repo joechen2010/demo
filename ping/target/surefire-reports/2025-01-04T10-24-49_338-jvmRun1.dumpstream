@@ -1,0 +1,371 @@
+# Created at 2025-01-04T10:24:55.510
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2025-01-04T10:24:56.432
+Unexpected IOException with stream: 10:24:56,414 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1735957496414)
+10:24:56,414 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [file:/C:/code/hsbc/demo/ping/target/classes/logback.xml] 
+10:24:56,414 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 10 seconds
+10:24:56,414 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [console]
+10:24:56,414 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:24:56,414 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:24:56,414 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [file]
+10:24:56,414 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+10:24:56,429 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1069632960 - setting totalSizeCap to 250 MB
+10:24:56,429 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1069632960 - No compression will be used
+10:24:56,429 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1069632960 - Will use the pattern logs/ping-INSTANCE_ID_IS_UNDEFINED.log.%d{yyyyMMdd}.%i.log for the active file
+10:24:56,430 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c04ddda - The date pattern is 'yyyyMMdd' from file name pattern 'logs/ping-INSTANCE_ID_IS_UNDEFINED.log.%d{yyyyMMdd}.%i.log'.
+10:24:56,430 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c04ddda - Roll-over at midnight.
+10:24:56,430 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c04ddda - Setting initial period to 2025-01-04T02:24:53.629Z
+10:24:56,430 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c04ddda - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+10:24:56,430 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3c04ddda - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+10:24:56,430 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:24:56,432 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file] - Active log file name: logs/ping-INSTANCE_ID_IS_UNDEFINED.log
+10:24:56,432 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[file] - File property is set to [logs/ping-INSTANCE_ID_IS_UNDEFINED.log]
+10:24:56,432 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.demo] to INFO
+10:24:56,432 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@78c23ade - Propagating INFO level on Logger[com.demo] onto the JUL framework
+10:24:56,432 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.demo.service.impl.FileLockThrottlingService] to INFO
+10:24:56,432 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@78c23ade - Propagating INFO level on Logger[com.demo.service.impl.FileLockThrottlingService] onto the JUL framework
+10:24:56,432 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+10:24:56,432 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@78c23ade - Propagating INFO level on Logger[ROOT] onto the JUL framework
+10:24:56,432 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [console] to Logger[ROOT]
+10:24:56,432 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [file] to Logger[ROOT]
+10:24:56,432 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@7ac1161f - End of configuration.
+10:24:56,432 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@4f5bfbca - Registering current configuration as safe fallback point
+
+
+
+# Created at 2025-01-04T10:24:56.446
+Unexpected IOException with stream: 
+
+
+# Created at 2025-01-04T10:24:56.446
+Unexpected IOException with stream:   .   ____          _            __ _ _
+
+
+# Created at 2025-01-04T10:24:56.446
+Unexpected IOException with stream:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+
+# Created at 2025-01-04T10:24:56.449
+Unexpected IOException with stream: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+
+# Created at 2025-01-04T10:24:56.449
+Unexpected IOException with stream:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+
+# Created at 2025-01-04T10:24:56.449
+Unexpected IOException with stream:   '  |____| .__|_| |_|_| |_\__, | / / / /
+
+
+# Created at 2025-01-04T10:24:56.449
+Unexpected IOException with stream:  =========|_|==============|___/=/_/_/_/
+
+
+# Created at 2025-01-04T10:24:56.449
+Unexpected IOException with stream:  :: Spring Boot ::                (v3.1.4)
+
+
+# Created at 2025-01-04T10:24:56.453
+Unexpected IOException with stream: 
+
+
+# Created at 2025-01-04T10:24:56.499
+Unexpected IOException with stream: 2025-01-04 10:24:56.499 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/work/apache-maven-3.8.8/repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/work/apache-maven-3.8.8/repo/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+
+
+# Created at 2025-01-04T10:24:56.522
+Unexpected IOException with stream: 2025-01-04 10:24:56.514 Starting PingServiceCTRedisSpec using Java 17.0.12 with PID 10796 (started by joech in C:\code\hsbc\demo\ping)
+
+
+# Created at 2025-01-04T10:24:56.524
+Unexpected IOException with stream: 2025-01-04 10:24:56.524 No active profile set, falling back to 1 default profile: "default"
+
+
+# Created at 2025-01-04T10:24:57.444
+Unexpected IOException with stream: 2025-01-04 10:24:57.444 Multiple Spring Data modules found, entering strict repository configuration mode
+
+
+# Created at 2025-01-04T10:24:57.450
+Unexpected IOException with stream: 2025-01-04 10:24:57.450 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+
+
+# Created at 2025-01-04T10:24:57.494
+Unexpected IOException with stream: 2025-01-04 10:24:57.490 Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+
+
+# Created at 2025-01-04T10:24:57.877
+Unexpected IOException with stream: 2025-01-04 10:24:57.877 Redisson 3.21.3
+
+
+# Created at 2025-01-04T10:24:58.318
+Unexpected IOException with stream: 2025-01-04 10:24:58.318 1 connections initialized for localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:24:58.390
+Unexpected IOException with stream: 2025-01-04 10:24:58.388 24 connections initialized for localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:24:59.372
+Unexpected IOException with stream: 2025-01-04 10:24:59.371 Exposing 1 endpoint(s) beneath base path '/actuator'
+
+
+# Created at 2025-01-04T10:25:00.004
+Unexpected IOException with stream: 2025-01-04 10:25:00.004 Started PingServiceCTRedisSpec in 3.751 seconds (process running for 9.832)
+
+
+# Created at 2025-01-04T10:25:00.017
+Unexpected IOException: 5,1,com.demo.ct.PingServiceCTRedisSpec,should send requests and handle successful responses,null,null,null
+
+
+# Created at 2025-01-04T10:25:02.092
+Unexpected IOException with stream: 2025-01-04 10:25:02.091 Request 1 sent & Pong Respond: 200
+
+
+# Created at 2025-01-04T10:25:02.115
+Unexpected IOException with stream: 2025-01-04 10:25:02.115 Request 0 send & Pong throttled it 429
+
+
+# Created at 2025-01-04T10:25:02.174
+Unexpected IOException with stream: 2025-01-04 10:25:02.171 Request 2 not sent as being 'ping rate limited'
+
+
+# Created at 2025-01-04T10:25:02.313
+Unexpected IOException with stream: 2025-01-04 10:25:02.310 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2025-01-04T10:25:02.370
+Unexpected IOException with stream: 2025-01-04 10:25:02.370 Reconnecting, last destination was localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:25:02.370
+Unexpected IOException with stream: 2025-01-04 10:25:02.370 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:25:10.281
+Unexpected IOException: 6,1,com.demo.ct.PingServiceCTRedisSpec,should send requests and handle successful responses,null,null,null
+
+
+# Created at 2025-01-04T10:25:11.465
+Unexpected IOException with stream: 2025-01-04 10:25:11.465 Reconnecting, last destination was localhost/<unresolved>:6379
+
+
+# Created at 2025-01-04T10:25:11.465
+Unexpected IOException with stream: 2025-01-04 10:25:11.465 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:25:12.658
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,PingServiceCTRedisSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:12.658
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,PingServiceCTSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:13.145
+Unexpected IOException: 7,1,com.demo.ct.PingServiceCTSpec,PingServiceCTSpec,null,Failed to start Redis service,null,Failed to start Redis service,PingServiceCTSpec>BaseSpec.setupSpec:22 \00BB IO Failed to start Redis service,java.io.IOException: Failed to start Redis service\000ACaused by: java.io.IOException: \000AReady pattern not found in log. Startup log: \000A[2992] 04 Jan 10:25:13.109 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\000A[2992] 04 Jan 10:25:13.109 # Redis version=5.0.14.1\002C bits=64\002C commit=ec77f72d\002C modified=0\002C pid=2992\002C just started\000A[2992] 04 Jan 10:25:13.109 # Configuration loaded\000A[2992] 04 Jan 10:25:13.110 # Could not create server TCP listening socket 127.0.0.1:6379: bind: \5728\4E00\4E2A\975E\5957\63A5\5B57\4E0A\5C1D\8BD5\4E86\4E00\4E2A\64CD\4F5C\3002\000A
+
+
+# Created at 2025-01-04T10:25:13.145
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,PingServiceCTSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:13.145
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,FileLockThrottlingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:13.496
+Unexpected IOException: 7,1,com.demo.service.impl.FileLockThrottlingServiceSpec,FileLockThrottlingServiceSpec,null,Failed to start Redis service,null,Failed to start Redis service,FileLockThrottlingServiceSpec>BaseSpec.setupSpec:22 \00BB IO Failed to start Redis...,java.io.IOException: Failed to start Redis service\000ACaused by: java.io.IOException: \000AReady pattern not found in log. Startup log: \000A[10544] 04 Jan 10:25:13.465 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\000A[10544] 04 Jan 10:25:13.465 # Redis version=5.0.14.1\002C bits=64\002C commit=ec77f72d\002C modified=0\002C pid=10544\002C just started\000A[10544] 04 Jan 10:25:13.465 # Configuration loaded\000A[10544] 04 Jan 10:25:13.465 # Could not create server TCP listening socket 127.0.0.1:6379: bind: \5728\4E00\4E2A\975E\5957\63A5\5B57\4E0A\5C1D\8BD5\4E86\4E00\4E2A\64CD\4F5C\3002\000A
+
+
+# Created at 2025-01-04T10:25:13.496
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,FileLockThrottlingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:13.499
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,RedissonThrottlingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:13.854
+Unexpected IOException: 7,1,com.demo.service.impl.RedissonThrottlingServiceSpec,RedissonThrottlingServiceSpec,null,Failed to start Redis service,null,Failed to start Redis service,RedissonThrottlingServiceSpec>BaseSpec.setupSpec:22 \00BB IO Failed to start Redis...,java.io.IOException: Failed to start Redis service\000ACaused by: java.io.IOException: \000AReady pattern not found in log. Startup log: \000A[21688] 04 Jan 10:25:13.818 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\000A[21688] 04 Jan 10:25:13.818 # Redis version=5.0.14.1\002C bits=64\002C commit=ec77f72d\002C modified=0\002C pid=21688\002C just started\000A[21688] 04 Jan 10:25:13.818 # Configuration loaded\000A[21688] 04 Jan 10:25:13.818 # Could not create server TCP listening socket 127.0.0.1:6379: bind: \5728\4E00\4E2A\975E\5957\63A5\5B57\4E0A\5C1D\8BD5\4E86\4E00\4E2A\64CD\4F5C\3002\000A
+
+
+# Created at 2025-01-04T10:25:13.856
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,RedissonThrottlingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:13.860
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,RedisThrottlingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.230
+Unexpected IOException: 7,1,com.demo.service.impl.RedisThrottlingServiceSpec,RedisThrottlingServiceSpec,null,Failed to start Redis service,null,Failed to start Redis service,RedisThrottlingServiceSpec>BaseSpec.setupSpec:22 \00BB IO Failed to start Redis se...,java.io.IOException: Failed to start Redis service\000ACaused by: java.io.IOException: \000AReady pattern not found in log. Startup log: \000A[17872] 04 Jan 10:25:14.218 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\000A[17872] 04 Jan 10:25:14.218 # Redis version=5.0.14.1\002C bits=64\002C commit=ec77f72d\002C modified=0\002C pid=17872\002C just started\000A[17872] 04 Jan 10:25:14.218 # Configuration loaded\000A[17872] 04 Jan 10:25:14.218 # Could not create server TCP listening socket 127.0.0.1:6379: bind: \5728\4E00\4E2A\975E\5957\63A5\5B57\4E0A\5C1D\8BD5\4E86\4E00\4E2A\64CD\4F5C\3002\000A
+
+
+# Created at 2025-01-04T10:25:14.230
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,RedisThrottlingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.257
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,ThrottlingServiceFactorySpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.257
+Unexpected IOException: 5,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return #expectedService when throttle.type is #throttleType,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.278
+Unexpected IOException: 5,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return Mock for type 'ThrottlingService' named '$spock_sharedField_mockFilelockThrottlingService' when throttle.type is filelock,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.280
+Unexpected IOException: 6,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return Mock for type 'ThrottlingService' named '$spock_sharedField_mockFilelockThrottlingService' when throttle.type is filelock,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.280
+Unexpected IOException: 5,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return Mock for type 'ThrottlingService' named '$spock_sharedField_mockRedisThrottlingService' when throttle.type is redis,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.280
+Unexpected IOException: 6,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return Mock for type 'ThrottlingService' named '$spock_sharedField_mockRedisThrottlingService' when throttle.type is redis,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.280
+Unexpected IOException: 5,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return Mock for type 'ThrottlingService' named '$spock_sharedField_mockRedissonThrottlingService' when throttle.type is redisson,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.288
+Unexpected IOException: 6,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return Mock for type 'ThrottlingService' named '$spock_sharedField_mockRedissonThrottlingService' when throttle.type is redisson,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.288
+Unexpected IOException: 6,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should return #expectedService when throttle.type is #throttleType,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.288
+Unexpected IOException: 5,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should throw IllegalArgumentException for invalid throttle type,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.294
+Unexpected IOException: 6,1,com.demo.service.impl.ThrottlingServiceFactorySpec,should throw IllegalArgumentException for invalid throttle type,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.342
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,ThrottlingServiceFactorySpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.342
+Unexpected IOException: 1,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,PingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:14.850
+Unexpected IOException: 7,1,com.demo.service.PingServiceSpec,PingServiceSpec,null,Failed to start Redis service,null,Failed to start Redis service,PingServiceSpec>BaseSpec.setupSpec:22 \00BB IO Failed to start Redis service,java.io.IOException: Failed to start Redis service\000ACaused by: java.io.IOException: \000AReady pattern not found in log. Startup log: \000A[11064] 04 Jan 10:25:14.819 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo\000A[11064] 04 Jan 10:25:14.819 # Redis version=5.0.14.1\002C bits=64\002C commit=ec77f72d\002C modified=0\002C pid=11064\002C just started\000A[11064] 04 Jan 10:25:14.819 # Configuration loaded\000A[11064] 04 Jan 10:25:14.819 # Could not create server TCP listening socket 127.0.0.1:6379: bind: \5728\4E00\4E2A\975E\5957\63A5\5B57\4E0A\5C1D\8BD5\4E86\4E00\4E2A\64CD\4F5C\3002\000A
+
+
+# Created at 2025-01-04T10:25:14.850
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,PingServiceSpec,null,null,null
+
+
+# Created at 2025-01-04T10:25:19.799
+Unexpected IOException with stream: 2025-01-04 10:25:19.799 Reconnecting, last destination was localhost/<unresolved>:6379
+
+
+# Created at 2025-01-04T10:25:19.814
+Unexpected IOException with stream: 2025-01-04 10:25:19.814 Reconnected to localhost/<unresolved>:6379
+
+
+# Created at 2025-01-04T10:25:21.092
+Unexpected IOException with stream: 2025-01-04 10:25:21.092 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2025-01-04T10:25:26.064
+Unexpected IOException with stream: 2025-01-04 10:25:26.064 Reconnecting, last destination was localhost/<unresolved>:6379
+
+
+# Created at 2025-01-04T10:25:26.067
+Unexpected IOException with stream: 2025-01-04 10:25:26.064 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:25:30.268
+Unexpected IOException with stream: 2025-01-04 10:25:30.268 Reconnected to localhost/<unresolved>:6379
+
+
+# Created at 2025-01-04T10:25:33.647
+Unexpected IOException with stream: 2025-01-04 10:25:33.647 null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2025-01-04T10:25:33.663
+Unexpected IOException with stream: 2025-01-04 10:25:33.663 Reconnecting, last destination was localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:25:33.663
+Unexpected IOException with stream: 2025-01-04 10:25:33.663 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+
+
+# Created at 2025-01-04T10:25:42.661
+Unexpected IOException with stream: 2025-01-04 10:25:42.661 Reconnecting, last destination was localhost/<unresolved>:6379
+
+
+# Created at 2025-01-04T10:25:42.661
+Unexpected IOException with stream: 2025-01-04 10:25:42.661 Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+
+

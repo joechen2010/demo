@@ -24,10 +24,6 @@ public class RedisThrottlingService implements ThrottlingService {
 
     @Override
     public boolean tryAcquire() {
-        if (redisTemplate == null) {
-            logger.warn("Redis is not available, throttling is disabled");
-            return true;
-        }
         Long currentCount = redisTemplate.opsForValue().increment(KEY);
         if (currentCount == 1) {
             redisTemplate.expire(KEY, Duration.ofSeconds(1));

@@ -14,11 +14,13 @@ import java.util.UUID;
 
     public static void main(String[] args) {
         //SET INSTANCE_ID for logback then each instance can separate log by instanceId
-<span class="nc" id="L17">        String instanceId = UUID.randomUUID().toString();</span>
-<span class="nc" id="L18">        System.setProperty(&quot;INSTANCE_ID&quot;, instanceId);</span>
-<span class="nc" id="L19">        ApplicationContext ctx = SpringApplication.run(PingApplication.class, args);</span>
-<span class="nc" id="L20">        PingService pingService = ctx.getBean(PingService.class);</span>
-<span class="nc" id="L21">        pingService.start().subscribe();</span>
-<span class="nc" id="L22">    }</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        if (System.getProperty(&quot;INSTANCE_ID&quot;) == null){</span>
+<span class="nc" id="L18">            String instanceId = UUID.randomUUID().toString();</span>
+<span class="nc" id="L19">            System.setProperty(&quot;INSTANCE_ID&quot;, instanceId);</span>
+        }
+<span class="nc" id="L21">        ApplicationContext ctx = SpringApplication.run(PingApplication.class, args);</span>
+<span class="nc" id="L22">        PingService pingService = ctx.getBean(PingService.class);</span>
+<span class="nc" id="L23">        pingService.start().subscribe();</span>
+<span class="nc" id="L24">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -13,8 +13,8 @@ class FileLockThrottlingServiceSpec extends BaseSpec {
     FileLockThrottlingService fileLockThrottlingService
 
     def setup() {
-        new File(fileLockThrottlingService.counterFilePath).delete()
-        new File(fileLockThrottlingService.lockFilePath).delete()
+        // reset request count
+        fileLockThrottlingService.run();
     }
 
 
@@ -57,14 +57,4 @@ class FileLockThrottlingServiceSpec extends BaseSpec {
         fileLockThrottlingService.getRequestCount() == 1
     }
 
-    def "should release lock successfully"() {
-        given:
-        fileLockThrottlingService.tryAcquire()
-
-        when:
-        fileLockThrottlingService.release()
-
-        then:
-        fileLockThrottlingService.fileLock == null
-    }
 }

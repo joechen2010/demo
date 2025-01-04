@@ -24,16 +24,12 @@ import java.time.Duration;
 
     @Override
     public boolean tryAcquire() {
-<span class="pc bpc" id="L27" title="1 of 2 branches missed.">        if (redisTemplate == null) {</span>
-<span class="nc" id="L28">            logger.warn(&quot;Redis is not available, throttling is disabled&quot;);</span>
-<span class="nc" id="L29">            return true;</span>
+<span class="fc" id="L27">        Long currentCount = redisTemplate.opsForValue().increment(KEY);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (currentCount == 1) {</span>
+<span class="fc" id="L29">            redisTemplate.expire(KEY, Duration.ofSeconds(1));</span>
         }
-<span class="fc" id="L31">        Long currentCount = redisTemplate.opsForValue().increment(KEY);</span>
-<span class="fc bfc" id="L32" title="All 2 branches covered.">        if (currentCount == 1) {</span>
-<span class="fc" id="L33">            redisTemplate.expire(KEY, Duration.ofSeconds(1));</span>
-        }
-<span class="fc" id="L35">        logger.debug(&quot;Rate limiter key: {}, current count: {}&quot;, KEY, currentCount);</span>
-<span class="fc bfc" id="L36" title="All 2 branches covered.">        return currentCount &lt;= permitsPerSecond;</span>
+<span class="fc" id="L31">        logger.debug(&quot;Rate limiter key: {}, current count: {}&quot;, KEY, currentCount);</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        return currentCount &lt;= permitsPerSecond;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

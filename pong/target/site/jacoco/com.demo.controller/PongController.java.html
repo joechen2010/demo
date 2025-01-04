@@ -33,7 +33,7 @@ import reactor.core.publisher.Mono;
 <span class="fc" id="L33">            logger.warn(&quot;Throttling request as too many requests in the same second&quot;);</span>
 <span class="fc" id="L34">            return Mono.error(new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, &quot;Too many requests in this second&quot;));</span>
         }
-<span class="fc" id="L36">        logger.info(&quot;Received ping message: {}&quot;, message);</span>
+<span class="fc" id="L36">        logger.info(&quot;Ping success, handling ping message: {}&quot;, message);</span>
 <span class="fc" id="L37">        kafkaProducerService.sendMessage(new Message(message, System.currentTimeMillis()));</span>
 <span class="fc" id="L38">        return Mono.just(RESPONSE);</span>
     }

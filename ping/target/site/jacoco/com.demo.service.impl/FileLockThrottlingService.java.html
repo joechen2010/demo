@@ -7,29 +7,29 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
 
 @Component(&quot;filelockThrottlingService&quot;)
 <span class="fc" id="L21">public class FileLockThrottlingService implements ThrottlingService, InitializingBean, Runnable, DisposableBean {</span>
 
 <span class="fc" id="L23">    private static final Logger logger = LoggerFactory.getLogger(FileLockThrottlingService.class);</span>
+<span class="fc" id="L24">    private static final ReentrantLock counterReentrantLock = new ReentrantLock();</span>
+    public static final String SPLIT = &quot;:&quot;;
 
     @Value(&quot;${lock.file.path:rate_limit.lock}&quot;)
     private String lockFilePath;
 
+    // store the reset time and request count,format: timestamp:count
     @Value(&quot;${counter.file.path:rate_limit.counter}&quot;)
     private String counterFilePath;
-
-    private FileLock fileLock;
-    private FileChannel channel;
 
 <span class="fc" id="L34">    @Value(&quot;${throttle.permitsPerSecond:2}&quot;)</span>
     private int permitsPerSecond = 2;
@@ -40,116 +40,124 @@ import java.util.concurrent.TimeUnit;
     public void afterPropertiesSet() throws Exception {
 <span class="fc" id="L41">        createFile(lockFilePath);</span>
 <span class="fc" id="L42">        createFile(counterFilePath);</span>
-<span class="fc" id="L43">        resetExecutorService.scheduleAtFixedRate(this, 0, 1000, TimeUnit.MILLISECONDS);</span>
+<span class="fc" id="L43">        resetExecutorService.scheduleAtFixedRate(this, 0, 250, TimeUnit.MILLISECONDS);</span>
 <span class="fc" id="L44">    }</span>
+
 
     @Override
     public void run() {
-<span class="fc" id="L48">        setRequestCount(0);</span>
-<span class="fc" id="L49">    }</span>
+<span class="fc" id="L49">        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;);</span>
+<span class="fc" id="L50">             FileChannel counterChannel = counterFile.getChannel();</span>
+<span class="fc" id="L51">             FileLock counterLock = counterChannel.tryLock()) {</span>
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">             if(counterLock == null){</span>
+<span class="nc" id="L53">                 logger.debug(&quot;Failed to acquire lock for counter file, skip reset&quot;);</span>
+<span class="nc" id="L54">                 return;</span>
+             }
+<span class="fc" id="L56">            String content = counterFile.readLine();</span>
+<span class="pc bpc" id="L57" title="1 of 4 branches missed.">            String lastResetTime = StringUtils.isEmpty(content) || !content.contains(SPLIT) ? null</span>
+<span class="fc" id="L58">                    : content.split(SPLIT)[0];</span>
+<span class="fc bfc" id="L59" title="All 2 branches covered.">            if (StringUtils.isEmpty(lastResetTime)</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">                    || System.currentTimeMillis() - Long.parseLong(lastResetTime) &gt;= 1000) {</span>
+<span class="fc" id="L61">                counterFile.setLength(0);</span>
+<span class="fc" id="L62">                String newValue = System.currentTimeMillis() + SPLIT + &quot;0&quot;;</span>
+<span class="fc" id="L63">                counterFile.writeBytes(newValue);</span>
+<span class="fc" id="L64">                logger.debug(&quot;Reset counter from {} to {}&quot;, content, newValue);</span>
+            }
+<span class="nc bnc" id="L66" title="All 4 branches missed.">        }catch (Exception e){</span>
+<span class="nc" id="L67">            logger.error(&quot;Failed to set counter&quot;, e);</span>
+<span class="fc" id="L68">        }</span>
+<span class="fc" id="L69">    }</span>
 
     @Override
     public boolean tryAcquire() {
-<span class="fc" id="L53">        try (RandomAccessFile lockFile = new RandomAccessFile(lockFilePath, &quot;rw&quot;)) {</span>
-<span class="fc" id="L54">            channel = lockFile.getChannel();</span>
-<span class="fc" id="L55">            fileLock = channel.tryLock();</span>
-<span class="pc bpc" id="L56" title="1 of 2 branches missed.">            if (fileLock == null) {</span>
-<span class="nc" id="L57">                return false;</span>
+<span class="fc" id="L73">        logger.debug(&quot;=== Try to acquire file lock ===&quot;);</span>
+<span class="fc" id="L74">        try (RandomAccessFile lockFile = new RandomAccessFile(lockFilePath, &quot;rw&quot;);</span>
+<span class="fc" id="L75">             FileChannel channel = lockFile.getChannel();</span>
+<span class="fc" id="L76">             FileLock fileLock = channel.tryLock()) {</span>
+<span class="pc bpc" id="L77" title="1 of 2 branches missed.">            if (fileLock == null) {</span>
+<span class="nc" id="L78">                logger.debug(&quot;Failed to acquire file lock, request rejected&quot;);</span>
+<span class="nc" id="L79">                return false;</span>
             }
-<span class="fc" id="L59">            int requestCount = getRequestCount();</span>
-<span class="fc" id="L60">            logger.debug(&quot;Request counter is {} in current second&quot;, requestCount);</span>
-<span class="fc bfc" id="L61" title="All 2 branches covered.">            if (requestCount &lt; permitsPerSecond) {</span>
-<span class="fc" id="L62">                setRequestCount(requestCount + 1);</span>
-<span class="fc" id="L63">                return true;</span>
+<span class="fc" id="L81">            counterReentrantLock.lock();</span>
+            try {
+                // get current request count
+<span class="fc" id="L84">                int requestCount = getRequestCount();</span>
+<span class="fc" id="L85">                logger.debug(&quot;Request counter is {} in current second&quot;, requestCount);</span>
+<span class="fc bfc" id="L86" title="All 2 branches covered.">                if (requestCount &lt; permitsPerSecond) {</span>
+<span class="fc" id="L87">                    return setRequestCount(requestCount + 1);</span>
+                }
+            } finally {
+<span class="fc" id="L90">                counterReentrantLock.unlock();</span>
             }
-<span class="pc" id="L65">        } catch (Exception e) {</span>
-<span class="nc" id="L66">            logger.error(&quot;Failed to acquire file lock&quot;, e);</span>
-        }finally {
-<span class="fc" id="L68">            release();</span>
-        }
-<span class="fc" id="L70">        return false;</span>
+<span class="pc bpc" id="L92" title="6 of 8 branches missed.">        } catch (Exception e) {</span>
+<span class="nc" id="L93">            logger.error(&quot;Failed to acquire file lock&quot;, e);</span>
+<span class="fc" id="L94">        }</span>
+<span class="fc" id="L95">        return false;</span>
     }
-
-    public void release() {
-<span class="fc" id="L74">        closeChannelAndRelease(channel, fileLock);</span>
-<span class="fc" id="L75">        fileLock = null;</span>
-<span class="fc" id="L76">        channel = null;</span>
-<span class="fc" id="L77">    }</span>
 
     private int getRequestCount(){
-<span class="fc" id="L80">        FileChannel counterChannel = null;</span>
-<span class="fc" id="L81">        FileLock counterLock = null;</span>
-<span class="fc" id="L82">        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;)) {</span>
-<span class="fc bfc" id="L83" title="All 2 branches covered.">            if (counterFile.length() == 0) {</span>
-<span class="fc" id="L84">                return 0;</span>
+<span class="fc" id="L99">        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;);</span>
+<span class="fc" id="L100">             FileChannel counterChannel = counterFile.getChannel();</span>
+<span class="fc" id="L101">             FileLock counterLock = counterChannel.tryLock()) {</span>
+            // new file, means no request so far
+<span class="pc bpc" id="L103" title="1 of 2 branches missed.">            if (counterFile.length() == 0) {</span>
+<span class="nc" id="L104">                return 0;</span>
             }
-<span class="fc" id="L86">            counterChannel = counterFile.getChannel();</span>
-<span class="fc" id="L87">            counterLock = counterChannel.tryLock();</span>
-<span class="pc bpc" id="L88" title="1 of 2 branches missed.">            if (counterLock == null) {</span>
-<span class="nc" id="L89">                throw new IllegalStateException(&quot;Failed to acquire lock on counter file&quot;);</span>
+<span class="pc bpc" id="L106" title="1 of 2 branches missed.">            if (counterLock != null) {</span>
+<span class="fc" id="L107">                String content = counterFile.readLine();</span>
+<span class="pc bpc" id="L108" title="1 of 2 branches missed.">                String counter = content.contains(SPLIT) ? content.split(SPLIT)[1] : content;</span>
+<span class="fc" id="L109">                logger.debug(&quot;Current request count is {}&quot;, content);</span>
+<span class="fc" id="L110">                return Integer.parseInt(counter);</span>
             }
-<span class="fc" id="L91">            return Integer.parseInt(counterFile.readLine());</span>
-<span class="pc" id="L92">        }catch (Exception e){</span>
-<span class="nc" id="L93">            logger.error(&quot;Failed to get counter&quot;, e);</span>
-<span class="nc" id="L94">            return Integer.MAX_VALUE;</span>
-        }finally {
-<span class="fc" id="L96">            closeChannelAndRelease(counterChannel, counterLock);</span>
-        }
+<span class="pc bpc" id="L112" title="6 of 8 branches missed.">        }catch (Exception e){</span>
+<span class="fc" id="L113">            logger.error(&quot;Failed to get counter&quot;, e);</span>
+<span class="nc" id="L114">        }</span>
+        //we reject this acquire due to lock fail
+<span class="fc" id="L116">        return Integer.MAX_VALUE;</span>
     }
 
-    public void setRequestCount(int count){
-<span class="fc" id="L101">        FileChannel counterChannel = null;</span>
-<span class="fc" id="L102">        FileLock counterLock = null;</span>
-<span class="fc" id="L103">        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;)) {</span>
-<span class="fc" id="L104">            counterChannel = counterFile.getChannel();</span>
-<span class="fc" id="L105">            counterLock = counterChannel.tryLock();</span>
-<span class="pc bpc" id="L106" title="1 of 2 branches missed.">            if (counterLock == null) {</span>
-<span class="nc" id="L107">                logger.error(&quot;Failed to acquire lock on counter file&quot;);</span>
+    public boolean setRequestCount(int count){
+<span class="fc" id="L120">        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, &quot;rw&quot;);</span>
+<span class="fc" id="L121">             FileChannel counterChannel = counterFile.getChannel();</span>
+<span class="fc" id="L122">             FileLock counterLock = counterChannel.tryLock()) {</span>
+<span class="pc bpc" id="L123" title="1 of 2 branches missed.">            if (counterLock == null) {</span>
+<span class="nc" id="L124">                return false;</span>
             }
-<span class="fc" id="L109">            counterFile.setLength(0);</span>
-<span class="fc" id="L110">            counterFile.writeBytes(String.valueOf(count));</span>
-<span class="fc" id="L111">            logger.debug(&quot;Request counter is set to {}&quot;, count);</span>
-<span class="nc" id="L112">        }catch (Exception e){</span>
-<span class="nc" id="L113">            logger.error(&quot;Failed to set counter&quot;, e);</span>
-        }finally {
-<span class="fc" id="L115">            closeChannelAndRelease(counterChannel, counterLock);</span>
+<span class="fc" id="L126">            String content = counterFile.readLine();</span>
+<span class="fc" id="L127">            String newValue = &quot;&quot;;</span>
+<span class="pc bpc" id="L128" title="2 of 4 branches missed.">            if(!StringUtils.isEmpty(content) &amp;&amp; content.contains(SPLIT)){</span>
+<span class="fc" id="L129">                String resetTime = content.split(SPLIT)[0];</span>
+<span class="fc" id="L130">                newValue = resetTime + SPLIT + count;</span>
+<span class="fc" id="L131">            }else{</span>
+                // should not happen, but just in case
+<span class="nc" id="L133">                newValue = String.valueOf(count);</span>
+            }
+<span class="fc" id="L135">            counterFile.setLength(0);</span>
+<span class="fc" id="L136">            counterFile.writeBytes(newValue);</span>
+<span class="fc" id="L137">            logger.debug(&quot;Request counter is set to {} from {}&quot;, newValue, content);</span>
+<span class="fc" id="L138">            return true;</span>
+<span class="nc bnc" id="L139" title="All 4 branches missed.">        }catch (Exception e){</span>
+<span class="nc" id="L140">            logger.error(&quot;Failed to set counter&quot;, e);</span>
         }
-<span class="fc" id="L117">    }</span>
-
-    private void closeChannelAndRelease(FileChannel channel, FileLock fileLock){
-<span class="pc bpc" id="L120" title="1 of 4 branches missed.">        if (channel == null || !channel.isOpen()) {</span>
-<span class="fc" id="L121">            return;</span>
-        }
-<span class="nc bnc" id="L123" title="All 2 branches missed.">        if(fileLock != null){</span>
-            try {
-<span class="nc" id="L125">                fileLock.release();</span>
-<span class="nc" id="L126">            } catch (IOException e) {</span>
-<span class="nc" id="L127">                logger.error(&quot;Failed to release lock&quot;, e);</span>
-<span class="nc" id="L128">            }</span>
-        }
-        try {
-<span class="nc" id="L131">            channel.close();</span>
-<span class="nc" id="L132">        } catch (IOException e) {</span>
-<span class="nc" id="L133">            logger.error(&quot;Failed to close channel&quot;, e);</span>
-<span class="nc" id="L134">        }</span>
-<span class="nc" id="L135">    }</span>
+<span class="nc" id="L142">        return false;</span>
+    }
 
     private static void createFile(String filePath) {
-<span class="fc" id="L138">        File file = new File(filePath);</span>
-<span class="pc bpc" id="L139" title="1 of 2 branches missed.">        if (!file.exists()) {</span>
+<span class="fc" id="L146">        File file = new File(filePath);</span>
+<span class="fc bfc" id="L147" title="All 2 branches covered.">        if (!file.exists()) {</span>
             try {
-<span class="nc bnc" id="L141" title="All 2 branches missed.">                if (!file.createNewFile()) {</span>
-<span class="nc" id="L142">                    logger.error(&quot;Failed to create file {}&quot;, filePath);</span>
+<span class="pc bpc" id="L149" title="1 of 2 branches missed.">                if (!file.createNewFile()) {</span>
+<span class="nc" id="L150">                    logger.error(&quot;Failed to create file {}&quot;, filePath);</span>
                 }
-<span class="nc" id="L144">            } catch (Exception e) {</span>
-<span class="nc" id="L145">                logger.error(&quot;Failed to create lock file {}&quot;, filePath, e);</span>
-<span class="nc" id="L146">            }</span>
+<span class="nc" id="L152">            } catch (Exception e) {</span>
+<span class="nc" id="L153">                logger.error(&quot;Failed to create lock file {}&quot;, filePath, e);</span>
+<span class="fc" id="L154">            }</span>
         }
-<span class="fc" id="L148">    }</span>
+<span class="fc" id="L156">    }</span>
 
     @Override
     public void destroy() throws Exception {
-<span class="fc" id="L152">        resetExecutorService.shutdown();</span>
-<span class="fc" id="L153">    }</span>
+<span class="fc" id="L160">        resetExecutorService.shutdown();</span>
+<span class="fc" id="L161">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

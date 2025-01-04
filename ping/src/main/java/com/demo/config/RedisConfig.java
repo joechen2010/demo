@@ -11,6 +11,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.util.StringUtils;
 
 @Configuration
 // By default, we don't have a redis server
@@ -32,7 +33,7 @@ public class RedisConfig {
         configuration.setDatabase(getDatabase());
         configuration.setHostName(getHost());
         configuration.setPort(getPort());
-        configuration.setPassword(getPassword());
+        //configuration.setPassword(getPassword());
         LettuceConnectionFactory factory = new LettuceConnectionFactory(configuration);
         factory.afterPropertiesSet();
         return new StringRedisTemplate(factory);
@@ -43,8 +44,7 @@ public class RedisConfig {
         Config config = new Config();
         config.useSingleServer()
                 .setDatabase(getDatabase())
-                .setPassword(getPassword())
-                .setDatabase(getDatabase())
+          //      .setPassword(getPassword())
                 .setAddress("redis://" + getHost() + ":" + getPort());
         return Redisson.create(config);
     }
