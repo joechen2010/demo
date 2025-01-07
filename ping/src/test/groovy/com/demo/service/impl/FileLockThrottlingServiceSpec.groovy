@@ -12,9 +12,12 @@ class FileLockThrottlingServiceSpec extends BaseSpec {
     @Autowired
     FileLockThrottlingService fileLockThrottlingService
 
+    RandomAccessFile lockFile
+
     def setup() {
         // reset request count
-        fileLockThrottlingService.run();
+        fileLockThrottlingService.resetCounter();
+        lockFile = new RandomAccessFile(fileLockThrottlingService.lockFilePath, "rw");
     }
 
 
@@ -27,7 +30,7 @@ class FileLockThrottlingServiceSpec extends BaseSpec {
 
         then:
         acquired == true
-        fileLockThrottlingService.getRequestCount() == 1
+        fileLockThrottlingService.getRequestCount(lockFile) == 1
     }
 
     def "should not acquire lock when request count is equal to permits per second"() {
@@ -40,7 +43,7 @@ class FileLockThrottlingServiceSpec extends BaseSpec {
 
         then:
         acquired == false
-        fileLockThrottlingService.getRequestCount() == 1
+        fileLockThrottlingService.getRequestCount(lockFile) == 1
     }
 
     def "should reset request count every second"() {
@@ -54,7 +57,7 @@ class FileLockThrottlingServiceSpec extends BaseSpec {
 
         then:
         acquired == true
-        fileLockThrottlingService.getRequestCount() == 1
+        fileLockThrottlingService.getRequestCount(lockFile) == 1
     }
 
 }

@@ -12,128 +12,139 @@ import org.springframework.util.StringUtils;
 import java.io.*;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.function.Function;
 
 @Component("filelockThrottlingService")
 public class FileLockThrottlingService implements ThrottlingService, InitializingBean, Runnable, DisposableBean {
 
     private static final Logger logger = LoggerFactory.getLogger(FileLockThrottlingService.class);
-    private static final ReentrantLock counterReentrantLock = new ReentrantLock();
     public static final String SPLIT = ":";
 
     @Value("${lock.file.path:rate_limit.lock}")
     private String lockFilePath;
 
-    // store the reset time and request count,format: timestamp:count
-    @Value("${counter.file.path:rate_limit.counter}")
-    private String counterFilePath;
-
     @Value("${throttle.permitsPerSecond:2}")
     private int permitsPerSecond = 2;
 
-    private ScheduledExecutorService resetExecutorService = Executors.newScheduledThreadPool(1);
+    @Value("${acquire.timeout:500}")
+    private int timeout = 500;
+    @Value("${acquire.backoff:100}")
+    private int backoff = 50;
+
+    private final ReentrantLock reentrantLock = new ReentrantLock();
+    private final ScheduledExecutorService resetExecutorService = Executors.newSingleThreadScheduledExecutor();
+    private final ExecutorService resetWorker = Executors.newSingleThreadExecutor();
+
 
     @Override
     public void afterPropertiesSet() throws Exception {
         createFile(lockFilePath);
-        createFile(counterFilePath);
-        resetExecutorService.scheduleAtFixedRate(this, 0, 250, TimeUnit.MILLISECONDS);
+        resetExecutorService.scheduleAtFixedRate(this, 0, 100 , TimeUnit.MILLISECONDS);
     }
-
 
     @Override
     public void run() {
-        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, "rw");
-             FileChannel counterChannel = counterFile.getChannel();
-             FileLock counterLock = counterChannel.tryLock()) {
-             if(counterLock == null){
-                 logger.debug("Failed to acquire lock for counter file, skip reset");
-                 return;
-             }
-            String content = counterFile.readLine();
-            String lastResetTime = StringUtils.isEmpty(content) || !content.contains(SPLIT) ? null
-                    : content.split(SPLIT)[0];
-            if (StringUtils.isEmpty(lastResetTime)
-                    || System.currentTimeMillis() - Long.parseLong(lastResetTime) >= 1000) {
-                counterFile.setLength(0);
-                String newValue = System.currentTimeMillis() + SPLIT + "0";
-                counterFile.writeBytes(newValue);
-                logger.debug("Reset counter from {} to {}", content, newValue);
-            }
-        }catch (Exception e){
-            logger.error("Failed to set counter", e);
-        }
+        // execute in async just make sure there is no delay
+        resetWorker.execute(this::resetCounter);
     }
 
     @Override
     public boolean tryAcquire() {
         logger.debug("=== Try to acquire file lock ===");
-        try (RandomAccessFile lockFile = new RandomAccessFile(lockFilePath, "rw");
-             FileChannel channel = lockFile.getChannel();
-             FileLock fileLock = channel.tryLock()) {
-            if (fileLock == null) {
-                logger.debug("Failed to acquire file lock, request rejected");
+        return acquireFileLockAndProcess(file -> {
+            int requestCount = getRequestCount(file);
+            logger.debug("Request counter is {} in current second", requestCount);
+            if (requestCount < permitsPerSecond) {
+                return setRequestCount(file, requestCount + 1);
+            }
+            return false;
+        });
+    }
+
+    public void resetCounter() {
+        logger.debug("=== Bging reset request counter ===");
+        acquireFileLockAndProcess(file -> {
+            try {
+                String content = file.readLine();
+                String lastResetTime = StringUtils.isEmpty(content) || !content.contains(SPLIT) ? null : content.split(SPLIT)[0];
+                long currentTimeMillis = System.currentTimeMillis();
+                if (StringUtils.isEmpty(lastResetTime) || currentTimeMillis - Long.parseLong(lastResetTime) >= 1000) {
+                    file.setLength(0);
+                    String newValue = currentTimeMillis + SPLIT + "0";
+                    file.writeBytes(newValue);
+                    logger.debug("Reset counter from {} to {}", content, newValue);
+                }
+                return true;
+            }catch (Exception e){
                 return false;
             }
-            counterReentrantLock.lock();
-            try {
-                // get current request count
-                int requestCount = getRequestCount();
-                logger.debug("Request counter is {} in current second", requestCount);
-                if (requestCount < permitsPerSecond) {
-                    return setRequestCount(requestCount + 1);
+        });
+        logger.debug("=== Finished reset request counter ===");
+    }
+
+    private boolean acquireFileLockAndProcess(Function<RandomAccessFile, Boolean> processFunction) {
+        FileLock fileLock = null;
+        reentrantLock.lock();
+        try (RandomAccessFile lockFile = new RandomAccessFile(lockFilePath, "rw");
+             FileChannel channel = lockFile.getChannel()) {
+            long startTime = System.currentTimeMillis();
+            while (fileLock == null && System.currentTimeMillis() - startTime <= timeout) {
+                fileLock = channel.tryLock();
+                if (fileLock == null) {
+                    Thread.sleep(backoff);
                 }
-            } finally {
-                counterReentrantLock.unlock();
             }
+            if (fileLock == null) {
+                logger.debug("Failed to acquire file lock within the timeout period.");
+                return false;
+            }
+            return processFunction.apply(lockFile);
         } catch (Exception e) {
             logger.error("Failed to acquire file lock", e);
+        } finally {
+            reentrantLock.unlock();
+            if (fileLock != null && fileLock.isValid()) {
+                try {
+                    fileLock.release();
+                } catch (IOException e) {
+                    logger.error("Failed to release file lock", e);
+                }
+            }
         }
         return false;
     }
 
-    private int getRequestCount(){
-        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, "rw");
-             FileChannel counterChannel = counterFile.getChannel();
-             FileLock counterLock = counterChannel.tryLock()) {
-            // new file, means no request so far
-            if (counterFile.length() == 0) {
-                return 0;
-            }
-            if (counterLock != null) {
-                String content = counterFile.readLine();
-                String counter = content.contains(SPLIT) ? content.split(SPLIT)[1] : content;
-                logger.debug("Current request count is {}", content);
-                return Integer.parseInt(counter);
-            }
+    private int getRequestCount(RandomAccessFile lockFile){
+        try{
+            String content = lockFile.readLine();
+            String counter = content.contains(SPLIT) ? content.split(SPLIT)[1] : content;
+            logger.debug("Current request count is {}", content);
+            return Integer.parseInt(counter);
         }catch (Exception e){
             logger.error("Failed to get counter", e);
         }
-        //we reject this acquire due to lock fail
         return Integer.MAX_VALUE;
     }
 
-    public boolean setRequestCount(int count){
-        try (RandomAccessFile counterFile = new RandomAccessFile(counterFilePath, "rw");
-             FileChannel counterChannel = counterFile.getChannel();
-             FileLock counterLock = counterChannel.tryLock()) {
-            if (counterLock == null) {
-                return false;
-            }
-            String content = counterFile.readLine();
+    public boolean setRequestCount(RandomAccessFile lockFile, int count){
+        try {
+            lockFile.seek(0);
+            String content = lockFile.readLine();
             String newValue = "";
             if(!StringUtils.isEmpty(content) && content.contains(SPLIT)){
                 String resetTime = content.split(SPLIT)[0];
                 newValue = resetTime + SPLIT + count;
             }else{
                 // should not happen, but just in case
-                newValue = String.valueOf(count);
+                newValue = System.currentTimeMillis() + SPLIT +count;
             }
-            counterFile.setLength(0);
-            counterFile.writeBytes(newValue);
+            lockFile.setLength(0);
+            lockFile.writeBytes(newValue);
             logger.debug("Request counter is set to {} from {}", newValue, content);
             return true;
         }catch (Exception e){

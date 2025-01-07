@@ -44,7 +44,7 @@ import org.springframework.util.StringUtils;
 <span class="fc" id="L44">        Config config = new Config();</span>
 <span class="fc" id="L45">        config.useSingleServer()</span>
 <span class="fc" id="L46">                .setDatabase(getDatabase())</span>
-          //      .setPassword(getPassword())
+                //.setPassword(getPassword())
 <span class="fc" id="L48">                .setAddress(&quot;redis://&quot; + getHost() + &quot;:&quot; + getPort());</span>
 <span class="fc" id="L49">        return Redisson.create(config);</span>
     }

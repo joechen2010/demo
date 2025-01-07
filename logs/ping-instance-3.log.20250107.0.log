@@ -1,0 +1,481 @@
+2025-01-07 15:31:28.343 Starting PingApplication using Java 17.0.12 with PID 23668 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 15:31:28.346 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:31:29.471 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 15:31:29.474 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 15:31:29.513 Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2025-01-07 15:31:30.605 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 15:31:31.246 Netty started on port 8083
+2025-01-07 15:31:31.266 Started PingApplication in 3.419 seconds (process running for 4.018)
+2025-01-07 15:31:32.497 Request 0 sent & Pong Respond: 200
+2025-01-07 15:31:33.295 Request 1 sent & Pong Respond: 200
+2025-01-07 15:31:34.292 Request 2 sent & Pong Respond: 200
+2025-01-07 15:31:35.292 Request 3 sent & Pong Respond: 200
+2025-01-07 15:31:36.307 Request 4 sent & Pong Respond: 200
+2025-01-07 15:31:37.298 Request 5 sent & Pong Respond: 200
+2025-01-07 15:31:38.295 Request 6 sent & Pong Respond: 200
+2025-01-07 15:31:39.295 Request 7 sent & Pong Respond: 200
+2025-01-07 15:31:40.294 Request 8 sent & Pong Respond: 200
+2025-01-07 15:31:41.303 Request 9 sent & Pong Respond: 200
+2025-01-07 15:31:42.297 Request 10 not sent as being 'ping rate limited'
+2025-01-07 15:31:43.293 Request 11 not sent as being 'ping rate limited'
+2025-01-07 15:31:44.288 Request 12 not sent as being 'ping rate limited'
+2025-01-07 15:31:45.287 Request 13 not sent as being 'ping rate limited'
+2025-01-07 15:31:46.290 Request 14 sent & Pong Respond: 200
+2025-01-07 15:31:47.300 Request 15 sent & Pong Respond: 200
+2025-01-07 15:31:48.301 Request 16 sent & Pong Respond: 200
+2025-01-07 15:31:49.294 Request 17 sent & Pong Respond: 200
+2025-01-07 15:31:50.293 Request 18 sent & Pong Respond: 200
+2025-01-07 15:31:51.301 Request 19 sent & Pong Respond: 200
+2025-01-07 15:31:52.296 Request 20 sent & Pong Respond: 200
+2025-01-07 15:31:53.294 Request 21 sent & Pong Respond: 200
+2025-01-07 15:31:54.291 Request 22 sent & Pong Respond: 200
+2025-01-07 15:31:55.303 Request 23 sent & Pong Respond: 200
+2025-01-07 15:31:56.302 Request 24 sent & Pong Respond: 200
+2025-01-07 15:31:57.295 Request 25 sent & Pong Respond: 200
+2025-01-07 15:31:58.300 Request 26 sent & Pong Respond: 200
+2025-01-07 15:31:59.301 Request 27 sent & Pong Respond: 200
+2025-01-07 15:32:00.300 Request 28 not sent as being 'ping rate limited'
+2025-01-07 15:32:01.295 Request 29 not sent as being 'ping rate limited'
+2025-01-07 15:32:02.289 Request 30 not sent as being 'ping rate limited'
+2025-01-07 15:32:03.289 Request 31 not sent as being 'ping rate limited'
+2025-01-07 15:32:04.300 Request 32 not sent as being 'ping rate limited'
+2025-01-07 15:32:05.308 Request 33 sent & Pong Respond: 200
+2025-01-07 15:32:06.300 Request 34 sent & Pong Respond: 200
+2025-01-07 15:32:07.303 Request 35 sent & Pong Respond: 200
+2025-01-07 15:32:08.296 Request 36 sent & Pong Respond: 200
+2025-01-07 15:32:09.293 Request 37 sent & Pong Respond: 200
+2025-01-07 15:32:10.304 Request 38 sent & Pong Respond: 200
+2025-01-07 15:32:11.301 Request 39 sent & Pong Respond: 200
+2025-01-07 15:32:12.297 Request 40 sent & Pong Respond: 200
+2025-01-07 15:32:13.300 Request 41 sent & Pong Respond: 200
+2025-01-07 15:32:14.292 Request 42 sent & Pong Respond: 200
+2025-01-07 15:32:15.290 Request 43 sent & Pong Respond: 200
+2025-01-07 15:32:16.302 Request 44 sent & Pong Respond: 200
+2025-01-07 15:32:17.293 Request 45 sent & Pong Respond: 200
+2025-01-07 15:32:18.311 Request 46 sent & Pong Respond: 200
+2025-01-07 15:32:19.300 Request 47 sent & Pong Respond: 200
+2025-01-07 15:32:20.304 Request 48 sent & Pong Respond: 200
+2025-01-07 15:32:21.300 Request 49 not sent as being 'ping rate limited'
+2025-01-07 15:32:22.296 Request 50 not sent as being 'ping rate limited'
+2025-01-07 15:32:23.295 Request 51 not sent as being 'ping rate limited'
+2025-01-07 15:32:24.292 Request 52 not sent as being 'ping rate limited'
+2025-01-07 15:32:25.288 Request 53 not sent as being 'ping rate limited'
+2025-01-07 15:32:26.303 Request 54 sent & Pong Respond: 200
+2025-01-07 15:32:27.295 Request 55 sent & Pong Respond: 200
+2025-01-07 15:32:28.295 Request 56 sent & Pong Respond: 200
+2025-01-07 15:32:29.304 Request 57 sent & Pong Respond: 200
+2025-01-07 15:32:30.291 Request 58 sent & Pong Respond: 200
+2025-01-07 15:32:31.304 Request 59 sent & Pong Respond: 200
+2025-01-07 15:32:32.299 Request 60 sent & Pong Respond: 200
+2025-01-07 15:32:33.298 Request 61 sent & Pong Respond: 200
+2025-01-07 15:32:34.292 Request 62 sent & Pong Respond: 200
+2025-01-07 15:32:35.290 Request 63 sent & Pong Respond: 200
+2025-01-07 15:32:36.303 Request 64 sent & Pong Respond: 200
+2025-01-07 15:32:37.302 Request 65 sent & Pong Respond: 200
+2025-01-07 15:32:38.303 Request 66 sent & Pong Respond: 200
+2025-01-07 15:32:39.304 Request 67 sent & Pong Respond: 200
+2025-01-07 15:32:40.307 Request 68 sent & Pong Respond: 200
+2025-01-07 15:32:41.305 Request 69 sent & Pong Respond: 200
+2025-01-07 15:32:42.287 Request 70 not sent as being 'ping rate limited'
+2025-01-07 15:32:43.286 Request 71 not sent as being 'ping rate limited'
+2025-01-07 15:32:44.285 Request 72 not sent as being 'ping rate limited'
+2025-01-07 15:32:45.299 Request 73 not sent as being 'ping rate limited'
+2025-01-07 15:32:46.285 Request 74 not sent as being 'ping rate limited'
+2025-01-07 15:32:47.298 Request 75 not sent as being 'ping rate limited'
+2025-01-07 15:32:48.299 Request 76 sent & Pong Respond: 200
+2025-01-07 15:32:49.293 Request 77 sent & Pong Respond: 200
+2025-01-07 15:32:50.304 Request 78 sent & Pong Respond: 200
+2025-01-07 15:32:51.299 Request 79 sent & Pong Respond: 200
+2025-01-07 15:32:52.297 Request 80 sent & Pong Respond: 200
+2025-01-07 15:32:53.292 Request 81 sent & Pong Respond: 200
+2025-01-07 15:32:54.293 Request 82 sent & Pong Respond: 200
+2025-01-07 15:32:55.293 Request 83 sent & Pong Respond: 200
+2025-01-07 15:32:56.305 Request 84 sent & Pong Respond: 200
+2025-01-07 15:32:57.290 Request 85 sent & Pong Respond: 200
+2025-01-07 15:32:58.301 Request 86 sent & Pong Respond: 200
+2025-01-07 15:32:59.295 Request 87 sent & Pong Respond: 200
+2025-01-07 15:33:00.290 Request 88 sent & Pong Respond: 200
+2025-01-07 15:33:01.303 Request 89 sent & Pong Respond: 200
+2025-01-07 15:33:02.302 Request 90 sent & Pong Respond: 200
+2025-01-07 15:33:03.296 Request 91 sent & Pong Respond: 200
+2025-01-07 15:33:04.298 Request 92 sent & Pong Respond: 200
+2025-01-07 15:33:05.307 Request 93 sent & Pong Respond: 200
+2025-01-07 15:33:06.293 Request 94 not sent as being 'ping rate limited'
+2025-01-07 15:33:07.295 Request 95 not sent as being 'ping rate limited'
+2025-01-07 15:33:08.290 Request 96 not sent as being 'ping rate limited'
+2025-01-07 15:33:09.287 Request 97 not sent as being 'ping rate limited'
+2025-01-07 15:33:10.288 Request 98 not sent as being 'ping rate limited'
+2025-01-07 15:33:11.302 Request 99 sent & Pong Respond: 200
+2025-01-07 15:33:12.296 Request 100 sent & Pong Respond: 200
+2025-01-07 15:33:13.293 Request 101 sent & Pong Respond: 200
+2025-01-07 15:33:14.303 Request 102 sent & Pong Respond: 200
+2025-01-07 15:33:15.299 Request 103 sent & Pong Respond: 200
+2025-01-07 15:33:16.297 Request 104 sent & Pong Respond: 200
+2025-01-07 15:33:17.298 Request 105 sent & Pong Respond: 200
+2025-01-07 15:33:18.291 Request 106 sent & Pong Respond: 200
+2025-01-07 15:33:19.303 Request 107 sent & Pong Respond: 200
+2025-01-07 15:33:20.301 Request 108 sent & Pong Respond: 200
+2025-01-07 15:33:21.298 Request 109 sent & Pong Respond: 200
+2025-01-07 15:33:22.300 Request 110 sent & Pong Respond: 200
+2025-01-07 15:33:23.295 Request 111 sent & Pong Respond: 200
+2025-01-07 15:33:24.316 Request 112 sent & Pong Respond: 200
+2025-01-07 15:33:25.295 Request 113 not sent as being 'ping rate limited'
+2025-01-07 15:33:26.296 Request 114 not sent as being 'ping rate limited'
+2025-01-07 15:33:27.294 Request 115 not sent as being 'ping rate limited'
+2025-01-07 15:33:28.289 Request 116 not sent as being 'ping rate limited'
+2025-01-07 15:33:29.300 Request 117 not sent as being 'ping rate limited'
+2025-01-07 15:33:30.299 Request 118 not sent as being 'ping rate limited'
+2025-01-07 15:33:31.303 Request 119 sent & Pong Respond: 200
+2025-01-07 15:33:32.299 Request 120 sent & Pong Respond: 200
+2025-01-07 15:33:33.299 Request 121 sent & Pong Respond: 200
+2025-01-07 15:33:34.304 Request 122 sent & Pong Respond: 200
+2025-01-07 15:33:35.290 Request 123 sent & Pong Respond: 200
+2025-01-07 15:33:36.308 Request 124 sent & Pong Respond: 200
+2025-01-07 15:33:37.297 Request 125 sent & Pong Respond: 200
+2025-01-07 15:33:38.295 Request 126 sent & Pong Respond: 200
+2025-01-07 15:33:39.290 Request 127 sent & Pong Respond: 200
+2025-01-07 15:33:40.305 Request 128 sent & Pong Respond: 200
+2025-01-07 15:33:41.299 Request 129 sent & Pong Respond: 200
+2025-01-07 15:33:42.295 Request 130 sent & Pong Respond: 200
+2025-01-07 15:33:43.294 Request 131 sent & Pong Respond: 200
+2025-01-07 15:33:44.304 Request 132 sent & Pong Respond: 200
+2025-01-07 15:33:45.289 Request 133 not sent as being 'ping rate limited'
+2025-01-07 15:33:46.297 Request 134 not sent as being 'ping rate limited'
+2025-01-07 15:57:56.117 Starting PingApplication using Java 17.0.12 with PID 28576 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 15:57:56.121 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:57:57.323 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 15:57:57.325 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 15:57:57.353 Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-01-07 15:57:58.592 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 15:57:59.146 Netty started on port 8083
+2025-01-07 15:57:59.164 Started PingApplication in 3.431 seconds (process running for 4.136)
+2025-01-07 15:58:00.351 Request 0 sent & Pong Respond: 200
+2025-01-07 15:58:01.205 Request 1 sent & Pong Respond: 200
+2025-01-07 15:58:02.194 Request 2 sent & Pong Respond: 200
+2025-01-07 15:58:03.199 Request 3 sent & Pong Respond: 200
+2025-01-07 15:58:04.196 Request 4 sent & Pong Respond: 200
+2025-01-07 15:58:05.189 Request 5 sent & Pong Respond: 200
+2025-01-07 15:58:06.197 Request 6 sent & Pong Respond: 200
+2025-01-07 15:58:07.202 Request 7 sent & Pong Respond: 200
+2025-01-07 15:58:08.195 Request 8 sent & Pong Respond: 200
+2025-01-07 15:58:09.191 Request 9 sent & Pong Respond: 200
+2025-01-07 15:58:10.194 Request 10 sent & Pong Respond: 200
+2025-01-07 15:58:11.194 Request 11 sent & Pong Respond: 200
+2025-01-07 15:58:12.188 Request 12 sent & Pong Respond: 200
+2025-01-07 15:58:13.199 Request 13 sent & Pong Respond: 200
+2025-01-07 15:58:14.194 Request 14 sent & Pong Respond: 200
+2025-01-07 15:58:15.192 Request 15 sent & Pong Respond: 200
+2025-01-07 15:58:16.201 Request 16 sent & Pong Respond: 200
+2025-01-07 15:58:17.197 Request 17 sent & Pong Respond: 200
+2025-01-07 15:58:18.193 Request 18 sent & Pong Respond: 200
+2025-01-07 15:58:19.201 Request 19 sent & Pong Respond: 200
+2025-01-07 15:58:20.203 Request 20 sent & Pong Respond: 200
+2025-01-07 15:58:21.195 Request 21 sent & Pong Respond: 200
+2025-01-07 15:58:22.199 Request 22 sent & Pong Respond: 200
+2025-01-07 15:58:23.205 Request 23 sent & Pong Respond: 200
+2025-01-07 15:58:24.190 Request 24 not sent as being 'ping rate limited'
+2025-01-07 15:58:25.188 Request 25 sent & Pong Respond: 200
+2025-01-07 15:58:26.219 Request 26 sent & Pong Respond: 200
+2025-01-07 15:58:27.189 Request 27 not sent as being 'ping rate limited'
+2025-01-07 16:21:25.281 Starting PingApplication using Java 17.0.12 with PID 11596 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 16:21:25.283 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:21:26.406 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 16:21:26.409 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 16:21:26.446 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-01-07 16:21:27.734 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 16:21:28.387 Netty started on port 8083
+2025-01-07 16:21:28.399 Started PingApplication in 3.481 seconds (process running for 4.307)
+2025-01-07 16:23:25.783 Starting PingApplication using Java 17.0.12 with PID 3276 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 16:23:25.785 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:23:27.072 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 16:23:27.075 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 16:23:27.112 Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2025-01-07 16:23:28.414 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 16:23:29.314 Netty started on port 8083
+2025-01-07 16:23:29.368 Started PingApplication in 4.064 seconds (process running for 4.889)
+2025-01-07 16:24:58.573 Starting PingApplication using Java 17.0.12 with PID 30460 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 16:24:58.576 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:24:59.793 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 16:24:59.796 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 16:24:59.833 Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2025-01-07 16:25:01.129 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 16:25:01.795 Netty started on port 8083
+2025-01-07 16:25:01.825 Started PingApplication in 3.68 seconds (process running for 4.319)
+2025-01-07 16:26:07.299 Starting PingApplication using Java 17.0.12 with PID 29940 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 16:26:07.302 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:26:08.718 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 16:26:08.720 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 16:26:08.746 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-01-07 16:26:09.898 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 16:26:10.581 Netty started on port 8083
+2025-01-07 16:26:10.602 Started PingApplication in 3.779 seconds (process running for 4.475)
+2025-01-07 16:27:01.301 Request 0 sent & Pong Respond: 200
+2025-01-07 16:27:02.034 Request 1 not sent as being 'ping rate limited'
+2025-01-07 16:27:03.033 Request 2 not sent as being 'ping rate limited'
+2025-01-07 16:27:04.044 Request 3 not sent as being 'ping rate limited'
+2025-01-07 16:27:05.042 Request 4 not sent as being 'ping rate limited'
+2025-01-07 16:27:06.046 Request 5 sent & Pong Respond: 200
+2025-01-07 16:27:07.045 Request 6 not sent as being 'ping rate limited'
+2025-01-07 16:27:08.047 Request 7 sent & Pong Respond: 200
+2025-01-07 16:27:09.038 Request 8 not sent as being 'ping rate limited'
+2025-01-07 16:27:10.033 Request 9 not sent as being 'ping rate limited'
+2025-01-07 16:27:11.044 Request 10 not sent as being 'ping rate limited'
+2025-01-07 16:27:12.038 Request 11 not sent as being 'ping rate limited'
+2025-01-07 16:27:13.034 Request 12 not sent as being 'ping rate limited'
+2025-01-07 16:27:14.042 Request 13 not sent as being 'ping rate limited'
+2025-01-07 16:27:15.035 Request 14 not sent as being 'ping rate limited'
+2025-01-07 16:27:16.045 Request 15 not sent as being 'ping rate limited'
+2025-01-07 16:27:17.039 Request 16 not sent as being 'ping rate limited'
+2025-01-07 16:27:18.067 Request 17 send & Pong throttled it 429
+2025-01-07 16:27:19.036 Request 18 not sent as being 'ping rate limited'
+2025-01-07 16:27:20.032 Request 19 not sent as being 'ping rate limited'
+2025-01-07 16:27:21.060 Request 20 send & Pong throttled it 429
+2025-01-07 16:27:22.043 Request 21 not sent as being 'ping rate limited'
+2025-01-07 16:27:23.040 Request 22 sent & Pong Respond: 200
+2025-01-07 16:27:24.034 Request 23 not sent as being 'ping rate limited'
+2025-01-07 16:27:25.049 Request 24 sent & Pong Respond: 200
+2025-01-07 16:27:26.040 Request 25 not sent as being 'ping rate limited'
+2025-01-07 16:27:27.036 Request 26 not sent as being 'ping rate limited'
+2025-01-07 16:27:28.043 Request 27 not sent as being 'ping rate limited'
+2025-01-07 16:27:29.043 Request 28 not sent as being 'ping rate limited'
+2025-01-07 16:27:30.040 Request 29 not sent as being 'ping rate limited'
+2025-01-07 16:27:31.036 Request 30 not sent as being 'ping rate limited'
+2025-01-07 16:27:32.051 Request 31 sent & Pong Respond: 200
+2025-01-07 16:27:33.038 Request 32 not sent as being 'ping rate limited'
+2025-01-07 16:27:34.038 Request 33 not sent as being 'ping rate limited'
+2025-01-07 16:27:35.048 Request 34 not sent as being 'ping rate limited'
+2025-01-07 16:27:36.056 Request 35 not sent as being 'ping rate limited'
+2025-01-07 16:27:37.044 Request 36 sent & Pong Respond: 200
+2025-01-07 16:27:38.040 Request 37 not sent as being 'ping rate limited'
+2025-01-07 16:27:39.034 Request 38 not sent as being 'ping rate limited'
+2025-01-07 16:27:40.045 Request 39 not sent as being 'ping rate limited'
+2025-01-07 16:27:41.040 Request 40 not sent as being 'ping rate limited'
+2025-01-07 16:27:42.034 Request 41 not sent as being 'ping rate limited'
+2025-01-07 16:27:43.055 Request 42 not sent as being 'ping rate limited'
+2025-01-07 16:27:44.047 Request 43 not sent as being 'ping rate limited'
+2025-01-07 16:27:45.038 Request 44 send & Pong throttled it 429
+2025-01-07 16:27:46.042 Request 45 not sent as being 'ping rate limited'
+2025-01-07 16:27:47.053 Request 46 sent & Pong Respond: 200
+2025-01-07 16:27:48.035 Request 47 not sent as being 'ping rate limited'
+2025-01-07 16:27:49.044 Request 48 not sent as being 'ping rate limited'
+2025-01-07 16:27:50.047 Request 49 sent & Pong Respond: 200
+2025-01-07 16:27:51.039 Request 50 not sent as being 'ping rate limited'
+2025-01-07 16:27:52.053 Request 51 not sent as being 'ping rate limited'
+2025-01-07 16:27:53.052 Request 52 sent & Pong Respond: 200
+2025-01-07 16:27:54.034 Request 53 not sent as being 'ping rate limited'
+2025-01-07 16:27:55.039 Request 54 sent & Pong Respond: 200
+2025-01-07 16:27:56.045 Request 55 not sent as being 'ping rate limited'
+2025-01-07 16:27:57.035 Request 56 not sent as being 'ping rate limited'
+2025-01-07 16:27:58.047 Request 57 not sent as being 'ping rate limited'
+2025-01-07 16:27:59.055 Request 58 not sent as being 'ping rate limited'
+2025-01-07 16:28:00.044 Request 59 not sent as being 'ping rate limited'
+2025-01-07 16:28:01.039 Request 60 not sent as being 'ping rate limited'
+2025-01-07 16:28:02.035 Request 61 not sent as being 'ping rate limited'
+2025-01-07 16:28:03.036 Request 62 not sent as being 'ping rate limited'
+2025-01-07 16:28:04.038 Request 63 not sent as being 'ping rate limited'
+2025-01-07 16:28:05.036 Request 64 not sent as being 'ping rate limited'
+2025-01-07 16:28:06.038 Request 65 sent & Pong Respond: 200
+2025-01-07 16:28:07.045 Request 66 not sent as being 'ping rate limited'
+2025-01-07 16:28:08.041 Request 67 not sent as being 'ping rate limited'
+2025-01-07 16:28:09.040 Request 68 not sent as being 'ping rate limited'
+2025-01-07 16:28:10.037 Request 69 not sent as being 'ping rate limited'
+2025-01-07 16:28:11.044 Request 70 not sent as being 'ping rate limited'
+2025-01-07 16:28:12.043 Request 71 sent & Pong Respond: 200
+2025-01-07 16:28:13.043 Request 72 sent & Pong Respond: 200
+2025-01-07 16:28:14.043 Request 73 sent & Pong Respond: 200
+2025-01-07 16:28:15.044 Request 74 not sent as being 'ping rate limited'
+2025-01-07 16:28:16.052 Request 75 sent & Pong Respond: 200
+2025-01-07 16:28:17.036 Request 76 not sent as being 'ping rate limited'
+2025-01-07 16:28:18.069 Request 77 sent & Pong Respond: 200
+2025-01-07 16:28:19.046 Request 78 not sent as being 'ping rate limited'
+2025-01-07 16:28:20.038 Request 79 not sent as being 'ping rate limited'
+2025-01-07 16:28:21.047 Request 80 not sent as being 'ping rate limited'
+2025-01-07 16:28:22.043 Request 81 not sent as being 'ping rate limited'
+2025-01-07 16:28:23.046 Request 82 not sent as being 'ping rate limited'
+2025-01-07 16:28:24.038 Request 83 sent & Pong Respond: 200
+2025-01-07 16:28:25.047 Request 84 sent & Pong Respond: 200
+2025-01-07 16:28:26.041 Request 85 not sent as being 'ping rate limited'
+2025-01-07 16:28:27.044 Request 86 send & Pong throttled it 429
+2025-01-07 16:28:28.040 Request 87 sent & Pong Respond: 200
+2025-01-07 16:28:29.034 Request 88 not sent as being 'ping rate limited'
+2025-01-07 16:28:30.044 Request 89 sent & Pong Respond: 200
+2025-01-07 16:28:31.035 Request 90 not sent as being 'ping rate limited'
+2025-01-07 16:28:32.044 Request 91 not sent as being 'ping rate limited'
+2025-01-07 16:28:33.047 Request 92 not sent as being 'ping rate limited'
+2025-01-07 16:28:34.042 Request 93 send & Pong throttled it 429
+2025-01-07 16:28:35.048 Request 94 sent & Pong Respond: 200
+2025-01-07 16:28:36.046 Request 95 sent & Pong Respond: 200
+2025-01-07 16:28:37.052 Request 96 sent & Pong Respond: 200
+2025-01-07 16:28:38.035 Request 97 not sent as being 'ping rate limited'
+2025-01-07 16:28:39.044 Request 98 not sent as being 'ping rate limited'
+2025-01-07 16:28:40.036 Request 99 not sent as being 'ping rate limited'
+2025-01-07 16:28:41.048 Request 100 not sent as being 'ping rate limited'
+2025-01-07 16:28:42.045 Request 101 not sent as being 'ping rate limited'
+2025-01-07 16:28:43.042 Request 102 not sent as being 'ping rate limited'
+2025-01-07 16:28:44.040 Request 103 not sent as being 'ping rate limited'
+2025-01-07 16:28:45.038 Request 104 sent & Pong Respond: 200
+2025-01-07 16:28:46.047 Request 105 not sent as being 'ping rate limited'
+2025-01-07 16:28:47.039 Request 106 not sent as being 'ping rate limited'
+2025-01-07 16:28:48.044 Request 107 sent & Pong Respond: 200
+2025-01-07 16:28:49.034 Request 108 not sent as being 'ping rate limited'
+2025-01-07 16:28:50.049 Request 109 sent & Pong Respond: 200
+2025-01-07 16:28:51.038 Request 110 not sent as being 'ping rate limited'
+2025-01-07 16:28:52.037 Request 111 send & Pong throttled it 429
+2025-01-07 16:28:53.045 Request 112 send & Pong throttled it 429
+2025-01-07 16:28:54.041 Request 113 not sent as being 'ping rate limited'
+2025-01-07 16:28:55.054 Request 114 not sent as being 'ping rate limited'
+2025-01-07 16:28:56.045 Request 115 not sent as being 'ping rate limited'
+2025-01-07 16:28:57.041 Request 116 sent & Pong Respond: 200
+2025-01-07 16:28:58.034 Request 117 not sent as being 'ping rate limited'
+2025-01-07 16:28:59.053 Request 118 not sent as being 'ping rate limited'
+2025-01-07 16:29:00.040 Request 119 not sent as being 'ping rate limited'
+2025-01-07 16:29:01.037 Request 120 sent & Pong Respond: 200
+2025-01-07 16:29:02.044 Request 121 not sent as being 'ping rate limited'
+2025-01-07 16:29:03.043 Request 122 not sent as being 'ping rate limited'
+2025-01-07 16:29:04.042 Request 123 not sent as being 'ping rate limited'
+2025-01-07 16:29:05.037 Request 124 not sent as being 'ping rate limited'
+2025-01-07 16:29:06.035 Request 125 not sent as being 'ping rate limited'
+2025-01-07 16:29:07.034 Request 126 not sent as being 'ping rate limited'
+2025-01-07 16:29:08.045 Request 127 not sent as being 'ping rate limited'
+2025-01-07 16:29:09.035 Request 128 not sent as being 'ping rate limited'
+2025-01-07 16:29:10.063 Request 129 sent & Pong Respond: 200
+2025-01-07 16:29:11.042 Request 130 not sent as being 'ping rate limited'
+2025-01-07 16:29:12.047 Request 131 not sent as being 'ping rate limited'
+2025-01-07 16:29:13.037 Request 132 not sent as being 'ping rate limited'
+2025-01-07 16:29:14.037 Request 133 not sent as being 'ping rate limited'
+2025-01-07 16:29:15.056 Request 134 not sent as being 'ping rate limited'
+2025-01-07 16:29:16.054 Request 135 sent & Pong Respond: 200
+2025-01-07 16:29:17.033 Request 136 not sent as being 'ping rate limited'
+2025-01-07 16:29:18.040 Request 137 not sent as being 'ping rate limited'
+2025-01-07 16:29:19.041 Request 138 not sent as being 'ping rate limited'
+2025-01-07 16:29:20.037 Request 139 not sent as being 'ping rate limited'
+2025-01-07 16:29:21.057 Request 140 not sent as being 'ping rate limited'
+2025-01-07 16:29:22.042 Request 141 not sent as being 'ping rate limited'
+2025-01-07 16:29:23.055 Request 142 not sent as being 'ping rate limited'
+2025-01-07 16:29:24.044 Request 143 not sent as being 'ping rate limited'
+2025-01-07 16:29:25.043 Request 144 not sent as being 'ping rate limited'
+2025-01-07 16:29:26.041 Request 145 sent & Pong Respond: 200
+2025-01-07 16:29:27.034 Request 146 not sent as being 'ping rate limited'
+2025-01-07 16:29:28.044 Request 147 sent & Pong Respond: 200
+2025-01-07 16:29:29.039 Request 148 not sent as being 'ping rate limited'
+2025-01-07 16:29:30.035 Request 149 not sent as being 'ping rate limited'
+2025-01-07 16:29:31.046 Request 150 not sent as being 'ping rate limited'
+2025-01-07 16:29:32.044 Request 151 not sent as being 'ping rate limited'
+2025-01-07 16:29:33.037 Request 152 not sent as being 'ping rate limited'
+2025-01-07 16:29:34.036 Request 153 not sent as being 'ping rate limited'
+2025-01-07 16:29:35.038 Request 154 not sent as being 'ping rate limited'
+2025-01-07 16:29:36.038 Request 155 sent & Pong Respond: 200
+2025-01-07 16:29:37.062 Request 156 sent & Pong Respond: 200
+2025-01-07 16:29:38.044 Request 157 not sent as being 'ping rate limited'
+2025-01-07 16:29:39.040 Request 158 not sent as being 'ping rate limited'
+2025-01-07 16:29:40.036 Request 159 not sent as being 'ping rate limited'
+2025-01-07 16:29:41.035 Request 160 not sent as being 'ping rate limited'
+2025-01-07 16:29:42.064 Request 161 send & Pong throttled it 429
+2025-01-07 16:29:43.049 Request 162 sent & Pong Respond: 200
+2025-01-07 16:29:44.072 Request 163 sent & Pong Respond: 200
+2025-01-07 16:29:45.053 Request 164 not sent as being 'ping rate limited'
+2025-01-07 16:33:43.986 Starting PingApplication using Java 17.0.12 with PID 10464 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 16:33:43.989 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:33:45.199 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 16:33:45.203 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 16:33:45.240 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-01-07 16:33:46.461 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 16:33:47.103 Netty started on port 8083
+2025-01-07 16:33:47.127 Started PingApplication in 3.515 seconds (process running for 4.227)
+2025-01-07 17:23:23.681 Starting PingApplication using Java 17.0.12 with PID 32304 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-07 17:23:23.683 No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:23:24.779 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-07 17:23:24.781 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-07 17:23:24.814 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-01-07 17:23:26.173 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-07 17:23:26.771 Netty started on port 8083
+2025-01-07 17:23:26.791 Started PingApplication in 3.471 seconds (process running for 4.219)
+2025-01-07 17:25:01.040 Request 0 not sent as being 'ping rate limited'
+2025-01-07 17:25:02.334 Request 1 send & Pong throttled it 429
+2025-01-07 17:25:03.035 Request 2 not sent as being 'ping rate limited'
+2025-01-07 17:25:04.028 Request 3 not sent as being 'ping rate limited'
+2025-01-07 17:25:05.056 Request 4 sent & Pong Respond: 200
+2025-01-07 17:25:06.037 Request 5 not sent as being 'ping rate limited'
+2025-01-07 17:25:07.035 Request 6 sent & Pong Respond: 200
+2025-01-07 17:25:08.044 Request 7 sent & Pong Respond: 200
+2025-01-07 17:25:09.046 Request 8 sent & Pong Respond: 200
+2025-01-07 17:25:10.038 Request 9 not sent as being 'ping rate limited'
+2025-01-07 17:25:11.036 Request 10 not sent as being 'ping rate limited'
+2025-01-07 17:25:12.037 Request 11 sent & Pong Respond: 200
+2025-01-07 17:25:13.038 Request 12 not sent as being 'ping rate limited'
+2025-01-07 17:25:14.032 Request 13 not sent as being 'ping rate limited'
+2025-01-07 17:25:15.031 Request 14 not sent as being 'ping rate limited'
+2025-01-07 17:25:16.046 Request 15 sent & Pong Respond: 200
+2025-01-07 17:25:17.033 Request 16 not sent as being 'ping rate limited'
+2025-01-07 17:25:18.031 Request 17 not sent as being 'ping rate limited'
+2025-01-07 17:25:19.046 Request 18 sent & Pong Respond: 200
+2025-01-07 17:25:20.036 Request 19 not sent as being 'ping rate limited'
+2025-01-07 17:25:21.037 Request 20 not sent as being 'ping rate limited'
+2025-01-07 17:25:22.032 Request 21 not sent as being 'ping rate limited'
+2025-01-07 17:25:23.034 Request 22 sent & Pong Respond: 200
+2025-01-07 17:25:24.055 Request 23 send & Pong throttled it 429
+2025-01-07 17:25:25.030 Request 24 not sent as being 'ping rate limited'
+2025-01-07 17:25:26.040 Request 25 not sent as being 'ping rate limited'
+2025-01-07 17:25:27.032 Request 26 not sent as being 'ping rate limited'
+2025-01-07 17:25:28.037 Request 27 sent & Pong Respond: 200
+2025-01-07 17:25:29.037 Request 28 not sent as being 'ping rate limited'
+2025-01-07 17:25:30.035 Request 29 not sent as being 'ping rate limited'
+2025-01-07 17:25:31.030 Request 30 not sent as being 'ping rate limited'
+2025-01-07 17:25:32.057 Request 31 sent & Pong Respond: 200
+2025-01-07 17:25:33.036 Request 32 not sent as being 'ping rate limited'
+2025-01-07 17:25:34.034 Request 33 not sent as being 'ping rate limited'
+2025-01-07 17:25:35.029 Request 34 not sent as being 'ping rate limited'
+2025-01-07 17:25:36.033 Request 35 not sent as being 'ping rate limited'
+2025-01-07 17:25:37.039 Request 36 not sent as being 'ping rate limited'
+2025-01-07 17:25:38.038 Request 37 not sent as being 'ping rate limited'
+2025-01-07 17:25:39.029 Request 38 not sent as being 'ping rate limited'
+2025-01-07 17:25:40.059 Request 39 sent & Pong Respond: 200
+2025-01-07 17:25:41.042 Request 40 send & Pong throttled it 429
+2025-01-07 17:25:42.033 Request 41 sent & Pong Respond: 200
+2025-01-07 17:25:43.032 Request 42 not sent as being 'ping rate limited'
+2025-01-07 17:25:44.028 Request 43 not sent as being 'ping rate limited'
+2025-01-07 17:25:45.039 Request 44 sent & Pong Respond: 200
+2025-01-07 17:25:46.039 Request 45 not sent as being 'ping rate limited'
+2025-01-07 17:25:47.038 Request 46 not sent as being 'ping rate limited'
+2025-01-07 17:25:48.037 Request 47 sent & Pong Respond: 200
+2025-01-07 17:25:49.026 Request 48 not sent as being 'ping rate limited'
+2025-01-07 17:25:50.038 Request 49 not sent as being 'ping rate limited'
+2025-01-07 17:25:51.034 Request 50 not sent as being 'ping rate limited'
+2025-01-07 17:25:52.041 Request 51 sent & Pong Respond: 200
+2025-01-07 17:25:53.030 Request 52 not sent as being 'ping rate limited'
+2025-01-07 17:25:54.049 Request 53 sent & Pong Respond: 200
+2025-01-07 17:25:55.042 Request 54 sent & Pong Respond: 200
+2025-01-07 17:25:56.038 Request 55 not sent as being 'ping rate limited'
+2025-01-07 17:25:57.037 Request 56 sent & Pong Respond: 200
+2025-01-07 17:25:58.034 Request 57 sent & Pong Respond: 200
+2025-01-07 17:25:59.039 Request 58 not sent as being 'ping rate limited'
+2025-01-07 17:26:00.035 Request 59 not sent as being 'ping rate limited'
+2025-01-07 17:26:01.037 Request 60 not sent as being 'ping rate limited'
+2025-01-07 17:26:02.034 Request 61 not sent as being 'ping rate limited'
+2025-01-07 17:26:03.032 Request 62 not sent as being 'ping rate limited'
+2025-01-07 17:26:04.038 Request 63 not sent as being 'ping rate limited'
+2025-01-07 17:26:05.040 Request 64 sent & Pong Respond: 200
+2025-01-07 17:26:06.036 Request 65 not sent as being 'ping rate limited'
+2025-01-07 17:26:07.035 Request 66 sent & Pong Respond: 200
+2025-01-07 17:26:08.053 Request 67 sent & Pong Respond: 200
+2025-01-07 17:26:09.036 Request 68 not sent as being 'ping rate limited'
+2025-01-07 17:26:10.038 Request 69 sent & Pong Respond: 200
+2025-01-07 17:26:11.038 Request 70 not sent as being 'ping rate limited'
+2025-01-07 17:26:12.034 Request 71 not sent as being 'ping rate limited'
+2025-01-07 17:26:13.044 Request 72 sent & Pong Respond: 200
+2025-01-07 17:26:14.031 Request 73 not sent as being 'ping rate limited'
+2025-01-07 17:26:15.028 Request 74 not sent as being 'ping rate limited'
+2025-01-07 17:26:16.046 Request 75 send & Pong throttled it 429
+2025-01-07 17:26:17.037 Request 76 not sent as being 'ping rate limited'
+2025-01-07 17:26:18.030 Request 77 not sent as being 'ping rate limited'
+2025-01-07 17:26:19.041 Request 78 not sent as being 'ping rate limited'
+2025-01-07 17:26:20.045 Request 79 send & Pong throttled it 429
+2025-01-07 17:26:21.039 Request 80 not sent as being 'ping rate limited'
+2025-01-07 17:26:22.037 Request 81 not sent as being 'ping rate limited'
+2025-01-07 17:26:23.028 Request 82 not sent as being 'ping rate limited'
+2025-01-07 17:26:24.040 Request 83 not sent as being 'ping rate limited'
+2025-01-07 17:26:25.043 Request 84 sent & Pong Respond: 200
+2025-01-07 17:26:26.036 Request 85 not sent as being 'ping rate limited'
+2025-01-07 17:26:27.032 Request 86 not sent as being 'ping rate limited'
+2025-01-07 17:26:28.072 Request 87 sent & Pong Respond: 200
+2025-01-07 17:26:29.037 Request 88 sent & Pong Respond: 200

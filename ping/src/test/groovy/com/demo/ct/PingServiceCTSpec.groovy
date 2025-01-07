@@ -37,7 +37,7 @@ class PingServiceCTSpec extends BaseSpec {
 
     def setup() {
         pingService.setWebClient(webClient)
-        throttlingService.setRequestCount(0)
+        throttlingService.resetCounter()
     }
 
     def "should send requests and handle successful responses"() {

@@ -26,6 +26,8 @@
     </appender>
 
     <logger name="com.demo" level="${LOG_LEVEL}"/>
+    <logger name="com.demo.kafka.KafkaConsumerService" level="info"/>
+
 
     <root level="info">
         <appender-ref ref="console"/>

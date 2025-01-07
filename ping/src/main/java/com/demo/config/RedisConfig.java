@@ -44,7 +44,7 @@ public class RedisConfig {
         Config config = new Config();
         config.useSingleServer()
                 .setDatabase(getDatabase())
-          //      .setPassword(getPassword())
+                //.setPassword(getPassword())
                 .setAddress("redis://" + getHost() + ":" + getPort());
         return Redisson.create(config);
     }
