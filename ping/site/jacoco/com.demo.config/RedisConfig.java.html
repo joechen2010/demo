@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RedisConfig.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ping</a> &gt; <a href="index.source.html" class="el_package">com.demo.config</a> &gt; <span class="el_source">RedisConfig.java</span></div><h1>RedisConfig.java</h1><pre class="source lang-java linenums">package com.demo.config;
+
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.util.StringUtils;
+
+@Configuration
+// By default, we don't have a redis server
+@ConditionalOnProperty(name = &quot;spring.redis.host&quot;)
+@ConfigurationProperties(prefix = &quot;spring.redis&quot;)
+<span class="fc" id="L20">public class RedisConfig {</span>
+
+    private Integer database;
+
+    private String host;
+
+    private Integer port;
+
+    private String password;
+
+    @Bean
+    public StringRedisTemplate redisTemplate() {
+<span class="fc" id="L32">        RedisStandaloneConfiguration configuration = new RedisStandaloneConfiguration();</span>
+<span class="fc" id="L33">        configuration.setDatabase(getDatabase());</span>
+<span class="fc" id="L34">        configuration.setHostName(getHost());</span>
+<span class="fc" id="L35">        configuration.setPort(getPort());</span>
+        //configuration.setPassword(getPassword());
+<span class="fc" id="L37">        LettuceConnectionFactory factory = new LettuceConnectionFactory(configuration);</span>
+<span class="fc" id="L38">        factory.afterPropertiesSet();</span>
+<span class="fc" id="L39">        return new StringRedisTemplate(factory);</span>
+    }
+
+    @Bean
+    public RedissonClient redissonClient() {
+<span class="fc" id="L44">        Config config = new Config();</span>
+<span class="fc" id="L45">        config.useSingleServer()</span>
+<span class="fc" id="L46">                .setDatabase(getDatabase())</span>
+                //.setPassword(getPassword())
+<span class="fc" id="L48">                .setAddress(&quot;redis://&quot; + getHost() + &quot;:&quot; + getPort());</span>
+<span class="fc" id="L49">        return Redisson.create(config);</span>
+    }
+
+    public Integer getDatabase() {
+<span class="fc" id="L53">        return database;</span>
+    }
+
+    public void setDatabase(Integer database) {
+<span class="fc" id="L57">        this.database = database;</span>
+<span class="fc" id="L58">    }</span>
+
+    public String getHost() {
+<span class="fc" id="L61">        return host;</span>
+    }
+
+    public void setHost(String host) {
+<span class="fc" id="L65">        this.host = host;</span>
+<span class="fc" id="L66">    }</span>
+
+    public Integer getPort() {
+<span class="fc" id="L69">        return port;</span>
+    }
+
+    public void setPort(Integer port) {
+<span class="fc" id="L73">        this.port = port;</span>
+<span class="fc" id="L74">    }</span>
+
+    public String getPassword() {
+<span class="nc" id="L77">        return password;</span>
+    }
+
+    public void setPassword(String password) {
+<span class="fc" id="L81">        this.password = password;</span>
+<span class="fc" id="L82">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

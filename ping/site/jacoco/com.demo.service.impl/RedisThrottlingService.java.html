@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RedisThrottlingService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ping</a> &gt; <a href="index.source.html" class="el_package">com.demo.service.impl</a> &gt; <span class="el_source">RedisThrottlingService.java</span></div><h1>RedisThrottlingService.java</h1><pre class="source lang-java linenums">package com.demo.service.impl;
+
+import com.demo.service.ThrottlingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
+
+import java.time.Duration;
+
+@Component(&quot;redisThrottlingService&quot;)
+<span class="fc" id="L14">public class RedisThrottlingService implements ThrottlingService {</span>
+
+<span class="fc" id="L16">    private static final Logger logger = LoggerFactory.getLogger(RedisThrottlingService.class);</span>
+    public static final String KEY = &quot;PING-REDIS-THROTTLING&quot;;
+
+    @Autowired(required = false)
+    private StringRedisTemplate redisTemplate;
+
+<span class="fc" id="L22">    @Value(&quot;${throttle.permitsPerSecond:2}&quot;)</span>
+    private int permitsPerSecond = 2;
+
+    @Override
+    public boolean tryAcquire() {
+<span class="fc" id="L27">        Long currentCount = redisTemplate.opsForValue().increment(KEY);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (currentCount == 1) {</span>
+<span class="fc" id="L29">            redisTemplate.expire(KEY, Duration.ofSeconds(1));</span>
+        }
+<span class="fc" id="L31">        logger.debug(&quot;Rate limiter key: {}, current count: {}&quot;, KEY, currentCount);</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        return currentCount &lt;= permitsPerSecond;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
