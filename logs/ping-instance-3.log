@@ -984,3 +984,490 @@
 2025-01-08 02:25:16.146 Request 975 sent & Pong Respond: 200
 2025-01-08 02:25:17.052 Request 976 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
 2025-01-08 02:25:18.039 Request 977 failed with unexpected error: Connection refused: no further information: localhost/127.0.0.1:8080
+2025-01-08 15:14:00.627 Starting PingApplication using Java 17.0.12 with PID 14932 (C:\code\hsbc\demo\ping\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-08 15:14:00.630 No active profile set, falling back to 1 default profile: "default"
+2025-01-08 15:14:02.100 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 15:14:02.104 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08 15:14:02.132 Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-01-08 15:14:03.330 Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-08 15:14:03.868 Netty started on port 8083
+2025-01-08 15:14:03.887 Started PingApplication in 3.743 seconds (process running for 4.4)
+2025-01-08 15:15:01.329 Request 0 not sent as being 'ping rate limited'
+2025-01-08 15:15:02.359 Request 1 send & Pong throttled it 429
+2025-01-08 15:15:03.099 Request 2 send & Pong throttled it 429
+2025-01-08 15:15:04.086 Request 3 not sent as being 'ping rate limited'
+2025-01-08 15:15:05.191 Request 4 not sent as being 'ping rate limited'
+2025-01-08 15:15:06.081 Request 5 send & Pong throttled it 429
+2025-01-08 15:15:07.099 Request 6 sent & Pong Respond: 200
+2025-01-08 15:15:08.193 Request 7 send & Pong throttled it 429
+2025-01-08 15:15:09.066 Request 8 not sent as being 'ping rate limited'
+2025-01-08 15:15:10.071 Request 9 not sent as being 'ping rate limited'
+2025-01-08 15:15:11.069 Request 10 not sent as being 'ping rate limited'
+2025-01-08 15:15:12.189 Request 11 send & Pong throttled it 429
+2025-01-08 15:15:13.177 Request 12 not sent as being 'ping rate limited'
+2025-01-08 15:15:14.077 Request 13 not sent as being 'ping rate limited'
+2025-01-08 15:15:15.200 Request 14 not sent as being 'ping rate limited'
+2025-01-08 15:15:16.091 Request 15 sent & Pong Respond: 200
+2025-01-08 15:15:17.079 Request 16 sent & Pong Respond: 200
+2025-01-08 15:15:18.202 Request 17 not sent as being 'ping rate limited'
+2025-01-08 15:15:19.291 Request 18 not sent as being 'ping rate limited'
+2025-01-08 15:15:20.283 Request 19 not sent as being 'ping rate limited'
+2025-01-08 15:15:21.082 Request 20 not sent as being 'ping rate limited'
+2025-01-08 15:15:22.087 Request 21 sent & Pong Respond: 200
+2025-01-08 15:15:23.177 Request 22 not sent as being 'ping rate limited'
+2025-01-08 15:15:24.071 Request 23 sent & Pong Respond: 200
+2025-01-08 15:15:25.082 Request 24 sent & Pong Respond: 200
+2025-01-08 15:15:26.177 Request 25 not sent as being 'ping rate limited'
+2025-01-08 15:15:27.286 Request 26 not sent as being 'ping rate limited'
+2025-01-08 15:15:28.079 Request 27 sent & Pong Respond: 200
+2025-01-08 15:15:29.190 Request 28 not sent as being 'ping rate limited'
+2025-01-08 15:15:30.094 Request 29 sent & Pong Respond: 200
+2025-01-08 15:15:31.096 Request 30 not sent as being 'ping rate limited'
+2025-01-08 15:15:32.072 Request 31 sent & Pong Respond: 200
+2025-01-08 15:15:33.080 Request 32 sent & Pong Respond: 200
+2025-01-08 15:15:34.393 Request 33 not sent as being 'ping rate limited'
+2025-01-08 15:15:35.089 Request 34 sent & Pong Respond: 200
+2025-01-08 15:15:36.089 Request 35 send & Pong throttled it 429
+2025-01-08 15:15:37.078 Request 36 sent & Pong Respond: 200
+2025-01-08 15:15:38.083 Request 37 sent & Pong Respond: 200
+2025-01-08 15:15:39.193 Request 38 not sent as being 'ping rate limited'
+2025-01-08 15:15:40.082 Request 39 sent & Pong Respond: 200
+2025-01-08 15:15:41.297 Request 40 not sent as being 'ping rate limited'
+2025-01-08 15:15:42.194 Request 41 not sent as being 'ping rate limited'
+2025-01-08 15:15:43.076 Request 42 sent & Pong Respond: 200
+2025-01-08 15:15:44.074 Request 43 sent & Pong Respond: 200
+2025-01-08 15:15:45.070 Request 44 sent & Pong Respond: 200
+2025-01-08 15:15:46.082 Request 45 not sent as being 'ping rate limited'
+2025-01-08 15:15:47.082 Request 46 sent & Pong Respond: 200
+2025-01-08 15:15:48.198 Request 47 not sent as being 'ping rate limited'
+2025-01-08 15:15:49.081 Request 48 sent & Pong Respond: 200
+2025-01-08 15:15:50.179 Request 49 not sent as being 'ping rate limited'
+2025-01-08 15:15:51.284 Request 50 not sent as being 'ping rate limited'
+2025-01-08 15:15:52.280 Request 51 not sent as being 'ping rate limited'
+2025-01-08 15:15:53.077 Request 52 sent & Pong Respond: 200
+2025-01-08 15:15:54.283 Request 53 not sent as being 'ping rate limited'
+2025-01-08 15:15:55.073 Request 54 sent & Pong Respond: 200
+2025-01-08 15:15:56.081 Request 55 not sent as being 'ping rate limited'
+2025-01-08 15:15:57.099 Request 56 not sent as being 'ping rate limited'
+2025-01-08 15:15:58.100 Request 57 not sent as being 'ping rate limited'
+2025-01-08 15:15:59.297 Request 58 not sent as being 'ping rate limited'
+2025-01-08 15:16:00.196 Request 59 not sent as being 'ping rate limited'
+2025-01-08 15:16:01.182 Request 60 not sent as being 'ping rate limited'
+2025-01-08 15:16:02.093 Request 61 send & Pong throttled it 429
+2025-01-08 15:16:03.070 Request 62 not sent as being 'ping rate limited'
+2025-01-08 15:16:04.088 Request 63 sent & Pong Respond: 200
+2025-01-08 15:16:05.074 Request 64 not sent as being 'ping rate limited'
+2025-01-08 15:16:06.081 Request 65 not sent as being 'ping rate limited'
+2025-01-08 15:16:07.073 Request 66 not sent as being 'ping rate limited'
+2025-01-08 15:16:08.204 Request 67 sent & Pong Respond: 200
+2025-01-08 15:16:09.077 Request 68 not sent as being 'ping rate limited'
+2025-01-08 15:16:10.084 Request 69 not sent as being 'ping rate limited'
+2025-01-08 15:16:11.082 Request 70 not sent as being 'ping rate limited'
+2025-01-08 15:16:12.077 Request 71 sent & Pong Respond: 200
+2025-01-08 15:16:13.081 Request 72 sent & Pong Respond: 200
+2025-01-08 15:16:14.076 Request 73 not sent as being 'ping rate limited'
+2025-01-08 15:16:15.082 Request 74 sent & Pong Respond: 200
+2025-01-08 15:16:16.181 Request 75 send & Pong throttled it 429
+2025-01-08 15:16:17.087 Request 76 not sent as being 'ping rate limited'
+2025-01-08 15:16:18.177 Request 77 not sent as being 'ping rate limited'
+2025-01-08 15:16:19.091 Request 78 sent & Pong Respond: 200
+2025-01-08 15:16:20.087 Request 79 sent & Pong Respond: 200
+2025-01-08 15:16:21.093 Request 80 sent & Pong Respond: 200
+2025-01-08 15:16:22.090 Request 81 sent & Pong Respond: 200
+2025-01-08 15:16:23.077 Request 82 send & Pong throttled it 429
+2025-01-08 15:16:24.085 Request 83 not sent as being 'ping rate limited'
+2025-01-08 15:16:25.071 Request 84 not sent as being 'ping rate limited'
+2025-01-08 15:16:26.071 Request 85 sent & Pong Respond: 200
+2025-01-08 15:16:27.297 Request 86 not sent as being 'ping rate limited'
+2025-01-08 15:16:28.084 Request 87 sent & Pong Respond: 200
+2025-01-08 15:16:29.090 Request 88 sent & Pong Respond: 200
+2025-01-08 15:16:30.086 Request 89 sent & Pong Respond: 200
+2025-01-08 15:16:31.398 Request 90 not sent as being 'ping rate limited'
+2025-01-08 15:16:32.097 Request 91 not sent as being 'ping rate limited'
+2025-01-08 15:16:33.083 Request 92 send & Pong throttled it 429
+2025-01-08 15:16:34.074 Request 93 sent & Pong Respond: 200
+2025-01-08 15:16:35.282 Request 94 not sent as being 'ping rate limited'
+2025-01-08 15:16:36.184 Request 95 not sent as being 'ping rate limited'
+2025-01-08 15:16:37.081 Request 96 send & Pong throttled it 429
+2025-01-08 15:16:38.070 Request 97 sent & Pong Respond: 200
+2025-01-08 15:16:39.194 Request 98 not sent as being 'ping rate limited'
+2025-01-08 15:16:40.192 Request 99 not sent as being 'ping rate limited'
+2025-01-08 15:16:41.082 Request 100 send & Pong throttled it 429
+2025-01-08 15:16:42.074 Request 101 send & Pong throttled it 429
+2025-01-08 15:16:43.093 Request 102 not sent as being 'ping rate limited'
+2025-01-08 15:16:44.072 Request 103 not sent as being 'ping rate limited'
+2025-01-08 15:16:45.082 Request 104 sent & Pong Respond: 200
+2025-01-08 15:16:46.084 Request 105 sent & Pong Respond: 200
+2025-01-08 15:16:47.079 Request 106 send & Pong throttled it 429
+2025-01-08 15:16:48.105 Request 107 not sent as being 'ping rate limited'
+2025-01-08 15:16:49.085 Request 108 not sent as being 'ping rate limited'
+2025-01-08 15:16:50.085 Request 109 not sent as being 'ping rate limited'
+2025-01-08 15:16:51.094 Request 110 sent & Pong Respond: 200
+2025-01-08 15:16:52.072 Request 111 not sent as being 'ping rate limited'
+2025-01-08 15:16:53.076 Request 112 not sent as being 'ping rate limited'
+2025-01-08 15:16:54.083 Request 113 not sent as being 'ping rate limited'
+2025-01-08 15:16:55.075 Request 114 not sent as being 'ping rate limited'
+2025-01-08 15:16:56.292 Request 115 send & Pong throttled it 429
+2025-01-08 15:16:57.079 Request 116 not sent as being 'ping rate limited'
+2025-01-08 15:16:58.073 Request 117 not sent as being 'ping rate limited'
+2025-01-08 15:16:59.192 Request 118 not sent as being 'ping rate limited'
+2025-01-08 15:17:00.082 Request 119 sent & Pong Respond: 200
+2025-01-08 15:17:01.188 Request 120 not sent as being 'ping rate limited'
+2025-01-08 15:17:02.087 Request 121 sent & Pong Respond: 200
+2025-01-08 15:17:03.079 Request 122 send & Pong throttled it 429
+2025-01-08 15:17:04.078 Request 123 send & Pong throttled it 429
+2025-01-08 15:17:05.174 Request 124 not sent as being 'ping rate limited'
+2025-01-08 15:17:06.076 Request 125 send & Pong throttled it 429
+2025-01-08 15:17:07.092 Request 126 sent & Pong Respond: 200
+2025-01-08 15:17:08.083 Request 127 send & Pong throttled it 429
+2025-01-08 15:17:09.070 Request 128 not sent as being 'ping rate limited'
+2025-01-08 15:17:10.084 Request 129 sent & Pong Respond: 200
+2025-01-08 15:17:11.080 Request 130 send & Pong throttled it 429
+2025-01-08 15:17:12.406 Request 131 not sent as being 'ping rate limited'
+2025-01-08 15:17:13.086 Request 132 send & Pong throttled it 429
+2025-01-08 15:17:14.283 Request 133 not sent as being 'ping rate limited'
+2025-01-08 15:17:15.091 Request 134 sent & Pong Respond: 200
+2025-01-08 15:17:16.285 Request 135 not sent as being 'ping rate limited'
+2025-01-08 15:17:17.090 Request 136 sent & Pong Respond: 200
+2025-01-08 15:17:18.073 Request 137 send & Pong throttled it 429
+2025-01-08 15:17:19.081 Request 138 send & Pong throttled it 429
+2025-01-08 15:17:20.074 Request 139 sent & Pong Respond: 200
+2025-01-08 15:17:21.085 Request 140 send & Pong throttled it 429
+2025-01-08 15:17:22.181 Request 141 not sent as being 'ping rate limited'
+2025-01-08 15:17:23.085 Request 142 not sent as being 'ping rate limited'
+2025-01-08 15:17:24.083 Request 143 not sent as being 'ping rate limited'
+2025-01-08 15:17:25.175 Request 144 not sent as being 'ping rate limited'
+2025-01-08 15:17:26.090 Request 145 not sent as being 'ping rate limited'
+2025-01-08 15:17:27.289 Request 146 not sent as being 'ping rate limited'
+2025-01-08 15:17:28.079 Request 147 not sent as being 'ping rate limited'
+2025-01-08 15:17:29.079 Request 148 not sent as being 'ping rate limited'
+2025-01-08 15:17:30.089 Request 149 send & Pong throttled it 429
+2025-01-08 15:17:31.079 Request 150 sent & Pong Respond: 200
+2025-01-08 15:17:32.188 Request 151 not sent as being 'ping rate limited'
+2025-01-08 15:17:33.082 Request 152 send & Pong throttled it 429
+2025-01-08 15:17:34.175 Request 153 not sent as being 'ping rate limited'
+2025-01-08 15:17:35.172 Request 154 not sent as being 'ping rate limited'
+2025-01-08 15:17:36.096 Request 155 sent & Pong Respond: 200
+2025-01-08 15:17:37.076 Request 156 send & Pong throttled it 429
+2025-01-08 15:17:38.175 Request 157 not sent as being 'ping rate limited'
+2025-01-08 15:17:39.084 Request 158 send & Pong throttled it 429
+2025-01-08 15:17:40.195 Request 159 not sent as being 'ping rate limited'
+2025-01-08 15:17:41.095 Request 160 sent & Pong Respond: 200
+2025-01-08 15:17:42.187 Request 161 sent & Pong Respond: 200
+2025-01-08 15:17:43.180 Request 162 sent & Pong Respond: 200
+2025-01-08 15:17:44.304 Request 163 send & Pong throttled it 429
+2025-01-08 15:17:45.075 Request 164 not sent as being 'ping rate limited'
+2025-01-08 15:17:46.173 Request 165 not sent as being 'ping rate limited'
+2025-01-08 15:17:47.071 Request 166 not sent as being 'ping rate limited'
+2025-01-08 15:17:48.083 Request 167 sent & Pong Respond: 200
+2025-01-08 15:17:49.077 Request 168 send & Pong throttled it 429
+2025-01-08 15:17:50.200 Request 169 not sent as being 'ping rate limited'
+2025-01-08 15:17:51.086 Request 170 send & Pong throttled it 429
+2025-01-08 15:17:52.415 Request 171 send & Pong throttled it 429
+2025-01-08 15:17:53.077 Request 172 not sent as being 'ping rate limited'
+2025-01-08 15:17:54.085 Request 173 sent & Pong Respond: 200
+2025-01-08 15:17:55.088 Request 174 send & Pong throttled it 429
+2025-01-08 15:17:56.085 Request 175 send & Pong throttled it 429
+2025-01-08 15:17:57.092 Request 176 sent & Pong Respond: 200
+2025-01-08 15:17:58.204 Request 177 not sent as being 'ping rate limited'
+2025-01-08 15:17:59.079 Request 178 send & Pong throttled it 429
+2025-01-08 15:18:00.085 Request 179 send & Pong throttled it 429
+2025-01-08 15:18:01.093 Request 180 send & Pong throttled it 429
+2025-01-08 15:18:02.102 Request 181 sent & Pong Respond: 200
+2025-01-08 15:18:03.092 Request 182 sent & Pong Respond: 200
+2025-01-08 15:18:04.084 Request 183 send & Pong throttled it 429
+2025-01-08 15:18:05.076 Request 184 sent & Pong Respond: 200
+2025-01-08 15:18:06.082 Request 185 send & Pong throttled it 429
+2025-01-08 15:18:07.076 Request 186 sent & Pong Respond: 200
+2025-01-08 15:18:08.114 Request 187 not sent as being 'ping rate limited'
+2025-01-08 15:18:09.079 Request 188 send & Pong throttled it 429
+2025-01-08 15:18:10.091 Request 189 sent & Pong Respond: 200
+2025-01-08 15:18:11.192 Request 190 not sent as being 'ping rate limited'
+2025-01-08 15:18:12.081 Request 191 send & Pong throttled it 429
+2025-01-08 15:18:13.192 Request 192 sent & Pong Respond: 200
+2025-01-08 15:18:14.070 Request 193 send & Pong throttled it 429
+2025-01-08 15:18:15.193 Request 194 not sent as being 'ping rate limited'
+2025-01-08 15:18:16.087 Request 195 send & Pong throttled it 429
+2025-01-08 15:18:17.085 Request 196 send & Pong throttled it 429
+2025-01-08 15:18:18.282 Request 197 not sent as being 'ping rate limited'
+2025-01-08 15:18:19.174 Request 198 not sent as being 'ping rate limited'
+2025-01-08 15:18:20.196 Request 199 not sent as being 'ping rate limited'
+2025-01-08 15:18:21.070 Request 200 send & Pong throttled it 429
+2025-01-08 15:18:22.410 Request 201 not sent as being 'ping rate limited'
+2025-01-08 15:18:23.199 Request 202 not sent as being 'ping rate limited'
+2025-01-08 15:18:24.081 Request 203 send & Pong throttled it 429
+2025-01-08 15:18:25.083 Request 204 sent & Pong Respond: 200
+2025-01-08 15:18:26.082 Request 205 not sent as being 'ping rate limited'
+2025-01-08 15:18:27.178 Request 206 not sent as being 'ping rate limited'
+2025-01-08 15:18:28.107 Request 207 not sent as being 'ping rate limited'
+2025-01-08 15:18:29.198 Request 208 not sent as being 'ping rate limited'
+2025-01-08 15:18:30.191 Request 209 not sent as being 'ping rate limited'
+2025-01-08 15:18:31.080 Request 210 send & Pong throttled it 429
+2025-01-08 15:18:32.176 Request 211 not sent as being 'ping rate limited'
+2025-01-08 15:18:33.204 Request 212 send & Pong throttled it 429
+2025-01-08 15:18:34.098 Request 213 sent & Pong Respond: 200
+2025-01-08 15:18:35.175 Request 214 not sent as being 'ping rate limited'
+2025-01-08 15:18:36.072 Request 215 not sent as being 'ping rate limited'
+2025-01-08 15:18:37.070 Request 216 not sent as being 'ping rate limited'
+2025-01-08 15:18:38.173 Request 217 not sent as being 'ping rate limited'
+2025-01-08 15:18:39.070 Request 218 not sent as being 'ping rate limited'
+2025-01-08 15:18:40.097 Request 219 not sent as being 'ping rate limited'
+2025-01-08 15:18:41.076 Request 220 not sent as being 'ping rate limited'
+2025-01-08 15:18:42.083 Request 221 sent & Pong Respond: 200
+2025-01-08 15:18:43.081 Request 222 send & Pong throttled it 429
+2025-01-08 15:18:44.074 Request 223 not sent as being 'ping rate limited'
+2025-01-08 15:18:45.301 Request 224 not sent as being 'ping rate limited'
+2025-01-08 15:18:46.080 Request 225 send & Pong throttled it 429
+2025-01-08 15:18:47.083 Request 226 not sent as being 'ping rate limited'
+2025-01-08 15:18:48.283 Request 227 not sent as being 'ping rate limited'
+2025-01-08 15:18:49.087 Request 228 not sent as being 'ping rate limited'
+2025-01-08 15:18:50.088 Request 229 sent & Pong Respond: 200
+2025-01-08 15:18:51.176 Request 230 not sent as being 'ping rate limited'
+2025-01-08 15:18:52.086 Request 231 send & Pong throttled it 429
+2025-01-08 15:18:53.076 Request 232 send & Pong throttled it 429
+2025-01-08 15:18:54.072 Request 233 sent & Pong Respond: 200
+2025-01-08 15:18:55.094 Request 234 sent & Pong Respond: 200
+2025-01-08 15:18:56.083 Request 235 not sent as being 'ping rate limited'
+2025-01-08 15:18:57.191 Request 236 not sent as being 'ping rate limited'
+2025-01-08 15:18:58.078 Request 237 send & Pong throttled it 429
+2025-01-08 15:18:59.083 Request 238 send & Pong throttled it 429
+2025-01-08 15:19:00.202 Request 239 not sent as being 'ping rate limited'
+2025-01-08 15:19:01.079 Request 240 not sent as being 'ping rate limited'
+2025-01-08 15:19:02.081 Request 241 send & Pong throttled it 429
+2025-01-08 15:19:03.190 Request 242 sent & Pong Respond: 200
+2025-01-08 15:19:04.096 Request 243 sent & Pong Respond: 200
+2025-01-08 15:19:05.076 Request 244 not sent as being 'ping rate limited'
+2025-01-08 15:19:06.289 Request 245 not sent as being 'ping rate limited'
+2025-01-08 15:19:07.092 Request 246 sent & Pong Respond: 200
+2025-01-08 15:19:08.078 Request 247 send & Pong throttled it 429
+2025-01-08 15:19:09.177 Request 248 not sent as being 'ping rate limited'
+2025-01-08 15:19:10.086 Request 249 send & Pong throttled it 429
+2025-01-08 15:19:11.083 Request 250 send & Pong throttled it 429
+2025-01-08 15:19:12.188 Request 251 not sent as being 'ping rate limited'
+2025-01-08 15:19:13.088 Request 252 sent & Pong Respond: 200
+2025-01-08 15:19:14.090 Request 253 not sent as being 'ping rate limited'
+2025-01-08 15:19:15.083 Request 254 not sent as being 'ping rate limited'
+2025-01-08 15:19:16.083 Request 255 not sent as being 'ping rate limited'
+2025-01-08 15:19:17.080 Request 256 send & Pong throttled it 429
+2025-01-08 15:19:18.194 Request 257 not sent as being 'ping rate limited'
+2025-01-08 15:19:19.404 Request 258 not sent as being 'ping rate limited'
+2025-01-08 15:19:20.083 Request 259 send & Pong throttled it 429
+2025-01-08 15:19:21.188 Request 260 not sent as being 'ping rate limited'
+2025-01-08 15:19:22.077 Request 261 send & Pong throttled it 429
+2025-01-08 15:19:23.189 Request 262 not sent as being 'ping rate limited'
+2025-01-08 15:19:24.193 Request 263 not sent as being 'ping rate limited'
+2025-01-08 15:19:25.294 Request 264 not sent as being 'ping rate limited'
+2025-01-08 15:19:26.401 Request 265 not sent as being 'ping rate limited'
+2025-01-08 15:19:27.089 Request 266 sent & Pong Respond: 200
+2025-01-08 15:19:28.188 Request 267 not sent as being 'ping rate limited'
+2025-01-08 15:19:29.297 Request 268 not sent as being 'ping rate limited'
+2025-01-08 15:19:30.082 Request 269 send & Pong throttled it 429
+2025-01-08 15:19:31.189 Request 270 not sent as being 'ping rate limited'
+2025-01-08 15:19:32.184 Request 271 not sent as being 'ping rate limited'
+2025-01-08 15:19:33.096 Request 272 sent & Pong Respond: 200
+2025-01-08 15:19:34.193 Request 273 not sent as being 'ping rate limited'
+2025-01-08 15:19:35.093 Request 274 sent & Pong Respond: 200
+2025-01-08 15:19:36.076 Request 275 send & Pong throttled it 429
+2025-01-08 15:19:37.089 Request 276 send & Pong throttled it 429
+2025-01-08 15:19:38.095 Request 277 not sent as being 'ping rate limited'
+2025-01-08 15:19:39.093 Request 278 sent & Pong Respond: 200
+2025-01-08 15:19:40.192 Request 279 send & Pong throttled it 429
+2025-01-08 15:19:41.076 Request 280 not sent as being 'ping rate limited'
+2025-01-08 15:19:42.071 Request 281 not sent as being 'ping rate limited'
+2025-01-08 15:19:43.092 Request 282 not sent as being 'ping rate limited'
+2025-01-08 15:19:44.092 Request 283 send & Pong throttled it 429
+2025-01-08 15:19:45.075 Request 284 send & Pong throttled it 429
+2025-01-08 15:19:46.078 Request 285 send & Pong throttled it 429
+2025-01-08 15:19:47.078 Request 286 not sent as being 'ping rate limited'
+2025-01-08 15:19:48.091 Request 287 send & Pong throttled it 429
+2025-01-08 15:19:49.082 Request 288 not sent as being 'ping rate limited'
+2025-01-08 15:19:50.174 Request 289 not sent as being 'ping rate limited'
+2025-01-08 15:19:51.075 Request 290 send & Pong throttled it 429
+2025-01-08 15:19:52.284 Request 291 not sent as being 'ping rate limited'
+2025-01-08 15:19:53.183 Request 292 not sent as being 'ping rate limited'
+2025-01-08 15:19:54.177 Request 293 not sent as being 'ping rate limited'
+2025-01-08 15:19:55.082 Request 294 send & Pong throttled it 429
+2025-01-08 15:19:56.078 Request 295 sent & Pong Respond: 200
+2025-01-08 15:19:57.280 Request 296 not sent as being 'ping rate limited'
+2025-01-08 15:19:58.085 Request 297 send & Pong throttled it 429
+2025-01-08 15:19:59.076 Request 298 sent & Pong Respond: 200
+2025-01-08 15:20:00.193 Request 299 not sent as being 'ping rate limited'
+2025-01-08 15:20:01.183 Request 300 not sent as being 'ping rate limited'
+2025-01-08 15:20:02.196 Request 301 not sent as being 'ping rate limited'
+2025-01-08 15:20:03.097 Request 302 sent & Pong Respond: 200
+2025-01-08 15:20:04.083 Request 303 send & Pong throttled it 429
+2025-01-08 15:20:05.087 Request 304 send & Pong throttled it 429
+2025-01-08 15:20:06.191 Request 305 not sent as being 'ping rate limited'
+2025-01-08 15:20:07.081 Request 306 send & Pong throttled it 429
+2025-01-08 15:20:08.077 Request 307 send & Pong throttled it 429
+2025-01-08 15:20:09.084 Request 308 send & Pong throttled it 429
+2025-01-08 15:20:10.088 Request 309 send & Pong throttled it 429
+2025-01-08 15:20:11.081 Request 310 send & Pong throttled it 429
+2025-01-08 15:20:12.299 Request 311 not sent as being 'ping rate limited'
+2025-01-08 15:20:13.090 Request 312 send & Pong throttled it 429
+2025-01-08 15:20:14.087 Request 313 send & Pong throttled it 429
+2025-01-08 15:20:15.081 Request 314 not sent as being 'ping rate limited'
+2025-01-08 15:20:16.087 Request 315 not sent as being 'ping rate limited'
+2025-01-08 15:20:17.080 Request 316 send & Pong throttled it 429
+2025-01-08 15:20:18.084 Request 317 not sent as being 'ping rate limited'
+2025-01-08 15:20:19.080 Request 318 sent & Pong Respond: 200
+2025-01-08 15:20:20.079 Request 319 send & Pong throttled it 429
+2025-01-08 15:20:21.312 Request 320 not sent as being 'ping rate limited'
+2025-01-08 15:20:22.076 Request 321 send & Pong throttled it 429
+2025-01-08 15:20:23.079 Request 322 send & Pong throttled it 429
+2025-01-08 15:20:24.084 Request 323 send & Pong throttled it 429
+2025-01-08 15:20:25.297 Request 324 not sent as being 'ping rate limited'
+2025-01-08 15:20:26.083 Request 325 send & Pong throttled it 429
+2025-01-08 15:20:27.076 Request 326 send & Pong throttled it 429
+2025-01-08 15:20:28.304 Request 327 not sent as being 'ping rate limited'
+2025-01-08 15:20:29.176 Request 328 not sent as being 'ping rate limited'
+2025-01-08 15:20:30.082 Request 329 not sent as being 'ping rate limited'
+2025-01-08 15:20:31.084 Request 330 send & Pong throttled it 429
+2025-01-08 15:20:32.406 Request 331 not sent as being 'ping rate limited'
+2025-01-08 15:20:33.193 Request 332 not sent as being 'ping rate limited'
+2025-01-08 15:20:34.085 Request 333 send & Pong throttled it 429
+2025-01-08 15:20:35.083 Request 334 sent & Pong Respond: 200
+2025-01-08 15:20:36.097 Request 335 sent & Pong Respond: 200
+2025-01-08 15:20:37.283 Request 336 not sent as being 'ping rate limited'
+2025-01-08 15:20:38.076 Request 337 not sent as being 'ping rate limited'
+2025-01-08 15:20:39.205 Request 338 sent & Pong Respond: 200
+2025-01-08 15:20:40.088 Request 339 send & Pong throttled it 429
+2025-01-08 15:20:41.174 Request 340 not sent as being 'ping rate limited'
+2025-01-08 15:20:42.079 Request 341 send & Pong throttled it 429
+2025-01-08 15:20:43.085 Request 342 not sent as being 'ping rate limited'
+2025-01-08 15:20:44.399 Request 343 sent & Pong Respond: 200
+2025-01-08 15:20:45.193 Request 344 not sent as being 'ping rate limited'
+2025-01-08 15:20:46.078 Request 345 send & Pong throttled it 429
+2025-01-08 15:20:47.193 Request 346 not sent as being 'ping rate limited'
+2025-01-08 15:20:48.106 Request 347 sent & Pong Respond: 200
+2025-01-08 15:20:49.080 Request 348 send & Pong throttled it 429
+2025-01-08 15:20:50.092 Request 349 send & Pong throttled it 429
+2025-01-08 15:20:51.093 Request 350 not sent as being 'ping rate limited'
+2025-01-08 15:20:52.088 Request 351 send & Pong throttled it 429
+2025-01-08 15:20:53.087 Request 352 send & Pong throttled it 429
+2025-01-08 15:20:54.080 Request 353 send & Pong throttled it 429
+2025-01-08 15:20:55.298 Request 354 not sent as being 'ping rate limited'
+2025-01-08 15:20:56.296 Request 355 not sent as being 'ping rate limited'
+2025-01-08 15:20:57.079 Request 356 not sent as being 'ping rate limited'
+2025-01-08 15:20:58.079 Request 357 send & Pong throttled it 429
+2025-01-08 15:20:59.394 Request 358 not sent as being 'ping rate limited'
+2025-01-08 15:21:00.206 Request 359 not sent as being 'ping rate limited'
+2025-01-08 15:21:01.079 Request 360 send & Pong throttled it 429
+2025-01-08 15:21:02.077 Request 361 send & Pong throttled it 429
+2025-01-08 15:21:03.071 Request 362 sent & Pong Respond: 200
+2025-01-08 15:21:04.416 Request 363 not sent as being 'ping rate limited'
+2025-01-08 15:21:05.094 Request 364 sent & Pong Respond: 200
+2025-01-08 15:21:06.084 Request 365 not sent as being 'ping rate limited'
+2025-01-08 15:21:07.086 Request 366 not sent as being 'ping rate limited'
+2025-01-08 15:21:08.088 Request 367 send & Pong throttled it 429
+2025-01-08 15:21:09.080 Request 368 not sent as being 'ping rate limited'
+2025-01-08 15:21:10.300 Request 369 not sent as being 'ping rate limited'
+2025-01-08 15:21:11.083 Request 370 send & Pong throttled it 429
+2025-01-08 15:21:12.068 Request 371 sent & Pong Respond: 200
+2025-01-08 15:21:13.079 Request 372 send & Pong throttled it 429
+2025-01-08 15:21:14.193 Request 373 not sent as being 'ping rate limited'
+2025-01-08 15:21:15.151 Request 374 sent & Pong Respond: 200
+2025-01-08 15:21:16.101 Request 375 sent & Pong Respond: 200
+2025-01-08 15:21:17.095 Request 376 sent & Pong Respond: 200
+2025-01-08 15:21:18.203 Request 377 sent & Pong Respond: 200
+2025-01-08 15:21:19.080 Request 378 not sent as being 'ping rate limited'
+2025-01-08 15:21:20.069 Request 379 not sent as being 'ping rate limited'
+2025-01-08 15:21:21.075 Request 380 not sent as being 'ping rate limited'
+2025-01-08 15:21:22.072 Request 381 not sent as being 'ping rate limited'
+2025-01-08 15:21:23.321 Request 382 send & Pong throttled it 429
+2025-01-08 15:21:24.080 Request 383 not sent as being 'ping rate limited'
+2025-01-08 15:21:25.073 Request 384 send & Pong throttled it 429
+2025-01-08 15:21:26.181 Request 385 not sent as being 'ping rate limited'
+2025-01-08 15:21:27.284 Request 386 not sent as being 'ping rate limited'
+2025-01-08 15:21:28.080 Request 387 sent & Pong Respond: 200
+2025-01-08 15:21:29.076 Request 388 send & Pong throttled it 429
+2025-01-08 15:21:30.291 Request 389 not sent as being 'ping rate limited'
+2025-01-08 15:21:31.078 Request 390 not sent as being 'ping rate limited'
+2025-01-08 15:21:32.195 Request 391 not sent as being 'ping rate limited'
+2025-01-08 15:21:33.078 Request 392 not sent as being 'ping rate limited'
+2025-01-08 15:21:34.197 Request 393 not sent as being 'ping rate limited'
+2025-01-08 15:21:35.083 Request 394 send & Pong throttled it 429
+2025-01-08 15:21:36.079 Request 395 not sent as being 'ping rate limited'
+2025-01-08 15:21:37.083 Request 396 send & Pong throttled it 429
+2025-01-08 15:21:38.178 Request 397 not sent as being 'ping rate limited'
+2025-01-08 15:21:39.186 Request 398 not sent as being 'ping rate limited'
+2025-01-08 15:21:40.076 Request 399 sent & Pong Respond: 200
+2025-01-08 15:21:41.087 Request 400 send & Pong throttled it 429
+2025-01-08 15:21:42.184 Request 401 not sent as being 'ping rate limited'
+2025-01-08 15:21:43.085 Request 402 send & Pong throttled it 429
+2025-01-08 15:21:44.081 Request 403 sent & Pong Respond: 200
+2025-01-08 15:21:45.395 Request 404 not sent as being 'ping rate limited'
+2025-01-08 15:21:46.289 Request 405 not sent as being 'ping rate limited'
+2025-01-08 15:21:47.172 Request 406 not sent as being 'ping rate limited'
+2025-01-08 15:21:48.082 Request 407 send & Pong throttled it 429
+2025-01-08 15:21:49.078 Request 408 send & Pong throttled it 429
+2025-01-08 15:21:50.082 Request 409 send & Pong throttled it 429
+2025-01-08 15:21:51.075 Request 410 not sent as being 'ping rate limited'
+2025-01-08 15:21:52.081 Request 411 send & Pong throttled it 429
+2025-01-08 15:21:53.081 Request 412 not sent as being 'ping rate limited'
+2025-01-08 15:21:54.177 Request 413 sent & Pong Respond: 200
+2025-01-08 15:21:55.079 Request 414 send & Pong throttled it 429
+2025-01-08 15:21:56.077 Request 415 not sent as being 'ping rate limited'
+2025-01-08 15:21:57.069 Request 416 sent & Pong Respond: 200
+2025-01-08 15:21:58.306 Request 417 not sent as being 'ping rate limited'
+2025-01-08 15:21:59.395 Request 418 not sent as being 'ping rate limited'
+2025-01-08 15:22:00.083 Request 419 send & Pong throttled it 429
+2025-01-08 15:22:01.086 Request 420 sent & Pong Respond: 200
+2025-01-08 15:22:02.072 Request 421 not sent as being 'ping rate limited'
+2025-01-08 15:22:03.184 Request 422 send & Pong throttled it 429
+2025-01-08 15:22:04.078 Request 423 not sent as being 'ping rate limited'
+2025-01-08 15:22:05.072 Request 424 not sent as being 'ping rate limited'
+2025-01-08 15:22:06.079 Request 425 not sent as being 'ping rate limited'
+2025-01-08 15:22:07.079 Request 426 not sent as being 'ping rate limited'
+2025-01-08 15:22:08.195 Request 427 send & Pong throttled it 429
+2025-01-08 15:22:09.073 Request 428 not sent as being 'ping rate limited'
+2025-01-08 15:22:10.075 Request 429 not sent as being 'ping rate limited'
+2025-01-08 15:22:11.067 Request 430 not sent as being 'ping rate limited'
+2025-01-08 15:22:12.082 Request 431 sent & Pong Respond: 200
+2025-01-08 15:22:13.072 Request 432 send & Pong throttled it 429
+2025-01-08 15:22:14.085 Request 433 not sent as being 'ping rate limited'
+2025-01-08 15:22:15.074 Request 434 not sent as being 'ping rate limited'
+2025-01-08 15:22:16.089 Request 435 sent & Pong Respond: 200
+2025-01-08 15:22:17.331 Request 436 sent & Pong Respond: 200
+2025-01-08 15:22:18.077 Request 437 not sent as being 'ping rate limited'
+2025-01-08 15:22:19.099 Request 438 sent & Pong Respond: 200
+2025-01-08 15:22:20.199 Request 439 not sent as being 'ping rate limited'
+2025-01-08 15:22:21.406 Request 440 send & Pong throttled it 429
+2025-01-08 15:22:22.071 Request 441 not sent as being 'ping rate limited'
+2025-01-08 15:22:23.068 Request 442 sent & Pong Respond: 200
+2025-01-08 15:22:24.082 Request 443 not sent as being 'ping rate limited'
+2025-01-08 15:22:25.196 Request 444 not sent as being 'ping rate limited'
+2025-01-08 15:22:26.186 Request 445 not sent as being 'ping rate limited'
+2025-01-08 15:22:27.075 Request 446 sent & Pong Respond: 200
+2025-01-08 15:22:28.094 Request 447 sent & Pong Respond: 200
+2025-01-08 15:22:29.088 Request 448 send & Pong throttled it 429
+2025-01-08 15:22:30.288 Request 449 not sent as being 'ping rate limited'
+2025-01-08 15:22:31.175 Request 450 not sent as being 'ping rate limited'
+2025-01-08 15:22:32.091 Request 451 not sent as being 'ping rate limited'
+2025-01-08 15:22:33.080 Request 452 send & Pong throttled it 429
+2025-01-08 15:22:34.089 Request 453 not sent as being 'ping rate limited'
+2025-01-08 15:22:35.186 Request 454 not sent as being 'ping rate limited'
+2025-01-08 15:22:36.296 Request 455 not sent as being 'ping rate limited'
+2025-01-08 15:22:37.084 Request 456 send & Pong throttled it 429
+2025-01-08 15:22:38.077 Request 457 send & Pong throttled it 429
+2025-01-08 15:22:39.081 Request 458 sent & Pong Respond: 200
+2025-01-08 15:22:40.081 Request 459 send & Pong throttled it 429
+2025-01-08 15:22:41.072 Request 460 send & Pong throttled it 429
+2025-01-08 15:22:42.086 Request 461 not sent as being 'ping rate limited'
+2025-01-08 15:22:43.076 Request 462 send & Pong throttled it 429
+2025-01-08 15:22:44.067 Request 463 sent & Pong Respond: 200
+2025-01-08 15:22:45.082 Request 464 send & Pong throttled it 429
+2025-01-08 15:22:46.083 Request 465 send & Pong throttled it 429
+2025-01-08 15:22:47.078 Request 466 send & Pong throttled it 429
+2025-01-08 15:22:48.071 Request 467 send & Pong throttled it 429
+2025-01-08 15:22:49.193 Request 468 not sent as being 'ping rate limited'
+2025-01-08 15:22:50.087 Request 469 send & Pong throttled it 429
+2025-01-08 15:22:51.080 Request 470 send & Pong throttled it 429
+2025-01-08 15:22:52.078 Request 471 sent & Pong Respond: 200
+2025-01-08 15:22:53.097 Request 472 sent & Pong Respond: 200
+2025-01-08 15:22:54.189 Request 473 sent & Pong Respond: 200
+2025-01-08 15:22:55.071 Request 474 not sent as being 'ping rate limited'
+2025-01-08 15:22:56.078 Request 475 not sent as being 'ping rate limited'
+2025-01-08 15:22:57.073 Request 476 not sent as being 'ping rate limited'
+2025-01-08 15:22:58.177 Request 477 not sent as being 'ping rate limited'
+2025-01-08 15:22:59.111 Request 478 sent & Pong Respond: 200

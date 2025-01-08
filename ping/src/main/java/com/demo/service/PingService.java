@@ -18,6 +18,8 @@ import reactor.core.publisher.Mono;
 
 import java.time.Duration;
 
+import static com.demo.PingApplication.INSTANCE_ID;
+
 @Service
 public class PingService implements InitializingBean {
 
@@ -55,15 +57,17 @@ public class PingService implements InitializingBean {
                 .flatMap(n -> {
                             logger.debug("Request {} is going to send to Pong", n);
                             return webClient.post()
+                                    .uri(uriBuilder -> uriBuilder
+                                            .queryParam("instance", System.getProperty(INSTANCE_ID))
+                                            .build())
                                     .contentType(MediaType.TEXT_PLAIN)
                                     .bodyValue("Hello-" + System.currentTimeMillis())
                                     .retrieve()
-                                    .toBodilessEntity()
-                                    .map(response -> {
-                                        int statusCode = response.getStatusCode().value();
-                                        logger.info("Request {} sent & Pong Respond: {}", n, statusCode);
+                                    .bodyToMono(String.class)
+                                    .map(responseBody -> {
+                                        logger.info("Request {} sent & Pong Respond: [{}] with status code {}", n, responseBody, HttpStatus.OK.value());
                                         successCounter.increment();
-                                        return statusCode;
+                                        return HttpStatus.OK.value();
                                     })
                                     .onErrorResume(e -> {
                                         if (e instanceof WebClientResponseException) {

@@ -19209,3 +19209,1907 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-01-08 02:25:14.785 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Connection to node 0 (host.docker.internal/192.168.2.145:9092) could not be established. Broker may not be available.
 2025-01-08 02:25:16.035 Ping success, handling ping message: Hello-1736274316035
 2025-01-08 02:25:16.145 Ping success, handling ping message: Hello-1736274316141
+2025-01-08 15:13:30.743 Starting PongApplication using Java 17.0.12 with PID 24840 (C:\code\hsbc\demo\pong\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-08 15:13:30.749 No active profile set, falling back to 1 default profile: "default"
+2025-01-08 15:13:32.093 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 15:13:32.095 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 15:13:32.197 Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+2025-01-08 15:13:32.211 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 15:13:32.211 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08 15:13:32.227 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.demo.dao.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-01-08 15:13:32.227 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-01-08 15:13:32.766 HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 15:13:32.825 HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-01-08 15:13:32.828 HHH000406: Using bytecode reflection optimizer
+2025-01-08 15:13:33.016 HHH000021: Bytecode provider name : bytebuddy
+2025-01-08 15:13:33.188 No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 15:13:33.209 HikariPool-1 - Starting...
+2025-01-08 15:13:33.371 HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-01-08 15:13:33.372 HikariPool-1 - Start completed.
+2025-01-08 15:13:33.542 HHH000021: Bytecode provider name : bytebuddy
+2025-01-08 15:13:33.978 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 15:13:34.034 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 15:13:35.650 Netty started on port 8080
+2025-01-08 15:13:35.691 ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-pong-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = pong-service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-01-08 15:13:35.785 These configurations '[spring.json.trusted.packages]' were supplied but are not used yet.
+2025-01-08 15:13:35.786 Kafka version: 3.4.1
+2025-01-08 15:13:35.787 Kafka commitId: 8a516edc2755df89
+2025-01-08 15:13:35.787 Kafka startTimeMs: 1736320415785
+2025-01-08 15:13:35.790 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Subscribed to topic(s): pong-message-topic
+2025-01-08 15:13:35.802 Started PongApplication in 6.114 seconds (process running for 16.346)
+2025-01-08 15:13:35.994 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting the last seen epoch of partition pong-message-topic-0 to 0 since the associated topicId changed from null to obZgS8JRSGWswmkSFX-iQA
+2025-01-08 15:13:35.996 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Cluster ID: VnszGBVhT1i3dgeeU9CHEg
+2025-01-08 15:13:35.998 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null)
+2025-01-08 15:13:36.005 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] (Re-)joining group
+2025-01-08 15:13:36.017 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: need to re-join with the given member-id: consumer-pong-service-1-3b5acc65-ae02-4a5a-912e-b6dd47ee5122
+2025-01-08 15:13:36.018 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-08 15:13:36.018 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] (Re-)joining group
+2025-01-08 15:13:36.021 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Successfully joined group with generation Generation{generationId=7, memberId='consumer-pong-service-1-3b5acc65-ae02-4a5a-912e-b6dd47ee5122', protocol='range'}
+2025-01-08 15:13:36.024 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Finished assignment for group at generation 7: {consumer-pong-service-1-3b5acc65-ae02-4a5a-912e-b6dd47ee5122=Assignment(partitions=[pong-message-topic-0])}
+2025-01-08 15:13:36.029 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Successfully synced group in generation Generation{generationId=7, memberId='consumer-pong-service-1-3b5acc65-ae02-4a5a-912e-b6dd47ee5122', protocol='range'}
+2025-01-08 15:13:36.029 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Notifying assignor about the new Assignment(partitions=[pong-message-topic-0])
+2025-01-08 15:13:36.032 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Adding newly assigned partitions: pong-message-topic-0
+2025-01-08 15:13:36.041 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Setting offset for partition pong-message-topic-0 to the committed offset FetchPosition{offset=3490, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-08 15:13:36.044 pong-service: partitions assigned: [pong-message-topic-0]
+2025-01-08 15:15:01.717 Ping success, handling ping message: Hello-1736320501065
+2025-01-08 15:15:01.717 Ping success, handling ping message: Hello-1736320501115
+2025-01-08 15:15:01.731 Idempotence will be disabled because acks is set to 0, not set to 'all'.
+2025-01-08 15:15:01.731 ProducerConfig values: 
+	acks = 0
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-01-08 15:15:01.757 Kafka version: 3.4.1
+2025-01-08 15:15:01.757 Kafka commitId: 8a516edc2755df89
+2025-01-08 15:15:01.757 Kafka startTimeMs: 1736320501757
+2025-01-08 15:15:01.764 [Producer clientId=producer-1] Cluster ID: VnszGBVhT1i3dgeeU9CHEg
+2025-01-08 15:15:01.774 [Producer clientId=producer-1] Resetting the last seen epoch of partition pong-message-topic-0 to 0 since the associated topicId changed from null to obZgS8JRSGWswmkSFX-iQA
+2025-01-08 15:15:02.244 Throttling request as too many requests in the same second
+2025-01-08 15:15:02.310 Throttling request as too many requests in the same second
+2025-01-08 15:15:03.061 Ping success, handling ping message: Hello-1736320503055
+2025-01-08 15:15:03.092 Throttling request as too many requests in the same second
+2025-01-08 15:15:04.050 Ping success, handling ping message: Hello-1736320504047
+2025-01-08 15:15:04.076 Throttling request as too many requests in the same second
+2025-01-08 15:15:05.060 Ping success, handling ping message: Hello-1736320505053
+2025-01-08 15:15:05.092 Throttling request as too many requests in the same second
+2025-01-08 15:15:06.046 Ping success, handling ping message: Hello-1736320506042
+2025-01-08 15:15:06.077 Throttling request as too many requests in the same second
+2025-01-08 15:15:07.092 Ping success, handling ping message: Hello-1736320507081
+2025-01-08 15:15:07.128 Throttling request as too many requests in the same second
+2025-01-08 15:15:08.098 Ping success, handling ping message: Hello-1736320508091
+2025-01-08 15:15:08.186 Throttling request as too many requests in the same second
+2025-01-08 15:15:09.111 Ping success, handling ping message: Hello-1736320509103
+2025-01-08 15:15:09.163 Throttling request as too many requests in the same second
+2025-01-08 15:15:10.185 Ping success, handling ping message: Hello-1736320510181
+2025-01-08 15:15:10.280 Throttling request as too many requests in the same second
+2025-01-08 15:15:12.064 Ping success, handling ping message: Hello-1736320512061
+2025-01-08 15:15:12.086 Ping success, handling ping message: Hello-1736320512083
+2025-01-08 15:15:12.179 Throttling request as too many requests in the same second
+2025-01-08 15:15:12.187 Throttling request as too many requests in the same second
+2025-01-08 15:15:13.273 Ping success, handling ping message: Hello-1736320513271
+2025-01-08 15:15:14.037 Throttling request as too many requests in the same second
+2025-01-08 15:15:14.394 Ping success, handling ping message: Hello-1736320514390
+2025-01-08 15:15:15.066 Ping success, handling ping message: Hello-1736320515061
+2025-01-08 15:15:16.059 Throttling request as too many requests in the same second
+2025-01-08 15:15:16.085 Ping success, handling ping message: Hello-1736320516082
+2025-01-08 15:15:17.054 Throttling request as too many requests in the same second
+2025-01-08 15:15:17.077 Ping success, handling ping message: Hello-1736320517074
+2025-01-08 15:15:18.067 Ping success, handling ping message: Hello-1736320518063
+2025-01-08 15:15:18.091 Throttling request as too many requests in the same second
+2025-01-08 15:15:19.046 Throttling request as too many requests in the same second
+2025-01-08 15:15:19.070 Ping success, handling ping message: Hello-1736320519067
+2025-01-08 15:15:20.069 Ping success, handling ping message: Hello-1736320520066
+2025-01-08 15:15:20.095 Throttling request as too many requests in the same second
+2025-01-08 15:15:21.046 Throttling request as too many requests in the same second
+2025-01-08 15:15:21.071 Ping success, handling ping message: Hello-1736320521069
+2025-01-08 15:15:22.049 Throttling request as too many requests in the same second
+2025-01-08 15:15:22.083 Ping success, handling ping message: Hello-1736320522078
+2025-01-08 15:15:23.041 Throttling request as too many requests in the same second
+2025-01-08 15:15:23.087 Ping success, handling ping message: Hello-1736320523083
+2025-01-08 15:15:24.038 Throttling request as too many requests in the same second
+2025-01-08 15:15:24.070 Ping success, handling ping message: Hello-1736320524067
+2025-01-08 15:15:25.048 Throttling request as too many requests in the same second
+2025-01-08 15:15:25.078 Ping success, handling ping message: Hello-1736320525074
+2025-01-08 15:15:26.038 Throttling request as too many requests in the same second
+2025-01-08 15:15:26.086 Ping success, handling ping message: Hello-1736320526083
+2025-01-08 15:15:27.054 Throttling request as too many requests in the same second
+2025-01-08 15:15:27.078 Ping success, handling ping message: Hello-1736320527075
+2025-01-08 15:15:28.055 Throttling request as too many requests in the same second
+2025-01-08 15:15:28.078 Ping success, handling ping message: Hello-1736320528074
+2025-01-08 15:15:28.601 Throttling request as too many requests in the same second
+2025-01-08 15:15:29.040 Throttling request as too many requests in the same second
+2025-01-08 15:15:30.061 Ping success, handling ping message: Hello-1736320530055
+2025-01-08 15:15:30.088 Ping success, handling ping message: Hello-1736320530083
+2025-01-08 15:15:31.055 Throttling request as too many requests in the same second
+2025-01-08 15:15:31.081 Ping success, handling ping message: Hello-1736320531075
+2025-01-08 15:15:32.069 Ping success, handling ping message: Hello-1736320532065
+2025-01-08 15:15:32.084 Throttling request as too many requests in the same second
+2025-01-08 15:15:33.050 Throttling request as too many requests in the same second
+2025-01-08 15:15:33.079 Ping success, handling ping message: Hello-1736320533076
+2025-01-08 15:15:34.070 Ping success, handling ping message: Hello-1736320534067
+2025-01-08 15:15:34.176 Throttling request as too many requests in the same second
+2025-01-08 15:15:35.085 Ping success, handling ping message: Hello-1736320535076
+2025-01-08 15:15:35.106 Throttling request as too many requests in the same second
+2025-01-08 15:15:36.069 Ping success, handling ping message: Hello-1736320536065
+2025-01-08 15:15:36.084 Throttling request as too many requests in the same second
+2025-01-08 15:15:37.076 Ping success, handling ping message: Hello-1736320537073
+2025-01-08 15:15:37.092 Throttling request as too many requests in the same second
+2025-01-08 15:15:38.049 Throttling request as too many requests in the same second
+2025-01-08 15:15:38.080 Ping success, handling ping message: Hello-1736320538077
+2025-01-08 15:15:39.043 Throttling request as too many requests in the same second
+2025-01-08 15:15:39.067 Ping success, handling ping message: Hello-1736320539063
+2025-01-08 15:15:40.050 Throttling request as too many requests in the same second
+2025-01-08 15:15:40.080 Ping success, handling ping message: Hello-1736320540076
+2025-01-08 15:15:41.051 Throttling request as too many requests in the same second
+2025-01-08 15:15:41.082 Ping success, handling ping message: Hello-1736320541076
+2025-01-08 15:15:42.043 Throttling request as too many requests in the same second
+2025-01-08 15:15:42.091 Ping success, handling ping message: Hello-1736320542087
+2025-01-08 15:15:43.044 Throttling request as too many requests in the same second
+2025-01-08 15:15:43.074 Ping success, handling ping message: Hello-1736320543071
+2025-01-08 15:15:44.055 Throttling request as too many requests in the same second
+2025-01-08 15:15:44.072 Ping success, handling ping message: Hello-1736320544069
+2025-01-08 15:15:45.069 Ping success, handling ping message: Hello-1736320545066
+2025-01-08 15:15:45.085 Throttling request as too many requests in the same second
+2025-01-08 15:15:46.045 Throttling request as too many requests in the same second
+2025-01-08 15:15:46.068 Ping success, handling ping message: Hello-1736320546066
+2025-01-08 15:15:47.054 Throttling request as too many requests in the same second
+2025-01-08 15:15:47.079 Ping success, handling ping message: Hello-1736320547077
+2025-01-08 15:15:48.064 Throttling request as too many requests in the same second
+2025-01-08 15:15:48.088 Ping success, handling ping message: Hello-1736320548084
+2025-01-08 15:15:49.054 Throttling request as too many requests in the same second
+2025-01-08 15:15:49.079 Ping success, handling ping message: Hello-1736320549076
+2025-01-08 15:15:50.078 Ping success, handling ping message: Hello-1736320550074
+2025-01-08 15:15:50.093 Throttling request as too many requests in the same second
+2025-01-08 15:15:51.038 Throttling request as too many requests in the same second
+2025-01-08 15:15:51.148 Ping success, handling ping message: Hello-1736320551143
+2025-01-08 15:15:52.083 Ping success, handling ping message: Hello-1736320552080
+2025-01-08 15:15:52.106 Throttling request as too many requests in the same second
+2025-01-08 15:15:53.043 Throttling request as too many requests in the same second
+2025-01-08 15:15:53.075 Ping success, handling ping message: Hello-1736320553071
+2025-01-08 15:15:54.084 Ping success, handling ping message: Hello-1736320554081
+2025-01-08 15:15:54.138 Throttling request as too many requests in the same second
+2025-01-08 15:15:55.070 Ping success, handling ping message: Hello-1736320555066
+2025-01-08 15:15:55.140 Throttling request as too many requests in the same second
+2025-01-08 15:15:56.045 Throttling request as too many requests in the same second
+2025-01-08 15:15:56.067 Ping success, handling ping message: Hello-1736320556064
+2025-01-08 15:15:57.040 Throttling request as too many requests in the same second
+2025-01-08 15:15:57.063 Throttling request as too many requests in the same second
+2025-01-08 15:15:58.045 Ping success, handling ping message: Hello-1736320558041
+2025-01-08 15:15:58.072 Ping success, handling ping message: Hello-1736320558068
+2025-01-08 15:15:59.083 Ping success, handling ping message: Hello-1736320559079
+2025-01-08 15:15:59.178 Throttling request as too many requests in the same second
+2025-01-08 15:16:00.065 Ping success, handling ping message: Hello-1736320560058
+2025-01-08 15:16:00.092 Throttling request as too many requests in the same second
+2025-01-08 15:16:01.070 Ping success, handling ping message: Hello-1736320561067
+2025-01-08 15:16:01.086 Throttling request as too many requests in the same second
+2025-01-08 15:16:02.075 Ping success, handling ping message: Hello-1736320562072
+2025-01-08 15:16:02.090 Throttling request as too many requests in the same second
+2025-01-08 15:16:03.097 Ping success, handling ping message: Hello-1736320563094
+2025-01-08 15:16:03.166 Throttling request as too many requests in the same second
+2025-01-08 15:16:04.086 Ping success, handling ping message: Hello-1736320564081
+2025-01-08 15:16:04.141 Throttling request as too many requests in the same second
+2025-01-08 15:16:05.293 Ping success, handling ping message: Hello-1736320565289
+2025-01-08 15:16:06.038 Throttling request as too many requests in the same second
+2025-01-08 15:16:06.159 Ping success, handling ping message: Hello-1736320566154
+2025-01-08 15:16:06.287 Throttling request as too many requests in the same second
+2025-01-08 15:16:07.184 Ping success, handling ping message: Hello-1736320567180
+2025-01-08 15:16:08.049 Throttling request as too many requests in the same second
+2025-01-08 15:16:08.200 Ping success, handling ping message: Hello-1736320568197
+2025-01-08 15:16:09.049 Throttling request as too many requests in the same second
+2025-01-08 15:16:09.388 Ping success, handling ping message: Hello-1736320569386
+2025-01-08 15:16:10.062 Throttling request as too many requests in the same second
+2025-01-08 15:16:10.386 Ping success, handling ping message: Hello-1736320570381
+2025-01-08 15:16:11.061 Throttling request as too many requests in the same second
+2025-01-08 15:16:12.076 Ping success, handling ping message: Hello-1736320572073
+2025-01-08 15:16:12.090 Ping success, handling ping message: Hello-1736320572088
+2025-01-08 15:16:13.048 Throttling request as too many requests in the same second
+2025-01-08 15:16:13.079 Ping success, handling ping message: Hello-1736320573076
+2025-01-08 15:16:13.284 Throttling request as too many requests in the same second
+2025-01-08 15:16:14.047 Throttling request as too many requests in the same second
+2025-01-08 15:16:15.079 Ping success, handling ping message: Hello-1736320575075
+2025-01-08 15:16:15.095 Ping success, handling ping message: Hello-1736320575091
+2025-01-08 15:16:16.083 Ping success, handling ping message: Hello-1736320576080
+2025-01-08 15:16:16.177 Throttling request as too many requests in the same second
+2025-01-08 15:16:17.047 Throttling request as too many requests in the same second
+2025-01-08 15:16:17.078 Throttling request as too many requests in the same second
+2025-01-08 15:16:18.040 Ping success, handling ping message: Hello-1736320578038
+2025-01-08 15:16:18.088 Ping success, handling ping message: Hello-1736320578084
+2025-01-08 15:16:19.067 Throttling request as too many requests in the same second
+2025-01-08 15:16:19.089 Ping success, handling ping message: Hello-1736320579087
+2025-01-08 15:16:20.084 Ping success, handling ping message: Hello-1736320580080
+2025-01-08 15:16:20.101 Throttling request as too many requests in the same second
+2025-01-08 15:16:21.071 Throttling request as too many requests in the same second
+2025-01-08 15:16:21.089 Ping success, handling ping message: Hello-1736320581084
+2025-01-08 15:16:22.066 Throttling request as too many requests in the same second
+2025-01-08 15:16:22.089 Ping success, handling ping message: Hello-1736320582086
+2025-01-08 15:16:23.073 Throttling request as too many requests in the same second
+2025-01-08 15:16:23.089 Ping success, handling ping message: Hello-1736320583085
+2025-01-08 15:16:24.049 Throttling request as too many requests in the same second
+2025-01-08 15:16:24.074 Throttling request as too many requests in the same second
+2025-01-08 15:16:24.512 Ping success, handling ping message: Hello-1736320584508
+2025-01-08 15:16:25.043 Throttling request as too many requests in the same second
+2025-01-08 15:16:26.068 Ping success, handling ping message: Hello-1736320586066
+2025-01-08 15:16:26.139 Ping success, handling ping message: Hello-1736320586135
+2025-01-08 15:16:27.054 Throttling request as too many requests in the same second
+2025-01-08 15:16:27.097 Ping success, handling ping message: Hello-1736320587093
+2025-01-08 15:16:28.081 Ping success, handling ping message: Hello-1736320588078
+2025-01-08 15:16:28.096 Throttling request as too many requests in the same second
+2025-01-08 15:16:29.061 Throttling request as too many requests in the same second
+2025-01-08 15:16:29.087 Ping success, handling ping message: Hello-1736320589084
+2025-01-08 15:16:30.083 Ping success, handling ping message: Hello-1736320590080
+2025-01-08 15:16:30.181 Throttling request as too many requests in the same second
+2025-01-08 15:16:31.051 Throttling request as too many requests in the same second
+2025-01-08 15:16:31.085 Ping success, handling ping message: Hello-1736320591079
+2025-01-08 15:16:32.040 Throttling request as too many requests in the same second
+2025-01-08 15:16:32.086 Ping success, handling ping message: Hello-1736320592081
+2025-01-08 15:16:33.036 Throttling request as too many requests in the same second
+2025-01-08 15:16:33.077 Throttling request as too many requests in the same second
+2025-01-08 15:16:34.072 Ping success, handling ping message: Hello-1736320594070
+2025-01-08 15:16:34.088 Ping success, handling ping message: Hello-1736320594085
+2025-01-08 15:16:35.070 Throttling request as too many requests in the same second
+2025-01-08 15:16:35.098 Ping success, handling ping message: Hello-1736320595093
+2025-01-08 15:16:36.064 Throttling request as too many requests in the same second
+2025-01-08 15:16:36.086 Ping success, handling ping message: Hello-1736320596083
+2025-01-08 15:16:37.047 Throttling request as too many requests in the same second
+2025-01-08 15:16:37.078 Throttling request as too many requests in the same second
+2025-01-08 15:16:38.068 Ping success, handling ping message: Hello-1736320598065
+2025-01-08 15:16:38.177 Ping success, handling ping message: Hello-1736320598172
+2025-01-08 15:16:39.063 Throttling request as too many requests in the same second
+2025-01-08 15:16:39.092 Ping success, handling ping message: Hello-1736320599086
+2025-01-08 15:16:40.040 Throttling request as too many requests in the same second
+2025-01-08 15:16:40.063 Throttling request as too many requests in the same second
+2025-01-08 15:16:41.051 Ping success, handling ping message: Hello-1736320601046
+2025-01-08 15:16:41.079 Throttling request as too many requests in the same second
+2025-01-08 15:16:42.040 Ping success, handling ping message: Hello-1736320602036
+2025-01-08 15:16:42.071 Throttling request as too many requests in the same second
+2025-01-08 15:16:43.047 Ping success, handling ping message: Hello-1736320603043
+2025-01-08 15:16:43.078 Ping success, handling ping message: Hello-1736320603073
+2025-01-08 15:16:44.038 Throttling request as too many requests in the same second
+2025-01-08 15:16:44.062 Throttling request as too many requests in the same second
+2025-01-08 15:16:45.049 Ping success, handling ping message: Hello-1736320605046
+2025-01-08 15:16:45.080 Ping success, handling ping message: Hello-1736320605077
+2025-01-08 15:16:46.050 Throttling request as too many requests in the same second
+2025-01-08 15:16:46.082 Ping success, handling ping message: Hello-1736320606079
+2025-01-08 15:16:47.076 Throttling request as too many requests in the same second
+2025-01-08 15:16:47.093 Ping success, handling ping message: Hello-1736320607090
+2025-01-08 15:16:48.041 Throttling request as too many requests in the same second
+2025-01-08 15:16:48.085 Ping success, handling ping message: Hello-1736320608082
+2025-01-08 15:16:49.050 Throttling request as too many requests in the same second
+2025-01-08 15:16:49.073 Throttling request as too many requests in the same second
+2025-01-08 15:16:50.048 Ping success, handling ping message: Hello-1736320610044
+2025-01-08 15:16:50.079 Throttling request as too many requests in the same second
+2025-01-08 15:16:51.075 Ping success, handling ping message: Hello-1736320611072
+2025-01-08 15:16:51.092 Ping success, handling ping message: Hello-1736320611089
+2025-01-08 15:16:52.495 Ping success, handling ping message: Hello-1736320612492
+2025-01-08 15:16:53.049 Throttling request as too many requests in the same second
+2025-01-08 15:16:53.282 Ping success, handling ping message: Hello-1736320613280
+2025-01-08 15:16:54.061 Throttling request as too many requests in the same second
+2025-01-08 15:16:54.173 Ping success, handling ping message: Hello-1736320614169
+2025-01-08 15:16:54.186 Throttling request as too many requests in the same second
+2025-01-08 15:16:55.188 Ping success, handling ping message: Hello-1736320615183
+2025-01-08 15:16:56.040 Throttling request as too many requests in the same second
+2025-01-08 15:16:56.182 Ping success, handling ping message: Hello-1736320616178
+2025-01-08 15:16:56.289 Throttling request as too many requests in the same second
+2025-01-08 15:16:57.175 Ping success, handling ping message: Hello-1736320617171
+2025-01-08 15:16:57.392 Throttling request as too many requests in the same second
+2025-01-08 15:16:58.169 Ping success, handling ping message: Hello-1736320618166
+2025-01-08 15:16:58.190 Throttling request as too many requests in the same second
+2025-01-08 15:17:00.080 Ping success, handling ping message: Hello-1736320620078
+2025-01-08 15:17:00.096 Ping success, handling ping message: Hello-1736320620093
+2025-01-08 15:17:01.040 Throttling request as too many requests in the same second
+2025-01-08 15:17:01.069 Throttling request as too many requests in the same second
+2025-01-08 15:17:02.056 Ping success, handling ping message: Hello-1736320622051
+2025-01-08 15:17:02.085 Ping success, handling ping message: Hello-1736320622079
+2025-01-08 15:17:03.047 Throttling request as too many requests in the same second
+2025-01-08 15:17:03.076 Throttling request as too many requests in the same second
+2025-01-08 15:17:04.053 Ping success, handling ping message: Hello-1736320624051
+2025-01-08 15:17:04.075 Throttling request as too many requests in the same second
+2025-01-08 15:17:05.086 Ping success, handling ping message: Hello-1736320625083
+2025-01-08 15:17:05.138 Ping success, handling ping message: Hello-1736320625135
+2025-01-08 15:17:06.042 Throttling request as too many requests in the same second
+2025-01-08 15:17:06.074 Throttling request as too many requests in the same second
+2025-01-08 15:17:07.068 Ping success, handling ping message: Hello-1736320627065
+2025-01-08 15:17:07.090 Ping success, handling ping message: Hello-1736320627088
+2025-01-08 15:17:08.048 Throttling request as too many requests in the same second
+2025-01-08 15:17:08.079 Throttling request as too many requests in the same second
+2025-01-08 15:17:08.306 Ping success, handling ping message: Hello-1736320628304
+2025-01-08 15:17:09.042 Throttling request as too many requests in the same second
+2025-01-08 15:17:10.083 Ping success, handling ping message: Hello-1736320630079
+2025-01-08 15:17:10.097 Ping success, handling ping message: Hello-1736320630094
+2025-01-08 15:17:11.044 Throttling request as too many requests in the same second
+2025-01-08 15:17:11.075 Throttling request as too many requests in the same second
+2025-01-08 15:17:12.053 Ping success, handling ping message: Hello-1736320632048
+2025-01-08 15:17:12.195 Ping success, handling ping message: Hello-1736320632191
+2025-01-08 15:17:13.057 Throttling request as too many requests in the same second
+2025-01-08 15:17:13.081 Throttling request as too many requests in the same second
+2025-01-08 15:17:14.084 Ping success, handling ping message: Hello-1736320634081
+2025-01-08 15:17:14.177 Ping success, handling ping message: Hello-1736320634175
+2025-01-08 15:17:15.065 Throttling request as too many requests in the same second
+2025-01-08 15:17:15.089 Ping success, handling ping message: Hello-1736320635087
+2025-01-08 15:17:16.070 Throttling request as too many requests in the same second
+2025-01-08 15:17:16.139 Ping success, handling ping message: Hello-1736320636137
+2025-01-08 15:17:17.064 Throttling request as too many requests in the same second
+2025-01-08 15:17:17.087 Ping success, handling ping message: Hello-1736320637084
+2025-01-08 15:17:18.071 Throttling request as too many requests in the same second
+2025-01-08 15:17:18.086 Ping success, handling ping message: Hello-1736320638084
+2025-01-08 15:17:19.049 Throttling request as too many requests in the same second
+2025-01-08 15:17:19.077 Throttling request as too many requests in the same second
+2025-01-08 15:17:20.072 Ping success, handling ping message: Hello-1736320640069
+2025-01-08 15:17:20.088 Ping success, handling ping message: Hello-1736320640084
+2025-01-08 15:17:21.061 Throttling request as too many requests in the same second
+2025-01-08 15:17:21.083 Throttling request as too many requests in the same second
+2025-01-08 15:17:22.060 Ping success, handling ping message: Hello-1736320642056
+2025-01-08 15:17:22.080 Throttling request as too many requests in the same second
+2025-01-08 15:17:23.049 Ping success, handling ping message: Hello-1736320643046
+2025-01-08 15:17:23.072 Throttling request as too many requests in the same second
+2025-01-08 15:17:24.044 Ping success, handling ping message: Hello-1736320644040
+2025-01-08 15:17:24.073 Throttling request as too many requests in the same second
+2025-01-08 15:17:25.083 Ping success, handling ping message: Hello-1736320645080
+2025-01-08 15:17:25.111 Ping success, handling ping message: Hello-1736320645109
+2025-01-08 15:17:26.053 Throttling request as too many requests in the same second
+2025-01-08 15:17:26.077 Throttling request as too many requests in the same second
+2025-01-08 15:17:27.041 Ping success, handling ping message: Hello-1736320647039
+2025-01-08 15:17:27.087 Ping success, handling ping message: Hello-1736320647085
+2025-01-08 15:17:28.051 Throttling request as too many requests in the same second
+2025-01-08 15:17:28.062 Throttling request as too many requests in the same second
+2025-01-08 15:17:29.045 Ping success, handling ping message: Hello-1736320649042
+2025-01-08 15:17:29.068 Throttling request as too many requests in the same second
+2025-01-08 15:17:30.059 Ping success, handling ping message: Hello-1736320650054
+2025-01-08 15:17:30.085 Throttling request as too many requests in the same second
+2025-01-08 15:17:31.078 Ping success, handling ping message: Hello-1736320651074
+2025-01-08 15:17:31.093 Ping success, handling ping message: Hello-1736320651090
+2025-01-08 15:17:32.038 Throttling request as too many requests in the same second
+2025-01-08 15:17:32.084 Throttling request as too many requests in the same second
+2025-01-08 15:17:33.046 Ping success, handling ping message: Hello-1736320653042
+2025-01-08 15:17:33.077 Throttling request as too many requests in the same second
+2025-01-08 15:17:34.039 Ping success, handling ping message: Hello-1736320654036
+2025-01-08 15:17:34.087 Ping success, handling ping message: Hello-1736320654083
+2025-01-08 15:17:35.084 Throttling request as too many requests in the same second
+2025-01-08 15:17:35.117 Ping success, handling ping message: Hello-1736320655112
+2025-01-08 15:17:36.063 Throttling request as too many requests in the same second
+2025-01-08 15:17:36.093 Ping success, handling ping message: Hello-1736320656089
+2025-01-08 15:17:37.074 Throttling request as too many requests in the same second
+2025-01-08 15:17:37.088 Ping success, handling ping message: Hello-1736320657086
+2025-01-08 15:17:38.068 Throttling request as too many requests in the same second
+2025-01-08 15:17:38.091 Ping success, handling ping message: Hello-1736320658089
+2025-01-08 15:17:39.049 Throttling request as too many requests in the same second
+2025-01-08 15:17:39.080 Throttling request as too many requests in the same second
+2025-01-08 15:17:40.054 Ping success, handling ping message: Hello-1736320660051
+2025-01-08 15:17:40.090 Ping success, handling ping message: Hello-1736320660086
+2025-01-08 15:17:41.073 Throttling request as too many requests in the same second
+2025-01-08 15:17:41.091 Ping success, handling ping message: Hello-1736320661088
+2025-01-08 15:17:42.083 Throttling request as too many requests in the same second
+2025-01-08 15:17:42.184 Ping success, handling ping message: Hello-1736320662181
+2025-01-08 15:17:43.178 Ping success, handling ping message: Hello-1736320663175
+2025-01-08 15:17:43.287 Throttling request as too many requests in the same second
+2025-01-08 15:17:44.191 Ping success, handling ping message: Hello-1736320664188
+2025-01-08 15:17:44.301 Throttling request as too many requests in the same second
+2025-01-08 15:17:45.189 Ping success, handling ping message: Hello-1736320665185
+2025-01-08 15:17:46.052 Throttling request as too many requests in the same second
+2025-01-08 15:17:46.283 Ping success, handling ping message: Hello-1736320666281
+2025-01-08 15:17:46.385 Throttling request as too many requests in the same second
+2025-01-08 15:17:48.080 Ping success, handling ping message: Hello-1736320668075
+2025-01-08 15:17:48.094 Ping success, handling ping message: Hello-1736320668091
+2025-01-08 15:17:49.071 Throttling request as too many requests in the same second
+2025-01-08 15:17:49.087 Ping success, handling ping message: Hello-1736320669084
+2025-01-08 15:17:50.067 Throttling request as too many requests in the same second
+2025-01-08 15:17:50.092 Ping success, handling ping message: Hello-1736320670089
+2025-01-08 15:17:51.037 Throttling request as too many requests in the same second
+2025-01-08 15:17:51.083 Throttling request as too many requests in the same second
+2025-01-08 15:17:52.051 Ping success, handling ping message: Hello-1736320672046
+2025-01-08 15:17:52.189 Ping success, handling ping message: Hello-1736320672184
+2025-01-08 15:17:52.300 Throttling request as too many requests in the same second
+2025-01-08 15:17:52.408 Throttling request as too many requests in the same second
+2025-01-08 15:17:54.083 Ping success, handling ping message: Hello-1736320674080
+2025-01-08 15:17:54.178 Ping success, handling ping message: Hello-1736320674175
+2025-01-08 15:17:55.051 Throttling request as too many requests in the same second
+2025-01-08 15:17:55.085 Throttling request as too many requests in the same second
+2025-01-08 15:17:56.052 Ping success, handling ping message: Hello-1736320676049
+2025-01-08 15:17:56.082 Throttling request as too many requests in the same second
+2025-01-08 15:17:57.065 Ping success, handling ping message: Hello-1736320677061
+2025-01-08 15:17:57.089 Ping success, handling ping message: Hello-1736320677087
+2025-01-08 15:17:58.067 Throttling request as too many requests in the same second
+2025-01-08 15:17:58.093 Ping success, handling ping message: Hello-1736320678090
+2025-01-08 15:17:59.046 Throttling request as too many requests in the same second
+2025-01-08 15:17:59.077 Throttling request as too many requests in the same second
+2025-01-08 15:18:00.055 Ping success, handling ping message: Hello-1736320680052
+2025-01-08 15:18:00.082 Throttling request as too many requests in the same second
+2025-01-08 15:18:01.064 Ping success, handling ping message: Hello-1736320681061
+2025-01-08 15:18:01.085 Throttling request as too many requests in the same second
+2025-01-08 15:18:02.041 Ping success, handling ping message: Hello-1736320682036
+2025-01-08 15:18:02.097 Ping success, handling ping message: Hello-1736320682093
+2025-01-08 15:18:03.054 Throttling request as too many requests in the same second
+2025-01-08 15:18:03.089 Ping success, handling ping message: Hello-1736320683085
+2025-01-08 15:18:04.060 Throttling request as too many requests in the same second
+2025-01-08 15:18:04.082 Throttling request as too many requests in the same second
+2025-01-08 15:18:05.074 Ping success, handling ping message: Hello-1736320685071
+2025-01-08 15:18:05.090 Ping success, handling ping message: Hello-1736320685087
+2025-01-08 15:18:06.047 Throttling request as too many requests in the same second
+2025-01-08 15:18:06.079 Throttling request as too many requests in the same second
+2025-01-08 15:18:07.074 Ping success, handling ping message: Hello-1736320687072
+2025-01-08 15:18:07.090 Ping success, handling ping message: Hello-1736320687087
+2025-01-08 15:18:08.059 Throttling request as too many requests in the same second
+2025-01-08 15:18:08.085 Throttling request as too many requests in the same second
+2025-01-08 15:18:09.046 Ping success, handling ping message: Hello-1736320689043
+2025-01-08 15:18:09.076 Throttling request as too many requests in the same second
+2025-01-08 15:18:10.037 Ping success, handling ping message: Hello-1736320690034
+2025-01-08 15:18:10.088 Ping success, handling ping message: Hello-1736320690084
+2025-01-08 15:18:11.042 Throttling request as too many requests in the same second
+2025-01-08 15:18:11.067 Throttling request as too many requests in the same second
+2025-01-08 15:18:12.047 Ping success, handling ping message: Hello-1736320692043
+2025-01-08 15:18:12.078 Throttling request as too many requests in the same second
+2025-01-08 15:18:13.047 Ping success, handling ping message: Hello-1736320693044
+2025-01-08 15:18:13.187 Ping success, handling ping message: Hello-1736320693184
+2025-01-08 15:18:14.068 Throttling request as too many requests in the same second
+2025-01-08 15:18:14.145 Ping success, handling ping message: Hello-1736320694142
+2025-01-08 15:18:15.042 Throttling request as too many requests in the same second
+2025-01-08 15:18:15.065 Throttling request as too many requests in the same second
+2025-01-08 15:18:16.038 Ping success, handling ping message: Hello-1736320696035
+2025-01-08 15:18:16.080 Throttling request as too many requests in the same second
+2025-01-08 15:18:17.058 Ping success, handling ping message: Hello-1736320697056
+2025-01-08 15:18:17.081 Throttling request as too many requests in the same second
+2025-01-08 15:18:18.040 Ping success, handling ping message: Hello-1736320698037
+2025-01-08 15:18:18.087 Ping success, handling ping message: Hello-1736320698084
+2025-01-08 15:18:19.070 Throttling request as too many requests in the same second
+2025-01-08 15:18:19.094 Ping success, handling ping message: Hello-1736320699092
+2025-01-08 15:18:20.064 Throttling request as too many requests in the same second
+2025-01-08 15:18:20.089 Ping success, handling ping message: Hello-1736320700086
+2025-01-08 15:18:21.068 Throttling request as too many requests in the same second
+2025-01-08 15:18:21.084 Throttling request as too many requests in the same second
+2025-01-08 15:18:22.050 Ping success, handling ping message: Hello-1736320702042
+2025-01-08 15:18:22.094 Ping success, handling ping message: Hello-1736320702087
+2025-01-08 15:18:23.049 Throttling request as too many requests in the same second
+2025-01-08 15:18:23.092 Ping success, handling ping message: Hello-1736320703088
+2025-01-08 15:18:24.054 Throttling request as too many requests in the same second
+2025-01-08 15:18:24.079 Throttling request as too many requests in the same second
+2025-01-08 15:18:25.080 Ping success, handling ping message: Hello-1736320705078
+2025-01-08 15:18:25.094 Ping success, handling ping message: Hello-1736320705092
+2025-01-08 15:18:26.044 Throttling request as too many requests in the same second
+2025-01-08 15:18:26.070 Throttling request as too many requests in the same second
+2025-01-08 15:18:27.039 Ping success, handling ping message: Hello-1736320707037
+2025-01-08 15:18:27.062 Throttling request as too many requests in the same second
+2025-01-08 15:18:28.050 Ping success, handling ping message: Hello-1736320708049
+2025-01-08 15:18:28.082 Throttling request as too many requests in the same second
+2025-01-08 15:18:29.047 Ping success, handling ping message: Hello-1736320709044
+2025-01-08 15:18:29.075 Throttling request as too many requests in the same second
+2025-01-08 15:18:30.047 Ping success, handling ping message: Hello-1736320710043
+2025-01-08 15:18:30.151 Ping success, handling ping message: Hello-1736320710147
+2025-01-08 15:18:31.045 Throttling request as too many requests in the same second
+2025-01-08 15:18:31.077 Throttling request as too many requests in the same second
+2025-01-08 15:18:32.057 Ping success, handling ping message: Hello-1736320712051
+2025-01-08 15:18:32.088 Ping success, handling ping message: Hello-1736320712084
+2025-01-08 15:18:33.094 Ping success, handling ping message: Hello-1736320713089
+2025-01-08 15:18:33.198 Throttling request as too many requests in the same second
+2025-01-08 15:18:34.084 Throttling request as too many requests in the same second
+2025-01-08 15:18:34.097 Ping success, handling ping message: Hello-1736320714094
+2025-01-08 15:18:35.094 Ping success, handling ping message: Hello-1736320715092
+2025-01-08 15:18:35.148 Throttling request as too many requests in the same second
+2025-01-08 15:18:36.103 Ping success, handling ping message: Hello-1736320716099
+2025-01-08 15:18:36.171 Throttling request as too many requests in the same second
+2025-01-08 15:18:37.291 Ping success, handling ping message: Hello-1736320717288
+2025-01-08 15:18:38.037 Throttling request as too many requests in the same second
+2025-01-08 15:18:38.391 Ping success, handling ping message: Hello-1736320718388
+2025-01-08 15:18:39.037 Throttling request as too many requests in the same second
+2025-01-08 15:18:39.194 Ping success, handling ping message: Hello-1736320719191
+2025-01-08 15:18:40.055 Throttling request as too many requests in the same second
+2025-01-08 15:18:40.234 Ping success, handling ping message: Hello-1736320720225
+2025-01-08 15:18:40.317 Throttling request as too many requests in the same second
+2025-01-08 15:18:42.080 Ping success, handling ping message: Hello-1736320722078
+2025-01-08 15:18:42.096 Ping success, handling ping message: Hello-1736320722093
+2025-01-08 15:18:43.075 Throttling request as too many requests in the same second
+2025-01-08 15:18:43.172 Ping success, handling ping message: Hello-1736320723163
+2025-01-08 15:18:43.309 Throttling request as too many requests in the same second
+2025-01-08 15:18:44.049 Throttling request as too many requests in the same second
+2025-01-08 15:18:45.042 Ping success, handling ping message: Hello-1736320725038
+2025-01-08 15:18:45.062 Throttling request as too many requests in the same second
+2025-01-08 15:18:46.048 Ping success, handling ping message: Hello-1736320726044
+2025-01-08 15:18:46.078 Throttling request as too many requests in the same second
+2025-01-08 15:18:47.049 Ping success, handling ping message: Hello-1736320727047
+2025-01-08 15:18:47.074 Throttling request as too many requests in the same second
+2025-01-08 15:18:48.084 Ping success, handling ping message: Hello-1736320728080
+2025-01-08 15:18:48.144 Ping success, handling ping message: Hello-1736320728142
+2025-01-08 15:18:49.048 Throttling request as too many requests in the same second
+2025-01-08 15:18:49.076 Throttling request as too many requests in the same second
+2025-01-08 15:18:50.084 Ping success, handling ping message: Hello-1736320730080
+2025-01-08 15:18:50.117 Ping success, handling ping message: Hello-1736320730108
+2025-01-08 15:18:51.039 Throttling request as too many requests in the same second
+2025-01-08 15:18:51.064 Throttling request as too many requests in the same second
+2025-01-08 15:18:52.036 Ping success, handling ping message: Hello-1736320732034
+2025-01-08 15:18:52.084 Throttling request as too many requests in the same second
+2025-01-08 15:18:53.042 Ping success, handling ping message: Hello-1736320733039
+2025-01-08 15:18:53.073 Throttling request as too many requests in the same second
+2025-01-08 15:18:54.070 Ping success, handling ping message: Hello-1736320734068
+2025-01-08 15:18:54.087 Ping success, handling ping message: Hello-1736320734084
+2025-01-08 15:18:55.064 Throttling request as too many requests in the same second
+2025-01-08 15:18:55.093 Ping success, handling ping message: Hello-1736320735089
+2025-01-08 15:18:56.045 Throttling request as too many requests in the same second
+2025-01-08 15:18:56.070 Throttling request as too many requests in the same second
+2025-01-08 15:18:57.039 Ping success, handling ping message: Hello-1736320737036
+2025-01-08 15:18:57.068 Throttling request as too many requests in the same second
+2025-01-08 15:18:58.045 Ping success, handling ping message: Hello-1736320738043
+2025-01-08 15:18:58.075 Throttling request as too many requests in the same second
+2025-01-08 15:18:59.053 Ping success, handling ping message: Hello-1736320739049
+2025-01-08 15:18:59.078 Throttling request as too many requests in the same second
+2025-01-08 15:19:00.069 Ping success, handling ping message: Hello-1736320740065
+2025-01-08 15:19:00.109 Ping success, handling ping message: Hello-1736320740102
+2025-01-08 15:19:01.040 Throttling request as too many requests in the same second
+2025-01-08 15:19:01.062 Throttling request as too many requests in the same second
+2025-01-08 15:19:02.036 Ping success, handling ping message: Hello-1736320742034
+2025-01-08 15:19:02.077 Throttling request as too many requests in the same second
+2025-01-08 15:19:03.046 Ping success, handling ping message: Hello-1736320743041
+2025-01-08 15:19:03.186 Ping success, handling ping message: Hello-1736320743182
+2025-01-08 15:19:04.050 Throttling request as too many requests in the same second
+2025-01-08 15:19:04.093 Ping success, handling ping message: Hello-1736320744088
+2025-01-08 15:19:05.039 Throttling request as too many requests in the same second
+2025-01-08 15:19:05.063 Throttling request as too many requests in the same second
+2025-01-08 15:19:06.044 Ping success, handling ping message: Hello-1736320746042
+2025-01-08 15:19:06.071 Throttling request as too many requests in the same second
+2025-01-08 15:19:07.042 Ping success, handling ping message: Hello-1736320747037
+2025-01-08 15:19:07.088 Ping success, handling ping message: Hello-1736320747084
+2025-01-08 15:19:08.075 Throttling request as too many requests in the same second
+2025-01-08 15:19:08.090 Ping success, handling ping message: Hello-1736320748087
+2025-01-08 15:19:09.058 Throttling request as too many requests in the same second
+2025-01-08 15:19:09.079 Throttling request as too many requests in the same second
+2025-01-08 15:19:10.052 Ping success, handling ping message: Hello-1736320750049
+2025-01-08 15:19:10.082 Throttling request as too many requests in the same second
+2025-01-08 15:19:11.048 Ping success, handling ping message: Hello-1736320751044
+2025-01-08 15:19:11.079 Throttling request as too many requests in the same second
+2025-01-08 15:19:12.049 Ping success, handling ping message: Hello-1736320752047
+2025-01-08 15:19:12.073 Throttling request as too many requests in the same second
+2025-01-08 15:19:13.083 Ping success, handling ping message: Hello-1736320753075
+2025-01-08 15:19:13.098 Ping success, handling ping message: Hello-1736320753095
+2025-01-08 15:19:14.052 Throttling request as too many requests in the same second
+2025-01-08 15:19:14.078 Throttling request as too many requests in the same second
+2025-01-08 15:19:15.044 Ping success, handling ping message: Hello-1736320755041
+2025-01-08 15:19:15.072 Throttling request as too many requests in the same second
+2025-01-08 15:19:16.040 Ping success, handling ping message: Hello-1736320756038
+2025-01-08 15:19:16.065 Throttling request as too many requests in the same second
+2025-01-08 15:19:17.054 Ping success, handling ping message: Hello-1736320757052
+2025-01-08 15:19:17.078 Throttling request as too many requests in the same second
+2025-01-08 15:19:18.043 Ping success, handling ping message: Hello-1736320758040
+2025-01-08 15:19:18.089 Ping success, handling ping message: Hello-1736320758086
+2025-01-08 15:19:19.052 Throttling request as too many requests in the same second
+2025-01-08 15:19:19.183 Ping success, handling ping message: Hello-1736320759181
+2025-01-08 15:19:20.046 Throttling request as too many requests in the same second
+2025-01-08 15:19:20.078 Throttling request as too many requests in the same second
+2025-01-08 15:19:21.054 Ping success, handling ping message: Hello-1736320761050
+2025-01-08 15:19:21.085 Throttling request as too many requests in the same second
+2025-01-08 15:19:22.044 Ping success, handling ping message: Hello-1736320762042
+2025-01-08 15:19:22.074 Throttling request as too many requests in the same second
+2025-01-08 15:19:23.070 Ping success, handling ping message: Hello-1736320763066
+2025-01-08 15:19:23.099 Ping success, handling ping message: Hello-1736320763096
+2025-01-08 15:19:24.044 Throttling request as too many requests in the same second
+2025-01-08 15:19:24.073 Throttling request as too many requests in the same second
+2025-01-08 15:19:25.051 Ping success, handling ping message: Hello-1736320765047
+2025-01-08 15:19:25.187 Ping success, handling ping message: Hello-1736320765182
+2025-01-08 15:19:26.075 Throttling request as too many requests in the same second
+2025-01-08 15:19:26.107 Ping success, handling ping message: Hello-1736320766101
+2025-01-08 15:19:27.060 Throttling request as too many requests in the same second
+2025-01-08 15:19:27.086 Ping success, handling ping message: Hello-1736320767084
+2025-01-08 15:19:28.052 Throttling request as too many requests in the same second
+2025-01-08 15:19:28.074 Throttling request as too many requests in the same second
+2025-01-08 15:19:29.038 Ping success, handling ping message: Hello-1736320769035
+2025-01-08 15:19:29.077 Throttling request as too many requests in the same second
+2025-01-08 15:19:30.059 Ping success, handling ping message: Hello-1736320770057
+2025-01-08 15:19:30.081 Throttling request as too many requests in the same second
+2025-01-08 15:19:31.083 Ping success, handling ping message: Hello-1736320771080
+2025-01-08 15:19:31.136 Ping success, handling ping message: Hello-1736320771135
+2025-01-08 15:19:32.079 Throttling request as too many requests in the same second
+2025-01-08 15:19:32.094 Ping success, handling ping message: Hello-1736320772091
+2025-01-08 15:19:33.043 Throttling request as too many requests in the same second
+2025-01-08 15:19:33.092 Ping success, handling ping message: Hello-1736320773087
+2025-01-08 15:19:34.042 Throttling request as too many requests in the same second
+2025-01-08 15:19:34.070 Throttling request as too many requests in the same second
+2025-01-08 15:19:35.042 Ping success, handling ping message: Hello-1736320775041
+2025-01-08 15:19:35.090 Ping success, handling ping message: Hello-1736320775088
+2025-01-08 15:19:36.075 Throttling request as too many requests in the same second
+2025-01-08 15:19:36.091 Ping success, handling ping message: Hello-1736320776089
+2025-01-08 15:19:37.051 Throttling request as too many requests in the same second
+2025-01-08 15:19:37.085 Throttling request as too many requests in the same second
+2025-01-08 15:19:38.062 Ping success, handling ping message: Hello-1736320778059
+2025-01-08 15:19:38.082 Throttling request as too many requests in the same second
+2025-01-08 15:19:39.089 Ping success, handling ping message: Hello-1736320779084
+2025-01-08 15:19:39.216 Ping success, handling ping message: Hello-1736320779211
+2025-01-08 15:19:40.094 Ping success, handling ping message: Hello-1736320780092
+2025-01-08 15:19:40.188 Throttling request as too many requests in the same second
+2025-01-08 15:19:41.195 Ping success, handling ping message: Hello-1736320781190
+2025-01-08 15:19:42.041 Throttling request as too many requests in the same second
+2025-01-08 15:19:42.291 Ping success, handling ping message: Hello-1736320782287
+2025-01-08 15:19:42.507 Throttling request as too many requests in the same second
+2025-01-08 15:19:44.044 Ping success, handling ping message: Hello-1736320784041
+2025-01-08 15:19:44.089 Throttling request as too many requests in the same second
+2025-01-08 15:19:45.054 Ping success, handling ping message: Hello-1736320785051
+2025-01-08 15:19:45.072 Throttling request as too many requests in the same second
+2025-01-08 15:19:46.043 Ping success, handling ping message: Hello-1736320786042
+2025-01-08 15:19:46.075 Throttling request as too many requests in the same second
+2025-01-08 15:19:46.284 Ping success, handling ping message: Hello-1736320786281
+2025-01-08 15:19:47.051 Throttling request as too many requests in the same second
+2025-01-08 15:19:48.039 Ping success, handling ping message: Hello-1736320788035
+2025-01-08 15:19:48.087 Throttling request as too many requests in the same second
+2025-01-08 15:19:49.043 Ping success, handling ping message: Hello-1736320789039
+2025-01-08 15:19:49.072 Throttling request as too many requests in the same second
+2025-01-08 15:19:50.069 Ping success, handling ping message: Hello-1736320790066
+2025-01-08 15:19:50.141 Ping success, handling ping message: Hello-1736320790137
+2025-01-08 15:19:51.073 Throttling request as too many requests in the same second
+2025-01-08 15:19:51.095 Ping success, handling ping message: Hello-1736320791093
+2025-01-08 15:19:52.071 Throttling request as too many requests in the same second
+2025-01-08 15:19:52.153 Ping success, handling ping message: Hello-1736320792148
+2025-01-08 15:19:53.050 Throttling request as too many requests in the same second
+2025-01-08 15:19:53.086 Throttling request as too many requests in the same second
+2025-01-08 15:19:53.421 Ping success, handling ping message: Hello-1736320793417
+2025-01-08 15:19:54.043 Throttling request as too many requests in the same second
+2025-01-08 15:19:55.049 Ping success, handling ping message: Hello-1736320795045
+2025-01-08 15:19:55.078 Throttling request as too many requests in the same second
+2025-01-08 15:19:56.076 Ping success, handling ping message: Hello-1736320796074
+2025-01-08 15:19:56.091 Ping success, handling ping message: Hello-1736320796089
+2025-01-08 15:19:57.051 Throttling request as too many requests in the same second
+2025-01-08 15:19:57.176 Ping success, handling ping message: Hello-1736320797174
+2025-01-08 15:19:58.062 Throttling request as too many requests in the same second
+2025-01-08 15:19:58.084 Throttling request as too many requests in the same second
+2025-01-08 15:19:59.074 Ping success, handling ping message: Hello-1736320799071
+2025-01-08 15:19:59.090 Ping success, handling ping message: Hello-1736320799087
+2025-01-08 15:20:00.041 Throttling request as too many requests in the same second
+2025-01-08 15:20:00.066 Throttling request as too many requests in the same second
+2025-01-08 15:20:01.047 Ping success, handling ping message: Hello-1736320801043
+2025-01-08 15:20:01.096 Ping success, handling ping message: Hello-1736320801092
+2025-01-08 15:20:02.046 Throttling request as too many requests in the same second
+2025-01-08 15:20:02.072 Throttling request as too many requests in the same second
+2025-01-08 15:20:03.066 Ping success, handling ping message: Hello-1736320803064
+2025-01-08 15:20:03.095 Ping success, handling ping message: Hello-1736320803085
+2025-01-08 15:20:04.081 Throttling request as too many requests in the same second
+2025-01-08 15:20:04.098 Ping success, handling ping message: Hello-1736320804095
+2025-01-08 15:20:05.047 Throttling request as too many requests in the same second
+2025-01-08 15:20:05.082 Throttling request as too many requests in the same second
+2025-01-08 15:20:06.061 Ping success, handling ping message: Hello-1736320806054
+2025-01-08 15:20:06.095 Ping success, handling ping message: Hello-1736320806091
+2025-01-08 15:20:07.079 Throttling request as too many requests in the same second
+2025-01-08 15:20:07.094 Ping success, handling ping message: Hello-1736320807092
+2025-01-08 15:20:08.044 Throttling request as too many requests in the same second
+2025-01-08 15:20:08.075 Throttling request as too many requests in the same second
+2025-01-08 15:20:09.049 Ping success, handling ping message: Hello-1736320809046
+2025-01-08 15:20:09.081 Throttling request as too many requests in the same second
+2025-01-08 15:20:10.051 Ping success, handling ping message: Hello-1736320810046
+2025-01-08 15:20:10.083 Throttling request as too many requests in the same second
+2025-01-08 15:20:11.047 Ping success, handling ping message: Hello-1736320811046
+2025-01-08 15:20:11.079 Throttling request as too many requests in the same second
+2025-01-08 15:20:12.041 Ping success, handling ping message: Hello-1736320812038
+2025-01-08 15:20:12.062 Throttling request as too many requests in the same second
+2025-01-08 15:20:13.047 Ping success, handling ping message: Hello-1736320813043
+2025-01-08 15:20:13.084 Throttling request as too many requests in the same second
+2025-01-08 15:20:14.043 Ping success, handling ping message: Hello-1736320814038
+2025-01-08 15:20:14.080 Throttling request as too many requests in the same second
+2025-01-08 15:20:15.036 Ping success, handling ping message: Hello-1736320815034
+2025-01-08 15:20:15.063 Throttling request as too many requests in the same second
+2025-01-08 15:20:16.059 Ping success, handling ping message: Hello-1736320816056
+2025-01-08 15:20:16.073 Throttling request as too many requests in the same second
+2025-01-08 15:20:17.045 Ping success, handling ping message: Hello-1736320817041
+2025-01-08 15:20:17.076 Throttling request as too many requests in the same second
+2025-01-08 15:20:18.038 Ping success, handling ping message: Hello-1736320818035
+2025-01-08 15:20:18.065 Throttling request as too many requests in the same second
+2025-01-08 15:20:19.078 Ping success, handling ping message: Hello-1736320819076
+2025-01-08 15:20:19.103 Ping success, handling ping message: Hello-1736320819100
+2025-01-08 15:20:20.075 Throttling request as too many requests in the same second
+2025-01-08 15:20:20.166 Ping success, handling ping message: Hello-1736320820162
+2025-01-08 15:20:21.052 Throttling request as too many requests in the same second
+2025-01-08 15:20:21.187 Ping success, handling ping message: Hello-1736320821183
+2025-01-08 15:20:22.074 Throttling request as too many requests in the same second
+2025-01-08 15:20:22.088 Ping success, handling ping message: Hello-1736320822087
+2025-01-08 15:20:23.042 Throttling request as too many requests in the same second
+2025-01-08 15:20:23.075 Throttling request as too many requests in the same second
+2025-01-08 15:20:24.049 Ping success, handling ping message: Hello-1736320824046
+2025-01-08 15:20:24.081 Throttling request as too many requests in the same second
+2025-01-08 15:20:25.052 Ping success, handling ping message: Hello-1736320825049
+2025-01-08 15:20:25.083 Throttling request as too many requests in the same second
+2025-01-08 15:20:26.047 Ping success, handling ping message: Hello-1736320826044
+2025-01-08 15:20:26.078 Throttling request as too many requests in the same second
+2025-01-08 15:20:27.038 Ping success, handling ping message: Hello-1736320827035
+2025-01-08 15:20:27.075 Throttling request as too many requests in the same second
+2025-01-08 15:20:28.090 Ping success, handling ping message: Hello-1736320828086
+2025-01-08 15:20:28.167 Ping success, handling ping message: Hello-1736320828163
+2025-01-08 15:20:29.036 Throttling request as too many requests in the same second
+2025-01-08 15:20:29.084 Throttling request as too many requests in the same second
+2025-01-08 15:20:30.048 Ping success, handling ping message: Hello-1736320830045
+2025-01-08 15:20:30.070 Throttling request as too many requests in the same second
+2025-01-08 15:20:31.035 Ping success, handling ping message: Hello-1736320831033
+2025-01-08 15:20:31.082 Throttling request as too many requests in the same second
+2025-01-08 15:20:32.055 Ping success, handling ping message: Hello-1736320832052
+2025-01-08 15:20:32.086 Throttling request as too many requests in the same second
+2025-01-08 15:20:33.065 Ping success, handling ping message: Hello-1736320833060
+2025-01-08 15:20:33.094 Ping success, handling ping message: Hello-1736320833088
+2025-01-08 15:20:34.062 Throttling request as too many requests in the same second
+2025-01-08 15:20:34.082 Throttling request as too many requests in the same second
+2025-01-08 15:20:35.079 Ping success, handling ping message: Hello-1736320835078
+2025-01-08 15:20:35.197 Ping success, handling ping message: Hello-1736320835193
+2025-01-08 15:20:36.094 Ping success, handling ping message: Hello-1736320836089
+2025-01-08 15:20:36.170 Throttling request as too many requests in the same second
+2025-01-08 15:20:37.104 Ping success, handling ping message: Hello-1736320837101
+2025-01-08 15:20:37.178 Throttling request as too many requests in the same second
+2025-01-08 15:20:38.168 Ping success, handling ping message: Hello-1736320838166
+2025-01-08 15:20:38.183 Throttling request as too many requests in the same second
+2025-01-08 15:20:39.203 Ping success, handling ping message: Hello-1736320839198
+2025-01-08 15:20:40.080 Throttling request as too many requests in the same second
+2025-01-08 15:20:40.220 Ping success, handling ping message: Hello-1736320840215
+2025-01-08 15:20:41.040 Throttling request as too many requests in the same second
+2025-01-08 15:20:42.048 Ping success, handling ping message: Hello-1736320842046
+2025-01-08 15:20:42.078 Throttling request as too many requests in the same second
+2025-01-08 15:20:42.282 Ping success, handling ping message: Hello-1736320842280
+2025-01-08 15:20:42.382 Throttling request as too many requests in the same second
+2025-01-08 15:20:44.044 Ping success, handling ping message: Hello-1736320844038
+2025-01-08 15:20:44.088 Throttling request as too many requests in the same second
+2025-01-08 15:20:44.396 Ping success, handling ping message: Hello-1736320844393
+2025-01-08 15:20:45.041 Throttling request as too many requests in the same second
+2025-01-08 15:20:46.044 Ping success, handling ping message: Hello-1736320846043
+2025-01-08 15:20:46.077 Throttling request as too many requests in the same second
+2025-01-08 15:20:46.503 Ping success, handling ping message: Hello-1736320846497
+2025-01-08 15:20:47.058 Throttling request as too many requests in the same second
+2025-01-08 15:20:48.050 Ping success, handling ping message: Hello-1736320848046
+2025-01-08 15:20:48.103 Ping success, handling ping message: Hello-1736320848096
+2025-01-08 15:20:49.046 Throttling request as too many requests in the same second
+2025-01-08 15:20:49.078 Throttling request as too many requests in the same second
+2025-01-08 15:20:50.063 Ping success, handling ping message: Hello-1736320850061
+2025-01-08 15:20:50.088 Throttling request as too many requests in the same second
+2025-01-08 15:20:51.047 Ping success, handling ping message: Hello-1736320851045
+2025-01-08 15:20:51.079 Throttling request as too many requests in the same second
+2025-01-08 15:20:52.047 Ping success, handling ping message: Hello-1736320852042
+2025-01-08 15:20:52.082 Throttling request as too many requests in the same second
+2025-01-08 15:20:53.061 Ping success, handling ping message: Hello-1736320853059
+2025-01-08 15:20:53.085 Throttling request as too many requests in the same second
+2025-01-08 15:20:54.038 Ping success, handling ping message: Hello-1736320854035
+2025-01-08 15:20:54.078 Throttling request as too many requests in the same second
+2025-01-08 15:20:55.040 Ping success, handling ping message: Hello-1736320855034
+2025-01-08 15:20:55.149 Ping success, handling ping message: Hello-1736320855143
+2025-01-08 15:20:56.083 Throttling request as too many requests in the same second
+2025-01-08 15:20:56.185 Ping success, handling ping message: Hello-1736320856181
+2025-01-08 15:20:57.042 Throttling request as too many requests in the same second
+2025-01-08 15:20:57.067 Throttling request as too many requests in the same second
+2025-01-08 15:20:58.039 Ping success, handling ping message: Hello-1736320858035
+2025-01-08 15:20:58.077 Throttling request as too many requests in the same second
+2025-01-08 15:20:59.048 Ping success, handling ping message: Hello-1736320859042
+2025-01-08 15:20:59.182 Ping success, handling ping message: Hello-1736320859179
+2025-01-08 15:21:00.040 Throttling request as too many requests in the same second
+2025-01-08 15:21:00.111 Ping success, handling ping message: Hello-1736320860105
+2025-01-08 15:21:01.037 Throttling request as too many requests in the same second
+2025-01-08 15:21:01.078 Throttling request as too many requests in the same second
+2025-01-08 15:21:02.042 Ping success, handling ping message: Hello-1736320862040
+2025-01-08 15:21:02.074 Throttling request as too many requests in the same second
+2025-01-08 15:21:03.070 Ping success, handling ping message: Hello-1736320863066
+2025-01-08 15:21:03.086 Throttling request as too many requests in the same second
+2025-01-08 15:21:04.051 Ping success, handling ping message: Hello-1736320864047
+2025-01-08 15:21:04.094 Ping success, handling ping message: Hello-1736320864090
+2025-01-08 15:21:05.065 Throttling request as too many requests in the same second
+2025-01-08 15:21:05.091 Ping success, handling ping message: Hello-1736320865088
+2025-01-08 15:21:06.042 Throttling request as too many requests in the same second
+2025-01-08 15:21:06.066 Throttling request as too many requests in the same second
+2025-01-08 15:21:07.049 Ping success, handling ping message: Hello-1736320867047
+2025-01-08 15:21:07.075 Throttling request as too many requests in the same second
+2025-01-08 15:21:08.052 Ping success, handling ping message: Hello-1736320868048
+2025-01-08 15:21:08.084 Throttling request as too many requests in the same second
+2025-01-08 15:21:09.043 Ping success, handling ping message: Hello-1736320869040
+2025-01-08 15:21:09.065 Throttling request as too many requests in the same second
+2025-01-08 15:21:10.040 Ping success, handling ping message: Hello-1736320870038
+2025-01-08 15:21:10.066 Throttling request as too many requests in the same second
+2025-01-08 15:21:11.077 Ping success, handling ping message: Hello-1736320871071
+2025-01-08 15:21:11.077 Throttling request as too many requests in the same second
+2025-01-08 15:21:12.067 Ping success, handling ping message: Hello-1736320872065
+2025-01-08 15:21:12.084 Throttling request as too many requests in the same second
+2025-01-08 15:21:13.046 Ping success, handling ping message: Hello-1736320873043
+2025-01-08 15:21:13.077 Throttling request as too many requests in the same second
+2025-01-08 15:21:14.042 Ping success, handling ping message: Hello-1736320874039
+2025-01-08 15:21:14.069 Throttling request as too many requests in the same second
+2025-01-08 15:21:15.084 Ping success, handling ping message: Hello-1736320875070
+2025-01-08 15:21:15.147 Ping success, handling ping message: Hello-1736320875139
+2025-01-08 15:21:16.058 Throttling request as too many requests in the same second
+2025-01-08 15:21:16.096 Ping success, handling ping message: Hello-1736320876089
+2025-01-08 15:21:17.078 Throttling request as too many requests in the same second
+2025-01-08 15:21:17.093 Ping success, handling ping message: Hello-1736320877091
+2025-01-08 15:21:18.087 Throttling request as too many requests in the same second
+2025-01-08 15:21:18.202 Ping success, handling ping message: Hello-1736320878200
+2025-01-08 15:21:19.190 Ping success, handling ping message: Hello-1736320879185
+2025-01-08 15:21:19.286 Throttling request as too many requests in the same second
+2025-01-08 15:21:20.086 Throttling request as too many requests in the same second
+2025-01-08 15:21:20.161 Ping success, handling ping message: Hello-1736320880159
+2025-01-08 15:21:21.101 Ping success, handling ping message: Hello-1736320881100
+2025-01-08 15:21:21.389 Throttling request as too many requests in the same second
+2025-01-08 15:21:23.070 Ping success, handling ping message: Hello-1736320883066
+2025-01-08 15:21:23.109 Ping success, handling ping message: Hello-1736320883104
+2025-01-08 15:21:23.234 Throttling request as too many requests in the same second
+2025-01-08 15:21:23.315 Throttling request as too many requests in the same second
+2025-01-08 15:21:24.389 Ping success, handling ping message: Hello-1736320884387
+2025-01-08 15:21:25.070 Throttling request as too many requests in the same second
+2025-01-08 15:21:25.284 Ping success, handling ping message: Hello-1736320885282
+2025-01-08 15:21:26.047 Throttling request as too many requests in the same second
+2025-01-08 15:21:26.306 Ping success, handling ping message: Hello-1736320886303
+2025-01-08 15:21:27.044 Throttling request as too many requests in the same second
+2025-01-08 15:21:28.078 Ping success, handling ping message: Hello-1736320888075
+2025-01-08 15:21:28.095 Ping success, handling ping message: Hello-1736320888091
+2025-01-08 15:21:29.072 Throttling request as too many requests in the same second
+2025-01-08 15:21:29.089 Throttling request as too many requests in the same second
+2025-01-08 15:21:30.051 Ping success, handling ping message: Hello-1736320890045
+2025-01-08 15:21:30.095 Ping success, handling ping message: Hello-1736320890091
+2025-01-08 15:21:30.404 Throttling request as too many requests in the same second
+2025-01-08 15:21:31.049 Throttling request as too many requests in the same second
+2025-01-08 15:21:32.044 Ping success, handling ping message: Hello-1736320892041
+2025-01-08 15:21:32.068 Throttling request as too many requests in the same second
+2025-01-08 15:21:33.041 Ping success, handling ping message: Hello-1736320893037
+2025-01-08 15:21:33.066 Throttling request as too many requests in the same second
+2025-01-08 15:21:34.060 Ping success, handling ping message: Hello-1736320894057
+2025-01-08 15:21:34.097 Ping success, handling ping message: Hello-1736320894093
+2025-01-08 15:21:35.048 Throttling request as too many requests in the same second
+2025-01-08 15:21:35.079 Throttling request as too many requests in the same second
+2025-01-08 15:21:36.042 Ping success, handling ping message: Hello-1736320896040
+2025-01-08 15:21:36.062 Throttling request as too many requests in the same second
+2025-01-08 15:21:37.038 Ping success, handling ping message: Hello-1736320897035
+2025-01-08 15:21:37.080 Throttling request as too many requests in the same second
+2025-01-08 15:21:38.075 Ping success, handling ping message: Hello-1736320898072
+2025-01-08 15:21:38.165 Ping success, handling ping message: Hello-1736320898162
+2025-01-08 15:21:39.047 Throttling request as too many requests in the same second
+2025-01-08 15:21:39.071 Throttling request as too many requests in the same second
+2025-01-08 15:21:40.073 Ping success, handling ping message: Hello-1736320900070
+2025-01-08 15:21:40.089 Throttling request as too many requests in the same second
+2025-01-08 15:21:41.055 Ping success, handling ping message: Hello-1736320901051
+2025-01-08 15:21:41.084 Throttling request as too many requests in the same second
+2025-01-08 15:21:42.063 Ping success, handling ping message: Hello-1736320902059
+2025-01-08 15:21:42.109 Ping success, handling ping message: Hello-1736320902102
+2025-01-08 15:21:43.060 Throttling request as too many requests in the same second
+2025-01-08 15:21:43.084 Throttling request as too many requests in the same second
+2025-01-08 15:21:44.080 Ping success, handling ping message: Hello-1736320904078
+2025-01-08 15:21:44.095 Ping success, handling ping message: Hello-1736320904094
+2025-01-08 15:21:45.049 Throttling request as too many requests in the same second
+2025-01-08 15:21:45.084 Throttling request as too many requests in the same second
+2025-01-08 15:21:46.040 Ping success, handling ping message: Hello-1736320906039
+2025-01-08 15:21:46.075 Throttling request as too many requests in the same second
+2025-01-08 15:21:47.067 Ping success, handling ping message: Hello-1736320907065
+2025-01-08 15:21:47.089 Throttling request as too many requests in the same second
+2025-01-08 15:21:48.047 Ping success, handling ping message: Hello-1736320908044
+2025-01-08 15:21:48.079 Throttling request as too many requests in the same second
+2025-01-08 15:21:49.051 Ping success, handling ping message: Hello-1736320909049
+2025-01-08 15:21:49.074 Throttling request as too many requests in the same second
+2025-01-08 15:21:50.047 Ping success, handling ping message: Hello-1736320910045
+2025-01-08 15:21:50.079 Throttling request as too many requests in the same second
+2025-01-08 15:21:51.039 Ping success, handling ping message: Hello-1736320911037
+2025-01-08 15:21:51.062 Throttling request as too many requests in the same second
+2025-01-08 15:21:52.048 Ping success, handling ping message: Hello-1736320912046
+2025-01-08 15:21:52.078 Throttling request as too many requests in the same second
+2025-01-08 15:21:53.045 Ping success, handling ping message: Hello-1736320913043
+2025-01-08 15:21:53.068 Throttling request as too many requests in the same second
+2025-01-08 15:21:54.068 Ping success, handling ping message: Hello-1736320914067
+2025-01-08 15:21:54.176 Ping success, handling ping message: Hello-1736320914174
+2025-01-08 15:21:55.044 Throttling request as too many requests in the same second
+2025-01-08 15:21:55.076 Throttling request as too many requests in the same second
+2025-01-08 15:21:56.044 Ping success, handling ping message: Hello-1736320916041
+2025-01-08 15:21:56.066 Throttling request as too many requests in the same second
+2025-01-08 15:21:57.068 Ping success, handling ping message: Hello-1736320917064
+2025-01-08 15:21:57.146 Ping success, handling ping message: Hello-1736320917144
+2025-01-08 15:21:58.090 Ping success, handling ping message: Hello-1736320918088
+2025-01-08 15:21:58.166 Throttling request as too many requests in the same second
+2025-01-08 15:21:59.043 Throttling request as too many requests in the same second
+2025-01-08 15:21:59.088 Throttling request as too many requests in the same second
+2025-01-08 15:22:00.054 Ping success, handling ping message: Hello-1736320920051
+2025-01-08 15:22:00.079 Throttling request as too many requests in the same second
+2025-01-08 15:22:01.085 Ping success, handling ping message: Hello-1736320921081
+2025-01-08 15:22:01.113 Ping success, handling ping message: Hello-1736320921109
+2025-01-08 15:22:02.098 Ping success, handling ping message: Hello-1736320922097
+2025-01-08 15:22:02.171 Throttling request as too many requests in the same second
+2025-01-08 15:22:03.101 Ping success, handling ping message: Hello-1736320923097
+2025-01-08 15:22:03.181 Throttling request as too many requests in the same second
+2025-01-08 15:22:04.101 Ping success, handling ping message: Hello-1736320924100
+2025-01-08 15:22:04.172 Throttling request as too many requests in the same second
+2025-01-08 15:22:05.101 Ping success, handling ping message: Hello-1736320925099
+2025-01-08 15:22:05.166 Throttling request as too many requests in the same second
+2025-01-08 15:22:06.281 Ping success, handling ping message: Hello-1736320926279
+2025-01-08 15:22:07.055 Throttling request as too many requests in the same second
+2025-01-08 15:22:07.194 Ping success, handling ping message: Hello-1736320927193
+2025-01-08 15:22:08.081 Throttling request as too many requests in the same second
+2025-01-08 15:22:08.176 Ping success, handling ping message: Hello-1736320928172
+2025-01-08 15:22:08.191 Throttling request as too many requests in the same second
+2025-01-08 15:22:09.178 Ping success, handling ping message: Hello-1736320929175
+2025-01-08 15:22:09.183 Throttling request as too many requests in the same second
+2025-01-08 15:22:10.388 Ping success, handling ping message: Hello-1736320930385
+2025-01-08 15:22:11.037 Throttling request as too many requests in the same second
+2025-01-08 15:22:12.081 Ping success, handling ping message: Hello-1736320932078
+2025-01-08 15:22:12.094 Ping success, handling ping message: Hello-1736320932093
+2025-01-08 15:22:12.195 Throttling request as too many requests in the same second
+2025-01-08 15:22:13.071 Throttling request as too many requests in the same second
+2025-01-08 15:22:14.048 Ping success, handling ping message: Hello-1736320934046
+2025-01-08 15:22:14.073 Throttling request as too many requests in the same second
+2025-01-08 15:22:14.391 Ping success, handling ping message: Hello-1736320934390
+2025-01-08 15:22:15.046 Throttling request as too many requests in the same second
+2025-01-08 15:22:16.086 Ping success, handling ping message: Hello-1736320936081
+2025-01-08 15:22:16.177 Ping success, handling ping message: Hello-1736320936173
+2025-01-08 15:22:16.325 Throttling request as too many requests in the same second
+2025-01-08 15:22:17.037 Throttling request as too many requests in the same second
+2025-01-08 15:22:17.328 Ping success, handling ping message: Hello-1736320937323
+2025-01-08 15:22:18.048 Throttling request as too many requests in the same second
+2025-01-08 15:22:19.065 Ping success, handling ping message: Hello-1736320939063
+2025-01-08 15:22:19.098 Ping success, handling ping message: Hello-1736320939094
+2025-01-08 15:22:20.064 Throttling request as too many requests in the same second
+2025-01-08 15:22:20.095 Ping success, handling ping message: Hello-1736320940092
+2025-01-08 15:22:21.051 Throttling request as too many requests in the same second
+2025-01-08 15:22:21.189 Ping success, handling ping message: Hello-1736320941188
+2025-01-08 15:22:21.404 Throttling request as too many requests in the same second
+2025-01-08 15:22:22.043 Throttling request as too many requests in the same second
+2025-01-08 15:22:23.067 Ping success, handling ping message: Hello-1736320943065
+2025-01-08 15:22:23.176 Ping success, handling ping message: Hello-1736320943175
+2025-01-08 15:22:24.046 Throttling request as too many requests in the same second
+2025-01-08 15:22:24.069 Throttling request as too many requests in the same second
+2025-01-08 15:22:25.062 Ping success, handling ping message: Hello-1736320945058
+2025-01-08 15:22:25.094 Ping success, handling ping message: Hello-1736320945090
+2025-01-08 15:22:26.062 Throttling request as too many requests in the same second
+2025-01-08 15:22:26.085 Throttling request as too many requests in the same second
+2025-01-08 15:22:27.074 Ping success, handling ping message: Hello-1736320947071
+2025-01-08 15:22:27.088 Throttling request as too many requests in the same second
+2025-01-08 15:22:28.038 Ping success, handling ping message: Hello-1736320948035
+2025-01-08 15:22:28.090 Ping success, handling ping message: Hello-1736320948086
+2025-01-08 15:22:29.045 Throttling request as too many requests in the same second
+2025-01-08 15:22:29.085 Throttling request as too many requests in the same second
+2025-01-08 15:22:30.044 Ping success, handling ping message: Hello-1736320950041
+2025-01-08 15:22:30.091 Ping success, handling ping message: Hello-1736320950088
+2025-01-08 15:22:31.052 Throttling request as too many requests in the same second
+2025-01-08 15:22:31.076 Throttling request as too many requests in the same second
+2025-01-08 15:22:32.050 Ping success, handling ping message: Hello-1736320952048
+2025-01-08 15:22:32.078 Throttling request as too many requests in the same second
+2025-01-08 15:22:33.048 Ping success, handling ping message: Hello-1736320953047
+2025-01-08 15:22:33.078 Throttling request as too many requests in the same second
+2025-01-08 15:22:34.050 Ping success, handling ping message: Hello-1736320954048
+2025-01-08 15:22:34.072 Throttling request as too many requests in the same second
+2025-01-08 15:22:35.049 Ping success, handling ping message: Hello-1736320955046
+2025-01-08 15:22:35.072 Throttling request as too many requests in the same second
+2025-01-08 15:22:36.038 Ping success, handling ping message: Hello-1736320956036
+2025-01-08 15:22:36.043 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Node -1 disconnected.
+2025-01-08 15:22:36.085 Throttling request as too many requests in the same second
+2025-01-08 15:22:37.047 Ping success, handling ping message: Hello-1736320957045
+2025-01-08 15:22:37.081 Throttling request as too many requests in the same second
+2025-01-08 15:22:38.044 Ping success, handling ping message: Hello-1736320958041
+2025-01-08 15:22:38.074 Throttling request as too many requests in the same second
+2025-01-08 15:22:39.079 Ping success, handling ping message: Hello-1736320959078
+2025-01-08 15:22:39.096 Ping success, handling ping message: Hello-1736320959092
+2025-01-08 15:22:40.078 Throttling request as too many requests in the same second
+2025-01-08 15:22:40.095 Ping success, handling ping message: Hello-1736320960091
+2025-01-08 15:22:41.070 Throttling request as too many requests in the same second
+2025-01-08 15:22:41.086 Throttling request as too many requests in the same second
+2025-01-08 15:22:42.047 Ping success, handling ping message: Hello-1736320962045
+2025-01-08 15:22:42.074 Throttling request as too many requests in the same second
+2025-01-08 15:22:43.042 Ping success, handling ping message: Hello-1736320963040
+2025-01-08 15:22:43.074 Throttling request as too many requests in the same second
+2025-01-08 15:22:44.066 Ping success, handling ping message: Hello-1736320964064
+2025-01-08 15:22:44.135 Ping success, handling ping message: Hello-1736320964134
+2025-01-08 15:22:45.047 Throttling request as too many requests in the same second
+2025-01-08 15:22:45.079 Throttling request as too many requests in the same second
+2025-01-08 15:22:46.049 Ping success, handling ping message: Hello-1736320966048
+2025-01-08 15:22:46.081 Throttling request as too many requests in the same second
+2025-01-08 15:22:47.045 Ping success, handling ping message: Hello-1736320967042
+2025-01-08 15:22:47.076 Throttling request as too many requests in the same second
+2025-01-08 15:22:48.053 Ping success, handling ping message: Hello-1736320968051
+2025-01-08 15:22:48.070 Throttling request as too many requests in the same second
+2025-01-08 15:22:49.039 Ping success, handling ping message: Hello-1736320969037
+2025-01-08 15:22:49.062 Throttling request as too many requests in the same second
+2025-01-08 15:22:50.038 Ping success, handling ping message: Hello-1736320970036
+2025-01-08 15:22:50.083 Throttling request as too many requests in the same second
+2025-01-08 15:22:51.056 Ping success, handling ping message: Hello-1736320971054
+2025-01-08 15:22:51.077 Throttling request as too many requests in the same second
+2025-01-08 15:22:52.077 Ping success, handling ping message: Hello-1736320972074
+2025-01-08 15:22:52.084 Throttling request as too many requests in the same second
+2025-01-08 15:22:53.095 Ping success, handling ping message: Hello-1736320973092
+2025-01-08 15:22:53.107 Ping success, handling ping message: Hello-1736320973104
+2025-01-08 15:22:54.085 Throttling request as too many requests in the same second
+2025-01-08 15:22:54.187 Ping success, handling ping message: Hello-1736320974184
+2025-01-08 15:22:55.093 Throttling request as too many requests in the same second
+2025-01-08 15:22:55.198 Ping success, handling ping message: Hello-1736320975196
+2025-01-08 15:22:56.183 Ping success, handling ping message: Hello-1736320976181
+2025-01-08 15:22:56.282 Throttling request as too many requests in the same second
+2025-01-08 15:22:58.037 Ping success, handling ping message: Hello-1736320978035
+2025-01-08 15:22:58.061 Throttling request as too many requests in the same second
+2025-01-08 15:22:59.097 Ping success, handling ping message: Hello-1736320979094
+2025-01-08 15:22:59.108 Ping success, handling ping message: Hello-1736320979068
+2025-01-08 15:23:00.036 Throttling request as too many requests in the same second
+2025-01-08 15:23:00.102 Ping success, handling ping message: Hello-1736320980073
+2025-01-08 15:23:01.075 Throttling request as too many requests in the same second
+2025-01-08 15:23:01.091 Throttling request as too many requests in the same second
+2025-01-08 15:23:02.045 Ping success, handling ping message: Hello-1736320982043
+2025-01-08 15:23:02.091 Throttling request as too many requests in the same second
+2025-01-08 15:23:03.051 Ping success, handling ping message: Hello-1736320983049
+2025-01-08 15:23:03.126 Ping success, handling ping message: Hello-1736320983095
+2025-01-08 15:24:03.138 [Producer clientId=producer-1] Node -1 disconnected.
+2025-01-08 15:24:35.580 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Revoke previously assigned partitions pong-message-topic-0
+2025-01-08 15:24:35.581 pong-service: partitions revoked: [pong-message-topic-0]
+2025-01-08 15:24:35.581 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Member consumer-pong-service-1-3b5acc65-ae02-4a5a-912e-b6dd47ee5122 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-01-08 15:24:35.582 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-08 15:24:35.582 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: consumer pro-actively leaving the group
+2025-01-08 15:24:35.582 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Unsubscribed all topics or patterns and assigned partitions
+2025-01-08 15:24:35.582 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-08 15:24:35.583 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: consumer pro-actively leaving the group
+2025-01-08 15:24:35.586 Metrics scheduler closed
+2025-01-08 15:24:35.586 Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-08 15:24:35.586 Metrics reporters closed
+2025-01-08 15:24:35.589 App info kafka.consumer for consumer-pong-service-1 unregistered
+2025-01-08 15:24:35.589 pong-service: Consumer stopped
+2025-01-08 15:24:35.593 [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-01-08 15:24:35.595 Metrics scheduler closed
+2025-01-08 15:24:35.595 Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-08 15:24:35.595 Metrics reporters closed
+2025-01-08 15:24:35.595 App info kafka.producer for producer-1 unregistered
+2025-01-08 15:24:35.617 Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 15:24:35.620 HikariPool-1 - Shutdown initiated...
+2025-01-08 15:24:35.624 HikariPool-1 - Shutdown completed.
+2025-01-08 15:50:25.623 Starting PongApplication using Java 17.0.12 with PID 32192 (C:\code\hsbc\demo\pong\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-08 15:50:25.626 No active profile set, falling back to 1 default profile: "default"
+2025-01-08 15:50:26.574 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 15:50:26.576 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 15:50:26.698 Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interfaces.
+2025-01-08 15:50:26.714 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 15:50:26.715 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08 15:50:26.727 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.demo.dao.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-01-08 15:50:26.727 Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-01-08 15:50:27.282 HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 15:50:27.338 HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-01-08 15:50:27.341 HHH000406: Using bytecode reflection optimizer
+2025-01-08 15:50:27.521 HHH000021: Bytecode provider name : bytebuddy
+2025-01-08 15:50:27.640 No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 15:50:27.662 HikariPool-1 - Starting...
+2025-01-08 15:50:27.853 HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-01-08 15:50:27.856 HikariPool-1 - Start completed.
+2025-01-08 15:50:28.013 HHH000021: Bytecode provider name : bytebuddy
+2025-01-08 15:50:28.374 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 15:50:28.421 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 15:50:30.065 Netty started on port 8080
+2025-01-08 15:50:30.113 ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-pong-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = pong-service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-01-08 15:50:30.227 These configurations '[spring.json.trusted.packages]' were supplied but are not used yet.
+2025-01-08 15:50:30.229 Kafka version: 3.4.1
+2025-01-08 15:50:30.229 Kafka commitId: 8a516edc2755df89
+2025-01-08 15:50:30.229 Kafka startTimeMs: 1736322630227
+2025-01-08 15:50:30.230 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Subscribed to topic(s): pong-message-topic
+2025-01-08 15:50:30.242 Started PongApplication in 5.0 seconds (process running for 5.742)
+2025-01-08 15:50:30.427 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting the last seen epoch of partition pong-message-topic-0 to 0 since the associated topicId changed from null to obZgS8JRSGWswmkSFX-iQA
+2025-01-08 15:50:30.429 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Cluster ID: VnszGBVhT1i3dgeeU9CHEg
+2025-01-08 15:50:30.429 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null)
+2025-01-08 15:50:30.432 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] (Re-)joining group
+2025-01-08 15:50:30.441 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: need to re-join with the given member-id: consumer-pong-service-1-d7c002cc-a5fa-471a-b924-439a822e75c0
+2025-01-08 15:50:30.441 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-08 15:50:30.441 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] (Re-)joining group
+2025-01-08 15:50:30.444 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Successfully joined group with generation Generation{generationId=9, memberId='consumer-pong-service-1-d7c002cc-a5fa-471a-b924-439a822e75c0', protocol='range'}
+2025-01-08 15:50:30.445 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Finished assignment for group at generation 9: {consumer-pong-service-1-d7c002cc-a5fa-471a-b924-439a822e75c0=Assignment(partitions=[pong-message-topic-0])}
+2025-01-08 15:50:30.449 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Successfully synced group in generation Generation{generationId=9, memberId='consumer-pong-service-1-d7c002cc-a5fa-471a-b924-439a822e75c0', protocol='range'}
+2025-01-08 15:50:30.449 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Notifying assignor about the new Assignment(partitions=[pong-message-topic-0])
+2025-01-08 15:50:30.451 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Adding newly assigned partitions: pong-message-topic-0
+2025-01-08 15:50:30.461 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Setting offset for partition pong-message-topic-0 to the committed offset FetchPosition{offset=3973, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-08 15:50:30.462 pong-service: partitions assigned: [pong-message-topic-0]
+2025-01-08 15:50:54.444 instance-2 Ping success, handling ping message: Hello-1736322654220
+2025-01-08 15:50:54.451 Idempotence will be disabled because acks is set to 0, not set to 'all'.
+2025-01-08 15:50:54.451 ProducerConfig values: 
+	acks = 0
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-01-08 15:50:54.463 Kafka version: 3.4.1
+2025-01-08 15:50:54.463 Kafka commitId: 8a516edc2755df89
+2025-01-08 15:50:54.463 Kafka startTimeMs: 1736322654463
+2025-01-08 15:50:54.467 [Producer clientId=producer-1] Cluster ID: VnszGBVhT1i3dgeeU9CHEg
+2025-01-08 15:50:54.470 [Producer clientId=producer-1] Resetting the last seen epoch of partition pong-message-topic-0 to 0 since the associated topicId changed from null to obZgS8JRSGWswmkSFX-iQA
+2025-01-08 15:50:55.214 instance-2 Ping success, handling ping message: Hello-1736322655210
+2025-01-08 15:50:56.219 instance-2 Ping success, handling ping message: Hello-1736322656215
+2025-01-08 15:50:57.219 instance-2 Ping success, handling ping message: Hello-1736322657217
+2025-01-08 15:50:58.226 instance-2 Ping success, handling ping message: Hello-1736322658223
+2025-01-08 15:50:59.220 instance-2 Ping success, handling ping message: Hello-1736322659216
+2025-01-08 15:51:00.221 instance-2 Ping success, handling ping message: Hello-1736322660217
+2025-01-08 15:51:01.222 instance-2 Ping success, handling ping message: Hello-1736322661217
+2025-01-08 15:51:02.217 instance-2 Ping success, handling ping message: Hello-1736322662214
+2025-01-08 15:51:03.212 instance-2 Ping success, handling ping message: Hello-1736322663208
+2025-01-08 15:51:04.220 instance-2 Ping success, handling ping message: Hello-1736322664215
+2025-01-08 15:51:05.212 instance-2 Ping success, handling ping message: Hello-1736322665210
+2025-01-08 15:51:06.225 instance-2 Ping success, handling ping message: Hello-1736322666220
+2025-01-08 15:51:07.218 instance-2 Ping success, handling ping message: Hello-1736322667213
+2025-01-08 15:51:08.218 instance-2 Ping success, handling ping message: Hello-1736322668214
+2025-01-08 15:51:09.211 instance-2 Ping success, handling ping message: Hello-1736322669206
+2025-01-08 15:51:10.215 instance-2 Ping success, handling ping message: Hello-1736322670212
+2025-01-08 15:51:11.218 instance-2 Ping success, handling ping message: Hello-1736322671213
+2025-01-08 15:51:12.218 instance-2 Ping success, handling ping message: Hello-1736322672212
+2025-01-08 15:51:13.215 instance-2 Ping success, handling ping message: Hello-1736322673206
+2025-01-08 15:51:14.219 instance-2 Ping success, handling ping message: Hello-1736322674215
+2025-01-08 15:51:15.217 instance-2 Ping success, handling ping message: Hello-1736322675213
+2025-01-08 15:51:16.355 instance-2 Ping success, handling ping message: Hello-1736322676352
+2025-01-08 15:51:16.969 instance-2 Ping success, handling ping message: Hello-1736322676832
+2025-01-08 15:51:17.214 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:17.931 instance-2 Ping success, handling ping message: Hello-1736322677928
+2025-01-08 15:51:18.215 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:18.837 instance-2 Ping success, handling ping message: Hello-1736322678833
+2025-01-08 15:51:19.221 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:19.847 instance-2 Ping success, handling ping message: Hello-1736322679843
+2025-01-08 15:51:20.218 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:20.934 instance-2 Ping success, handling ping message: Hello-1736322680931
+2025-01-08 15:51:21.213 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:21.825 instance-2 Ping success, handling ping message: Hello-1736322681820
+2025-01-08 15:51:22.214 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:22.832 instance-2 Ping success, handling ping message: Hello-1736322682830
+2025-01-08 15:51:23.220 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:23.826 instance-2 Ping success, handling ping message: Hello-1736322683823
+2025-01-08 15:51:24.261 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:24.934 instance-2 Ping success, handling ping message: Hello-1736322684930
+2025-01-08 15:51:25.944 instance-2 Ping success, handling ping message: Hello-1736322685942
+2025-01-08 15:51:26.211 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:26.834 instance-2 Ping success, handling ping message: Hello-1736322686831
+2025-01-08 15:51:27.222 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:27.939 instance-2 Ping success, handling ping message: Hello-1736322687935
+2025-01-08 15:51:28.220 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:28.943 instance-2 Ping success, handling ping message: Hello-1736322688937
+2025-01-08 15:51:29.217 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:29.827 instance-2 Ping success, handling ping message: Hello-1736322689823
+2025-01-08 15:51:30.218 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:30.945 instance-2 Ping success, handling ping message: Hello-1736322690942
+2025-01-08 15:51:31.211 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:31.946 instance-2 Ping success, handling ping message: Hello-1736322691941
+2025-01-08 15:51:32.209 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:32.942 instance-2 Ping success, handling ping message: Hello-1736322692938
+2025-01-08 15:51:33.220 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:33.856 instance-2 Ping success, handling ping message: Hello-1736322693851
+2025-01-08 15:51:34.212 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:34.858 instance-2 Ping success, handling ping message: Hello-1736322694854
+2025-01-08 15:51:35.220 Throttling instance-2 request as too many requests in the same second
+2025-01-08 15:51:35.731 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Revoke previously assigned partitions pong-message-topic-0
+2025-01-08 15:51:35.732 pong-service: partitions revoked: [pong-message-topic-0]
+2025-01-08 15:51:35.733 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Member consumer-pong-service-1-d7c002cc-a5fa-471a-b924-439a822e75c0 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-01-08 15:51:35.733 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-08 15:51:35.733 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: consumer pro-actively leaving the group
+2025-01-08 15:51:35.733 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Unsubscribed all topics or patterns and assigned partitions
+2025-01-08 15:51:35.733 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-08 15:51:35.733 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: consumer pro-actively leaving the group
+2025-01-08 15:51:35.736 Metrics scheduler closed
+2025-01-08 15:51:35.736 Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-08 15:51:35.736 Metrics reporters closed
+2025-01-08 15:51:35.739 App info kafka.consumer for consumer-pong-service-1 unregistered
+2025-01-08 15:51:35.739 pong-service: Consumer stopped
+2025-01-08 15:51:35.742 [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-01-08 15:51:35.745 Metrics scheduler closed
+2025-01-08 15:51:35.745 Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-08 15:51:35.745 Metrics reporters closed
+2025-01-08 15:51:35.745 App info kafka.producer for producer-1 unregistered
+2025-01-08 15:51:35.763 Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 15:51:35.767 HikariPool-1 - Shutdown initiated...
+2025-01-08 15:51:35.768 HikariPool-1 - Shutdown completed.
+2025-01-08 16:04:46.419 Starting PongApplication using Java 17.0.12 with PID 23516 (C:\code\hsbc\demo\pong\target\classes started by joech in C:\code\hsbc\demo)
+2025-01-08 16:04:46.423 No active profile set, falling back to 1 default profile: "default"
+2025-01-08 16:04:48.140 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 16:04:48.142 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 16:04:48.283 Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interfaces.
+2025-01-08 16:04:48.306 Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-08 16:04:48.307 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-08 16:04:48.322 Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.demo.dao.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-01-08 16:04:48.322 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-01-08 16:04:48.842 HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 16:04:48.900 HHH000412: Hibernate ORM core version 6.2.9.Final
+2025-01-08 16:04:48.903 HHH000406: Using bytecode reflection optimizer
+2025-01-08 16:04:49.064 HHH000021: Bytecode provider name : bytebuddy
+2025-01-08 16:04:49.169 No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08 16:04:49.183 HikariPool-1 - Starting...
+2025-01-08 16:04:49.300 HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-01-08 16:04:49.302 HikariPool-1 - Start completed.
+2025-01-08 16:04:49.448 HHH000021: Bytecode provider name : bytebuddy
+2025-01-08 16:04:49.871 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 16:04:49.940 Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 16:04:51.528 Netty started on port 8080
+2025-01-08 16:04:51.568 ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-pong-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = pong-service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-01-08 16:04:51.670 These configurations '[spring.json.trusted.packages]' were supplied but are not used yet.
+2025-01-08 16:04:51.671 Kafka version: 3.4.1
+2025-01-08 16:04:51.672 Kafka commitId: 8a516edc2755df89
+2025-01-08 16:04:51.672 Kafka startTimeMs: 1736323491670
+2025-01-08 16:04:51.674 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Subscribed to topic(s): pong-message-topic
+2025-01-08 16:04:51.687 Started PongApplication in 5.891 seconds (process running for 6.507)
+2025-01-08 16:04:51.876 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting the last seen epoch of partition pong-message-topic-0 to 0 since the associated topicId changed from null to obZgS8JRSGWswmkSFX-iQA
+2025-01-08 16:04:51.878 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Cluster ID: VnszGBVhT1i3dgeeU9CHEg
+2025-01-08 16:04:51.879 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Discovered group coordinator host.docker.internal:9092 (id: 2147483647 rack: null)
+2025-01-08 16:04:51.886 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] (Re-)joining group
+2025-01-08 16:04:51.899 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: need to re-join with the given member-id: consumer-pong-service-1-f972ad31-e613-448f-81b0-e1afdaa1f893
+2025-01-08 16:04:51.900 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2025-01-08 16:04:51.900 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] (Re-)joining group
+2025-01-08 16:04:51.902 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Successfully joined group with generation Generation{generationId=11, memberId='consumer-pong-service-1-f972ad31-e613-448f-81b0-e1afdaa1f893', protocol='range'}
+2025-01-08 16:04:51.905 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Finished assignment for group at generation 11: {consumer-pong-service-1-f972ad31-e613-448f-81b0-e1afdaa1f893=Assignment(partitions=[pong-message-topic-0])}
+2025-01-08 16:04:51.909 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Successfully synced group in generation Generation{generationId=11, memberId='consumer-pong-service-1-f972ad31-e613-448f-81b0-e1afdaa1f893', protocol='range'}
+2025-01-08 16:04:51.910 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Notifying assignor about the new Assignment(partitions=[pong-message-topic-0])
+2025-01-08 16:04:51.912 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Adding newly assigned partitions: pong-message-topic-0
+2025-01-08 16:04:51.922 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Setting offset for partition pong-message-topic-0 to the committed offset FetchPosition{offset=4015, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[host.docker.internal:9092 (id: 0 rack: null)], epoch=0}}
+2025-01-08 16:04:51.923 pong-service: partitions assigned: [pong-message-topic-0]
+2025-01-08 16:05:07.044 instance-1 ping success, handling ping message: Hello-1736323506835
+2025-01-08 16:05:07.052 Idempotence will be disabled because acks is set to 0, not set to 'all'.
+2025-01-08 16:05:07.052 ProducerConfig values: 
+	acks = 0
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-01-08 16:05:07.067 Kafka version: 3.4.1
+2025-01-08 16:05:07.067 Kafka commitId: 8a516edc2755df89
+2025-01-08 16:05:07.067 Kafka startTimeMs: 1736323507067
+2025-01-08 16:05:07.071 [Producer clientId=producer-1] Resetting the last seen epoch of partition pong-message-topic-0 to 0 since the associated topicId changed from null to obZgS8JRSGWswmkSFX-iQA
+2025-01-08 16:05:07.071 [Producer clientId=producer-1] Cluster ID: VnszGBVhT1i3dgeeU9CHEg
+2025-01-08 16:05:07.826 instance-1 ping success, handling ping message: Hello-1736323507822
+2025-01-08 16:05:08.832 instance-1 ping success, handling ping message: Hello-1736323508828
+2025-01-08 16:05:09.842 instance-1 ping success, handling ping message: Hello-1736323509839
+2025-01-08 16:05:10.832 instance-1 ping success, handling ping message: Hello-1736323510829
+2025-01-08 16:05:11.834 instance-1 ping success, handling ping message: Hello-1736323511831
+2025-01-08 16:05:12.827 instance-1 ping success, handling ping message: Hello-1736323512822
+2025-01-08 16:05:13.834 instance-1 ping success, handling ping message: Hello-1736323513829
+2025-01-08 16:05:14.831 instance-1 ping success, handling ping message: Hello-1736323514828
+2025-01-08 16:05:15.823 instance-1 ping success, handling ping message: Hello-1736323515820
+2025-01-08 16:05:16.824 instance-1 ping success, handling ping message: Hello-1736323516819
+2025-01-08 16:05:17.835 instance-1 ping success, handling ping message: Hello-1736323517832
+2025-01-08 16:05:18.828 instance-1 ping success, handling ping message: Hello-1736323518824
+2025-01-08 16:05:19.826 instance-1 ping success, handling ping message: Hello-1736323519821
+2025-01-08 16:05:20.832 instance-1 ping success, handling ping message: Hello-1736323520830
+2025-01-08 16:05:21.835 instance-1 ping success, handling ping message: Hello-1736323521831
+2025-01-08 16:05:22.833 instance-1 ping success, handling ping message: Hello-1736323522829
+2025-01-08 16:05:23.826 instance-1 ping success, handling ping message: Hello-1736323523824
+2025-01-08 16:05:24.840 instance-1 ping success, handling ping message: Hello-1736323524834
+2025-01-08 16:05:25.830 instance-1 ping success, handling ping message: Hello-1736323525827
+2025-01-08 16:05:26.830 instance-1 ping success, handling ping message: Hello-1736323526826
+2025-01-08 16:05:27.829 instance-1 ping success, handling ping message: Hello-1736323527826
+2025-01-08 16:05:28.827 instance-1 ping success, handling ping message: Hello-1736323528823
+2025-01-08 16:05:29.846 instance-1 ping success, handling ping message: Hello-1736323529842
+2025-01-08 16:05:30.833 instance-1 ping success, handling ping message: Hello-1736323530830
+2025-01-08 16:05:31.829 instance-1 ping success, handling ping message: Hello-1736323531826
+2025-01-08 16:05:32.829 instance-1 ping success, handling ping message: Hello-1736323532823
+2025-01-08 16:05:33.838 instance-1 ping success, handling ping message: Hello-1736323533833
+2025-01-08 16:05:34.831 instance-1 ping success, handling ping message: Hello-1736323534826
+2025-01-08 16:05:35.830 instance-1 ping success, handling ping message: Hello-1736323535825
+2025-01-08 16:05:36.866 instance-1 ping success, handling ping message: Hello-1736323536822
+2025-01-08 16:05:37.831 instance-1 ping success, handling ping message: Hello-1736323537828
+2025-01-08 16:06:01.230 instance-1 ping success, handling ping message: Hello-1736323561129
+2025-01-08 16:06:02.130 instance-1 ping success, handling ping message: Hello-1736323562126
+2025-01-08 16:06:03.134 instance-1 ping success, handling ping message: Hello-1736323563131
+2025-01-08 16:06:04.128 instance-1 ping success, handling ping message: Hello-1736323564124
+2025-01-08 16:06:05.122 instance-1 ping success, handling ping message: Hello-1736323565119
+2025-01-08 16:06:06.119 instance-1 ping success, handling ping message: Hello-1736323566116
+2025-01-08 16:06:07.118 instance-1 ping success, handling ping message: Hello-1736323567116
+2025-01-08 16:06:08.132 instance-1 ping success, handling ping message: Hello-1736323568126
+2025-01-08 16:06:09.125 instance-1 ping success, handling ping message: Hello-1736323569122
+2025-01-08 16:06:10.126 instance-1 ping success, handling ping message: Hello-1736323570123
+2025-01-08 16:06:11.129 instance-1 ping success, handling ping message: Hello-1736323571124
+2025-01-08 16:06:12.118 instance-1 ping success, handling ping message: Hello-1736323572114
+2025-01-08 16:06:13.133 instance-1 ping success, handling ping message: Hello-1736323573128
+2025-01-08 16:06:14.122 instance-1 ping success, handling ping message: Hello-1736323574120
+2025-01-08 16:06:15.119 instance-1 ping success, handling ping message: Hello-1736323575117
+2025-01-08 16:06:16.121 instance-1 ping success, handling ping message: Hello-1736323576118
+2025-01-08 16:06:17.122 instance-1 ping success, handling ping message: Hello-1736323577118
+2025-01-08 16:06:18.130 instance-1 ping success, handling ping message: Hello-1736323578127
+2025-01-08 16:06:19.138 instance-1 ping success, handling ping message: Hello-1736323579135
+2025-01-08 16:06:20.126 instance-1 ping success, handling ping message: Hello-1736323580124
+2025-01-08 16:06:21.118 instance-1 ping success, handling ping message: Hello-1736323581116
+2025-01-08 16:06:22.134 instance-1 ping success, handling ping message: Hello-1736323582128
+2025-01-08 16:06:23.125 instance-1 ping success, handling ping message: Hello-1736323583120
+2025-01-08 16:06:24.119 instance-1 ping success, handling ping message: Hello-1736323584115
+2025-01-08 16:06:25.134 instance-1 ping success, handling ping message: Hello-1736323585130
+2025-01-08 16:06:26.139 instance-1 ping success, handling ping message: Hello-1736323586132
+2025-01-08 16:06:27.122 instance-1 ping success, handling ping message: Hello-1736323587115
+2025-01-08 16:06:28.128 instance-1 ping success, handling ping message: Hello-1736323588125
+2025-01-08 16:06:29.126 instance-1 ping success, handling ping message: Hello-1736323589121
+2025-01-08 16:06:30.126 instance-1 ping success, handling ping message: Hello-1736323590123
+2025-01-08 16:06:31.119 instance-1 ping success, handling ping message: Hello-1736323591117
+2025-01-08 16:06:31.509 instance-2 ping success, handling ping message: Hello-1736323591349
+2025-01-08 16:06:32.130 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:32.331 instance-2 ping success, handling ping message: Hello-1736323592327
+2025-01-08 16:06:33.124 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:33.342 instance-2 ping success, handling ping message: Hello-1736323593339
+2025-01-08 16:06:34.121 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:34.341 instance-2 ping success, handling ping message: Hello-1736323594337
+2025-01-08 16:06:35.118 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:35.337 instance-2 ping success, handling ping message: Hello-1736323595334
+2025-01-08 16:06:36.116 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:36.336 instance-2 ping success, handling ping message: Hello-1736323596332
+2025-01-08 16:06:37.128 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:37.344 instance-2 ping success, handling ping message: Hello-1736323597341
+2025-01-08 16:06:38.129 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:38.330 instance-2 ping success, handling ping message: Hello-1736323598327
+2025-01-08 16:06:39.124 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:39.346 instance-2 ping success, handling ping message: Hello-1736323599343
+2025-01-08 16:06:40.128 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:40.333 instance-2 ping success, handling ping message: Hello-1736323600329
+2025-01-08 16:06:41.126 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:41.343 instance-2 ping success, handling ping message: Hello-1736323601339
+2025-01-08 16:06:42.130 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:42.337 instance-2 ping success, handling ping message: Hello-1736323602332
+2025-01-08 16:06:43.119 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:43.335 instance-2 ping success, handling ping message: Hello-1736323603332
+2025-01-08 16:06:44.132 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:44.334 instance-2 ping success, handling ping message: Hello-1736323604330
+2025-01-08 16:06:45.127 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:45.344 instance-2 ping success, handling ping message: Hello-1736323605341
+2025-01-08 16:06:46.122 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:46.343 instance-2 ping success, handling ping message: Hello-1736323606338
+2025-01-08 16:06:47.130 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:47.339 instance-2 ping success, handling ping message: Hello-1736323607336
+2025-01-08 16:06:48.127 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:48.335 instance-2 ping success, handling ping message: Hello-1736323608332
+2025-01-08 16:06:49.332 instance-2 ping success, handling ping message: Hello-1736323609330
+2025-01-08 16:06:50.124 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:50.343 instance-2 ping success, handling ping message: Hello-1736323610340
+2025-01-08 16:06:51.122 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:51.339 instance-2 ping success, handling ping message: Hello-1736323611335
+2025-01-08 16:06:52.126 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:52.346 instance-2 ping success, handling ping message: Hello-1736323612342
+2025-01-08 16:06:53.124 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:53.345 instance-2 ping success, handling ping message: Hello-1736323613342
+2025-01-08 16:06:54.124 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:54.345 instance-2 ping success, handling ping message: Hello-1736323614342
+2025-01-08 16:06:55.123 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:55.342 instance-2 ping success, handling ping message: Hello-1736323615337
+2025-01-08 16:06:56.120 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:56.339 instance-2 ping success, handling ping message: Hello-1736323616336
+2025-01-08 16:06:57.119 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:57.342 instance-2 ping success, handling ping message: Hello-1736323617338
+2025-01-08 16:06:58.123 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:58.348 instance-2 ping success, handling ping message: Hello-1736323618344
+2025-01-08 16:06:59.120 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:06:59.345 instance-2 ping success, handling ping message: Hello-1736323619341
+2025-01-08 16:07:00.128 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:01.131 instance-1 ping success, handling ping message: Hello-1736323621128
+2025-01-08 16:07:01.330 instance-2 ping success, handling ping message: Hello-1736323621327
+2025-01-08 16:07:02.122 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:02.342 instance-2 ping success, handling ping message: Hello-1736323622339
+2025-01-08 16:07:03.119 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:03.337 instance-2 ping success, handling ping message: Hello-1736323623333
+2025-01-08 16:07:04.117 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:04.335 instance-2 ping success, handling ping message: Hello-1736323624333
+2025-01-08 16:07:05.129 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:05.331 instance-2 ping success, handling ping message: Hello-1736323625329
+2025-01-08 16:07:06.128 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:06.331 instance-2 ping success, handling ping message: Hello-1736323626328
+2025-01-08 16:07:07.124 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:07.346 instance-2 ping success, handling ping message: Hello-1736323627342
+2025-01-08 16:07:08.125 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:08.330 instance-2 ping success, handling ping message: Hello-1736323628326
+2025-01-08 16:07:09.125 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:09.344 instance-2 ping success, handling ping message: Hello-1736323629340
+2025-01-08 16:07:10.118 instance-1 request is throttled as too many requests in the same second
+2025-01-08 16:07:10.338 instance-2 ping success, handling ping message: Hello-1736323630335
+2025-01-08 16:07:10.643 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Revoke previously assigned partitions pong-message-topic-0
+2025-01-08 16:07:10.644 pong-service: partitions revoked: [pong-message-topic-0]
+2025-01-08 16:07:10.644 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Member consumer-pong-service-1-f972ad31-e613-448f-81b0-e1afdaa1f893 sending LeaveGroup request to coordinator host.docker.internal:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2025-01-08 16:07:10.645 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-08 16:07:10.645 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: consumer pro-actively leaving the group
+2025-01-08 16:07:10.645 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Unsubscribed all topics or patterns and assigned partitions
+2025-01-08 16:07:10.645 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-01-08 16:07:10.645 [Consumer clientId=consumer-pong-service-1, groupId=pong-service] Request joining group due to: consumer pro-actively leaving the group
+2025-01-08 16:07:10.647 Metrics scheduler closed
+2025-01-08 16:07:10.647 Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-08 16:07:10.647 Metrics reporters closed
+2025-01-08 16:07:10.650 App info kafka.consumer for consumer-pong-service-1 unregistered
+2025-01-08 16:07:10.651 pong-service: Consumer stopped
+2025-01-08 16:07:10.654 [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-01-08 16:07:10.656 Metrics scheduler closed
+2025-01-08 16:07:10.656 Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-01-08 16:07:10.656 Metrics reporters closed
+2025-01-08 16:07:10.657 App info kafka.producer for producer-1 unregistered
+2025-01-08 16:07:10.671 Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 16:07:10.673 HikariPool-1 - Shutdown initiated...
+2025-01-08 16:07:10.676 HikariPool-1 - Shutdown completed.

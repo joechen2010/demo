@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
@@ -27,13 +28,13 @@ public class PongController {
     private KafkaProducerService kafkaProducerService;
 
     @PostMapping(value = "/pong", consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
-    public Mono<String> handle(@RequestBody String message) {
+    public Mono<String> handle(@RequestBody String message, @RequestParam String instance) {
 
         if (!throttlingService.tryAcquire()) {
-            logger.warn("Throttling request as too many requests in the same second");
+            logger.warn("{} request is throttled as too many requests in the same second", instance);
             return Mono.error(new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Too many requests in this second"));
         }
-        logger.info("Ping success, handling ping message: {}", message);
+        logger.info("{} ping success, handling ping message: {}", instance, message);
         kafkaProducerService.sendMessage(new Message(message, System.currentTimeMillis()));
         return Mono.just(RESPONSE);
     }

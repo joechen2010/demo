@@ -25,6 +25,7 @@ public class FileLockThrottlingService implements ThrottlingService, Initializin
     private static final Logger logger = LoggerFactory.getLogger(FileLockThrottlingService.class);
     public static final String SPLIT = ":";
 
+    //content format: resetTime:requestCount,  eg: 1736307118857:2
     @Value("${lock.file.path:rate_limit.lock}")
     private String lockFilePath;
 
@@ -49,7 +50,7 @@ public class FileLockThrottlingService implements ThrottlingService, Initializin
 
     @Override
     public void run() {
-        // execute in async just make sure there is no delay
+        // execute in async just make sure there is no delay for each taks
         resetWorker.execute(this::resetCounter);
     }
 
@@ -89,6 +90,7 @@ public class FileLockThrottlingService implements ThrottlingService, Initializin
 
     private boolean acquireFileLockAndProcess(Function<RandomAccessFile, Boolean> processFunction) {
         FileLock fileLock = null;
+        // use lock to avoid unnecessary try lock the file in single instance, and it will throw OverlappingFileLockException
         reentrantLock.lock();
         try (RandomAccessFile lockFile = new RandomAccessFile(lockFilePath, "rw");
              FileChannel channel = lockFile.getChannel()) {
@@ -96,7 +98,7 @@ public class FileLockThrottlingService implements ThrottlingService, Initializin
             while (fileLock == null && System.currentTimeMillis() - startTime <= timeout) {
                 fileLock = channel.tryLock();
                 if (fileLock == null) {
-                    Thread.sleep(backoff);
+                    TimeUnit.MILLISECONDS.sleep(backoff);
                 }
             }
             if (fileLock == null) {
